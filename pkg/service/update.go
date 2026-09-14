@@ -22,9 +22,6 @@ import (
 )
 
 const (
-	// discordWebhookURL is the Discord webhook called for each new article.
-	discordWebhookURL = "https://discord.com/api/webhooks/1521619888190263367/S4Sadt3tEEIz0BnFuKmQOsWBDWY1-miRXa9oHMRlNWT9A20Gh33fZAIG0GUmvuAcE-zz"
-
 	// discordContentLimit is Discord's hard cap on a message's content field.
 	discordContentLimit = 2000
 
@@ -66,9 +63,14 @@ func plainText(s string) string {
 	return strings.Join(strings.Fields(s), " ")
 }
 
-// notifyDiscord posts the given article to the Discord webhook, sanitizing and
-// truncating the content and respecting Discord's rate limits.
+// notifyDiscord posts the given article to the Discord webhook configured via
+// DISCORD_WEBHOOK_URL, sanitizing and truncating the content and respecting
+// Discord's rate limits. It is a no-op when no webhook is configured.
 func notifyDiscord(article data.Article) {
+	if env.DISCORD_WEBHOOK_URL == "" {
+		return
+	}
+
 	title := plainText(article.Name)
 	resume := plainText(article.Resume)
 
@@ -98,7 +100,7 @@ func notifyDiscord(article data.Article) {
 			time.Sleep(wait)
 		}
 
-		resp, err := http.Post(discordWebhookURL, "application/json", bytes.NewReader(payload))
+		resp, err := http.Post(env.DISCORD_WEBHOOK_URL, "application/json", bytes.NewReader(payload))
 		lastDiscordCall = time.Now()
 		if err != nil {
 			log.Printf("Error calling Discord webhook: %v\n", err)
