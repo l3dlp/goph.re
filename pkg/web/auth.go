@@ -148,9 +148,8 @@ func RequireAdmin() gin.HandlerFunc {
 		if user.ID == "60765" {
 			c.Next()
 		} else {
-			c.String(http.StatusOK, "%s", user.ID)
 			// Not an admin, redirect to home
-			// c.Redirect(http.StatusTemporaryRedirect, "/")
+			c.Redirect(http.StatusTemporaryRedirect, "/")
 			c.Abort()
 		}
 	}

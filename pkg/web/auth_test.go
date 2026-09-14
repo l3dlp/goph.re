@@ -59,7 +59,7 @@ func TestRequireAdmin_AuthenticatedNonAdminUser(t *testing.T) {
 	// Middleware to set up a non-admin user session for this test
 	r.Use(func(c *gin.Context) {
 		session := sessions.Default(c)
-		user := data.User{UserID: "user123", Name: "nonAdminUser", Email: "test@example.com", Provider: "github"}
+		user := data.User{ID: "user123", Name: "nonAdminUser", Email: "test@example.com", Provider: "github"}
 		userDataJSON, err := json.Marshal(user)
 		assert.NoError(t, err)
 		session.Set("user", string(userDataJSON))
@@ -88,7 +88,7 @@ func TestRequireAdmin_AuthenticatedNonAdminUser(t *testing.T) {
 }
 
 // TestRequireAdmin_AuthenticatedAdminUser tests the RequireAdmin middleware
-// when the admin user 'l3dlp' is logged in.
+// when the admin user (ID "60765") is logged in.
 // Expected: Request proceeds (HTTP 200 from dummy handler).
 func TestRequireAdmin_AuthenticatedAdminUser(t *testing.T) {
 	// Setup: Create a Gin engine and response recorder.
@@ -99,7 +99,7 @@ func TestRequireAdmin_AuthenticatedAdminUser(t *testing.T) {
 	// Middleware to set up an admin user session for this test
 	r.Use(func(c *gin.Context) {
 		session := sessions.Default(c)
-		adminUser := data.User{UserID: "admin456", Name: "l3dlp", Email: "admin@example.com", Provider: "github"}
+		adminUser := data.User{ID: "60765", Name: "l3dlp", Email: "admin@example.com", Provider: "github"}
 		userDataJSON, err := json.Marshal(adminUser)
 		assert.NoError(t, err)
 		session.Set("user", string(userDataJSON))

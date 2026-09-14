@@ -222,12 +222,6 @@ async function loadMoreArticles() {
 }
 
 
-/*
-	async function vote(articleUrl, note) {
-		await fetch(`/vote?url=${encodeURIComponent(articleUrl)}&note=${note}`);
-	}
-*/
-
 async function vote(id, voteValue) {
 	document.getElementById("allPostsLink").classList.remove("hidden");
 

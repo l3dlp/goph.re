@@ -416,12 +416,6 @@ async function loadMoreArticles() {
 }
 
 
-/*
-	async function vote(articleUrl, note) {
-		await fetch(`/vote?url=${encodeURIComponent(articleUrl)}&note=${note}`);
-	}
-*/
-
 async function vote(id, voteValue) {
 
 	// Find the corresponding article div by searching for a link with the matching URL

@@ -84,12 +84,16 @@ Big Go news (a release, a CVE) appears in 5+ feeds at once.
 
 ## Housekeeping (not LLM, but worth doing)
 
-- [ ] Fix `pkg/web/auth_test.go`: it uses `UserID` but `data.User`'s field is `ID`,
-      so `go test ./pkg/web/` doesn't compile.
-- [ ] `pkg/rss/topic.go` sanitizes the wrong slice (`articles[idx]` instead of
+- [x] Fix `pkg/web/auth_test.go`: it uses `UserID` but `data.User`'s field is `ID`,
+      so `go test ./pkg/web/` doesn't compile. (Also fixed the `RequireAdmin` debug
+      leftover that printed the user ID instead of redirecting non-admins.)
+- [x] `pkg/rss/topic.go` sanitizes the wrong slice (`articles[idx]` instead of
       `goodArticles[idx]`), so topic pages return unsanitized descriptions.
-- [ ] Unify the two vote paths: legacy `POST /vote?url=` writes `Vote` directly and
-      can be clobbered by `updateArticleVoteAggregate`; drop the legacy route once the
-      frontend only uses `POST /vote/:id/:vote`.
-- [ ] Move the session cookie key (`"secret-session-key"` in `www.go`) into `.env`.
-- [ ] The per-IP rate-limiter map grows forever; evict idle entries.
+- [x] Unify the two vote paths: the frontend only called `POST /vote/:id/:vote`
+      (the legacy calls were commented out), so the legacy `POST /vote?url=` route
+      and `rss.UpdateVoteByURL` are removed.
+- [x] Move the session cookie key (`"secret-session-key"` in `www.go`) into `.env`
+      as `SESSION_KEY` (random per-start fallback when unset).
+- [x] The per-IP rate-limiter map grows forever; evict idle entries. (Janitor
+      goroutine evicts visitors idle > 15 min; also fixed a create-race in
+      `GetLimiter`.)

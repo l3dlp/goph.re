@@ -1,6 +1,7 @@
 package web
 
 import (
+	"crypto/rand"
 	"encoding/json"
 	"gophre/env"
 	"gophre/pkg/rss"
@@ -59,8 +60,19 @@ func Serve(port ...int) {
 	r.SetFuncMap(customFuncs)
 	r.Use(RateLimiterMiddleware(limiter))
 
-	// Set up sessions
-	store := cookie.NewStore([]byte("secret-session-key")) // Change this to a secure key
+	// Set up sessions, keyed by SESSION_KEY from the environment. Without a
+	// configured key, fall back to a random one: the server still works, but
+	// sessions are invalidated on every restart.
+	sessionKey := []byte(env.SESSION_KEY)
+	if len(sessionKey) == 0 {
+		sessionKey = make([]byte, 32)
+		if _, err := rand.Read(sessionKey); err != nil {
+			log.Printf("Error generating random session key: %v\n", err)
+			return
+		}
+		log.Println("SESSION_KEY is not set; using a random key, sessions will not survive restarts.")
+	}
+	store := cookie.NewStore(sessionKey)
 	r.Use(sessions.Sessions("gophre-session", store))
 
 	// Configure Goth
@@ -110,15 +122,6 @@ func Serve(port ...int) {
 	})
 
 	// API POST
-	r.POST("/vote", func(c *gin.Context) {
-		url := c.Query("url")
-		note := c.Query("note")
-		// Find the article by URL and update its vote
-		rss.UpdateVoteByURL(url, note)
-		c.JSON(http.StatusOK, gin.H{"success": true})
-	})
-
-	// New vote endpoint using ID
 	r.POST("/vote/:id/:vote", Vote)
 
 	// API GET

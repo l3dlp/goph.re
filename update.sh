@@ -1,5 +1,5 @@
 cd /intelligences/apps/goph.re
-gophre update
+bin/gophre update
 
 
 gigit "Hourly update"

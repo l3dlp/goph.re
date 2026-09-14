@@ -35,7 +35,7 @@ func Topic(path string) []data.Article {
 
 			for idx, article := range goodArticles[:sizeNum] {
 				// Sanitize the article content
-				articles[idx].Resume = p.Sanitize(article.Resume)
+				goodArticles[idx].Resume = p.Sanitize(article.Resume)
 			}
 
 			return goodArticles[:sizeNum]

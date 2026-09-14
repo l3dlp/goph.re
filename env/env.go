@@ -14,6 +14,7 @@ var (
 	GITHUB_CLIENT_SECRET string
 	GITHUB_CALLBACK_URL  string
 	DISCORD_WEBHOOK_URL  string
+	SESSION_KEY          string
 
 	// LOCAL_IPV4 optionally pins outbound connections to one local IPv4
 	// address. Leave empty to let the kernel pick the source address.
@@ -27,6 +28,7 @@ func init() {
 	GITHUB_CLIENT_SECRET = lookup("GITHUB_CLIENT_SECRET", fileVars)
 	GITHUB_CALLBACK_URL = lookup("GITHUB_CALLBACK_URL", fileVars)
 	DISCORD_WEBHOOK_URL = lookup("DISCORD_WEBHOOK_URL", fileVars)
+	SESSION_KEY = lookup("SESSION_KEY", fileVars)
 	LOCAL_IPV4 = lookup("LOCAL_IPV4", fileVars)
 }
 
