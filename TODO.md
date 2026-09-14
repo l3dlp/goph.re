@@ -93,5 +93,3 @@ Big Go news (a release, a CVE) appears in 5+ feeds at once.
       frontend only uses `POST /vote/:id/:vote`.
 - [ ] Move the session cookie key (`"secret-session-key"` in `www.go`) into `.env`.
 - [ ] The per-IP rate-limiter map grows forever; evict idle entries.
-- [ ] Rotate the GitHub OAuth client secret (it was hardcoded in the repo before the
-      `.env` migration; Discord webhook already rotated).
