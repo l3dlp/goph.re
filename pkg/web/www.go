@@ -5,6 +5,8 @@ import (
 	"gophre/env"
 	"gophre/pkg/rss"
 	"html/template"
+	"log"
+	"net"
 	"net/http"
 	"os"
 	"strconv"
@@ -142,8 +144,13 @@ func Serve(port ...int) {
 	// Check all articles from one topic
 	r.GET("/:path", Topic)
 
-	// Start the server
-	r.Run(":" + strconv.Itoa(goodPort))
+	// Start the server on IPv4 only.
+	listener, err := net.Listen("tcp4", ":"+strconv.Itoa(goodPort))
+	if err != nil {
+		log.Printf("Error listening on port %d: %v\n", goodPort, err)
+		return
+	}
+	r.RunListener(listener)
 
 }
 
