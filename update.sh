@@ -1,4 +1,4 @@
-cd /intelligences/apps/goph.re/latest
+cd /intelligences/apps/goph.re
 gophre update
 
 
