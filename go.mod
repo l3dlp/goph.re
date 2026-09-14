@@ -1,6 +1,6 @@
 module gophre
 
-go 1.26.0
+go 1.27.0
 
 require (
 	github.com/gin-contrib/sessions v1.1.1
