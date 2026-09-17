@@ -37,7 +37,7 @@ Gophre is a modern RSS feed aggregator specifically focused on Go programming la
 
 ### Prerequisites
 
-- Go 1.16 or higher
+- Go 1.27 or higher
 - GitHub OAuth credentials (for authentication features)
 
 ### Setup
