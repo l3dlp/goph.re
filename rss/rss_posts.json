@@ -1,5 +1,18 @@
 [
   {
+    "id": "6006edd5490c0ca2663ca5a4f612c332",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Announcing list2regexp - Generate regular expressions to match lists of strings",
+    "url": "https://forum.golangbridge.org/t/announcing-list2regexp-generate-regular-expressions-to-match-lists-of-strings/42579#post_2",
+    "resume": " \u003cp\u003eWhat’s a real-world use for this? Just wondering how you intend for people to use it.\u003c/p\u003e ",
+    "date": "2026-09-17T21:03:19Z",
+    "vote": 0
+  },
+  {
     "id": "9804c779b31fdc4dd2130b7f0cad936d",
     "source": {
       "path": "forums",
