@@ -1,5 +1,18 @@
 [
   {
+    "id": "2b5975d5ce27ac2a8bd43648bbf4f128",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Announcing list2regexp - Generate regular expressions to match lists of strings",
+    "url": "https://forum.golangbridge.org/t/announcing-list2regexp-generate-regular-expressions-to-match-lists-of-strings/42579#post_3",
+    "resume": " \u003cp\u003eThis project grew out of Sriracha, where it is used to match large IP lists (for whitelisting or blacklisting).\u003c/p\u003e\n\u003caside class=\"onebox allowlistedgeneric\" data-onebox-src=\"https://codeberg.org/tslocum/sriracha/src/commit/5bf24b0daabd058c2714427da17c7ea16b7cd43a/internal/server/server.go#L447\"\u003e\n  \u003cheader class=\"source\"\u003e\n      \u003cimg src=\"https://codeberg.org/assets/img/favicon.svg\" class=\"site-icon\" alt=\"\" width=\"16\" height=\"16\"\u003e\n\n      \u003ca href=\"https://codeberg.org/tslocum/sriracha/src/commit/5bf24b0daabd058c2714427da17c7ea16b7cd43a/internal/server/server.go#L447\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eCodeberg.org\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"aspect-image\" style=\"--aspect-ratio:690/344;\"\u003e\u003cimg src=\"https://codeberg.org/tslocum/sriracha/-/summary-card\" class=\"thumbnail\" alt=\"\" width=\"690\" height=\"345\"\u003e\u003c/div\u003e\n\n\u003ch3\u003e\u003ca href=\"https://codeberg.org/tslocum/sriracha/src/commit/5bf24b0daabd058c2714427da17c7ea16b7cd43a/internal/server/server.go#L447\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003e3706 lines 96 KiB Go Raw Blame History - sriracha/internal/server/server.go at...\u003c/a\u003e\u003c/h3\u003e\n\n  \u003cp\u003ePowered by Forgejo | sriracha - Imageboard and forum server\u003c/p\u003e\n\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n ",
+    "date": "2026-09-17T21:24:14Z",
+    "vote": 0
+  },
+  {
     "id": "6006edd5490c0ca2663ca5a4f612c332",
     "source": {
       "path": "forums",
