@@ -1,5 +1,18 @@
 [
   {
+    "id": "9804c779b31fdc4dd2130b7f0cad936d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I contributed to Golang, here is how you can too",
+    "url": "https://www.reddit.com/r/golang/comments/1wj50f5/i_contributed_to_golang_here_is_how_you_can_too/",
+    "resume": "",
+    "date": "2026-09-17T20:15:24Z",
+    "vote": 0
+  },
+  {
     "id": "94aaa47df206eac8b49245c366603c5c",
     "source": {
       "path": "forums",
@@ -13,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "1503e3520db27414e918be91720156a8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "SunGo Project Manager DevTools",
+    "url": "https://www.reddit.com/r/golang/comments/1wj3dxv/sungo_project_manager_devtools/",
+    "resume": "",
+    "date": "2026-09-17T19:15:45Z",
+    "vote": 0
+  },
+  {
     "id": "9f8f0d3f52b569a4877846ff14a3e312",
     "source": {
       "path": "forums",
@@ -23,6 +49,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1wj3bgr/announcing_list2regexp_generate_regular/",
     "resume": "",
     "date": "2026-09-17T19:13:21Z",
+    "vote": 0
+  },
+  {
+    "id": "7ca13f1fd3e121fb6a4b95c512cfefd4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built Routa an open-source Go traffic gateway for developers",
+    "url": "https://www.reddit.com/r/golang/comments/1wj2sjy/i_built_routa_an_opensource_go_traffic_gateway/",
+    "resume": "",
+    "date": "2026-09-17T18:54:30Z",
     "vote": 0
   },
   {
