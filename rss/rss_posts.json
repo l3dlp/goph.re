@@ -1,5 +1,18 @@
 [
   {
+    "id": "3eef408c7e9ed79d744a1499fdee727e",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do i use go doc -ex from 1.27?",
+    "url": "https://forum.golangbridge.org/t/how-do-i-use-go-doc-ex-from-1-27/42548#post_5",
+    "resume": " \u003caside class=\"onebox allowlistedgeneric\" data-onebox-src=\"https://go.dev/doc/go1.27\"\u003e\n  \u003cheader class=\"source\"\u003e\n      \u003cimg src=\"https://go.dev/images/favicon-gopher.png\" class=\"site-icon\" alt=\"\" width=\"288\" height=\"288\"\u003e\n\n      \u003ca href=\"https://go.dev/doc/go1.27\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003ego.dev\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"aspect-image\" style=\"--aspect-ratio:690/400;\"\u003e\u003cimg src=\"https://go.dev/doc/gopher/gopher5logo.jpg\" class=\"thumbnail\" alt=\"\" width=\"690\" height=\"400\"\u003e\u003c/div\u003e\n\n\u003ch3\u003e\u003ca href=\"https://go.dev/doc/go1.27\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGo 1.27 Release Notes - The Go Programming Language\u003c/a\u003e\u003c/h3\u003e\n\n\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n\n\u003cp\u003eThis answers my question: yes -ex flag came with release 1.27.\u003c/p\u003e\n\u003cp\u003eQuote :\u003c/p\u003e\n\u003cp\u003eThe \u003ccode\u003ego doc\u003c/code\u003e command now accepts the \u003ccode\u003e-ex\u003c/code\u003e command-line option to list executable examples of the given package or symbol. When an example name is passed on the command line (such as \u003ccode\u003ego doc bytes.ExampleBuffer\u003c/code\u003e), \u003ccode\u003ego doc\u003c/code\u003e now prints the example source code along with comments.\u003c/p\u003e ",
+    "date": "2026-09-18T03:14:44Z",
+    "vote": 0
+  },
+  {
     "id": "2b5975d5ce27ac2a8bd43648bbf4f128",
     "source": {
       "path": "forums",
