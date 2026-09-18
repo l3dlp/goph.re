@@ -1,5 +1,18 @@
 [
   {
+    "id": "35d735b74deefdc8844d37b3faa1517c",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "I vibecoded a tool to shrink Golang codebase automatically",
+    "url": "https://github.com/dhilst/sx",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/dhilst/sx\"\u003ehttps://github.com/dhilst/sx\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=49758293\"\u003ehttps://news.ycombinator.com/item?id=49758293\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n",
+    "date": "2026-09-18T18:29:43Z",
+    "vote": 0
+  },
+  {
     "id": "e950933642fd96a75f107f4bc25dcd68",
     "source": {
       "path": "forums",
