@@ -1,5 +1,18 @@
 [
   {
+    "id": "5d5c81dca2bc0c110039090d513ff3fb",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Ragnarok Online client written in Golang",
+    "url": "https://github.com/kivutar/goro/",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/kivutar/goro/\"\u003ehttps://github.com/kivutar/goro/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=49767075\"\u003ehttps://news.ycombinator.com/item?id=49767075\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n",
+    "date": "2026-09-19T14:56:42Z",
+    "vote": 0
+  },
+  {
     "id": "dac47b3c49a64c724e9413a84140a78e",
     "source": {
       "path": "forums",
