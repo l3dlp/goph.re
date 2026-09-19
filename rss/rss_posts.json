@@ -1,5 +1,18 @@
 [
   {
+    "id": "f74556e76dc9086fe5fd5cc2e66baf7a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How Data Is Replicated In Distributed Systems | Raft From Scratch In GoLang",
+    "url": "https://www.reddit.com/r/golang/comments/1wkeigy/how_data_is_replicated_in_distributed_systems/",
+    "resume": "",
+    "date": "2026-09-19T06:27:44Z",
+    "vote": 0
+  },
+  {
     "id": "35d735b74deefdc8844d37b3faa1517c",
     "source": {
       "path": "community",
