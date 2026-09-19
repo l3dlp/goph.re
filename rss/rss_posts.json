@@ -1,5 +1,18 @@
 [
   {
+    "id": "bbb134d23d180977df29528babdb872a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do i use go doc -ex from 1.27?",
+    "url": "https://forum.golangbridge.org/t/how-do-i-use-go-doc-ex-from-1-27/42548#post_6",
+    "resume": " \u003cp\u003e\u003ccode\u003ego doc -ex io.ExampleCopy\u003c/code\u003e does work, but \u003ccode\u003ego doc -all -ex io\u003c/code\u003e does not output any information about examples at all, despite \u003ccode\u003ego doc -ex io\u003c/code\u003e correctly doing so. I manually checked the entire output, and grep is not hiding any information. I just used grep to make my post more succinct.\u003c/p\u003e\n\u003cp\u003ethis is an issue for me as i use \u003ccode\u003ego doc -all \u0026lt;pkg\u0026gt;\u003c/code\u003e to learn about what functions exist in a package, if \u003ccode\u003ego -doc -all -ex \u0026lt;pkg\u0026gt;\u003c/code\u003e doesn’t contain information about the examples, ill never know to type in \u003ccode\u003ego doc -ex \u0026lt;function\u0026gt;\u003c/code\u003e for a specific function.\u003c/p\u003e ",
+    "date": "2026-09-19T17:38:42Z",
+    "vote": 0
+  },
+  {
     "id": "9c69fce6593f5e335629b3a73e1e33a6",
     "source": {
       "path": "examples",
