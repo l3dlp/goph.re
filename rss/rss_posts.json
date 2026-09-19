@@ -1,5 +1,18 @@
 [
   {
+    "id": "dac47b3c49a64c724e9413a84140a78e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How do you validate local envs \u0026 Docker hosts?",
+    "url": "https://www.reddit.com/r/golang/comments/1wkjikn/how_do_you_validate_local_envs_docker_hosts/",
+    "resume": "",
+    "date": "2026-09-19T11:15:50Z",
+    "vote": 0
+  },
+  {
     "id": "f74556e76dc9086fe5fd5cc2e66baf7a",
     "source": {
       "path": "forums",
