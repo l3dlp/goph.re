@@ -39,6 +39,19 @@
     "vote": 0
   },
   {
+    "id": "cca2fedc0f8f7b0b48a0fabcdf9f175d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Introducing unolog: one canonical event per Go request",
+    "url": "https://www.reddit.com/r/golang/comments/1wknfyb/introducing_unolog_one_canonical_event_per_go/",
+    "resume": "",
+    "date": "2026-09-19T14:17:50Z",
+    "vote": 0
+  },
+  {
     "id": "dac47b3c49a64c724e9413a84140a78e",
     "source": {
       "path": "forums",
