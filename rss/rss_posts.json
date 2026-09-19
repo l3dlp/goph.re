@@ -26,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "70b9174dec24ef1c7dd4393d2d73aaa2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What kind of AI services we can build Go?",
+    "url": "https://www.reddit.com/r/golang/comments/1wkddlg/what_kind_of_ai_services_we_can_build_go/",
+    "resume": "",
+    "date": "2026-09-19T05:26:16Z",
+    "vote": 0
+  },
+  {
     "id": "35d735b74deefdc8844d37b3faa1517c",
     "source": {
       "path": "community",
