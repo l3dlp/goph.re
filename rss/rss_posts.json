@@ -1,5 +1,31 @@
 [
   {
+    "id": "e1a1c49772dafd25bb18b4a5d764fceb",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Need Advice/Suggestion] I've written a Go book. Should I open source it and give everyone a headache?",
+    "url": "https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558#post_5",
+    "resume": " \u003cp\u003eYes please open source it. Already reading it\u003c/p\u003e ",
+    "date": "2026-09-20T13:37:43Z",
+    "vote": 0
+  },
+  {
+    "id": "df3ebdba6415a65fa4262c114fe44ac7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Has anyone read Distributed Systems in Go by Joel Bryan Juliano or Any recommendations for Dist. Systems?",
+    "url": "https://www.reddit.com/r/golang/comments/1wlh7va/has_anyone_read_distributed_systems_in_go_by_joel/",
+    "resume": "",
+    "date": "2026-09-20T13:32:55Z",
+    "vote": 0
+  },
+  {
     "id": "6d83f34c41f62426a8cdfc6c8f076848",
     "source": {
       "path": "forums",
