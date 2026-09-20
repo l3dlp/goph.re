@@ -1,5 +1,18 @@
 [
   {
+    "id": "31edba5453075bccc63f044d73e4e4c6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "fmt and time values",
+    "url": "https://www.reddit.com/r/golang/comments/1wl49go/fmt_and_time_values/",
+    "resume": "",
+    "date": "2026-09-20T02:05:32Z",
+    "vote": 0
+  },
+  {
     "id": "bef5fb8a9a45f5c8071753fc9811b89f",
     "source": {
       "path": "forums",
