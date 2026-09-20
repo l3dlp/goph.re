@@ -1,5 +1,18 @@
 [
   {
+    "id": "bc6f9f31b6224477c920b051fb1d3ea3",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How PostgreSQL replaces NoSQL and MongoDB #database #postgresql #mongodb #sql #nosql",
+    "url": "https://www.youtube.com/shorts/Arqb5XqMEF4",
+    "resume": "",
+    "date": "2026-09-20T16:00:37Z",
+    "vote": 0
+  },
+  {
     "id": "e1a1c49772dafd25bb18b4a5d764fceb",
     "source": {
       "path": "forums",
