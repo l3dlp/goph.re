@@ -1,5 +1,18 @@
 [
   {
+    "id": "85885cca2e66a287233ed7cc82cfcd7a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Developing an open-source code judging engine with Go and I want someone to break it",
+    "url": "https://www.reddit.com/r/golang/comments/1wlmuvx/developing_an_opensource_code_judging_engine_with/",
+    "resume": "",
+    "date": "2026-09-20T17:16:54Z",
+    "vote": 0
+  },
+  {
     "id": "bc6f9f31b6224477c920b051fb1d3ea3",
     "source": {
       "path": "examples",
@@ -10,6 +23,19 @@
     "url": "https://www.youtube.com/shorts/Arqb5XqMEF4",
     "resume": "",
     "date": "2026-09-20T16:00:37Z",
+    "vote": 0
+  },
+  {
+    "id": "a780a2cbe8c754989871e4c5ea98eaab",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Tinygo getting big!",
+    "url": "https://www.reddit.com/r/golang/comments/1wlksyp/tinygo_getting_big/",
+    "resume": "",
+    "date": "2026-09-20T15:58:53Z",
     "vote": 0
   },
   {
