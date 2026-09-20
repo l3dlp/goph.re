@@ -1,5 +1,18 @@
 [
   {
+    "id": "a4e83be4ee68d837a4c831fd2ce03153",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "3 pure-Go CLIs for local-first Confluence search - CGO_ENABLED=0, pluggable embeddings, MCP",
+    "url": "https://www.reddit.com/r/golang/comments/1wlvpvb/3_purego_clis_for_localfirst_confluence_search/",
+    "resume": "",
+    "date": "2026-09-20T23:01:41Z",
+    "vote": 0
+  },
+  {
     "id": "85885cca2e66a287233ed7cc82cfcd7a",
     "source": {
       "path": "forums",
