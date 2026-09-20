@@ -1,5 +1,18 @@
 [
   {
+    "id": "bef5fb8a9a45f5c8071753fc9811b89f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What Go patterns are most frequently used?",
+    "url": "https://www.reddit.com/r/golang/comments/1wl2ywz/what_go_patterns_are_most_frequently_used/",
+    "resume": "",
+    "date": "2026-09-20T01:02:30Z",
+    "vote": 0
+  },
+  {
     "id": "bbb134d23d180977df29528babdb872a",
     "source": {
       "path": "forums",
