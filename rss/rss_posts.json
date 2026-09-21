@@ -1,5 +1,18 @@
 [
   {
+    "id": "35bfdcfc6a11a497f330a56daf10cba8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Financial infrastructure foundation in Go/Python — frozen V1 available for licensing",
+    "url": "https://www.reddit.com/r/golang/comments/1wmo0am/financial_infrastructure_foundation_in_gopython/",
+    "resume": "",
+    "date": "2026-09-21T20:13:27Z",
+    "vote": 0
+  },
+  {
     "id": "408f33c10dc4a423e17b299cb85b9c08",
     "source": {
       "path": "forums",
@@ -10,6 +23,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1wmm0au/small_projects/",
     "resume": "",
     "date": "2026-09-21T19:01:10Z",
+    "vote": 0
+  },
+  {
+    "id": "114c71f389925779018fc5132e2ba4b2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I’ve been building an ML framework in pure Go. It started as a side project in 2019 and has turned into Zerfoo",
+    "url": "https://www.reddit.com/r/golang/comments/1wmkbmm/ive_been_building_an_ml_framework_in_pure_go_it/",
+    "resume": "",
+    "date": "2026-09-21T18:01:46Z",
     "vote": 0
   },
   {
