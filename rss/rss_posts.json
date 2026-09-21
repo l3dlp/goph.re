@@ -1,5 +1,44 @@
 [
   {
+    "id": "6c96d34d52ad8ec1fea3f9f61e800709",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "PostgreSQL: The world's most advanced open source database... #postgresql #database #coding",
+    "url": "https://www.youtube.com/shorts/jGv-4DaAQLk",
+    "resume": "",
+    "date": "2026-09-21T16:00:32Z",
+    "vote": 0
+  },
+  {
+    "id": "1a98211c989079f9222a7a0a78cbc5b8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Slat, a terminal multiplexer I've been writing in Go for about a year. What's missing for you?",
+    "url": "https://www.reddit.com/r/golang/comments/1wmew63/slat_a_terminal_multiplexer_ive_been_writing_in/",
+    "resume": "",
+    "date": "2026-09-21T14:47:45Z",
+    "vote": 0
+  },
+  {
+    "id": "e7f836d9e226f14df18a70faf54ea6b8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Rethinking Classical Concurrency Patterns — the Bil Edition",
+    "url": "https://www.reddit.com/r/golang/comments/1wmep6l/rethinking_classical_concurrency_patterns_the_bil/",
+    "resume": "",
+    "date": "2026-09-21T14:40:27Z",
+    "vote": 0
+  },
+  {
     "id": "1a379349718e1dda54d57ef71a91f867",
     "source": {
       "path": "forums",
