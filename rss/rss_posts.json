@@ -1,5 +1,18 @@
 [
   {
+    "id": "c0d8f9aae53b30597ed27907a33c07c2",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Dxui: A declarative desktop GUI framework for Go, without cgo",
+    "url": "https://forum.golangbridge.org/t/dxui-a-declarative-desktop-gui-framework-for-go-without-cgo/42565#post_4",
+    "resume": " \u003cp\u003eOh wow. Do we have Compose for Golang now?\u003c/p\u003e ",
+    "date": "2026-09-21T22:00:30Z",
+    "vote": 0
+  },
+  {
     "id": "35bfdcfc6a11a497f330a56daf10cba8",
     "source": {
       "path": "forums",
