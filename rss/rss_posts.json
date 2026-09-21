@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "6376cd5325d9b0caaafd63f276d7048b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Looking for testing/verification library recommendations",
+    "url": "https://www.reddit.com/r/golang/comments/1wlwkzg/looking_for_testingverification_library/",
+    "resume": "",
+    "date": "2026-09-20T23:39:40Z",
+    "vote": 0
+  },
+  {
     "id": "a4e83be4ee68d837a4c831fd2ce03153",
     "source": {
       "path": "forums",
