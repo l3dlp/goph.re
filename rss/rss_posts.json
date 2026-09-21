@@ -1,5 +1,18 @@
 [
   {
+    "id": "408f33c10dc4a423e17b299cb85b9c08",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Small Projects",
+    "url": "https://www.reddit.com/r/golang/comments/1wmm0au/small_projects/",
+    "resume": "",
+    "date": "2026-09-21T19:01:10Z",
+    "vote": 0
+  },
+  {
     "id": "6c96d34d52ad8ec1fea3f9f61e800709",
     "source": {
       "path": "examples",
