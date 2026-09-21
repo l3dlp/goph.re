@@ -1,5 +1,18 @@
 [
   {
+    "id": "e7ab285d4327fddf1c4477a5bcb9e68b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Need Advice: Simple service, one container, multiple workers",
+    "url": "https://www.reddit.com/r/golang/comments/1wm7x9j/need_advice_simple_service_one_container_multiple/",
+    "resume": "",
+    "date": "2026-09-21T09:29:19Z",
+    "vote": 0
+  },
+  {
     "id": "bd3dab5c5eb069f8e8918513283c2741",
     "source": {
       "path": "forums",
