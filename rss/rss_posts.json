@@ -1,5 +1,18 @@
 [
   {
+    "id": "bc2b3b14fc1e2ff409fac2189bb7dd80",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Is this line supposed to compile, and if not, why is it compiling? \"return new(Page{Title: title, Body: body})\"",
+    "url": "https://www.reddit.com/r/golang/comments/1wmaezc/is_this_line_supposed_to_compile_and_if_not_why/",
+    "resume": "",
+    "date": "2026-09-21T11:44:07Z",
+    "vote": 0
+  },
+  {
     "id": "907c696cff08c2d1291d59e067d169b7",
     "source": {
       "path": "forums",
