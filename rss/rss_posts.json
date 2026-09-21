@@ -1,5 +1,18 @@
 [
   {
+    "id": "fa13567b9f6da89721c43c8b6c1496de",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Preventing Case-Mismatch Bugs with Go’s Type System",
+    "url": "https://www.reddit.com/r/golang/comments/1wmsiq5/preventing_casemismatch_bugs_with_gos_type_system/",
+    "resume": "",
+    "date": "2026-09-21T23:07:13Z",
+    "vote": 0
+  },
+  {
     "id": "c0d8f9aae53b30597ed27907a33c07c2",
     "source": {
       "path": "forums",
