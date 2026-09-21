@@ -1,5 +1,18 @@
 [
   {
+    "id": "bd3dab5c5eb069f8e8918513283c2741",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Building Conway’s Game of Life in Go with raylib-go",
+    "url": "https://www.reddit.com/r/golang/comments/1wm6xou/building_conways_game_of_life_in_go_with_raylibgo/",
+    "resume": "",
+    "date": "2026-09-21T08:30:19Z",
+    "vote": 0
+  },
+  {
     "id": "27860990161b9de94833aa80a7b5f8c4",
     "source": {
       "path": "forums",
