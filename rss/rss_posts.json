@@ -1,5 +1,31 @@
 [
   {
+    "id": "1533ea1154ae761402de3569d6ebc7e3",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Replacing Message Queues with FOR UPDATE SKIP LOCKED #coding #database #programming",
+    "url": "https://www.youtube.com/shorts/HM-8w7DRyCs",
+    "resume": "",
+    "date": "2026-09-22T16:00:21Z",
+    "vote": 0
+  },
+  {
+    "id": "42009196cb3a76ed638c5abc00fa5e4e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "a ₹18,000 aws bill led me to build this",
+    "url": "https://www.reddit.com/r/golang/comments/1wnc7un/a_18000_aws_bill_led_me_to_build_this/",
+    "resume": "",
+    "date": "2026-09-22T15:12:46Z",
+    "vote": 0
+  },
+  {
     "id": "4c96ed4b1b4e93d068e39d5fd2aa24dd",
     "source": {
       "path": "forums",
