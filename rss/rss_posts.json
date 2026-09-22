@@ -1,5 +1,18 @@
 [
   {
+    "id": "0691fbeaac4453bf1100eb8c9a164996",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Live talk on building your own static analyzer for Go",
+    "url": "https://www.reddit.com/r/golang/comments/1wn7aau/live_talk_on_building_your_own_static_analyzer/",
+    "resume": "",
+    "date": "2026-09-22T11:48:58Z",
+    "vote": 0
+  },
+  {
     "id": "b511b06d5e93740ddd7793ee7f852d00",
     "source": {
       "path": "forums",
