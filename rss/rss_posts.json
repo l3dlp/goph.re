@@ -1,5 +1,18 @@
 [
   {
+    "id": "9eda99f516dc0b61b91a47808c0ea206",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Lisp-to-Go transpiler in 500 lines of code",
+    "url": "https://www.reddit.com/r/golang/comments/1wnlep9/lisptogo_transpiler_in_500_lines_of_code/",
+    "resume": "",
+    "date": "2026-09-22T20:43:28Z",
+    "vote": 0
+  },
+  {
     "id": "1533ea1154ae761402de3569d6ebc7e3",
     "source": {
       "path": "examples",
