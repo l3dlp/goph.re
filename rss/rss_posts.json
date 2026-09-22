@@ -1,5 +1,18 @@
 [
   {
+    "id": "b511b06d5e93740ddd7793ee7f852d00",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Dxui: A declarative desktop GUI framework for Go, without cgo",
+    "url": "https://forum.golangbridge.org/t/dxui-a-declarative-desktop-gui-framework-for-go-without-cgo/42565#post_5",
+    "resume": " \u003cp\u003eHaha, that’s the idea! \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/slightly_smiling_face.png?v=15\" title=\":slightly_smiling_face:\" class=\"emoji\" alt=\":slightly_smiling_face:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e Declarative, composable UIs with Go functions, typed props, and callbacks.\u003c/p\u003e ",
+    "date": "2026-09-22T03:46:25Z",
+    "vote": 0
+  },
+  {
     "id": "fa13567b9f6da89721c43c8b6c1496de",
     "source": {
       "path": "forums",
