@@ -1,5 +1,18 @@
 [
   {
+    "id": "4c96ed4b1b4e93d068e39d5fd2aa24dd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "TIL: go fix Reaches Into Third-Party Code Too",
+    "url": "https://www.reddit.com/r/golang/comments/1wnabkx/til_go_fix_reaches_into_thirdparty_code_too/",
+    "resume": "",
+    "date": "2026-09-22T14:00:43Z",
+    "vote": 0
+  },
+  {
     "id": "0691fbeaac4453bf1100eb8c9a164996",
     "source": {
       "path": "forums",
