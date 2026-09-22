@@ -52,6 +52,19 @@
     "vote": 0
   },
   {
+    "id": "b19e762207c9f1d03669c9282f8701f3",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Minecraft .. But in GoLang from scratch!",
+    "url": "https://www.reddit.com/r/golang/comments/1wmlnth/minecraft_but_in_golang_from_scratch/",
+    "resume": "",
+    "date": "2026-09-21T18:48:57Z",
+    "vote": 0
+  },
+  {
     "id": "114c71f389925779018fc5132e2ba4b2",
     "source": {
       "path": "forums",
