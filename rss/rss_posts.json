@@ -1,5 +1,31 @@
 [
   {
+    "id": "4668d39e2fb0548a6974f427d568bef7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Goってもう終わってるの?",
+    "url": "https://www.reddit.com/r/golang/comments/1wnovnm/go%E3%81%A3%E3%81%A6%E3%82%82%E3%81%86%E7%B5%82%E3%82%8F%E3%81%A3%E3%81%A6%E3%82%8B%E3%81%AE/",
+    "resume": "",
+    "date": "2026-09-22T23:01:10Z",
+    "vote": 0
+  },
+  {
+    "id": "36e9a25dd85c6d0f26e7aa6668f25569",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Datapages v0.10.0 (Beta)",
+    "url": "https://www.reddit.com/r/golang/comments/1wnlf7j/datapages_v0100_beta/",
+    "resume": "",
+    "date": "2026-09-22T20:43:56Z",
+    "vote": 0
+  },
+  {
     "id": "9eda99f516dc0b61b91a47808c0ea206",
     "source": {
       "path": "forums",
@@ -10,6 +36,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1wnlep9/lisptogo_transpiler_in_500_lines_of_code/",
     "resume": "",
     "date": "2026-09-22T20:43:28Z",
+    "vote": 0
+  },
+  {
+    "id": "042d4269bcbad229052687f679442981",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Fun and games with unsafe - Creating a custom allocator in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1wnkb1e/fun_and_games_with_unsafe_creating_a_custom/",
+    "resume": "",
+    "date": "2026-09-22T20:03:15Z",
     "vote": 0
   },
   {
