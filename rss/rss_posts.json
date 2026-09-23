@@ -1,5 +1,18 @@
 [
   {
+    "id": "0c29ea078e09c0693c85b6c8f399d5e4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "json/v2: slice nil checks considered harmful?",
+    "url": "https://www.reddit.com/r/golang/comments/1wog3oy/jsonv2_slice_nil_checks_considered_harmful/",
+    "resume": "",
+    "date": "2026-09-23T19:43:31Z",
+    "vote": 0
+  },
+  {
     "id": "d3089ea98093490aaa17b58e400e97c1",
     "source": {
       "path": "examples",
