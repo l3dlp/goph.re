@@ -52,6 +52,19 @@
     "vote": 0
   },
   {
+    "id": "be2c462b09d31f3b3029a006ba2675b5",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "go-astiav: FFMpeg and libav C bindings are now compatible with ffmpeg n9.0",
+    "url": "https://www.reddit.com/r/golang/comments/1wnyrdb/goastiav_ffmpeg_and_libav_c_bindings_are_now/",
+    "resume": "",
+    "date": "2026-09-23T07:03:38Z",
+    "vote": 0
+  },
+  {
     "id": "4668d39e2fb0548a6974f427d568bef7",
     "source": {
       "path": "forums",
