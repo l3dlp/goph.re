@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "0c533432312d2fa2b637ad4b7a939c97",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "AlpineJudge - A code judge engine made entirely with Go and containerd for easy deployment",
+    "url": "https://www.reddit.com/r/golang/comments/1wo8xk4/alpinejudge_a_code_judge_engine_made_entirely/",
+    "resume": "",
+    "date": "2026-09-23T15:20:23Z",
+    "vote": 0
+  },
+  {
     "id": "d870c49bc554d28020a08279aae05ae4",
     "source": {
       "path": "forums",
