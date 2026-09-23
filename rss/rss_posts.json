@@ -1,5 +1,18 @@
 [
   {
+    "id": "d3089ea98093490aaa17b58e400e97c1",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Replacing Search Engines (Elasticsearch) with TS Vector #coding #databaseconcepts #database",
+    "url": "https://www.youtube.com/shorts/dG3O159m6dk",
+    "resume": "",
+    "date": "2026-09-23T16:00:20Z",
+    "vote": 0
+  },
+  {
     "id": "d870c49bc554d28020a08279aae05ae4",
     "source": {
       "path": "forums",
