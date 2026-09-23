@@ -1,5 +1,57 @@
 [
   {
+    "id": "d870c49bc554d28020a08279aae05ae4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Always Active: Faking Microsoft Teams Green Status in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1wo3y4m/always_active_faking_microsoft_teams_green_status/",
+    "resume": "",
+    "date": "2026-09-23T11:57:31Z",
+    "vote": 0
+  },
+  {
+    "id": "edbba0303ecbe38755da7cbdec0049ff",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Datapages v0.10.0 (Beta)",
+    "url": "https://forum.golangbridge.org/t/datapages-v0-10-0-beta/42600#post_1",
+    "resume": " \u003cp\u003eAfter 7 long months of lots of work and rumination, it finally happened!\u003cbr\u003e\nDatapages has reached beta \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/partying_face.png?v=15\" title=\":partying_face:\" class=\"emoji\" alt=\":partying_face:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e\n\u003caside class=\"onebox allowlistedgeneric\" data-onebox-src=\"https://github.com/romshark/datapages/releases/tag/v0.10.0\"\u003e\n  \u003cheader class=\"source\"\u003e\n      \u003cimg src=\"https://github.githubassets.com/favicons/favicon.svg\" class=\"site-icon\" alt=\"\" width=\"32\" height=\"32\"\u003e\n\n      \u003ca href=\"https://github.com/romshark/datapages/releases/tag/v0.10.0\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGitHub\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"aspect-image\" style=\"--aspect-ratio:690/344;\"\u003e\u003cimg src=\"https://opengraph.githubassets.com/811e06ae3bc2f37434ba1c3fe3147d85e66b2be430911768ec2351ad51e8bd06/romshark/datapages/releases/tag/v0.10.0\" class=\"thumbnail\" alt=\"\" width=\"690\" height=\"345\"\u003e\u003c/div\u003e\n\n\u003ch3\u003e\u003ca href=\"https://github.com/romshark/datapages/releases/tag/v0.10.0\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eRelease v0.10.0 · romshark/datapages\u003c/a\u003e\u003c/h3\u003e\n\n  \u003cp\u003eDatapages v0.10.0 (Beta)\nAfter 7 long months, Datapages finally leaves Alpha and enters Beta! 🥳 It's now ready for production use and ships a lot of new features, fixes and DX improvements!\nIn tota...\u003c/p\u003e\n\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n\n\u003cp\u003eThis is the first release of Datapages I consider production ready.\u003cbr\u003e\nP.S. Please read the release notes, I’ve carefully hand-written them for you \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/writing_hand.png?v=15\" title=\":writing_hand:\" class=\"emoji\" alt=\":writing_hand:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e ",
+    "date": "2026-09-23T11:41:49Z",
+    "vote": 0
+  },
+  {
+    "id": "6dcdcb3e2be5004f5b7b464f8e1c2655",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Four ways to pay an order in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1wo3mei/four_ways_to_pay_an_order_in_go/",
+    "resume": "",
+    "date": "2026-09-23T11:41:36Z",
+    "vote": 0
+  },
+  {
+    "id": "33174c289fec370950d1c86aa54aeb74",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Any reason to choose net/http instead of Gin ?",
+    "url": "https://www.reddit.com/r/golang/comments/1wo37tr/any_reason_to_choose_nethttp_instead_of_gin/",
+    "resume": "",
+    "date": "2026-09-23T11:21:30Z",
+    "vote": 0
+  },
+  {
     "id": "4668d39e2fb0548a6974f427d568bef7",
     "source": {
       "path": "forums",
