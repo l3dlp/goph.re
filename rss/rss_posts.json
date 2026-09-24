@@ -1,5 +1,18 @@
 [
   {
+    "id": "973e24f4cb3131bf93d8c10ac90ecb39",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "I built a scripting language specifically for pentesting — Spectator. Would love your honest feedback",
+    "url": "https://forum.golangbridge.org/t/i-built-a-scripting-language-specifically-for-pentesting-spectator-would-love-your-honest-feedback/42538#post_3",
+    "resume": " \u003cp\u003eHello,\u003c/p\u003e\n\u003cp\u003eHonestly, the fatigue of stitching together Bash glue scripts, Python wrapper libraries, and half-baked Node.js tools for a quick engagement is very real. Having a single standalone binary with zero dependency hell—especially one that bakes in recon, HTTP routing, and a package manager with SHA-256 verification—makes a ton of sense for portability. Dropping a single compiled binary onto a box or a thumb drive without worrying about pip install chains or missing system headers cuts out a ton of friction when you’re moving fast in the field.   \u003ca href=\"https://www.peach-pass.com\" rel=\"noopener nofollow ugc\"\u003ePeachPass payment methods\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eBest Regards\u003c/p\u003e ",
+    "date": "2026-09-24T09:48:28Z",
+    "vote": 0
+  },
+  {
     "id": "0c29ea078e09c0693c85b6c8f399d5e4",
     "source": {
       "path": "forums",
