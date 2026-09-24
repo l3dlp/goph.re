@@ -1,5 +1,18 @@
 [
   {
+    "id": "5de12ecb8c80e8f17616efee680fb6cd",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Replacing Vector Databases (Pinecone) with pgvector  #database #coding #programming #postgresql",
+    "url": "https://www.youtube.com/shorts/h8qIdoTYD1A",
+    "resume": "",
+    "date": "2026-09-24T16:00:37Z",
+    "vote": 0
+  },
+  {
     "id": "db2e0ba1253dd92969bd2585a8d15239",
     "source": {
       "path": "forums",
