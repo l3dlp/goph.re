@@ -91,6 +91,19 @@
     "vote": 0
   },
   {
+    "id": "3694693db555de47b99add073b8d29fa",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "Platform-independent SIMD in Go",
+    "url": "https://go.dev/blog/simd-experiment",
+    "resume": "Go 1.27 adds an experimental platform-agnostic SIMD API",
+    "date": "2026-09-24T00:00:00Z",
+    "vote": 0
+  },
+  {
     "id": "0c29ea078e09c0693c85b6c8f399d5e4",
     "source": {
       "path": "forums",
