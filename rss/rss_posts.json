@@ -1,5 +1,57 @@
 [
   {
+    "id": "db2e0ba1253dd92969bd2585a8d15239",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Two questions about reverse engineering of Go binaries.",
+    "url": "https://www.reddit.com/r/golang/comments/1wp1a5t/two_questions_about_reverse_engineering_of_go/",
+    "resume": "",
+    "date": "2026-09-24T13:12:28Z",
+    "vote": 0
+  },
+  {
+    "id": "4467b0a35f7340e9de46673f4995f32d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Provider sandboxes only know how to succeed, so I built an open-source tool that makes them fail on purpose",
+    "url": "https://www.reddit.com/r/golang/comments/1wp0ran/provider_sandboxes_only_know_how_to_succeed_so_i/",
+    "resume": "",
+    "date": "2026-09-24T12:49:24Z",
+    "vote": 0
+  },
+  {
+    "id": "ca7c36a62fc04334a51c08879bb348c2",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "I built a scripting language specifically for pentesting — Spectator. Would love your honest feedback",
+    "url": "https://forum.golangbridge.org/t/i-built-a-scripting-language-specifically-for-pentesting-spectator-would-love-your-honest-feedback/42538#post_4",
+    "resume": " \u003cp\u003eThankyou for your kind words!\u003c/p\u003e ",
+    "date": "2026-09-24T12:38:53Z",
+    "vote": 0
+  },
+  {
+    "id": "c146f40c66d5154ffe08df14fde86830",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Need Advice/Suggestion] I've written a Go book. Should I open source it and give everyone a headache?",
+    "url": "https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558#post_6",
+    "resume": " \u003cp\u003eI’ll open source it as soon as I complete it. I’ve already refined almost 50% of it. The remaining 50% could take a few more weeks. Hopefully, I’ll be able to release it soon.\u003c/p\u003e ",
+    "date": "2026-09-24T12:23:50Z",
+    "vote": 0
+  },
+  {
     "id": "973e24f4cb3131bf93d8c10ac90ecb39",
     "source": {
       "path": "forums",
