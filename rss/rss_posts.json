@@ -1,5 +1,18 @@
 [
   {
+    "id": "cb369ae3ef432c73ef71ac8fc70b9ea4",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "ArchitectureKit: A CQRS/ES Application Framework for Golang",
+    "url": "https://github.com/thenativeweb/architecturekit-golang/",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/thenativeweb/architecturekit-golang/\"\u003ehttps://github.com/thenativeweb/architecturekit-golang/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=49833308\"\u003ehttps://news.ycombinator.com/item?id=49833308\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-09-24T16:44:39Z",
+    "vote": 0
+  },
+  {
     "id": "5de12ecb8c80e8f17616efee680fb6cd",
     "source": {
       "path": "examples",
