@@ -1,5 +1,31 @@
 [
   {
+    "id": "f6e65f94eccd72ecab72a330ffc6cb70",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Online event for Go devs: Building a static analyzer for Go",
+    "url": "https://forum.golangbridge.org/t/online-event-for-go-devs-building-a-static-analyzer-for-go/42606#post_1",
+    "resume": " \u003cp\u003eHi everyone. On September 30, we’re doing an online event for Go devs on writing your own Go static analyzer.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eLink to join: \u003ca href=\"https://pvs-studio.com/en/webinar/35/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGo vet can′t go: How to create your own Go analyzer?\u003c/a\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eWe will walk through Go’s built-in tools and code-parsing capabilities, explain the basics of static analysis, unpack what a semantic model is, show how to build a syntax tree, and much more. If you’ve ever wondered whether it was worth building your own tool, this is a chance to ask the person who actually did it.\u003c/p\u003e ",
+    "date": "2026-09-25T12:07:56Z",
+    "vote": 0
+  },
+  {
+    "id": "2ed2ff8dc85b64fa36c1574e2b929ea8",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Announcing list2regexp - Generate regular expressions to match lists of strings",
+    "url": "https://forum.golangbridge.org/t/announcing-list2regexp-generate-regular-expressions-to-match-lists-of-strings/42579#post_4",
+    "resume": " \u003cp\u003eThanks for announcing It’s very helpful for us ! \u003ca href=\"https://www.mymilestoneccard.com\" rel=\"noopener nofollow ugc\"\u003eMyMilestoneCard online services\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-09-25T12:00:54Z",
+    "vote": 0
+  },
+  {
     "id": "0af8d10d25eea825f595c3f9a95d5d09",
     "source": {
       "path": "forums",
