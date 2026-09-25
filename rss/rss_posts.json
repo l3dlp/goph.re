@@ -1,5 +1,18 @@
 [
   {
+    "id": "8b98ce6b7d2702156029f750d3d8e165",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Shirei v0.8: GPU rendering, UI automation, and dark mode",
+    "url": "https://www.reddit.com/r/golang/comments/1wq1pxu/shirei_v08_gpu_rendering_ui_automation_and_dark/",
+    "resume": "",
+    "date": "2026-09-25T17:00:44Z",
+    "vote": 0
+  },
+  {
     "id": "a61c5e7a0b12d06b9476bad8e6c5216e",
     "source": {
       "path": "examples",
