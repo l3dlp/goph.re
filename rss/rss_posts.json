@@ -1,5 +1,18 @@
 [
   {
+    "id": "fb531b5bcbab2f8a426003842787f116",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Can you build a kernel with Go?",
+    "url": "https://www.reddit.com/r/golang/comments/1wplslx/can_you_build_a_kernel_with_go/",
+    "resume": "",
+    "date": "2026-09-25T03:27:36Z",
+    "vote": 0
+  },
+  {
     "id": "cb369ae3ef432c73ef71ac8fc70b9ea4",
     "source": {
       "path": "community",
