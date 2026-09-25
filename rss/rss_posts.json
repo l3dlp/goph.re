@@ -1,5 +1,18 @@
 [
   {
+    "id": "7f3dd6f5b32e5a5847b85242190b61e6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Diago release!",
+    "url": "https://www.reddit.com/r/golang/comments/1wpuy05/diago_release/",
+    "resume": "",
+    "date": "2026-09-25T12:24:09Z",
+    "vote": 0
+  },
+  {
     "id": "f6e65f94eccd72ecab72a330ffc6cb70",
     "source": {
       "path": "forums",
