@@ -1,5 +1,18 @@
 [
   {
+    "id": "0af8d10d25eea825f595c3f9a95d5d09",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Platform-independent SIMD in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1wpnab3/platformindependent_simd_in_go/",
+    "resume": "",
+    "date": "2026-09-25T04:47:35Z",
+    "vote": 0
+  },
+  {
     "id": "fb531b5bcbab2f8a426003842787f116",
     "source": {
       "path": "forums",
