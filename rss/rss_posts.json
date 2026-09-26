@@ -1,5 +1,31 @@
 [
   {
+    "id": "1cfa1e2de7cb68f05698c4a60e42f911",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Learning Go from an SRE Perspective And Breaking Out Of Tutorial Hell",
+    "url": "https://www.reddit.com/r/golang/comments/1wqv84r/learning_go_from_an_sre_perspective_and_breaking/",
+    "resume": "",
+    "date": "2026-09-26T16:45:57Z",
+    "vote": 0
+  },
+  {
+    "id": "e0771ee9af3ad9d64b9a80d278f7bca8",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Postgres Materialized Views  #database #databaseconcepts #coding",
+    "url": "https://www.youtube.com/shorts/Ka8OMfCWnF4",
+    "resume": "",
+    "date": "2026-09-26T16:45:13Z",
+    "vote": 0
+  },
+  {
     "id": "40338fdd8818124594cd499ab9c6ca47",
     "source": {
       "path": "forums",
