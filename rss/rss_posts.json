@@ -1,5 +1,18 @@
 [
   {
+    "id": "0c3e84bb2249a2eae54e36373606aab8",
+    "source": {
+      "path": "blogs",
+      "name": "Anton Zhiyanov",
+      "url": "https://antonz.org/index.xml"
+    },
+    "name": "Go concurrency distilled",
+    "url": "https://antonz.org/go-concurrency-distilled/",
+    "resume": "Interactive mini-book on concurrent programming in Go.",
+    "date": "2026-09-26T11:30:00Z",
+    "vote": 0
+  },
+  {
     "id": "8b98ce6b7d2702156029f750d3d8e165",
     "source": {
       "path": "forums",
