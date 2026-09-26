@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "0db2635717ed138a6f660df024cc9d9d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I cut allocations in go-playground/validator request benchmarks by 59–70% — looking for review",
+    "url": "https://www.reddit.com/r/golang/comments/1wqnttd/i_cut_allocations_in_goplaygroundvalidator/",
+    "resume": "",
+    "date": "2026-09-26T11:08:29Z",
+    "vote": 0
+  },
+  {
     "id": "8b98ce6b7d2702156029f750d3d8e165",
     "source": {
       "path": "forums",
