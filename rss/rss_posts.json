@@ -1,5 +1,18 @@
 [
   {
+    "id": "7e411748ff1a2df82b9a38ad6dde212f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Data Engineering in Go?",
+    "url": "https://www.reddit.com/r/golang/comments/1wr7wr7/data_engineering_in_go/",
+    "resume": "",
+    "date": "2026-09-27T02:00:32Z",
+    "vote": 0
+  },
+  {
     "id": "75596767bbaaed442cf4a38f57bee846",
     "source": {
       "path": "forums",
