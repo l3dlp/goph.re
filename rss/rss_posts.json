@@ -1,5 +1,31 @@
 [
   {
+    "id": "5cf54ad415a438108f7babc3fffe22e1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What do you use to create CLI tools/apps?",
+    "url": "https://www.reddit.com/r/golang/comments/1wro60n/what_do_you_use_to_create_cli_toolsapps/",
+    "resume": "",
+    "date": "2026-09-27T16:11:26Z",
+    "vote": 0
+  },
+  {
+    "id": "0fe749f1ed5976b1ce1f3d6f8bf63513",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Postgres Limitations \u0026 Scaling Trade-offs  #database #coding #programming",
+    "url": "https://www.youtube.com/shorts/fiPGtp6zTF0",
+    "resume": "",
+    "date": "2026-09-27T16:00:18Z",
+    "vote": 0
+  },
+  {
     "id": "7e411748ff1a2df82b9a38ad6dde212f",
     "source": {
       "path": "forums",
