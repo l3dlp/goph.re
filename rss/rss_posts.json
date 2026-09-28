@@ -1,5 +1,18 @@
 [
   {
+    "id": "08d950f6c316b404897690a03d4277b8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "JSON Web Tokens in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1wsbg3q/json_web_tokens_in_go/",
+    "resume": "",
+    "date": "2026-09-28T10:56:23Z",
+    "vote": 0
+  },
+  {
     "id": "b1a451c3f6a3db2ca9a6178facadc75b",
     "source": {
       "path": "forums",
