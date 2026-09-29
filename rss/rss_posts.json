@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "cc3331de21ca0ce8a0b13250574032bd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How do you ship SQL migrations with a single Go binary?",
+    "url": "https://www.reddit.com/r/golang/comments/1wt82sn/how_do_you_ship_sql_migrations_with_a_single_go/",
+    "resume": "",
+    "date": "2026-09-29T11:54:37Z",
+    "vote": 0
+  },
+  {
     "id": "c10c037c879ae086d2c724fbb6c03ed0",
     "source": {
       "path": "forums",
