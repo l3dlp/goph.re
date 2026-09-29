@@ -1,5 +1,18 @@
 [
   {
+    "id": "9b1e9e59a2a00d004e2c3095ec047cf6",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Feedback wanted: embedding raw SQL migrations in a Go binary",
+    "url": "https://forum.golangbridge.org/t/feedback-wanted-embedding-raw-sql-migrations-in-a-go-binary/42610#post_1",
+    "resume": " \u003cp\u003eHi all,\u003c/p\u003e\n\u003cp\u003eI maintain \u003ca href=\"https://github.com/gookit/miglite\" rel=\"noopener nofollow ugc\"\u003emiglite\u003c/a\u003e, a small migration tool for Go projects that prefer plain SQL files. The v0.8.0 release adds \u003ccode\u003efs.FS\u003c/code\u003e support, mainly for services that want to embed migrations with \u003ccode\u003ego:embed\u003c/code\u003e:\u003c/p\u003e\n\u003cpre data-code-wrap=\"go\"\u003e\u003ccode class=\"lang-go\"\u003e//go:embed migrations/*.sql\nvar migrationFS embed.FS\n\nmig.SetFS(migrationFS).SetSqlDB(db)\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe migration path is an \u003ccode\u003eio/fs\u003c/code\u003e logical path, and \u003ccode\u003eSetFS(nil)\u003c/code\u003e switches back to the local filesystem. The CLI commands and file format stay unchanged.\u003c/p\u003e\n\u003cp\u003eThe same update fixes three behaviours that were easy to miss: \u003ccode\u003e--skip-err\u003c/code\u003e now continues but returns a failure, injected \u003ccode\u003e*sql.DB\u003c/code\u003e values are not closed by miglite, and a file without \u003ccode\u003eDOWN\u003c/code\u003e is reported as skipped.\u003c/p\u003e\n\u003cp\u003eDetails: \u003ca href=\"https://inhere.github.io/en/blog/2026/gookit-miglite-v0-8-0/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eInhere's Site • miglite v0.8.0: ship migrations inside the binary\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eFor small services, how do you decide between embedding migrations and shipping a separate directory? I would especially appreciate feedback on the \u003ccode\u003efs.FS\u003c/code\u003e API.\u003c/p\u003e ",
+    "date": "2026-09-29T12:05:22Z",
+    "vote": 0
+  },
+  {
     "id": "c10c037c879ae086d2c724fbb6c03ed0",
     "source": {
       "path": "forums",
