@@ -1,5 +1,31 @@
 [
   {
+    "id": "ce2dd45a462190294fbf43338d0827c0",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "CodeCrafters, the hardest programming challenges on the internet  #coding",
+    "url": "https://www.youtube.com/shorts/Nkfjfcpp5eg",
+    "resume": "",
+    "date": "2026-09-29T16:00:29Z",
+    "vote": 0
+  },
+  {
+    "id": "a68cb557501e19db5f65dc6b3491b32e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Rill v0.9: context support, non-commutative reduction, synctest-based tests",
+    "url": "https://www.reddit.com/r/golang/comments/1wtcbhi/rill_v09_context_support_noncommutative_reduction/",
+    "resume": "",
+    "date": "2026-09-29T14:55:26Z",
+    "vote": 0
+  },
+  {
     "id": "9b1e9e59a2a00d004e2c3095ec047cf6",
     "source": {
       "path": "forums",
