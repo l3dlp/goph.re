@@ -1,5 +1,18 @@
 [
   {
+    "id": "f3172f7d3eb575fcda8fa9414ac6b490",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Kruda: typed Go handlers — feedback on validation defaults and codegen",
+    "url": "https://forum.golangbridge.org/t/kruda-typed-go-handlers-feedback-on-validation-defaults-and-codegen/42615#post_1",
+    "resume": " \u003cp\u003eHi everyone, I maintain Kruda, an open-source Go web framework (MIT).\u003c/p\u003e\n\u003cp\u003eI built it because I enjoy working in Go and wanted to explore how far I could push performance without making API development harder. For this post, I’d like feedback on the typed handler API rather than benchmark numbers.\u003c/p\u003e\n\u003cp\u003eYou define an input struct, and Kruda binds and validates the request before calling your handler. Inputs can combine body, path parameters, and query fields. Here’s a simple JSON-body example:\u003c/p\u003e\n\u003cpre data-code-wrap=\"go\"\u003e\u003ccode class=\"lang-go\"\u003etype CreateUser struct {\n    Name  string `json:\"name\" validate:\"required,min=2\"`\n    Email string `json:\"email\" validate:\"required,email\"`\n}\n\ntype User struct {\n    ID    string `json:\"id\"`\n    Name  string `json:\"name\"`\n    Email string `json:\"email\"`\n}\n\nkruda.Post[CreateUser, User](app, \"/users\", func(c *kruda.C[CreateUser]) (*User, error) {\n    return \u0026amp;User{ID: \"1\", Name: c.In.Name, Email: c.In.Email}, nil\n})\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThree decisions I’d like opinions on:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eValidation runs by default. Invalid input returns 422 with per-field errors, without calling the handler. You can disable it with \u003ccode\u003ekruda.New(kruda.WithoutValidation())\u003c/code\u003e. Is that a useful default, or would you prefer to enable it explicitly?\u003c/li\u003e\n\u003cli\u003eKruda has its own validator with 20 built-in rules. The tags look similar to go-playground/validator, but they aren’t fully compatible. Unknown rules produce a startup warning and are skipped; recognized rules still run. Would you prefer startup to fail instead?\u003c/li\u003e\n\u003cli\u003eThere’s an experimental, optional \u003ccode\u003ecmd/bindgen\u003c/code\u003e step for scalar query/path fields, defaults, and built-in \u003ccode\u003emin\u003c/code\u003e/\u003ccode\u003emax\u003c/code\u003e validation. Routes opt in explicitly. It doesn’t generate JSON/form body binding, so the example above uses the regular binding path. Would you use this, or would the extra build step put you off?\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eI’ve used Kruda in some production work, but not in a large project under heavy load yet. I’d appreciate hearing what feels awkward in the API, or what would stop you from trying it.\u003c/p\u003e\n\u003cp\u003eRepository and examples: \u003ca href=\"https://github.com/go-kruda/kruda\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - go-kruda/kruda: High-performance, type-safe Go web framework with custom async I/O transport — faster than Fiber and Actix on every benchmark route · GitHub\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-09-29T20:23:49Z",
+    "vote": 0
+  },
+  {
     "id": "ce2dd45a462190294fbf43338d0827c0",
     "source": {
       "path": "examples",
