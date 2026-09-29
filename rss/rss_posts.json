@@ -1,5 +1,18 @@
 [
   {
+    "id": "c10c037c879ae086d2c724fbb6c03ed0",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Open-source AWS-compatible cloud for your own hardware — EC2, S3, VPC, EKS, RDS on a single box",
+    "url": "https://www.reddit.com/r/golang/comments/1wswb02/opensource_awscompatible_cloud_for_your_own/",
+    "resume": "",
+    "date": "2026-09-29T00:58:13Z",
+    "vote": 0
+  },
+  {
     "id": "bb6dc9e399981b2fda3d7dfd781b8995",
     "source": {
       "path": "forums",
