@@ -1,5 +1,18 @@
 [
   {
+    "id": "cb34a4eafa38f9d1c8f74a2996551c8e",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Feedback wanted: Orionis, service-to-service OAuth2 client credentials for Go/Gin",
+    "url": "https://forum.golangbridge.org/t/feedback-wanted-orionis-service-to-service-oauth2-client-credentials-for-go-gin/42136#post_5",
+    "resume": " \u003cp\u003e\u003cstrong\u003eOrionis refreshes remote JWKS automatically.\u003c/strong\u003e Your service doesn’t need a manual refresh loop\u003c/p\u003e\n\u003cp\u003eYou can tune RefreshEvery(…) and MaxStale(…), or explicitly call provdier.Refresh(ctx) to preload or force a refresh\u003c/p\u003e ",
+    "date": "2026-09-30T19:11:46Z",
+    "vote": 0
+  },
+  {
     "id": "e4b40f621e01088a32b70de95972e7a2",
     "source": {
       "path": "forums",
