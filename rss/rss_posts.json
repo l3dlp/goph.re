@@ -1,5 +1,18 @@
 [
   {
+    "id": "61ec4b0b9b61a93755612356ed7d2c25",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Do you use method generics of 1.27 in production ?",
+    "url": "https://www.reddit.com/r/golang/comments/1wu2x6h/do_you_use_method_generics_of_127_in_production/",
+    "resume": "",
+    "date": "2026-09-30T11:54:44Z",
+    "vote": 0
+  },
+  {
     "id": "937989fdf5622b3b8f8a5e720e7b39e1",
     "source": {
       "path": "forums",
