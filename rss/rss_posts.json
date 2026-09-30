@@ -1,5 +1,18 @@
 [
   {
+    "id": "937989fdf5622b3b8f8a5e720e7b39e1",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Feedback wanted: embedding raw SQL migrations in a Go binary",
+    "url": "https://forum.golangbridge.org/t/feedback-wanted-embedding-raw-sql-migrations-in-a-go-binary/42610#post_2",
+    "resume": " \u003cp\u003eI would never use embedding for plain sql files, because the chew memory without the option toclean that.\u003cbr\u003e\nNormally for each file you read, you can clean up  afterwards.\u003cbr\u003e\nThe disadvantage is, that you have to ship the separate files with the executable.\u003cbr\u003e\n(but perhaps you can make them available via some cloud repo?)\u003c/p\u003e ",
+    "date": "2026-09-30T09:24:24Z",
+    "vote": 0
+  },
+  {
     "id": "f3172f7d3eb575fcda8fa9414ac6b490",
     "source": {
       "path": "forums",
