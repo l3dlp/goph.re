@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "a749be6597c1cf6e054d304bd826748b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Open-source cross-platform deep research for AWS, GCP, Azure, Kubernetes, GitHub \u0026 GitLab - read-only by construction",
+    "url": "https://www.reddit.com/r/golang/comments/1wtkt3a/opensource_crossplatform_deep_research_for_aws/",
+    "resume": "",
+    "date": "2026-09-29T20:13:49Z",
+    "vote": 0
+  },
+  {
     "id": "ce2dd45a462190294fbf43338d0827c0",
     "source": {
       "path": "examples",
