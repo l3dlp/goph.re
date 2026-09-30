@@ -26,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "ca9401b1188350218bef21a9c9a62d72",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "gograph 0.8: generic graph library with a stable topological order, a dag package and Mermaid output",
+    "url": "https://www.reddit.com/r/golang/comments/1wu7xku/gograph_08_generic_graph_library_with_a_stable/",
+    "resume": "",
+    "date": "2026-09-30T15:27:54Z",
+    "vote": 0
+  },
+  {
     "id": "61ec4b0b9b61a93755612356ed7d2c25",
     "source": {
       "path": "forums",
