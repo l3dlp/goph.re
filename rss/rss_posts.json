@@ -1,5 +1,31 @@
 [
   {
+    "id": "e4b40f621e01088a32b70de95972e7a2",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Feedback wanted: Orionis, service-to-service OAuth2 client credentials for Go/Gin",
+    "url": "https://forum.golangbridge.org/t/feedback-wanted-orionis-service-to-service-oauth2-client-credentials-for-go-gin/42136#post_4",
+    "resume": " \u003cp\u003eI’m curious, how does Orionis handle JWKS key rotation and token validation when the cached keys expire? Does it automatically refresh them, or does the service need to handle that manually? \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/thinking.png?v=15\" title=\":thinking:\" class=\"emoji\" alt=\":thinking:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e ",
+    "date": "2026-09-30T17:06:47Z",
+    "vote": 0
+  },
+  {
+    "id": "cee21d4e114d02cdb0376adf23b39436",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Feedback wanted: embedding raw SQL migrations in a Go binary",
+    "url": "https://forum.golangbridge.org/t/feedback-wanted-embedding-raw-sql-migrations-in-a-go-binary/42610#post_3",
+    "resume": " \u003cp\u003eWhen deploying to standard container-y cloud solutions like Google Cloud Run, I generally prefer to ship my migrations embedded in my binaries. The less schlepping files around in docker via \u003ccode\u003eCOPY\u003c/code\u003e I can do, the better.\u003c/p\u003e\n\u003cp\u003eRe: memory pressure, the ramifications in most of my apps is almost nil. My understanding is that it increases virtual memory because of increased binary size (by exactly the increase in binary size), but the resident memory is mostly unaffected. Important caveat: when talking migrations, I’m not talking about seed data. I just scanned a few of my project folders and most of the schema ranges from 18kb (small project, 30-ish migrations) to 300kb (medium project with 100-ish tables). I imagine on some of my larger projects the schema might hit 1mb but that is a \u003cem\u003elot\u003c/em\u003e of schema/tables and \u003cem\u003enot\u003c/em\u003e a lot of virtual memory.\u003c/p\u003e\n\u003cp\u003eFor inserting seed/dev data (where file size is going to be larger) I usually have some other mechanism by which I do that. Usually I just build a binary in my \u003ccode\u003e/cmd\u003c/code\u003e folder that either uses on-disk scripts or scripts stored in object storage (AKA cheap cloud storage). That is usually a once-per-environment type thing for local dev setup, etc. For test/staging environments I usually restore from last night’s prod backup.\u003c/p\u003e\n\u003cp\u003eAll of this is to say, yes, I personally think embedding migrations is great. It keeps things self-contained. You don’t have to wrestle with a real filesystem and permissions related to that (which matters to me in some sandboxed environments). Etc.\u003c/p\u003e\n\u003cp\u003eMy only question is: why build your own when it seems like goose has become the de facto standard for this type of migrations library/tooling?\u003c/p\u003e ",
+    "date": "2026-09-30T16:48:26Z",
+    "vote": 0
+  },
+  {
     "id": "61ec4b0b9b61a93755612356ed7d2c25",
     "source": {
       "path": "forums",
