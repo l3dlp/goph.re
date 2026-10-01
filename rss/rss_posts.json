@@ -1,5 +1,18 @@
 [
   {
+    "id": "94477075292e7e3cd271de2968b8fb8e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Who's Hiring",
+    "url": "https://www.reddit.com/r/golang/comments/1wuyulc/whos_hiring/",
+    "resume": "",
+    "date": "2026-10-01T13:02:03Z",
+    "vote": 0
+  },
+  {
     "id": "5e51291772984055ad8ea39dc589ff94",
     "source": {
       "path": "forums",
