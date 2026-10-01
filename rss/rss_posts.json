@@ -1,5 +1,31 @@
 [
   {
+    "id": "7eab3b68ac0f59f1888cf0c302d144f9",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go Website Sometimes Returns Stale Data After Updating Records",
+    "url": "https://forum.golangbridge.org/t/go-website-sometimes-returns-stale-data-after-updating-records/42625#post_3",
+    "resume": " \u003caside class=\"quote no-group\" data-username=\"joeroot\" data-post=\"1\" data-topic=\"42625\"\u003e\n\u003cdiv class=\"title\"\u003e\n\u003cdiv class=\"quote-controls\"\u003e\u003c/div\u003e\n\u003cimg alt=\"\" width=\"24\" height=\"24\" src=\"https://forum.golangbridge.org/user_avatar/forum.golangbridge.org/joeroot/48/14876_2.png\" class=\"avatar\"\u003e joeroot:\u003c/div\u003e\n\u003cblockquote\u003e\n\u003cp\u003eHas anyone experienced a Go web application returning an older database value even though the corresponding update has already been committed and the database shows the new value?\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/aside\u003e\n\u003cp\u003eNever using SPA. Safari may keep old cache for weeks using static MPA.  Or what does Go send to the browser and what does the browser show?\u003c/p\u003e\n\u003cp\u003eOr something in the headers that caches non static data? In Caddy I have this header. No problems yet. Or it could be a CDN issue?\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"lang-auto\"\u003e@static path \\*.css \\*.js \\*.png \\*.jpg \\*.webp \\*.jpeg \\*.gif \\*.ico \\*.svg \\*.woff \\*.woff2 \\*.ttf\nheader @static Cache-Control \"public, max-age=31536000, immutable\"\n\u003c/code\u003e\u003c/pre\u003e ",
+    "date": "2026-10-01T18:09:39Z",
+    "vote": 0
+  },
+  {
+    "id": "2e361b3c0151a0258c4a392580b16d43",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go Website Sometimes Returns Stale Data After Updating Records",
+    "url": "https://forum.golangbridge.org/t/go-website-sometimes-returns-stale-data-after-updating-records/42625#post_2",
+    "resume": " \u003cp\u003eThe answer to these types of questions is \u003cem\u003ealmost always\u003c/em\u003e client-side caching. Browsers can be aggressive about caching. What kind of headers are you setting on your response? What value are you setting in \u003ccode\u003eCache-Control\u003c/code\u003e? And have you used a tool like curl to verify that the HTML coming back actually has the older values?\u003c/p\u003e ",
+    "date": "2026-10-01T17:34:48Z",
+    "vote": 0
+  },
+  {
     "id": "bb143d0ccf55263cbd1bbfb7254f64f3",
     "source": {
       "path": "forums",
