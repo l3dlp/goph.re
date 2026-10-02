@@ -1,5 +1,18 @@
 [
   {
+    "id": "da2a17397fea6834c143efddf1d13778",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How to check for undefined attributes on JSON?",
+    "url": "https://www.reddit.com/r/golang/comments/1ww034a/how_to_check_for_undefined_attributes_on_json/",
+    "resume": "",
+    "date": "2026-10-02T17:40:48Z",
+    "vote": 0
+  },
+  {
     "id": "753f1fe4d23e230d71126e85e628ba99",
     "source": {
       "path": "forums",
