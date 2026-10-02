@@ -1,5 +1,31 @@
 [
   {
+    "id": "753f1fe4d23e230d71126e85e628ba99",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built a pure Go supervisor proxy to make harnesses like Zoo, Cline and Aider work better",
+    "url": "https://www.reddit.com/r/golang/comments/1wvq7s5/i_built_a_pure_go_supervisor_proxy_to_make/",
+    "resume": "",
+    "date": "2026-10-02T10:23:16Z",
+    "vote": 0
+  },
+  {
+    "id": "8e82567dd7c45860834516c5710c4d6d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GoEventBus: a high-performance Go event bus with optional intelligent routing powered by JEV",
+    "url": "https://www.reddit.com/r/golang/comments/1wvo6l6/goeventbus_a_highperformance_go_event_bus_with/",
+    "resume": "",
+    "date": "2026-10-02T08:12:28Z",
+    "vote": 0
+  },
+  {
     "id": "5946cf68eaee7e860e2f9ec9cfff39e5",
     "source": {
       "path": "forums",
