@@ -1,5 +1,18 @@
 [
   {
+    "id": "65c819341cfbea9ecac1d868be332fae",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Why always Rust and not Go?",
+    "url": "https://www.reddit.com/r/golang/comments/1wwtuxn/why_always_rust_and_not_go/",
+    "resume": "",
+    "date": "2026-10-03T18:10:43Z",
+    "vote": 0
+  },
+  {
     "id": "5b095ec8850e99116e91f0ad905c7cf8",
     "source": {
       "path": "forums",
