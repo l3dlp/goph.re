@@ -1,5 +1,18 @@
 [
   {
+    "id": "420b29df699297c225dcccde57182f23",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go JSON v2 Migration: What Breaks in Go 1.27",
+    "url": "https://www.reddit.com/r/golang/comments/1wwllb3/go_json_v2_migration_what_breaks_in_go_127/",
+    "resume": "",
+    "date": "2026-10-03T12:04:49Z",
+    "vote": 0
+  },
+  {
     "id": "da2a17397fea6834c143efddf1d13778",
     "source": {
       "path": "forums",
