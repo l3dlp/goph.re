@@ -1,5 +1,31 @@
 [
   {
+    "id": "3f099d2ba371e590da52354b09768ade",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Arch-specific SIMD in Go - The Go Programming Language",
+    "url": "https://www.reddit.com/r/golang/comments/1wwpfbh/archspecific_simd_in_go_the_go_programming/",
+    "resume": "",
+    "date": "2026-10-03T15:03:33Z",
+    "vote": 0
+  },
+  {
+    "id": "23742a816687c0650b937604e6afe224",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "PDP-11 emulator running Unix V6 on a MCU",
+    "url": "https://www.reddit.com/r/golang/comments/1wwp8d4/pdp11_emulator_running_unix_v6_on_a_mcu/",
+    "resume": "",
+    "date": "2026-10-03T14:55:29Z",
+    "vote": 0
+  },
+  {
     "id": "59a5cb51c68de74264bb7551f08dbe1f",
     "source": {
       "path": "forums",
