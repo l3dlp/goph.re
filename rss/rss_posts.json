@@ -65,6 +65,19 @@
     "vote": 0
   },
   {
+    "id": "312322edc2dde1da801fad0471c897a4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "controlsys v1.12.0: a control-systems toolbox for Go (MIT)",
+    "url": "https://www.reddit.com/r/golang/comments/1wwp9a9/controlsys_v1120_a_controlsystems_toolbox_for_go/",
+    "resume": "",
+    "date": "2026-10-03T14:56:37Z",
+    "vote": 0
+  },
+  {
     "id": "23742a816687c0650b937604e6afe224",
     "source": {
       "path": "forums",
