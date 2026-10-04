@@ -1,5 +1,31 @@
 [
   {
+    "id": "ce2720abb4369edaa7a6d85fe8af41cb",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Qt package, building GUIs on it",
+    "url": "https://www.reddit.com/r/golang/comments/1wxrqat/qt_package_building_guis_on_it/",
+    "resume": "",
+    "date": "2026-10-04T21:55:10Z",
+    "vote": 0
+  },
+  {
+    "id": "8546eb01fbf0cd8cc557a02111fbcfc8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built a harmless 'botnet' in Go: a self-spawning P2P swarm with SWIM membership, gossip + Merkle-tree sync, and no coordinator",
+    "url": "https://www.reddit.com/r/golang/comments/1wxr8ay/i_built_a_harmless_botnet_in_go_a_selfspawning/",
+    "resume": "",
+    "date": "2026-10-04T21:32:55Z",
+    "vote": 0
+  },
+  {
     "id": "fdd9b8f0b49f5b9d103c39558cdc29d5",
     "source": {
       "path": "forums",
