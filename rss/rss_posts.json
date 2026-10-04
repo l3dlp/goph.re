@@ -1,5 +1,18 @@
 [
   {
+    "id": "587c52f9261bbf433cc7b41728b1c9c1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Learning to build microservices in golang",
+    "url": "https://www.reddit.com/r/golang/comments/1wxbilp/learning_to_build_microservices_in_golang/",
+    "resume": "",
+    "date": "2026-10-04T09:30:49Z",
+    "vote": 0
+  },
+  {
     "id": "38a98157f8851f37a3653951059afd23",
     "source": {
       "path": "community",
