@@ -1,5 +1,18 @@
 [
   {
+    "id": "38a98157f8851f37a3653951059afd23",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Show HN: LC3 VM in Golang",
+    "url": "https://github.com/shraddhaag/toyvm",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/shraddhaag/toyvm\"\u003ehttps://github.com/shraddhaag/toyvm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=49950415\"\u003ehttps://news.ycombinator.com/item?id=49950415\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-04T03:46:48Z",
+    "vote": 0
+  },
+  {
     "id": "1c21c913c51ba5c1fb9c3a5f36273c4d",
     "source": {
       "path": "forums",
