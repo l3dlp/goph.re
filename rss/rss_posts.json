@@ -1,5 +1,18 @@
 [
   {
+    "id": "dbfdee2ac7874377acafce30518f8640",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_1",
+    "resume": " \u003cp\u003eHi all!\u003c/p\u003e\n\u003cp\u003eI’m terrified but wanted to share nonetheless that I’ve been working on an \u003cem\u003eexperiment\u003c/em\u003e called \u003cstrong\u003eGo++\u003c/strong\u003e, a superset of Go that compiles to ordinary Go; the project is still in early stages and definitely not ready for production use but I was hoping to get some early feedback from the community that could help steer it in the right direction.\u003c/p\u003e\n\u003cp\u003eI love Go and its simplicity, but over the years I’ve occasionally wished I could use some features that Go quite deliberately avoids. Go++ is my experiment in layering some of those capabilities on top while retaining Go interoperability and the existing Go ecosystem.\u003c/p\u003e\n\u003cp\u003eGo++ currently adds things like:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eClasses and polymorphism\u003c/li\u003e\n\u003cli\u003eGenerics\u003c/li\u003e\n\u003cli\u003eMultiple inheritance\u003c/li\u003e\n\u003cli\u003eFunction and method overloading\u003c/li\u003e\n\u003cli\u003eNamed and default arguments\u003c/li\u003e\n\u003cli\u003eEnums and structural records\u003c/li\u003e\n\u003cli\u003eExtension methods\u003c/li\u003e\n\u003cli\u003eString interpolation\u003c/li\u003e\n\u003cli\u003eSafe nil walking and fallbacks\u003c/li\u003e\n\u003cli\u003eExceptions\u003c/li\u003e\n\u003cli\u003eAnnotations and introspection\u003c/li\u003e\n\u003cli\u003eand more!\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe important constraint is that \u003cstrong\u003eGo++ compiles to ordinary Go\u003c/strong\u003e. The intention is to retain interoperability with Go packages and the existing Go ecosystem rather than create an entirely separate runtime/world.\u003c/p\u003e\n\u003cp\u003eThe project has grown beyond the compiler itself and now includes a CLI, formatter, language server, VS Code support, testing, and some opinionated stdlib packages for HTTP routing, serialization, ORM and more.\u003c/p\u003e\n\u003cp\u003eYou can try it with:\u003c/p\u003e\n\u003cpre data-code-wrap=\"bash\"\u003e\u003ccode class=\"lang-bash\"\u003ego install github.com/telgatech/gpp@latest\ngpp init hello\ncd hello\ngpp run\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSource, examples and documentation: \u003ca href=\"https://github.com/telgatech/gpp\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - telgatech/gpp: Go++ Programming Language. A practical superset of Go with classes, exceptions, enums, and more—compiled to ordinary Go. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI’d love feedback from Go developers who are willing to give it a spin—particularly around the language design, Go interoperability, tooling, rough edges, and anything that feels surprising or inconsistent.\u003c/p\u003e\n\u003cp\u003eIf you try it, let me know what works, what breaks, and what you’d like to see next.\u003c/p\u003e ",
+    "date": "2026-10-04T15:07:21Z",
+    "vote": 0
+  },
+  {
     "id": "587c52f9261bbf433cc7b41728b1c9c1",
     "source": {
       "path": "forums",
