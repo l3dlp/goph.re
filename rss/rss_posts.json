@@ -1,5 +1,18 @@
 [
   {
+    "id": "fdd9b8f0b49f5b9d103c39558cdc29d5",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Struggling to review and maintain an AI generated codebase growing too fast.",
+    "url": "https://www.reddit.com/r/golang/comments/1wxkbh0/struggling_to_review_and_maintain_an_ai_generated/",
+    "resume": "",
+    "date": "2026-10-04T16:47:21Z",
+    "vote": 0
+  },
+  {
     "id": "dbfdee2ac7874377acafce30518f8640",
     "source": {
       "path": "forums",
