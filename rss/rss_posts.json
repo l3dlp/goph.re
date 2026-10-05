@@ -1,5 +1,18 @@
 [
   {
+    "id": "e665406621117c1baa71e31112690a23",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Francis is the actor framework \u0026 workflow engine for Go apps, large and small (with over 10k deployments)",
+    "url": "https://www.reddit.com/r/golang/comments/1wxu465/francis_is_the_actor_framework_workflow_engine/",
+    "resume": "",
+    "date": "2026-10-04T23:49:11Z",
+    "vote": 0
+  },
+  {
     "id": "ce2720abb4369edaa7a6d85fe8af41cb",
     "source": {
       "path": "forums",
