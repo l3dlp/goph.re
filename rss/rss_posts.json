@@ -1,5 +1,18 @@
 [
   {
+    "id": "d150a02f16cd010cda903be4db3d5758",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Hooking into the Go toolchain",
+    "url": "https://www.reddit.com/r/golang/comments/1wym3v0/hooking_into_the_go_toolchain/",
+    "resume": "",
+    "date": "2026-10-05T22:21:34Z",
+    "vote": 0
+  },
+  {
     "id": "0991d35593ce59720bda299a5b8402b1",
     "source": {
       "path": "community",
