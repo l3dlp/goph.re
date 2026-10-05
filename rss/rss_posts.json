@@ -1,5 +1,44 @@
 [
   {
+    "id": "a192bf052a2fc72e9bb1cffc5b9a5cfc",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Monoslices: Generate specialized slice operations for a 2-10× speedup",
+    "url": "https://forum.golangbridge.org/t/monoslices-generate-specialized-slice-operations-for-a-2-10x-speedup/42626#post_2",
+    "resume": " \u003cp\u003eNice work. The standard library and the garbage collector are also using specialization in several places. I hope the people working on generics will find ways to make the compiler optimize this cases without extra tools.\u003c/p\u003e\n\u003cp\u003eIt would be interesting if you could do tests like the go team often does for new optimizations: benchmark the optimization automatically across a wide range of open source code bases and see the real world impact.\u003c/p\u003e ",
+    "date": "2026-10-05T14:02:26Z",
+    "vote": 0
+  },
+  {
+    "id": "2546c7287b3f0d2c12bf01c4341e4aba",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_2",
+    "resume": " \u003cp\u003eI’m my opinion this is simply too much. There are some interesting solutions I would probably try, if I could use them in a small and isolated package - but this is a giant collection of very different things.\u003c/p\u003e\n\u003cp\u003eWhat you created there should be split into at least 3 isolated projects, which can be used together gut your vision, but which can be vetted, validated and used standalone.\u003c/p\u003e\n\u003cp\u003eI am using go for critical applications and one of the main reasonsI use go is the unparalleled stability and safety of the language and the standard library. When you provide something which wants to work on par with either of those, you will need to provide easily accessible proof that your solution is as rock solid and battle hardened as the foundation. And you simply cannot provide this as a single person for such a massive set of features.\u003c/p\u003e ",
+    "date": "2026-10-05T13:55:20Z",
+    "vote": 0
+  },
+  {
+    "id": "959f2e54b075eeeebda84aab725d252d",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go Website Sometimes Returns Stale Data After Updating Records",
+    "url": "https://forum.golangbridge.org/t/go-website-sometimes-returns-stale-data-after-updating-records/42625#post_7",
+    "resume": " \u003cp\u003eHow I would go about debugging this problem:\u003c/p\u003e\n\u003cp\u003eAdd a debug log which prints the query and result each time your code runs. You will have three possible outcomes when you retrieve stale data, eauch one ruling out a lot of causes:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eNo log printed on stale data: you are receiving a cached response somewhere between the client and middleware. (e.g. browser cache, CDN, proxy, go middleware)\u003c/li\u003e\n\u003cli\u003eYour log prints stale data: the problem is between your code and the database (e.g. reusing a connection with an uncommitted transaction and thus old database state?)\u003c/li\u003e\n\u003cli\u003eYour log prints the updated data: very unexpected. (e.g. client reusing the wrong variable in the frontend code, or some racing condition with a global variable or wrong use of context in go)\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eKeep us posted what you find\u003c/p\u003e ",
+    "date": "2026-10-05T13:43:20Z",
+    "vote": 0
+  },
+  {
     "id": "e665406621117c1baa71e31112690a23",
     "source": {
       "path": "forums",
