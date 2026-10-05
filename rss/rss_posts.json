@@ -1,5 +1,18 @@
 [
   {
+    "id": "0991d35593ce59720bda299a5b8402b1",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Golang tool to check SPF, DKIM, TLSA, and TLS settings for mailservers",
+    "url": "https://git.sig-io.nl/Sig-IO/mailcheck",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://git.sig-io.nl/Sig-IO/mailcheck\"\u003ehttps://git.sig-io.nl/Sig-IO/mailcheck\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=49969751\"\u003ehttps://news.ycombinator.com/item?id=49969751\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n",
+    "date": "2026-10-05T19:52:34Z",
+    "vote": 0
+  },
+  {
     "id": "69f9e9dc001f73b5e3278e2330f6db07",
     "source": {
       "path": "forums",
