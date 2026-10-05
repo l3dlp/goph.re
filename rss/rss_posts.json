@@ -39,6 +39,32 @@
     "vote": 0
   },
   {
+    "id": "5c0e3b7e7fdc04a8ba2c3ddc99fe4964",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Open-source Go plugin: multi-key rotation and cooldown for LLM API access",
+    "url": "https://www.reddit.com/r/golang/comments/1wxoxtp/opensource_go_plugin_multikey_rotation_and/",
+    "resume": "",
+    "date": "2026-10-04T19:56:14Z",
+    "vote": 0
+  },
+  {
+    "id": "59513050831d465d6d2f5b58fa59d812",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How do I make a Go library available on WASM",
+    "url": "https://www.reddit.com/r/golang/comments/1wxltu6/how_do_i_make_a_go_library_available_on_wasm/",
+    "resume": "",
+    "date": "2026-10-04T17:49:44Z",
+    "vote": 0
+  },
+  {
     "id": "fdd9b8f0b49f5b9d103c39558cdc29d5",
     "source": {
       "path": "forums",
