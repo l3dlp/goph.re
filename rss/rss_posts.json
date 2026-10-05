@@ -1,5 +1,31 @@
 [
   {
+    "id": "69f9e9dc001f73b5e3278e2330f6db07",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Small Projects",
+    "url": "https://www.reddit.com/r/golang/comments/1wyh354/small_projects/",
+    "resume": "",
+    "date": "2026-10-05T19:01:05Z",
+    "vote": 0
+  },
+  {
+    "id": "e3e4dcfbe0dd9c116aa011b9fad0feb8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Nanolathe brings Total Annihilation to Go and WebAssembly",
+    "url": "https://www.reddit.com/r/golang/comments/1wydq0h/nanolathe_brings_total_annihilation_to_go_and/",
+    "resume": "",
+    "date": "2026-10-05T16:53:30Z",
+    "vote": 0
+  },
+  {
     "id": "a192bf052a2fc72e9bb1cffc5b9a5cfc",
     "source": {
       "path": "forums",
