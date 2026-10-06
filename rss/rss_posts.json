@@ -1,5 +1,31 @@
 [
   {
+    "id": "0fd5b684cf7daef1d7e9d0bc4d41269a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_3",
+    "resume": " \u003cp\u003eHa, yes. I know what you mean, feels like a lot to drop all at once. And no, I certainly don’t call this production quality at the moment but I hope the community would join me in making it so. That said, thankfully these features seem to have converged rather well going by how well it’s shaping up. I hope you get to try it sometime and share your feedback! Thanks again!\u003c/p\u003e ",
+    "date": "2026-10-06T14:04:40Z",
+    "vote": 0
+  },
+  {
+    "id": "76367d98bd66333e642965b3c47f3c2e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "The data race that wasn't a bug (and the one that was)",
+    "url": "https://www.reddit.com/r/golang/comments/1wz3e5l/the_data_race_that_wasnt_a_bug_and_the_one_that/",
+    "resume": "",
+    "date": "2026-10-06T14:01:37Z",
+    "vote": 0
+  },
+  {
     "id": "d21530578fe96af4fa5ec8adb22668b3",
     "source": {
       "path": "forums",
