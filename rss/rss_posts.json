@@ -1,5 +1,18 @@
 [
   {
+    "id": "d21530578fe96af4fa5ec8adb22668b3",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Need Advice/Suggestion] I've written a Go book. Should I open source it and give everyone a headache?",
+    "url": "https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558#post_7",
+    "resume": " \u003cp\u003eIf anyone is actually reading this book, I’d appreciate it if you could share your feedback\u003c/p\u003e ",
+    "date": "2026-10-06T10:41:17Z",
+    "vote": 0
+  },
+  {
     "id": "b11081fac5d9bccc61caaad282fc0c77",
     "source": {
       "path": "forums",
