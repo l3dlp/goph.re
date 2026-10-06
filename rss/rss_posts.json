@@ -1,5 +1,18 @@
 [
   {
+    "id": "4314e452954d459f23cd40a1354fcadd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Does our expertise still matter?",
+    "url": "https://www.reddit.com/r/golang/comments/1wysilc/does_our_expertise_still_matter/",
+    "resume": "",
+    "date": "2026-10-06T03:34:41Z",
+    "vote": 0
+  },
+  {
     "id": "d150a02f16cd010cda903be4db3d5758",
     "source": {
       "path": "forums",
