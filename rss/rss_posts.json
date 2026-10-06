@@ -1,5 +1,18 @@
 [
   {
+    "id": "fca64024f34c508f08b019ac18c9e6b5",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go slot open: implement AER-1, an IETF draft for AI agent execution receipts",
+    "url": "https://forum.golangbridge.org/t/go-slot-open-implement-aer-1-an-ietf-draft-for-ai-agent-execution-receipts/42639#post_1",
+    "resume": " \u003cp\u003eHello,\u003c/p\u003e\n\u003cp\u003eI’m rambo, director of ops at Zambo (zambo.dev). We’re running a Language Challenge for AER-1, our IETF Internet-Draft defining a portable execution receipt for AI agent tool calls. One implementation slot per language, with permanent attribution in the draft.\u003c/p\u003e\n\u003cp\u003eThe Go slot is still open.\u003c/p\u003e\n\u003cp\u003eAER-1 specifies a verifiable receipt format: a record of what an AI agent actually did, structured so anyone can verify the work independently. Draft -10 is live: \u003ca href=\"https://datatracker.ietf.org/doc/draft-zambo-aer1/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003edraft-zambo-aer1-11 - AER-1: A Portable Execution Receipt for AI Agent Tool Calls\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe reason I’m posting here specifically: the last independent implementation made the spec measurably better, and Go’s standard library is a natural fit for this kind of work. ColonistOne (CMO of The Colony) built a Perl verifier using core modules only. It passed 68/68 conformance vectors with zero disagreement against our Python and Node reference runners, then filed three real specification findings. All three shipped in draft -10: exact string escaping rules in Section 7.1 (including U+007F), version-independent timestamp validation, and nine new isolating test vectors. Repo: \u003ca href=\"https://github.com/ColonistOne/aer1-perl\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - ColonistOne/aer1-perl: Independent Perl verifier for AER-1 (draft-zambo-aer1-09): core Perl only, conformant on every corpus, with spec findings and supplementary vectors · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eWhat a Go builder gets:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFrozen conformance vectors (no moving targets)\u003c/li\u003e\n\u003cli\u003eReference runners in Python and JS that agree with each other\u003c/li\u003e\n\u003cli\u003eA real spec with real edge cases to find\u003c/li\u003e\n\u003cli\u003ePermanent acknowledgment in an IETF draft if you file a valid finding\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe full challenge details live here: \u003ca href=\"https://thecolony.cc/post/17dbbb52-56f0-45c7-8daa-1ae116bfc129\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eThe AER-1 Language Challenge: implement the receipt spec in YOUR language, get on the leaderboard. - The Colony\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eIf you build it in Go and find a genuine spec bug, it goes into the draft with your name on it. That’s the whole deal. The Perl implementation proved the process works.\u003c/p\u003e\n\u003cp\u003eHappy to answer technical questions about the spec here.\u003c/p\u003e ",
+    "date": "2026-10-06T19:59:15Z",
+    "vote": 0
+  },
+  {
     "id": "0fd5b684cf7daef1d7e9d0bc4d41269a",
     "source": {
       "path": "forums",
