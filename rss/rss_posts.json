@@ -1,5 +1,18 @@
 [
   {
+    "id": "b11081fac5d9bccc61caaad282fc0c77",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Monoslices: Generate specialized slice operations for a 2-10× speedup",
+    "url": "https://forum.golangbridge.org/t/monoslices-generate-specialized-slice-operations-for-a-2-10x-speedup/42626#post_3",
+    "resume": " \u003cp\u003eI have blog-post planned to talk about some of this stuff in more detail. One piece is that I think you \u003cem\u003ecould\u003c/em\u003e get equivalent performance to this through regular generics if Go was willing to go all-the-way on specializing generics, though the code would be a bit ugly, and a few more cases could be supported with an arguably better API if they supported generics over constant values / functions. However, aesthetics aside, I think the Go team is concerned about long compile times and re-creating the complexities of C++ templates. I think these concerns are likely overblown, but it could open the language to APIs that generate a lot of code, and at least right now code generators make us \u003cem\u003eaware\u003c/em\u003e of how much code they generate.\u003c/p\u003e\n\u003cp\u003eUnfortunately, in this case, benchmarking across broad open-source isn’t super easy, since the generated APIs are not quite drop-in-compatible; it wouldn’t be easy to write a script that applies the changes automatically. Also… my projects over the last few months have taught me just how hard, slow, and/or expensive it is to generate reliable benchmark results.\u003c/p\u003e ",
+    "date": "2026-10-06T05:02:59Z",
+    "vote": 0
+  },
+  {
     "id": "4314e452954d459f23cd40a1354fcadd",
     "source": {
       "path": "forums",
