@@ -1,5 +1,18 @@
 [
   {
+    "id": "86cd546e49f79487b98d9c2f36a2099e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "V basic semaphore syntax help",
+    "url": "https://www.reddit.com/r/golang/comments/1wzth3z/v_basic_semaphore_syntax_help/",
+    "resume": "",
+    "date": "2026-10-07T10:55:36Z",
+    "vote": 0
+  },
+  {
     "id": "abeea677e22d8fe12c83685d6b025b75",
     "source": {
       "path": "forums",
