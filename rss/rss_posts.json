@@ -1,5 +1,18 @@
 [
   {
+    "id": "0fd5cdf4cbf6e3d3a3fd160cb2d258c8",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Https://x.com/sansantech/status/2107289748033388957?s=46",
+    "url": "https://forum.golangbridge.org/t/https-x-com-sansantech-status-2107289748033388957-s-46/42641#post_1",
+    "resume": " \u003cp\u003eHi everyone! I’d like to share my article, \u003cstrong\u003e“What I Learned About Bounded Concurrency in Go,”\u003c/strong\u003e covering errgroup, semaphores, and cancellation.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://x.com/sansantech/status/2107289748033388957?s=46\" class=\"onebox\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003ehttps://x.com/sansantech/status/2107289748033388957?s=46\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-10-07T01:31:53Z",
+    "vote": 0
+  },
+  {
     "id": "fca64024f34c508f08b019ac18c9e6b5",
     "source": {
       "path": "forums",
