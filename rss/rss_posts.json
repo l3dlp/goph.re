@@ -1,5 +1,18 @@
 [
   {
+    "id": "7e56cdcf767c5a61a51cbe872857be13",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "ZeroPhone Partner Program — Start Your Own VoIP Cluster Node",
+    "url": "https://www.reddit.com/r/golang/comments/1wzn713/zerophone_partner_program_start_your_own_voip/",
+    "resume": "",
+    "date": "2026-10-07T04:17:36Z",
+    "vote": 0
+  },
+  {
     "id": "0fd5cdf4cbf6e3d3a3fd160cb2d258c8",
     "source": {
       "path": "forums",
