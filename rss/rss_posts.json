@@ -1,5 +1,18 @@
 [
   {
+    "id": "abeea677e22d8fe12c83685d6b025b75",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Looking for part-time opportunity",
+    "url": "https://forum.golangbridge.org/t/looking-for-part-time-opportunity/42642#post_1",
+    "resume": " \u003cp\u003eHi,\u003c/p\u003e\n\u003cp\u003eI’m a backend engineer with 5 years of experience building high-performance applications in Go. As a full-time engineer, I designed and built two CPaaS platforms from scratch, covering everything from architecture to production.\u003c/p\u003e\n\u003cp\u003eI’m currently pursuing a master’s degree, so I’m looking for a part-time remote role. I’m available from 3 PM to 9 PM JST, for up to 25 hours per week.\u003c/p\u003e\n\u003cp\u003eI’d be glad to share more about my work or talk about how I could fit your team.\u003c/p\u003e ",
+    "date": "2026-10-07T10:08:04Z",
+    "vote": 0
+  },
+  {
     "id": "7e56cdcf767c5a61a51cbe872857be13",
     "source": {
       "path": "forums",
