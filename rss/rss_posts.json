@@ -1,5 +1,18 @@
 [
   {
+    "id": "82f9aa79969b0a5134e1d909143c3e40",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Two Go interviews tomorrow , a little anxious, would appreciate some advice",
+    "url": "https://www.reddit.com/r/golang/comments/1x0y5r5/two_go_interviews_tomorrow_a_little_anxious_would/",
+    "resume": "",
+    "date": "2026-10-08T18:09:21Z",
+    "vote": 0
+  },
+  {
     "id": "665a22d6b4b0b4c49169827bb7cff94e",
     "source": {
       "path": "forums",
