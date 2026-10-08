@@ -1,5 +1,18 @@
 [
   {
+    "id": "bc464a62752fdb31cc1e616d508b0be1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go simd Package in 1.27: Dot Product Benchmark",
+    "url": "https://www.reddit.com/r/golang/comments/1x0g9lf/go_simd_package_in_127_dot_product_benchmark/",
+    "resume": "",
+    "date": "2026-10-08T03:13:20Z",
+    "vote": 0
+  },
+  {
     "id": "2bfd1344d4c2ac507802d2654c4dade4",
     "source": {
       "path": "forums",
