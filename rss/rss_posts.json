@@ -1,5 +1,18 @@
 [
   {
+    "id": "c6e479e6d389b3a5a5aebd0adb016206",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built an open-source cellular network planning tool with Go, now testing 8-cell scenarios",
+    "url": "https://www.reddit.com/r/golang/comments/1x0m2e6/i_built_an_opensource_cellular_network_planning/",
+    "resume": "",
+    "date": "2026-10-08T09:02:18Z",
+    "vote": 0
+  },
+  {
     "id": "bc464a62752fdb31cc1e616d508b0be1",
     "source": {
       "path": "forums",
