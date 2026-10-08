@@ -1,5 +1,18 @@
 [
   {
+    "id": "762faa4027df46dbb36631a37778e386",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Dxui: A declarative desktop GUI framework for Go, without cgo",
+    "url": "https://forum.golangbridge.org/t/dxui-a-declarative-desktop-gui-framework-for-go-without-cgo/42565#post_6",
+    "resume": " \u003cp\u003eAmazing job!\u003c/p\u003e\n\u003cp\u003eAny intention to add charts?\u003c/p\u003e ",
+    "date": "2026-10-08T15:42:36Z",
+    "vote": 0
+  },
+  {
     "id": "0d7448a1f83efd5711c08a48d07fdcb8",
     "source": {
       "path": "forums",
