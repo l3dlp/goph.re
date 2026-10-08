@@ -1,5 +1,31 @@
 [
   {
+    "id": "0d7448a1f83efd5711c08a48d07fdcb8",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Shellroute: run terminal commands through a proxy by country or city",
+    "url": "https://forum.golangbridge.org/t/shellroute-run-terminal-commands-through-a-proxy-by-country-or-city/42645#post_1",
+    "resume": " \u003cp\u003eI built Shellroute, an open-source Go CLI for routing a shell session or a single terminal command through a proxy in a chosen country or city.\u003c/p\u003e\n\u003cp\u003eThe goal is to make country-specific HTTP checks easier without changing the rest of the machine. Other apps and terminals keep their normal connection.\u003c/p\u003e\n\u003cp\u003eFor example:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"lang-auto\"\u003eshellroute run DE -- curl -I https://example.com/\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis works with compatible clients that honor the proxy settings supplied to the command. Browser traffic such as Playwright needs explicit browser proxy configuration.\u003c/p\u003e\n\u003cp\u003eThe CLI is open source. Routed proxy traffic is a paid service.\u003c/p\u003e\n\u003cp\u003eSource: \u003ca href=\"https://github.com/shellroute/shellroute-cli\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - shellroute/shellroute-cli: Run terminal commands through a proxy. Choose a country or city and route a shell session or a single command through a proxy. Your other apps and terminals keep their normal connection. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eQuickstart: \u003ca href=\"https://shellroute.com/docs/quickstart/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eQuickstart | Shellroute\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eFeedback on the CLI workflow and use cases is welcome.\u003c/p\u003e ",
+    "date": "2026-10-08T12:58:39Z",
+    "vote": 0
+  },
+  {
+    "id": "6a832b8d41294684f606219efeff970b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Goroutine Leak Profiles",
+    "url": "https://www.reddit.com/r/golang/comments/1x0n3ar/goroutine_leak_profiles/",
+    "resume": "",
+    "date": "2026-10-08T10:08:37Z",
+    "vote": 0
+  },
+  {
     "id": "c6e479e6d389b3a5a5aebd0adb016206",
     "source": {
       "path": "forums",
