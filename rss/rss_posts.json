@@ -1,5 +1,18 @@
 [
   {
+    "id": "665a22d6b4b0b4c49169827bb7cff94e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go 1.27.2 is released",
+    "url": "https://www.reddit.com/r/golang/comments/1x0vbyx/go_1272_is_released/",
+    "resume": "",
+    "date": "2026-10-08T16:21:46Z",
+    "vote": 0
+  },
+  {
     "id": "762faa4027df46dbb36631a37778e386",
     "source": {
       "path": "forums",
