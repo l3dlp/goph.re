@@ -1,5 +1,18 @@
 [
   {
+    "id": "5bb21a6df807fd465c518f48ee4821fd",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Dxui: A declarative desktop GUI framework for Go, without cgo",
+    "url": "https://forum.golangbridge.org/t/dxui-a-declarative-desktop-gui-framework-for-go-without-cgo/42565#post_7",
+    "resume": " \u003cp\u003eThanks! Charts aren’t on the immediate roadmap yet, but they’re definitely something I’d like to explore. What kinds of charts would you find most useful?\u003c/p\u003e ",
+    "date": "2026-10-09T03:00:34Z",
+    "vote": 0
+  },
+  {
     "id": "82f9aa79969b0a5134e1d909143c3e40",
     "source": {
       "path": "forums",
