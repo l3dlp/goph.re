@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "51014ae628bb2ea0faf5c19aee67eb73",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go via vfox with VSCode?",
+    "url": "https://www.reddit.com/r/golang/comments/1x10jiy/go_via_vfox_with_vscode/",
+    "resume": "",
+    "date": "2026-10-08T19:39:01Z",
+    "vote": 0
+  },
+  {
     "id": "82f9aa79969b0a5134e1d909143c3e40",
     "source": {
       "path": "forums",
