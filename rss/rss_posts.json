@@ -1,5 +1,18 @@
 [
   {
+    "id": "e87200cd86f7c071d6b0cba941beeea4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Starting to learn Go, where should I begin?",
+    "url": "https://www.reddit.com/r/golang/comments/1x1fnfw/starting_to_learn_go_where_should_i_begin/",
+    "resume": "",
+    "date": "2026-10-09T08:11:52Z",
+    "vote": 0
+  },
+  {
     "id": "a4282d7ee318fac6141b9f84a5ec45b1",
     "source": {
       "path": "forums",
