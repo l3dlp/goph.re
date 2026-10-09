@@ -1,5 +1,18 @@
 [
   {
+    "id": "eb357fe44be1a03d74a743ba9ffb4343",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Is Go a good first language for a total beginner who only knows basic concepts?",
+    "url": "https://www.reddit.com/r/golang/comments/1x1wgjp/is_go_a_good_first_language_for_a_total_beginner/",
+    "resume": "",
+    "date": "2026-10-09T20:42:58Z",
+    "vote": 0
+  },
+  {
     "id": "71554cda08af937f0efbb94cc45cb531",
     "source": {
       "path": "forums",
