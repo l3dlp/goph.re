@@ -1,5 +1,18 @@
 [
   {
+    "id": "a4282d7ee318fac6141b9f84a5ec45b1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Does anyone have a pet gopher here",
+    "url": "https://www.reddit.com/r/golang/comments/1x1faiv/does_anyone_have_a_pet_gopher_here/",
+    "resume": "",
+    "date": "2026-10-09T07:48:53Z",
+    "vote": 0
+  },
+  {
     "id": "5bb21a6df807fd465c518f48ee4821fd",
     "source": {
       "path": "forums",
