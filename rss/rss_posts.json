@@ -1,5 +1,18 @@
 [
   {
+    "id": "71554cda08af937f0efbb94cc45cb531",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How Go maps work internally: swiss tables",
+    "url": "https://www.reddit.com/r/golang/comments/1x1reli/how_go_maps_work_internally_swiss_tables/",
+    "resume": "",
+    "date": "2026-10-09T17:26:24Z",
+    "vote": 0
+  },
+  {
     "id": "7d16c0bcd394ea6de76895d23d346f8e",
     "source": {
       "path": "forums",
