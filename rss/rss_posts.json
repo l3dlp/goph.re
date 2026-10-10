@@ -1,5 +1,31 @@
 [
   {
+    "id": "a49882b92736a76dea70244bb8f1f266",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Caddy - Payment Required",
+    "url": "https://www.reddit.com/r/golang/comments/1x2g22r/caddy_payment_required/",
+    "resume": "",
+    "date": "2026-10-10T14:01:39Z",
+    "vote": 0
+  },
+  {
+    "id": "8d02553ca44fad1ffd3d68a9c391149b",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "The Ultimate Go Book \u0026 Beyond",
+    "url": "https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649#post_1",
+    "resume": " \u003cp\u003e\u003c/p\u003e\u003cdiv class=\"lightbox-wrapper\"\u003e\u003ca class=\"lightbox\" href=\"https://forum.golangbridge.org/uploads/default/original/3X/6/2/62fe1474f118135832387c65a24b46e2a0543a39.png\" data-download-href=\"https://forum.golangbridge.org/uploads/default/62fe1474f118135832387c65a24b46e2a0543a39\" title=\"Screenshot_1\"\u003e\u003cimg src=\"https://forum.golangbridge.org/uploads/default/optimized/3X/6/2/62fe1474f118135832387c65a24b46e2a0543a39_2_652x500.png\" alt=\"Screenshot_1\" data-base62-sha1=\"e7J9ETkKKzTc8ElZRjeH9xGNvgB\" width=\"652\" height=\"500\" srcset=\"https://forum.golangbridge.org/uploads/default/optimized/3X/6/2/62fe1474f118135832387c65a24b46e2a0543a39_2_652x500.png, https://forum.golangbridge.org/uploads/default/optimized/3X/6/2/62fe1474f118135832387c65a24b46e2a0543a39_2_978x750.png 1.5x, https://forum.golangbridge.org/uploads/default/optimized/3X/6/2/62fe1474f118135832387c65a24b46e2a0543a39_2_1304x1000.png 2x\" data-dominant-color=\"0A1013\"\u003e\u003c/a\u003e\u003c/div\u003e\u003cp\u003e\u003c/p\u003e\n\u003cp\u003eContinuing the discussion from \u003ca href=\"https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558\"\u003e[Need Advice/Suggestion] I’ve written a Go book. Should I open source it and give everyone a headache?\u003c/a\u003e:\u003c/p\u003e\n\u003cp\u003eI’ve finally made my \u003cstrong\u003eGo book open source\u003c/strong\u003e. It started as a personal project but grew into a much bigger resource, covering everything from Go fundamentals to concurrency, production-ready systems, and real-world applications and many more. The book is \u003cstrong\u003enot fully finished\u003c/strong\u003e, so feedback, suggestions, and pull requests are welcome. I’d be especially happy to see contributions from the community to improve the content and add missing topics.\u003c/p\u003e\n\u003cp\u003eI also mentioned in my previous post that I’d like to eventually \u003cstrong\u003ehand over\u003c/strong\u003e this book to an experienced and \u003cstrong\u003emost loved Go developer\u003c/strong\u003e who can take ownership of it and help make it the best possible resource for the Go community. Who are your favorite Go developers or respected people in the Go community that you think I should reach out to and discuss this with? I’d love to hear your suggestions.\u003c/p\u003e\n\u003cp\u003eI used AI to assist with research, writing, and refinement, and I want to be transparent about that.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eBook:\u003c/strong\u003e \u003ca href=\"https://gobook.bbt.bd/\" rel=\"noopener nofollow ugc\"\u003ehttps://gobook.bbt.bd/\u003c/a\u003e\u003c/p\u003e\n\u003caside class=\"onebox githubrepo\" data-onebox-src=\"https://github.com/developernajib/the-ultimate-go-book-and-beyond\"\u003e\n  \u003cheader class=\"source\"\u003e\n\n      \u003ca href=\"https://github.com/developernajib/the-ultimate-go-book-and-beyond\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003egithub.com\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"github-row\" data-github-private-repo=\"false\"\u003e\n  \u003cimg width=\"690\" height=\"344\" src=\"https://opengraph.githubassets.com/9249a7a0d24863cd9d650434a8b793a4/developernajib/the-ultimate-go-book-and-beyond\" class=\"thumbnail\"\u003e\n\n  \u003ch3\u003e\u003ca href=\"https://github.com/developernajib/the-ultimate-go-book-and-beyond\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGitHub - developernajib/the-ultimate-go-book-and-beyond: The Ultimate Go Book \u0026amp; Beyond\u003c/a\u003e\u003c/h3\u003e\n\n    \u003cp\u003e\u003cspan class=\"github-repo-description\"\u003eThe Ultimate Go Book \u0026amp; Beyond\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n ",
+    "date": "2026-10-10T13:51:39Z",
+    "vote": 0
+  },
+  {
     "id": "a89745fa22cd3d85ef4642504dc0e5f5",
     "source": {
       "path": "forums",
