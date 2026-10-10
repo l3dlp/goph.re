@@ -1,5 +1,18 @@
 [
   {
+    "id": "bb05f3efb83edfefcc3bc283684101be",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Neptunus v1.17.0 - now with Ollama in the middle of your ETL pipelines!",
+    "url": "https://www.reddit.com/r/golang/comments/1x1yljs/neptunus_v1170_now_with_ollama_in_the_middle_of/",
+    "resume": "",
+    "date": "2026-10-09T22:13:56Z",
+    "vote": 0
+  },
+  {
     "id": "eb357fe44be1a03d74a743ba9ffb4343",
     "source": {
       "path": "forums",
