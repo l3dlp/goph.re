@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "9670f648fafadf2320d7e2c7b95f16c1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Architecture advice: Managing timeouts and zombie containers in a Go worker pool evaluating untrusted code",
+    "url": "https://www.reddit.com/r/golang/comments/1x28s9x/architecture_advice_managing_timeouts_and_zombie/",
+    "resume": "",
+    "date": "2026-10-10T07:09:47Z",
+    "vote": 0
+  },
+  {
     "id": "af6538b214f105bb1a741e8bedb19551",
     "source": {
       "path": "examples",
