@@ -1,5 +1,18 @@
 [
   {
+    "id": "98fa14bbbf18a27890784b90692d83a1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "XGo and LLGo: a more expressive Go front end and an LLVM-based compiler for the C ecosystem",
+    "url": "https://www.reddit.com/r/golang/comments/1x2i8ai/xgo_and_llgo_a_more_expressive_go_front_end_and/",
+    "resume": "",
+    "date": "2026-10-10T15:35:23Z",
+    "vote": 0
+  },
+  {
     "id": "a49882b92736a76dea70244bb8f1f266",
     "source": {
       "path": "forums",
