@@ -1,5 +1,18 @@
 [
   {
+    "id": "46bd74a36ff45d423da3d3748f784362",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Testing database interactions in Golang",
+    "url": "https://abdus.dev/posts/golang-database-tests/",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://abdus.dev/posts/golang-database-tests/\"\u003ehttps://abdus.dev/posts/golang-database-tests/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50037599\"\u003ehttps://news.ycombinator.com/item?id=50037599\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-10T21:57:51Z",
+    "vote": 0
+  },
+  {
     "id": "98fa14bbbf18a27890784b90692d83a1",
     "source": {
       "path": "forums",
