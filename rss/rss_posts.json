@@ -1,5 +1,18 @@
 [
   {
+    "id": "af6538b214f105bb1a741e8bedb19551",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How to actually get cracked at programming. #coding",
+    "url": "https://www.youtube.com/shorts/pFG7PcTT2vA",
+    "resume": "",
+    "date": "2026-10-10T01:10:32Z",
+    "vote": 0
+  },
+  {
     "id": "bb05f3efb83edfefcc3bc283684101be",
     "source": {
       "path": "forums",
