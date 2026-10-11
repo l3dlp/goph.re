@@ -1,5 +1,31 @@
 [
   {
+    "id": "06f66f2a383c53ab9c2cdc3818481076",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Lies we tell ourselves to keep using Golang",
+    "url": "https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang\"\u003ehttps://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50044368\"\u003ehttps://news.ycombinator.com/item?id=50044368\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-11T15:31:26Z",
+    "vote": 0
+  },
+  {
+    "id": "235777916451f231437acae5a0151c3d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "go-dev-auth v0.3.1: zero-dependency auth for Go with passkeys, SSO, 2FA and orgs",
+    "url": "https://www.reddit.com/r/golang/comments/1x38xlh/godevauth_v031_zerodependency_auth_for_go_with/",
+    "resume": "",
+    "date": "2026-10-11T14:00:15Z",
+    "vote": 0
+  },
+  {
     "id": "325ecf5259e1b8cd273d7690c9a38bd8",
     "source": {
       "path": "forums",
