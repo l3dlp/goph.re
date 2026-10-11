@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "00b1fe3368809999c51286420f611f55",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Why databases don't lose your data",
+    "url": "https://www.youtube.com/shorts/Ifc7dzvOTYo",
+    "resume": "",
+    "date": "2026-10-11T01:00:14Z",
+    "vote": 0
+  },
+  {
     "id": "46bd74a36ff45d423da3d3748f784362",
     "source": {
       "path": "community",
