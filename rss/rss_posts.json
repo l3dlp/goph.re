@@ -1,5 +1,18 @@
 [
   {
+    "id": "325ecf5259e1b8cd273d7690c9a38bd8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Hardware Coding practice tool in Golang",
+    "url": "https://www.reddit.com/r/golang/comments/1x34ni7/hardware_coding_practice_tool_in_golang/",
+    "resume": "",
+    "date": "2026-10-11T10:18:22Z",
+    "vote": 0
+  },
+  {
     "id": "2428f34ec37066e6ea7401e3a160b681",
     "source": {
       "path": "forums",
