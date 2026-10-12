@@ -1,5 +1,31 @@
 [
   {
+    "id": "d1af1dfbd9307d3820c7d27e9254677c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I'm tired of AI",
+    "url": "https://www.reddit.com/r/golang/comments/1x43821/im_tired_of_ai/",
+    "resume": "",
+    "date": "2026-10-12T14:23:40Z",
+    "vote": 0
+  },
+  {
+    "id": "053b94f54f476810166cca253f5a7238",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Golang port of simdjson: parsing gigabytes of JSON per second",
+    "url": "https://github.com/minio/simdjson-go",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/minio/simdjson-go\"\u003ehttps://github.com/minio/simdjson-go\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50056248\"\u003ehttps://news.ycombinator.com/item?id=50056248\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-12T13:34:21Z",
+    "vote": 0
+  },
+  {
     "id": "32a1b2dd46dbce3f60e2c35590bb39ff",
     "source": {
       "path": "forums",
