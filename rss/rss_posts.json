@@ -1,5 +1,31 @@
 [
   {
+    "id": "32a1b2dd46dbce3f60e2c35590bb39ff",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go worker handling bursty large-file transfers. Unlimited concurrency vs bounded semaphore and retries",
+    "url": "https://www.reddit.com/r/golang/comments/1x3wq21/go_worker_handling_bursty_largefile_transfers/",
+    "resume": "",
+    "date": "2026-10-12T08:48:47Z",
+    "vote": 0
+  },
+  {
+    "id": "a71ded39421e201c2847d1d4b6c7efe8",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Alpha release of Natural Deploy",
+    "url": "https://forum.golangbridge.org/t/alpha-release-of-natural-deploy/42655#post_1",
+    "resume": " \u003cp\u003eI built this library to make it as easy as possible to manage a task/worker node programatically for nodes behind NAT (It’s abstracted on top of another project I maintain called P2PRC(\u003ca href=\"https://github.com/Akilan1999/p2p-rendering-computation\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - Akilan1999/p2p-rendering-computation: p2p network to enable running distributed computation and rendering. · GitHub\u003c/a\u003e)). The true motivation is to embed orchestration rules as functions inside the same program you want deploy. This allows the program to self manage itself deterministically and it’s also out of my hatred for the creation of YAML developers.\u003c/p\u003e\n\u003cp\u003eSource code: \u003ca href=\"https://github.com/Akilan1999/Natural-deploy\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - Akilan1999/Natural-deploy: A natural and simple way to deploy workloads or anything on other machines. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eDocumentation: \u003ca href=\"https://nd.akilan.io/\" rel=\"noopener nofollow ugc\"\u003ehttps://nd.akilan.io/\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-10-12T08:45:46Z",
+    "vote": 0
+  },
+  {
     "id": "89a1473b539a76369baac38fac34d8a2",
     "source": {
       "path": "examples",
