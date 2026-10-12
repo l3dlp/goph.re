@@ -1,5 +1,18 @@
 [
   {
+    "id": "9f2b4da267d315d0bb4d7e3088bf7cb5",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built Spool — an open-source, self-hosted dashboard for monitoring and managing Asynq jobs",
+    "url": "https://www.reddit.com/r/golang/comments/1x44gz9/i_built_spool_an_opensource_selfhosted_dashboard/",
+    "resume": "",
+    "date": "2026-10-12T15:12:22Z",
+    "vote": 0
+  },
+  {
     "id": "d1af1dfbd9307d3820c7d27e9254677c",
     "source": {
       "path": "forums",
