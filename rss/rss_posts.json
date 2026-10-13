@@ -1,5 +1,18 @@
 [
   {
+    "id": "771e0f419108c49d9bb52a4767de33d0",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Escape analysis in Go: stack or heap?",
+    "url": "https://www.reddit.com/r/golang/comments/1x53otx/escape_analysis_in_go_stack_or_heap/",
+    "resume": "",
+    "date": "2026-10-13T17:54:43Z",
+    "vote": 0
+  },
+  {
     "id": "427b638c117b26165e296b3e9b92604a",
     "source": {
       "path": "forums",
