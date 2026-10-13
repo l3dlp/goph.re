@@ -1,5 +1,18 @@
 [
   {
+    "id": "13ae08963f96a60f7380c4288a1b8ab4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Python vs. Go in 2026: What the Data and Developers Say",
+    "url": "https://www.reddit.com/r/golang/comments/1x4yhkd/python_vs_go_in_2026_what_the_data_and_developers/",
+    "resume": "",
+    "date": "2026-10-13T14:41:37Z",
+    "vote": 0
+  },
+  {
     "id": "866e7655853c5a5910829222e4af0d72",
     "source": {
       "path": "tools",
