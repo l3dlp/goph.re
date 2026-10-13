@@ -1,5 +1,18 @@
 [
   {
+    "id": "9df0c71b1162c98143e5a0c4f8ed8767",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "goRoutine Wisdom Needed !!",
+    "url": "https://www.reddit.com/r/golang/comments/1x509ak/goroutine_wisdom_needed/",
+    "resume": "",
+    "date": "2026-10-13T15:49:12Z",
+    "vote": 0
+  },
+  {
     "id": "13ae08963f96a60f7380c4288a1b8ab4",
     "source": {
       "path": "forums",
