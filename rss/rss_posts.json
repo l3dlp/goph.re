@@ -1,5 +1,31 @@
 [
   {
+    "id": "427b638c117b26165e296b3e9b92604a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "p4runtime-go-controller v2: Go SDK and CLI for P4Runtime",
+    "url": "https://forum.golangbridge.org/t/p4runtime-go-controller-v2-go-sdk-and-cli-for-p4runtime/42667#post_1",
+    "resume": " \u003cp\u003eHi everyone,\u003c/p\u003e\n\u003cp\u003eI’ve released v2 of p4runtime-go-controller, a Go SDK and CLI for building P4Runtime controllers. The latest version is v2.0.1.\u003c/p\u003e\n\u003cp\u003eFor those unfamiliar with P4, it’s a language for describing how network devices process packets. P4Runtime is the API a controller uses to install a P4 pipeline and manage resources such as forwarding tables, counters and registers.\u003c/p\u003e\n\u003cp\u003eThis project provides Go helpers for those operations, including resource lookup by name, value encoding, connection management and stream handling.\u003c/p\u003e\n\u003cp\u003eFeatures include:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTable entry builders with exact, LPM, ternary, range and optional matches, plus bit-width validation.\u003c/li\u003e\n\u003cli\u003eController arbitration, pipeline configuration, automatic reconnection, TLS and mutual TLS.\u003c/li\u003e\n\u003cli\u003ePacketIn and PacketOut handling, digest subscriptions, counters, meters, registers and packet replication.\u003c/li\u003e\n\u003cli\u003eA p4ctl CLI for pipeline, table and counter operations, with text, JSON and YAML output.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe SDK uses context.Context for cancellation and deadlines, and log/slog for structured logging. It requires Go 1.26 or newer and is licensed under Apache 2.0.\u003c/p\u003e\n\u003cp\u003eTo add it to an existing Go module:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003ego get github.com/zhh2001/p4runtime-go-controller/v2@v2.0.1\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eTo install the CLI:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003ego install github.com/zhh2001/p4runtime-go-controller/v2/cmd/p4ctl@v2.0.1\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eThe repository includes API documentation and runnable BMv2 examples covering L2 forwarding, packet I/O and counters. Testing so far has focused on BMv2, including control-plane operations and packet forwarding.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://github.com/zhh2001/p4runtime-go-controller\" rel=\"noopener nofollow ugc\"\u003eRepository\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://github.com/zhh2001/p4runtime-go-controller/blob/v2.0.1/docs/quickstart.md\" rel=\"noopener nofollow ugc\"\u003eQuickstart\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIf you’re working on programmable networking or SDN in Go, I’d welcome feedback on the API and examples.\u003c/p\u003e\n\u003cp\u003eIf you find the project useful, a GitHub star would help others discover it. Issues and contributions are welcome.\u003c/p\u003e ",
+    "date": "2026-10-13T16:28:57Z",
+    "vote": 0
+  },
+  {
+    "id": "ff3b27aad2a1c201a9dab35054f962fb",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "REW: Capture failed Go builds and replay them offline with Docker",
+    "url": "https://forum.golangbridge.org/t/rew-capture-failed-go-builds-and-replay-them-offline-with-docker/42665#post_1",
+    "resume": " \u003cp\u003eHi everyone,\u003c/p\u003e\n\u003cp\u003eI’ve been working on REW, an open-source CLI written in Go.\u003c/p\u003e\n\u003cp\u003eIt captures failed \u003ccode\u003ego build ./...\u003c/code\u003e executions into portable capsules that can be replayed offline with Docker, without the original project checkout.\u003c/p\u003e\n\u003cp\u003eThe current release is v0.1.0-alpha.5, focused on Go 1.26.6. I’ve tested it on a small Go project and Cobra with an intentionally introduced compilation error.\u003c/p\u003e\n\u003cp\u003eThere’s a quickstart and GIF demo in the README.\u003c/p\u003e\n\u003cp\u003eI’m looking for developers willing to try it and report cases where capture or replay fails.\u003c/p\u003e\n\u003caside class=\"onebox githubrepo\" data-onebox-src=\"https://github.com/rewtools/rew\"\u003e\n  \u003cheader class=\"source\"\u003e\n\n      \u003ca href=\"https://github.com/rewtools/rew\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003egithub.com\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"github-row\" data-github-private-repo=\"false\"\u003e\n  \u003cimg width=\"690\" height=\"344\" src=\"https://opengraph.githubassets.com/71767ade7293df643a2be8724fd17568/rewtools/rew\" class=\"thumbnail\"\u003e\n\n  \u003ch3\u003e\u003ca href=\"https://github.com/rewtools/rew\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGitHub - rewtools/rew: Capture failed Go builds into portable capsules....\u003c/a\u003e\u003c/h3\u003e\n\n    \u003cp\u003e\u003cspan class=\"github-repo-description\"\u003eCapture failed Go builds into portable capsules. Replay them offline with Docker.\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n ",
+    "date": "2026-10-13T16:25:34Z",
+    "vote": 0
+  },
+  {
     "id": "9df0c71b1162c98143e5a0c4f8ed8767",
     "source": {
       "path": "forums",
