@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "d0c0b86cfb54c144fc07af3b35533cc4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Reproducing UDP socket buffer drops (sk_rcvbuf) in Go: Why time.Sleep breaks sub-millisecond packet pacing",
+    "url": "https://www.reddit.com/r/golang/comments/1x55xe9/reproducing_udp_socket_buffer_drops_sk_rcvbuf_in/",
+    "resume": "",
+    "date": "2026-10-13T19:16:52Z",
+    "vote": 0
+  },
+  {
     "id": "771e0f419108c49d9bb52a4767de33d0",
     "source": {
       "path": "forums",
