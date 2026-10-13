@@ -1,5 +1,18 @@
 [
   {
+    "id": "a65c17d940e71278afe4b5d98799af5a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Has anyone tried using Encore framework for production? How does it compare with Fiber, Gin and Echo?",
+    "url": "https://www.reddit.com/r/golang/comments/1x4ofxz/has_anyone_tried_using_encore_framework_for/",
+    "resume": "",
+    "date": "2026-10-13T05:34:30Z",
+    "vote": 0
+  },
+  {
     "id": "93a006c09f2833a53cb68331d625d684",
     "source": {
       "path": "examples",
