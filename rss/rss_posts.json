@@ -1,5 +1,18 @@
 [
   {
+    "id": "866e7655853c5a5910829222e4af0d72",
+    "source": {
+      "path": "tools",
+      "name": "GoLand",
+      "url": "https://blog.jetbrains.com/go/feed/"
+    },
+    "name": "Python vs Go: A Practical Comparison for Developers",
+    "url": "https://blog.jetbrains.com/go/2026/10/13/python-vs-go/",
+    "resume": "Two things are true about Python: It’s the most popular programming language in the world, and it’s the most common companion language for Go developers. How do we know that? From the Developer Ecosystem 2026 survey by JetBrains. But we also know a lot more about the developers who use these two languages – both [\u0026#8230;]",
+    "date": "2026-10-13T09:02:11Z",
+    "vote": 0
+  },
+  {
     "id": "f7e028848286cef9df66361513a401e2",
     "source": {
       "path": "examples",
