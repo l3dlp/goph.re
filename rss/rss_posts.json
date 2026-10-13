@@ -1,5 +1,18 @@
 [
   {
+    "id": "65f2c5b1787906151277a481601a93ab",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What is your Go stack (or dream stack) for building robust, scalable microservices?",
+    "url": "https://www.reddit.com/r/golang/comments/1x4j2yo/what_is_your_go_stack_or_dream_stack_for_building/",
+    "resume": "",
+    "date": "2026-10-13T00:55:36Z",
+    "vote": 0
+  },
+  {
     "id": "e65fb93d1c59b5f9797b183fb37ccc94",
     "source": {
       "path": "forums",
