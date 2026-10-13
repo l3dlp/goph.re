@@ -1,5 +1,18 @@
 [
   {
+    "id": "667c8f14d177165bc85bb9a67616f742",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Adanos Go SDK v1.0.0 for stock and crypto sentiment data",
+    "url": "https://forum.golangbridge.org/t/adanos-go-sdk-v1-0-0-for-stock-and-crypto-sentiment-data/42671#post_1",
+    "resume": " \u003cp\u003eWe’ve released the first Go SDK for the Adanos Market Sentiment API. It lets Go applications fetch stock and crypto sentiment data from Reddit, plus stock data from X, financial news and Polymarket. It also supports direct text sentiment analysis.\u003c/p\u003e\n\u003cp\u003eVersion 1.0.0 covers all 53 operations in API 1.54.0. It has typed responses, accepts context.Context for every request, and uses only the Go standard library. It requires Go 1.26 or newer and is MIT licensed.\u003c/p\u003e\n\u003cp\u003eInstall it with:\u003c/p\u003e\n\u003cpre data-code-wrap=\"sh\"\u003e\u003ccode class=\"lang-sh\"\u003ego get github.com/adanos-software/adanos-go-sdk@v1.0.0\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFor example, fetch the top three Reddit stocks:\u003c/p\u003e\n\u003cpre data-code-wrap=\"go\"\u003e\u003ccode class=\"lang-go\"\u003epackage main\n\nimport (\n    \"context\"\n    \"fmt\"\n    \"log\"\n    \"os\"\n    \"time\"\n\n    adanos \"github.com/adanos-software/adanos-go-sdk\"\n)\n\nfunc main() {\n    client, err := adanos.NewClient(adanos.Config{\n        APIKey: os.Getenv(\"ADANOS_API_KEY\"),\n    })\n    if err != nil {\n        log.Fatal(err)\n    }\n    ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)\n    defer cancel()\n    stocks, err := client.Reddit().Trending(ctx, \u0026amp;adanos.TrendingOptions{Limit: new(3)})\n    if err != nil {\n        log.Fatal(err)\n    }\n    for _, stock := range stocks {\n        fmt.Println(stock.Ticker, stock.BuzzScore, stock.SentimentScore)\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eData endpoints require an Adanos API key. Public health endpoints work without one. The SDK is free and open source. The hosted API has separate usage limits and pricing.\u003c/p\u003e\n\u003cp\u003eSource and quick start: \u003ca href=\"https://github.com/adanos-software/adanos-go-sdk\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - adanos-software/adanos-go-sdk: Go SDK for the Adanos Market Sentiment API · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePackage docs: \u003ca href=\"https://pkg.go.dev/github.com/adanos-software/adanos-go-sdk\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eadanos package - github.com/adanos-software/adanos-go-sdk - Go Packages\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eFeedback on the Go API and examples is welcome.\u003c/p\u003e ",
+    "date": "2026-10-13T20:14:09Z",
+    "vote": 0
+  },
+  {
     "id": "771e0f419108c49d9bb52a4767de33d0",
     "source": {
       "path": "forums",
