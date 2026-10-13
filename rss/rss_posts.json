@@ -1,5 +1,18 @@
 [
   {
+    "id": "f7e028848286cef9df66361513a401e2",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Become a code archaeologist",
+    "url": "https://www.youtube.com/shorts/SRbSqsYui-0",
+    "resume": "",
+    "date": "2026-10-13T07:00:01Z",
+    "vote": 0
+  },
+  {
     "id": "a65c17d940e71278afe4b5d98799af5a",
     "source": {
       "path": "forums",
