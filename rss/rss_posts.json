@@ -1,5 +1,31 @@
 [
   {
+    "id": "168c97b65ed80dd8bdad051cb48df209",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Show HN: Golang DL/ML primitives with inference, diffusion, vision, systemone",
+    "url": "https://github.com/computerex/dlgo",
+    "resume": "\n\u003cp\u003eI created a DL inference engine that slowly grew to have more and functionality.\u003cp\u003e- Inference for a bunch of open weights architectures\u003cp\u003e- Diffusion image generation fir Z ai turbo\u003cp\u003e- Vision input into LLM for inference\u003cp\u003e- Vulkan/fast CPU, optimized kernels\u003cp\u003e- Playground for testing\u003cp\u003e- Last but not least, system one fast inference mode with same API semantics as Jev\u003cp\u003eIt's MIT, so go nuts\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50091939\"\u003ehttps://news.ycombinator.com/item?id=50091939\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-14T17:53:56Z",
+    "vote": 0
+  },
+  {
+    "id": "883cdc315777525af3ee26df8b37df4f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Are gosec and govulncheck enough for Go security?",
+    "url": "https://www.reddit.com/r/golang/comments/1x5wgjj/are_gosec_and_govulncheck_enough_for_go_security/",
+    "resume": "",
+    "date": "2026-10-14T16:51:50Z",
+    "vote": 0
+  },
+  {
     "id": "3c8f1509ee26038e5ac6c511cbee3b87",
     "source": {
       "path": "forums",
