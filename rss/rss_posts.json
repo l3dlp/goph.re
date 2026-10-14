@@ -1,5 +1,18 @@
 [
   {
+    "id": "23ba24eb740b491a1c6716d9feb8e6ac",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Everyone at the pottery class painted flowers. I painted a gopher :)",
+    "url": "https://www.reddit.com/r/golang/comments/1x5niab/everyone_at_the_pottery_class_painted_flowers_i/",
+    "resume": "",
+    "date": "2026-10-14T10:17:12Z",
+    "vote": 0
+  },
+  {
     "id": "667c8f14d177165bc85bb9a67616f742",
     "source": {
       "path": "forums",
