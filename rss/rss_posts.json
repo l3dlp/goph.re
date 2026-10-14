@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "d12b9a47868aca93c593b866601be010",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Is using go fix to modernize Go code safe?",
+    "url": "https://www.reddit.com/r/golang/comments/1x5nstp/is_using_go_fix_to_modernize_go_code_safe/",
+    "resume": "",
+    "date": "2026-10-14T10:34:47Z",
+    "vote": 0
+  },
+  {
     "id": "23ba24eb740b491a1c6716d9feb8e6ac",
     "source": {
       "path": "forums",
@@ -23,6 +36,32 @@
     "url": "https://www.reddit.com/r/golang/comments/1x5niab/everyone_at_the_pottery_class_painted_flowers_i/",
     "resume": "",
     "date": "2026-10-14T10:17:12Z",
+    "vote": 0
+  },
+  {
+    "id": "660976fc5d0ee7a9eb4b7e2e436199ac",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How the Go team uses the AI tools",
+    "url": "https://www.reddit.com/r/golang/comments/1x5nhp0/how_the_go_team_uses_the_ai_tools/",
+    "resume": "",
+    "date": "2026-10-14T10:16:09Z",
+    "vote": 0
+  },
+  {
+    "id": "1831587350f5dc6d760823d5717680d9",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "The hardest concurrency bug isn't always a data race",
+    "url": "https://www.reddit.com/r/golang/comments/1x5m4j5/the_hardest_concurrency_bug_isnt_always_a_data/",
+    "resume": "",
+    "date": "2026-10-14T08:48:41Z",
     "vote": 0
   },
   {
