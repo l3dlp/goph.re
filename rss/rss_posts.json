@@ -1,5 +1,18 @@
 [
   {
+    "id": "8b57472925b9e831008bef9832e6a2d7",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go HTTP Server Returns Incomplete JSON Responses Under Concurrent Requests Despite Successful Handler Execution",
+    "url": "https://forum.golangbridge.org/t/go-http-server-returns-incomplete-json-responses-under-concurrent-requests-despite-successful-handler-execution/42678#post_2",
+    "resume": " \u003caside class=\"quote no-group\" data-username=\"joeroot\" data-post=\"1\" data-topic=\"42678\"\u003e\n\u003cdiv class=\"title\"\u003e\n\u003cdiv class=\"quote-controls\"\u003e\u003c/div\u003e\n\u003cimg alt=\"\" width=\"24\" height=\"24\" src=\"https://forum.golangbridge.org/user_avatar/forum.golangbridge.org/joeroot/48/14876_2.png\" class=\"avatar\"\u003e joeroot:\u003c/div\u003e\n\u003cblockquote\u003e\n\u003cp\u003eHas anyone encountered a similar issue in a Go HTTP server where JSON endpoints behave correctly under individual requests but occasionally return incomplete or inconsistent response bodies under concurrent load?\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/aside\u003e\n\u003cp\u003eI have not. Based on what you are describing, this is \u003cem\u003ealmost certainly\u003c/em\u003e a concurrency problem. That said, returning incomplete JSON might be a timeout issue. What are your timeouts set to and are your requests butting up against them?\u003c/p\u003e\n\u003caside class=\"quote no-group\" data-username=\"joeroot\" data-post=\"1\" data-topic=\"42678\"\u003e\n\u003cdiv class=\"title\"\u003e\n\u003cdiv class=\"quote-controls\"\u003e\u003c/div\u003e\n\u003cimg alt=\"\" width=\"24\" height=\"24\" src=\"https://forum.golangbridge.org/user_avatar/forum.golangbridge.org/joeroot/48/14876_2.png\" class=\"avatar\"\u003e joeroot:\u003c/div\u003e\n\u003cblockquote\u003e\n\u003cp\u003eIf a map or slice is being modified while another goroutine reads it, synchronization may be necessary\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/aside\u003e\n\u003cp\u003eSynchronization is \u003cem\u003eabsolutely\u003c/em\u003e necessary in this case. If you want something fast, take a look at \u003ca href=\"https://pkg.go.dev/sync/atomic\"\u003e\u003ccode\u003esync/atomic\u003c/code\u003e\u003c/a\u003e and specifically \u003ccode\u003ePointer[T]\u003c/code\u003e. You could also import a library. Not sure what the best ones are but you could start \u003ca href=\"https://github.com/maypok86/otter\"\u003ehere\u003c/a\u003e.\u003c/p\u003e ",
+    "date": "2026-10-14T21:12:53Z",
+    "vote": 0
+  },
+  {
     "id": "168c97b65ed80dd8bdad051cb48df209",
     "source": {
       "path": "community",
