@@ -1,5 +1,18 @@
 [
   {
+    "id": "2753ccd13645a6392756c415b14ff793",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Alpha release of Natural Deploy",
+    "url": "https://forum.golangbridge.org/t/alpha-release-of-natural-deploy/42655#post_2",
+    "resume": " \u003cp\u003eThanks for share this update\u003c/p\u003e ",
+    "date": "2026-10-14T11:18:57Z",
+    "vote": 0
+  },
+  {
     "id": "23ba24eb740b491a1c6716d9feb8e6ac",
     "source": {
       "path": "forums",
