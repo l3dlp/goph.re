@@ -1,5 +1,18 @@
 [
   {
+    "id": "3c8f1509ee26038e5ac6c511cbee3b87",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "RFC: DocuDex, an offline documentation CLI for Go projects",
+    "url": "https://forum.golangbridge.org/t/rfc-docudex-an-offline-documentation-cli-for-go-projects/42679#post_1",
+    "resume": " \u003cp\u003eHello Gophers! I’m designing DocuDex, a CLI that builds API reference for every dependency in a \u003ccode\u003ego.mod\u003c/code\u003e from the module cache (via \u003ccode\u003ego/doc\u003c/code\u003e), stores it locally, and serves it in a browser or to a coding agent — fully offline. It’s a solo side project, pre-code; the design doc, two ADRs, a POC write-up with benchmarks and architecture diagrams are here:\u003c/p\u003e\n\u003caside class=\"onebox githubrepo\" data-onebox-src=\"https://github.com/aureliushq/docudex\"\u003e\n  \u003cheader class=\"source\"\u003e\n\n      \u003ca href=\"https://github.com/aureliushq/docudex\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003egithub.com\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"github-row\" data-github-private-repo=\"false\"\u003e\n  \u003cimg width=\"690\" height=\"344\" src=\"https://opengraph.githubassets.com/dec53ce96787487bf47bfb29ae1ec0fb/aureliushq/docudex\" class=\"thumbnail\"\u003e\n\n  \u003ch3\u003e\u003ca href=\"https://github.com/aureliushq/docudex\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGitHub - aureliushq/docudex\u003c/a\u003e\u003c/h3\u003e\n\n    \u003cp\u003e\u003cspan class=\"github-repo-description\"\u003eContribute to aureliushq/docudex development by creating an account on GitHub.\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n\n\u003cp\u003eTwo decisions I’d like challenged:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eStorage\u003c/strong\u003e: Markdown files on disk as the source of truth, plus a SQLite FTS5 index.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eManifest\u003c/strong\u003e: a \u003ccode\u003edocudex.toml\u003c/code\u003e derived from \u003ccode\u003ego.mod\u003c/code\u003e as DocuDex’s source of truth (it will warn about drift) rather than reading \u003ccode\u003ego.mod\u003c/code\u003e directly each run.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eReplies welcome here or in the repo discussion: \u003ca href=\"https://github.com/aureliushq/docudex/discussions\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eaureliushq/docudex · Discussions · GitHub\u003c/a\u003e. Feedback not limited to the above decisions are also welcome. I’ll close the review on Oct 24 and post what changed and what I held, with reasons.\u003c/p\u003e\n\u003cp\u003eThank you!\u003c/p\u003e ",
+    "date": "2026-10-14T16:45:19Z",
+    "vote": 0
+  },
+  {
     "id": "d1b994b6260c2e023b53732a90975d3a",
     "source": {
       "path": "forums",
@@ -101,6 +114,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1x5m4j5/the_hardest_concurrency_bug_isnt_always_a_data/",
     "resume": "",
     "date": "2026-10-14T08:48:41Z",
+    "vote": 0
+  },
+  {
+    "id": "3e2a33b9b9a49c2bcdef9d1920898a70",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "Better HTTP/1 connection reuse",
+    "url": "https://go.dev/blog/http-connection-reuse",
+    "resume": "Go 1.27 includes a change to the HTTP client that can make programs sending many sequential HTTP/1 requests significantly faster.",
+    "date": "2026-10-14T00:00:00Z",
     "vote": 0
   },
   {
