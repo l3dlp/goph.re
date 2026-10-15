@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "fee17d76cdaeb49b1af42fb3ff2650e8",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Debug like a scientist",
+    "url": "https://www.youtube.com/shorts/ztC9UxXMH8o",
+    "resume": "",
+    "date": "2026-10-15T01:00:37Z",
+    "vote": 0
+  },
+  {
     "id": "8b57472925b9e831008bef9832e6a2d7",
     "source": {
       "path": "forums",
