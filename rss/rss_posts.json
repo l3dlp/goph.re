@@ -1,5 +1,57 @@
 [
   {
+    "id": "45d0c1a4a76f263d1fb1f90eec501549",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Hiring] Senior/Lead Go Backend Engineer (IAM / Auth) — Remote, Europe \u0026 Caucasus",
+    "url": "https://forum.golangbridge.org/t/hiring-senior-lead-go-backend-engineer-iam-auth-remote-europe-caucasus/42686#post_2",
+    "resume": " \u003cp\u003eHey.\u003c/p\u003e\n\u003cp\u003eEmail sent with you.\u003c/p\u003e\n\u003cp\u003eThanks\u003c/p\u003e\n\u003cp\u003eSeth\u003c/p\u003e ",
+    "date": "2026-10-15T12:56:24Z",
+    "vote": 0
+  },
+  {
+    "id": "e3e13f5b6d82d001e7533f4aa1d62828",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Hiring] Senior/Lead Go Backend Engineer (IAM / Auth) — Remote, Europe \u0026 Caucasus",
+    "url": "https://forum.golangbridge.org/t/hiring-senior-lead-go-backend-engineer-iam-auth-remote-europe-caucasus/42686#post_1",
+    "resume": " \u003cp\u003eHi Gophers! \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/waving_hand.png?v=15\" title=\":waving_hand:\" class=\"emoji\" alt=\":waving_hand:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eAndersen\u003c/strong\u003e is hiring a \u003cstrong\u003eSenior Backend Engineer (Identity \u0026amp; Access Management)\u003c/strong\u003e for an international client in the financial and protection services domain. You’ll build high-throughput, low-latency identity services (SSO, MFA, sessions, federation) on a distributed Go platform.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/round_pushpin.png?v=15\" title=\":round_pushpin:\" class=\"emoji\" alt=\":round_pushpin:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e Location:\u003c/strong\u003e EU, Albania, Azerbaijan, Georgia, North Macedonia, Serbia or Slovenia. Remote, office or hybrid.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/white_check_mark.png?v=15\" title=\":white_check_mark:\" class=\"emoji\" alt=\":white_check_mark:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e Must-haves\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e7+ years backend, \u003cstrong\u003e5+ years with Go\u003c/strong\u003e, strong \u003cstrong\u003egRPC\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eProduction IAM experience\u003c/strong\u003e: OAuth 2.0, OIDC, SSO, MFA, RBAC, JWT, token security, session management, cryptography\u003c/li\u003e\n\u003cli\u003eWeb security, federated identity, OWASP Top 10\u003c/li\u003e\n\u003cli\u003eAWS, Kubernetes, Terraform / Terragrunt / OpenTofu\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEnglish B2+\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/light_bulb.png?v=15\" title=\":light_bulb:\" class=\"emoji\" alt=\":light_bulb:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e Nice-to-have:\u003c/strong\u003e Keycloak, AWS Cognito, SAML, SCIM, PKI, KMS/HSM\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/wrapped_gift.png?v=15\" title=\":wrapped_gift:\" class=\"emoji\" alt=\":wrapped_gift:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e Offer:\u003c/strong\u003e up to +1,000 EUR/month bonus, certification compensation, private health insurance, option to switch projects.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/envelope_with_arrow.png?v=15\" title=\":envelope_with_arrow:\" class=\"emoji\" alt=\":envelope_with_arrow:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e \u003cstrong\u003eApply:\u003c/strong\u003e DM me here, email \u003cstrong\u003e\u003ca href=\"mailto:a.hardzeyeva@andersenlab.com\"\u003ea.hardzeyeva@andersenlab.com\u003c/a\u003e\u003c/strong\u003e or Telegram \u003cstrong\u003e\u003cspan class=\"mention\"\u003e@aliak1hardz\u003c/span\u003e\u003c/strong\u003e\u003c/p\u003e ",
+    "date": "2026-10-15T12:46:17Z",
+    "vote": 0
+  },
+  {
+    "id": "2a3414ee12e50652249ec4c69eae478b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Data Analytics Question",
+    "url": "https://www.reddit.com/r/golang/comments/1x6izvp/data_analytics_question/",
+    "resume": "",
+    "date": "2026-10-15T11:20:12Z",
+    "vote": 0
+  },
+  {
+    "id": "dfd1abd6f9bf8708942a21f91fc70856",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Channel composition is hard: lessons from building a zero-dependency concurrency toolkit in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1x6h12f/channel_composition_is_hard_lessons_from_building/",
+    "resume": "",
+    "date": "2026-10-15T09:23:15Z",
+    "vote": 0
+  },
+  {
     "id": "4afebccd3e5db2880724efbb93160e03",
     "source": {
       "path": "community",
