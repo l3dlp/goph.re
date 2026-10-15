@@ -1,5 +1,18 @@
 [
   {
+    "id": "4afebccd3e5db2880724efbb93160e03",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Show HN: Visual Scripting for Golang",
+    "url": "https://symphony.q3k.app",
+    "resume": "\n\u003cp\u003eHi Folks,\u003cp\u003eFor a long time I wanted to build a universal visual scripting program that was like unreal's blueprints but for the languages that I enjoy. I've given a fair few attempts but AI has allowed me to build something I really enjoy using and with tools that I have found make working with complex code bases a bit more visual which is something that helps me a lot.\u003cp\u003eI also have sons who love coding in various languages so I wanted to build something that helped people who are learning to code transition from stuff like scratch.\u003cp\u003eGive it a go, see what you think. Enjoy!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50098278\"\u003ehttps://news.ycombinator.com/item?id=50098278\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-15T02:07:00Z",
+    "vote": 0
+  },
+  {
     "id": "8b57472925b9e831008bef9832e6a2d7",
     "source": {
       "path": "forums",
