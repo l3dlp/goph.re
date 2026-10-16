@@ -1,5 +1,31 @@
 [
   {
+    "id": "add1b2a5e62d6984eb52c5ed179757ce",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Exponential back off with jitter",
+    "url": "https://www.youtube.com/shorts/WBjFFJP3txs",
+    "resume": "",
+    "date": "2026-10-16T07:00:02Z",
+    "vote": 0
+  },
+  {
+    "id": "338db3264c083f55135b29ea3daa8ff9",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Assume everything will break",
+    "url": "https://www.youtube.com/shorts/B0YihrQOWQo",
+    "resume": "",
+    "date": "2026-10-16T01:00:08Z",
+    "vote": 0
+  },
+  {
     "id": "b414dc0327c92b6ea7afd49479f3005a",
     "source": {
       "path": "forums",
