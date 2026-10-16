@@ -39,6 +39,19 @@
     "vote": 0
   },
   {
+    "id": "1f9d9ea64f60db34a3880f4591f16d5b",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Show: shcmd - A Go package for parsing shell-style text into commands",
+    "url": "https://forum.golangbridge.org/t/show-shcmd-a-go-package-for-parsing-shell-style-text-into-commands/42687#post_1",
+    "resume": " \u003cp\u003eFeedback and issues welcome!\u003cbr\u003e\nRepo: \u003ca href=\"https://github.com/roy2220/shcmd\" rel=\"noopener nofollow ugc\"\u003ehttps://github.com/roy2220/shcmd\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-10-16T07:42:27Z",
+    "vote": 0
+  },
+  {
     "id": "add1b2a5e62d6984eb52c5ed179757ce",
     "source": {
       "path": "examples",
