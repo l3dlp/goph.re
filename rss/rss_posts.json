@@ -78,6 +78,19 @@
     "vote": 0
   },
   {
+    "id": "b3324999382567f1174c8355e39e3dd6",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "Interactive refactoring in gopls",
+    "url": "https://go.dev/blog/interactive-refactoring",
+    "resume": "Introducing interactive refactoring in gopls and the LSP: a new capability that brings dynamic, multi-step refactorings into your favorite editor.",
+    "date": "2026-10-16T00:00:00Z",
+    "vote": 0
+  },
+  {
     "id": "b414dc0327c92b6ea7afd49479f3005a",
     "source": {
       "path": "forums",
