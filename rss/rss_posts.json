@@ -1,5 +1,31 @@
 [
   {
+    "id": "89d864dd45a6ee1c4d7f4e0ae120bb84",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Design pattern question",
+    "url": "https://www.reddit.com/r/golang/comments/1x7gehs/design_pattern_question/",
+    "resume": "",
+    "date": "2026-10-16T13:35:17Z",
+    "vote": 0
+  },
+  {
+    "id": "2d29b2003afa2473ac96d88126fd60b3",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Bellui — a Go UI toolkit for desktop, mobile and web: Material Design 3, WebGPU rendering",
+    "url": "https://www.reddit.com/r/golang/comments/1x7gav4/bellui_a_go_ui_toolkit_for_desktop_mobile_and_web/",
+    "resume": "",
+    "date": "2026-10-16T13:31:06Z",
+    "vote": 0
+  },
+  {
     "id": "648b7115725a6a782cb43a3aca0117d5",
     "source": {
       "path": "forums",
