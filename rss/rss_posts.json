@@ -1,5 +1,18 @@
 [
   {
+    "id": "b414dc0327c92b6ea7afd49479f3005a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go Was Burning 60% CPU Just Running GC. The Fix Was a Memory Limit",
+    "url": "https://www.reddit.com/r/golang/comments/1x6tohb/go_was_burning_60_cpu_just_running_gc_the_fix_was/",
+    "resume": "",
+    "date": "2026-10-15T18:34:35Z",
+    "vote": 0
+  },
+  {
     "id": "45d0c1a4a76f263d1fb1f90eec501549",
     "source": {
       "path": "forums",
