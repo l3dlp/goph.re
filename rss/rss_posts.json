@@ -1,5 +1,18 @@
 [
   {
+    "id": "e1f87378be86a67d8442b0bc7f324043",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go (Golang) Publisher Attestation and Signature Verification",
+    "url": "https://www.reddit.com/r/golang/comments/1x8hzzt/go_golang_publisher_attestation_and_signature/",
+    "resume": "",
+    "date": "2026-10-17T18:50:16Z",
+    "vote": 0
+  },
+  {
     "id": "fae51c42f4eb74ecab1684f52e147cc0",
     "source": {
       "path": "forums",
