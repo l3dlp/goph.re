@@ -1,5 +1,18 @@
 [
   {
+    "id": "52aa4c9f1ccdb50f27d75e076477c85d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Estonia's election system is mostly programmed in Go. I came across the open source github repo and wanted to share.",
+    "url": "https://www.reddit.com/r/golang/comments/1x7oe1w/estonias_election_system_is_mostly_programmed_in/",
+    "resume": "",
+    "date": "2026-10-16T18:42:44Z",
+    "vote": 0
+  },
+  {
     "id": "89d864dd45a6ee1c4d7f4e0ae120bb84",
     "source": {
       "path": "forums",
