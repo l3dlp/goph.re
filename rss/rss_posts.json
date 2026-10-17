@@ -39,6 +39,32 @@
     "vote": 0
   },
   {
+    "id": "df41843841941baee2f9ce9b4855193b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Rust/Go Leverage in PHP",
+    "url": "https://www.reddit.com/r/golang/comments/1x8cntu/rustgo_leverage_in_php/",
+    "resume": "",
+    "date": "2026-10-17T15:12:47Z",
+    "vote": 0
+  },
+  {
+    "id": "8c35ca2c4c57bf0a9c1205e1f4335ab1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Cicada: Sub-millisecond Zero-Trust AI Agent \u0026 MCP Proxy in Go (DialContext IP pinning, sync/atomic.Pointer gossip quarantine, 7-pass deobfuscator)",
+    "url": "https://www.reddit.com/r/golang/comments/1x8c2vg/cicada_submillisecond_zerotrust_ai_agent_mcp/",
+    "resume": "",
+    "date": "2026-10-17T14:48:30Z",
+    "vote": 0
+  },
+  {
     "id": "f4720b498f70e058e3c42505fc5dff27",
     "source": {
       "path": "community",
