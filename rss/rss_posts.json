@@ -1,5 +1,18 @@
 [
   {
+    "id": "52eb9d75596c811329a6c19104bbb440",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Why arrays beat linked lists in performance",
+    "url": "https://www.youtube.com/shorts/bj5tuA4po_0",
+    "resume": "",
+    "date": "2026-10-17T07:00:18Z",
+    "vote": 0
+  },
+  {
     "id": "52aa4c9f1ccdb50f27d75e076477c85d",
     "source": {
       "path": "forums",
