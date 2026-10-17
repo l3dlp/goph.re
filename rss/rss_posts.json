@@ -1,5 +1,18 @@
 [
   {
+    "id": "fa4fa827e6bd6653a33c2649b855baa7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Brain 2.0 - A minimal and extensible agent server for building agent applications written in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1x87apv/brain_20_a_minimal_and_extensible_agent_server/",
+    "resume": "",
+    "date": "2026-10-17T10:51:53Z",
+    "vote": 0
+  },
+  {
     "id": "01f37420ea2e57733ea89274aced0180",
     "source": {
       "path": "forums",
