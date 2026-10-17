@@ -1,5 +1,18 @@
 [
   {
+    "id": "467ce102088118e9140b1fde0b440119",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Interactive refactoring in gopls",
+    "url": "https://www.reddit.com/r/golang/comments/1x8a6ar/interactive_refactoring_in_gopls/",
+    "resume": "",
+    "date": "2026-10-17T13:24:01Z",
+    "vote": 0
+  },
+  {
     "id": "fa4fa827e6bd6653a33c2649b855baa7",
     "source": {
       "path": "forums",
