@@ -1,5 +1,31 @@
 [
   {
+    "id": "01f37420ea2e57733ea89274aced0180",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Kubernetes Events and Controller design",
+    "url": "https://www.reddit.com/r/golang/comments/1x85mnj/kubernetes_events_and_controller_design/",
+    "resume": "",
+    "date": "2026-10-17T09:07:59Z",
+    "vote": 0
+  },
+  {
+    "id": "c6e7821b93fafd81327425a16cfc306a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Field masks for PATCH in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1x84z8z/field_masks_for_patch_in_go/",
+    "resume": "",
+    "date": "2026-10-17T08:25:51Z",
+    "vote": 0
+  },
+  {
     "id": "52eb9d75596c811329a6c19104bbb440",
     "source": {
       "path": "examples",
