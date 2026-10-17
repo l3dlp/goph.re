@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "7e415b1ee414b2ed390fef0ded22bbc6",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Softmap – readable flow map for Golang projects",
+    "url": "https://news.ycombinator.com/item?id=50129836",
+    "resume": "\n\u003cp\u003eI’m working as a developer in a fin-tech company and most of the time I work with system analysts. The most of the time is being taking by the research of the code in order to answer for the questions of the system analytics. So I decided to make a tool that scans a project and shows what the api does under the hood: http validations, db calls - what kind of sql is being executed, kafka events and what happens when the function call is not succeeded - everything in ui map with detailed information. It also filters the noise so the user sees only business logic in the map. For now it works only for golang. Only static analysis - no LLM needed. softmap works only locally - scanned project data is not collected or shared with nobody.\u003cp\u003eHere is the link: https://github.com/softmapio/softmap\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50129836\"\u003ehttps://news.ycombinator.com/item?id=50129836\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-17T10:42:26Z",
+    "vote": 0
+  },
+  {
     "id": "01f37420ea2e57733ea89274aced0180",
     "source": {
       "path": "forums",
