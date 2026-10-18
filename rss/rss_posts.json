@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "afa4daf1eb4e9a86107c3321f3d6bd9a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Gofer, a multi-account webmail",
+    "url": "https://www.reddit.com/r/golang/comments/1x8w5gq/gofer_a_multiaccount_webmail/",
+    "resume": "",
+    "date": "2026-10-18T06:33:55Z",
+    "vote": 0
+  },
+  {
     "id": "e1f87378be86a67d8442b0bc7f324043",
     "source": {
       "path": "forums",
