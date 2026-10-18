@@ -1,5 +1,18 @@
 [
   {
+    "id": "6db85c79abb9a590a79c70e9be40a7e5",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go HTTP Server Returns Incomplete JSON Responses Under Concurrent Requests Despite Successful Handler Execution",
+    "url": "https://forum.golangbridge.org/t/go-http-server-returns-incomplete-json-responses-under-concurrent-requests-despite-successful-handler-execution/42678#post_4",
+    "resume": " \u003caside class=\"quote no-group\" data-username=\"joeroot\" data-post=\"1\" data-topic=\"42678\"\u003e\n\u003cdiv class=\"title\"\u003e\n\u003cdiv class=\"quote-controls\"\u003e\u003c/div\u003e\n\u003cimg alt=\"\" width=\"24\" height=\"24\" src=\"https://forum.golangbridge.org/user_avatar/forum.golangbridge.org/joeroot/48/14876_2.png\" class=\"avatar\"\u003e joeroot:\u003c/div\u003e\n\u003cblockquote\u003e\n\u003cp\u003eI am developing a website backed by a Go application that exposes several HTTP endpoints for retrieving structured data, and I am experiencing an intermittent problem where some requests return incomplete JSON responses even though the corresponding handlers appear to execute successfully. The website uses these endpoints to populate different sections of its interface, so when a response is incomplete, some content fails to appear even though the rest of the page loads normally.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/aside\u003e\n\u003cp\u003eI do not know if this is an answer to your question. But I use the ONE time fetch instead of traditional load page and then load data. It is called SSRDI (SSR Direct Injection). Meaning that the template has the data embedded. The template is the carrier of the data. Instead of double fetch.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"lang-auto\"\u003e\u0026lt;script class=\"data-json\" type=\"application/json\"\u0026gt;\n   {{ .Table}}\n\u0026lt;/script\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThen Javascript read the JSON and put it where it belongs. No racing conditions.\u003c/p\u003e\n\u003cp\u003eAs a bonus it gets way faster with only one roundtrip to Go.\u003c/p\u003e ",
+    "date": "2026-10-18T17:27:21Z",
+    "vote": 0
+  },
+  {
     "id": "56a37516e0d8c6b4b0f33d7c7f87f3b2",
     "source": {
       "path": "forums",
