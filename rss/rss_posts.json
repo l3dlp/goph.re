@@ -1,5 +1,31 @@
 [
   {
+    "id": "0f9ac0552eea654be3dfdf5cda005e8f",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Show HN: Erlang Concepts in Golang",
+    "url": "https://goer.p6m.onl",
+    "resume": "\n\u003cp\u003eI’ve always been facinated by talks on erlang and elixir. It was intriguing to me how Erlandson was used to do amazing fault-tolerant deployments of cell phone technology, how it could do live software patching etc.\u003cp\u003eI haven’t had the time since I heard about it to really try and build something similar in a language I enjoyed so I turned to Claude and built as many erlang/beam features into a golang superset I guess you could say. I wanted something that was practically go but had erlang paradigms and this was where my experiment landed.\u003cp\u003eI’m still yet to find a practical use case for it, but it’s a fun experiment that I enjoyed putting together.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50151976\"\u003ehttps://news.ycombinator.com/item?id=50151976\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-19T13:06:46Z",
+    "vote": 0
+  },
+  {
+    "id": "9b880be458755350adbb56905802d541",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Rewriting 98’s Task Manager in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1x9vvyl/rewriting_98s_task_manager_in_go/",
+    "resume": "",
+    "date": "2026-10-19T12:43:42Z",
+    "vote": 0
+  },
+  {
     "id": "c1d9c09a6da299a1716f9c956f732a10",
     "source": {
       "path": "forums",
@@ -10,6 +36,32 @@
     "url": "https://forum.golangbridge.org/t/go-http-server-returns-incomplete-json-responses-under-concurrent-requests-despite-successful-handler-execution/42678#post_5",
     "resume": " \u003cp\u003eThere could be a lot of causes. First introduce solid debug logging. Log each call, make sure to log error (especially errors after you have started to write the response) and log the length of each result (so you can easily check if the length matches what you received over HTTP)\u003c/p\u003e\n\u003cp\u003eMy first guess for the truncated JSON would be some kind of early return problem, or forgetting to flush a buffered writer. Where you forget to call .close or .flush on the writer, or where you return from a function and the connection gets closed/reused, while you haven’t finished writing concurrently to the stream.\u003c/p\u003e\n\u003cp\u003eThe other error with fields missing is most likely a concurrent update issue. When you can simultaneously read and update data, you have essentially an in memory database. Either use a small in memory database, or use a synchronized data structure (packages sync or atomic).\u003c/p\u003e ",
     "date": "2026-10-19T11:52:50Z",
+    "vote": 0
+  },
+  {
+    "id": "7edc268eb3c3514d4b6be45902b2e126",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built an open source localhost tunneling tool in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1x9sf97/i_built_an_open_source_localhost_tunneling_tool/",
+    "resume": "",
+    "date": "2026-10-19T09:38:12Z",
+    "vote": 0
+  },
+  {
+    "id": "033b0afd8c8ef0fb3ac539c473300d40",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Task UI: automation front end",
+    "url": "https://www.reddit.com/r/golang/comments/1x9rqig/task_ui_automation_front_end/",
+    "resume": "",
+    "date": "2026-10-19T08:55:50Z",
     "vote": 0
   },
   {
