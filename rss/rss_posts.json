@@ -1,5 +1,18 @@
 [
   {
+    "id": "c1d9c09a6da299a1716f9c956f732a10",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go HTTP Server Returns Incomplete JSON Responses Under Concurrent Requests Despite Successful Handler Execution",
+    "url": "https://forum.golangbridge.org/t/go-http-server-returns-incomplete-json-responses-under-concurrent-requests-despite-successful-handler-execution/42678#post_5",
+    "resume": " \u003cp\u003eThere could be a lot of causes. First introduce solid debug logging. Log each call, make sure to log error (especially errors after you have started to write the response) and log the length of each result (so you can easily check if the length matches what you received over HTTP)\u003c/p\u003e\n\u003cp\u003eMy first guess for the truncated JSON would be some kind of early return problem, or forgetting to flush a buffered writer. Where you forget to call .close or .flush on the writer, or where you return from a function and the connection gets closed/reused, while you haven’t finished writing concurrently to the stream.\u003c/p\u003e\n\u003cp\u003eThe other error with fields missing is most likely a concurrent update issue. When you can simultaneously read and update data, you have essentially an in memory database. Either use a small in memory database, or use a synchronized data structure (packages sync or atomic).\u003c/p\u003e ",
+    "date": "2026-10-19T11:52:50Z",
+    "vote": 0
+  },
+  {
     "id": "6db85c79abb9a590a79c70e9be40a7e5",
     "source": {
       "path": "forums",
