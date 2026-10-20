@@ -1,5 +1,18 @@
 [
   {
+    "id": "1a7dd659900ed199c47f400b34af529e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "SIMD and Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xapt8n/simd_and_go/",
+    "resume": "",
+    "date": "2026-10-20T11:39:11Z",
+    "vote": 0
+  },
+  {
     "id": "b0d63e5eb91f4ca89c6bee6e6d6ede60",
     "source": {
       "path": "forums",
