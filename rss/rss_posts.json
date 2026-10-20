@@ -1,5 +1,18 @@
 [
   {
+    "id": "12d6f391e04a746870b4fa7d4913a2cb",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "A code execution sandbox in Go without Docker, just plain linux tooling",
+    "url": "https://www.reddit.com/r/golang/comments/1xagllz/a_code_execution_sandbox_in_go_without_docker/",
+    "resume": "",
+    "date": "2026-10-20T02:41:03Z",
+    "vote": 0
+  },
+  {
     "id": "4289793d2118e8d9c2fa8e64ba31af30",
     "source": {
       "path": "forums",
