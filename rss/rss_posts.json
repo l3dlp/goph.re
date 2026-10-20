@@ -1,5 +1,31 @@
 [
   {
+    "id": "60f99387dca0a207489816183505f539",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Backoffice Golang Project equivalent of filament (php)",
+    "url": "https://www.reddit.com/r/golang/comments/1xat85m/backoffice_golang_project_equivalent_of_filament/",
+    "resume": "",
+    "date": "2026-10-20T14:12:14Z",
+    "vote": 0
+  },
+  {
+    "id": "e5b6940e82cae49f154bd6c24aced98b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "One Name for Schema, Hierarchy and Access Control on a Replicated Log: 225ns in-process evaluation in Go over NATS JetStream and PostgreSQL (Paper + Benchmark Repo)",
+    "url": "https://www.reddit.com/r/golang/comments/1xas21h/one_name_for_schema_hierarchy_and_access_control/",
+    "resume": "",
+    "date": "2026-10-20T13:24:03Z",
+    "vote": 0
+  },
+  {
     "id": "e2f93788d21d35d8fc02d8cb07de3617",
     "source": {
       "path": "forums",
