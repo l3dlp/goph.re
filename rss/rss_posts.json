@@ -1,5 +1,18 @@
 [
   {
+    "id": "4289793d2118e8d9c2fa8e64ba31af30",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "With coding agents writing faster than we can review, what does your testing stack look like?",
+    "url": "https://www.reddit.com/r/golang/comments/1xag1bv/with_coding_agents_writing_faster_than_we_can/",
+    "resume": "",
+    "date": "2026-10-20T02:13:17Z",
+    "vote": 0
+  },
+  {
     "id": "6ab034454d24f5c872523723b301d698",
     "source": {
       "path": "forums",
