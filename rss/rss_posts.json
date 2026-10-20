@@ -1,5 +1,31 @@
 [
   {
+    "id": "e2f93788d21d35d8fc02d8cb07de3617",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Building an HTML-like markup language for terminal UIs in Go (SML)",
+    "url": "https://www.reddit.com/r/golang/comments/1xary86/building_an_htmllike_markup_language_for_terminal/",
+    "resume": "",
+    "date": "2026-10-20T13:19:31Z",
+    "vote": 0
+  },
+  {
+    "id": "b4af6508cc7e21d7e9c393628ff56cc2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Four ways my Go framework's router and access control read the same request path differently",
+    "url": "https://www.reddit.com/r/golang/comments/1xar23l/four_ways_my_go_frameworks_router_and_access/",
+    "resume": "",
+    "date": "2026-10-20T12:39:52Z",
+    "vote": 0
+  },
+  {
     "id": "1a7dd659900ed199c47f400b34af529e",
     "source": {
       "path": "forums",
