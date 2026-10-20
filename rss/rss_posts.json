@@ -1,5 +1,31 @@
 [
   {
+    "id": "b0d63e5eb91f4ca89c6bee6e6d6ede60",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Berapa kah whatsapp linkaja",
+    "url": "https://forum.golangbridge.org/t/berapa-kah-whatsapp-linkaja/42707#post_1",
+    "resume": " \u003cp\u003eNomor WhatsApp resmi layanan pelanggan LinkAja (Asisten Virtual MITA) adalah +62 823-7128-9887 atau +62 823-7534-2020.\u003c/p\u003e ",
+    "date": "2026-10-20T07:19:55Z",
+    "vote": 0
+  },
+  {
+    "id": "cb54f040f592732250ceb28ad3c76ebc",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go 1.27.3",
+    "url": "https://www.reddit.com/r/golang/comments/1xal4vp/go_1273/",
+    "resume": "",
+    "date": "2026-10-20T06:54:56Z",
+    "vote": 0
+  },
+  {
     "id": "12d6f391e04a746870b4fa7d4913a2cb",
     "source": {
       "path": "forums",
