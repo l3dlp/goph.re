@@ -1,5 +1,18 @@
 [
   {
+    "id": "b9977a834877a3c5f78169ac28cc810c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Aspose.Cells for Go via C++ Toolkits: a Go-shaped API over the C++ binding",
+    "url": "https://www.reddit.com/r/golang/comments/1xbc78p/asposecells_for_go_via_c_toolkits_a_goshaped_api/",
+    "resume": "",
+    "date": "2026-10-21T03:13:56Z",
+    "vote": 0
+  },
+  {
     "id": "bc4065669e7f8a79671248341e8907dd",
     "source": {
       "path": "examples",
@@ -10,6 +23,19 @@
     "url": "https://www.youtube.com/shorts/AZPE3IAAQRs",
     "resume": "",
     "date": "2026-10-21T01:00:37Z",
+    "vote": 0
+  },
+  {
+    "id": "2ba4a491c874628b36f9e52ef0f8ea18",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "Help set Go's priorities for next year",
+    "url": "https://go.dev/blog/survey2026-announce",
+    "resume": "Share your experience with Go in the 2026 Go Developer Survey, open through November 3.",
+    "date": "2026-10-21T00:00:00Z",
     "vote": 0
   },
   {
