@@ -1,5 +1,18 @@
 [
   {
+    "id": "8a7d3571d15578a98ceb0000a87555f6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Acquiring TLS certificates at runtime",
+    "url": "https://www.reddit.com/r/golang/comments/1xc0bzf/acquiring_tls_certificates_at_runtime/",
+    "resume": "",
+    "date": "2026-10-21T21:40:52Z",
+    "vote": 0
+  },
+  {
     "id": "387e7d7eaab5868f09328229c4eddad0",
     "source": {
       "path": "forums",
