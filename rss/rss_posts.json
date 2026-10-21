@@ -1,5 +1,18 @@
 [
   {
+    "id": "7f274f2b0e0afd41ede61f0639f1ed92",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Oxynote v0.9.0: a self-hosted wiki in Go, from the maintainers of ttlcache",
+    "url": "https://www.reddit.com/r/golang/comments/1xbtnvd/oxynote_v090_a_selfhosted_wiki_in_go_from_the/",
+    "resume": "",
+    "date": "2026-10-21T17:32:17Z",
+    "vote": 0
+  },
+  {
     "id": "ab4bfb347c45716c0105fd604dc224d5",
     "source": {
       "path": "forums",
