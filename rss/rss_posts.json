@@ -1,5 +1,31 @@
 [
   {
+    "id": "387e7d7eaab5868f09328229c4eddad0",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Help set Go's priorities for next year",
+    "url": "https://www.reddit.com/r/golang/comments/1xbzlsi/help_set_gos_priorities_for_next_year/",
+    "resume": "",
+    "date": "2026-10-21T21:12:02Z",
+    "vote": 0
+  },
+  {
+    "id": "bd38592ca371e05805dac4c0a3f06eeb",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "You criticized my custom TUI language for Go, so I made it open source. Now I'd love your help building it.",
+    "url": "https://www.reddit.com/r/golang/comments/1xbyeys/you_criticized_my_custom_tui_language_for_go_so_i/",
+    "resume": "",
+    "date": "2026-10-21T20:26:25Z",
+    "vote": 0
+  },
+  {
     "id": "7f274f2b0e0afd41ede61f0639f1ed92",
     "source": {
       "path": "forums",
