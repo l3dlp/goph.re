@@ -1,5 +1,31 @@
 [
   {
+    "id": "d319dcd6f78b0fe10f6018631609c1c7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Gostman: one Go request engine behind a desktop app, a CLI and a web proxy",
+    "url": "https://www.reddit.com/r/golang/comments/1xci2qq/gostman_one_go_request_engine_behind_a_desktop/",
+    "resume": "",
+    "date": "2026-10-22T13:06:56Z",
+    "vote": 0
+  },
+  {
+    "id": "dd4898f6f95af3134f7001d901cf3ac6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "acurl: cURL for agent (looking for contributors)",
+    "url": "https://www.reddit.com/r/golang/comments/1xchvjq/acurl_curl_for_agent_looking_for_contributors/",
+    "resume": "",
+    "date": "2026-10-22T12:58:59Z",
+    "vote": 0
+  },
+  {
     "id": "b4dff7149e7e8409cfd20a579cbb7517",
     "source": {
       "path": "forums",
