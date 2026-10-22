@@ -1,5 +1,18 @@
 [
   {
+    "id": "9d14b148fa6c2dc548ec44125c5143a3",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Testing Automation",
+    "url": "https://forum.golangbridge.org/t/testing-automation/42698#post_3",
+    "resume": " \u003cp\u003eThanks for the close read. You’re right about -merge: it only ever loosens a snapshot, so merging in a run from a bad environment or an old API version means the snapshot then accepts that shape.\u003c/p\u003e\n\u003cp\u003eWhat I’d recommend:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eKeep one snapshot per environment and API version, for example snapshots//checkout.json, and compare each environment against its own baseline. Today that’s done by file naming. Native per-environment support isn’t built yet beyond recording the environment in the file.\u003c/li\u003e\n\u003cli\u003eUse -merge only for several known-good runs of the same flow against the same target. That’s what it’s for: learning which fields are really optional. Don’t merge across environments that should behave differently.\u003c/li\u003e\n\u003cli\u003eKeep recording and merging out of CI. CI should only compare, with -shapes FILE -shape-drift-fail breaking. Recording refuses to overwrite a snapshot that differs, and -force keeps a .prev copy. Snapshot updates then show up as a reviewed git diff.\u003c/li\u003e\n\u003cli\u003eTreat required-to-optional changes as something to review. Use assertions and contracts for the fields that must always be present.\u003c/li\u003e\n\u003c/ul\u003e ",
+    "date": "2026-10-22T19:36:14Z",
+    "vote": 0
+  },
+  {
     "id": "d319dcd6f78b0fe10f6018631609c1c7",
     "source": {
       "path": "forums",
