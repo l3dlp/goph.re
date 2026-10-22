@@ -1,5 +1,18 @@
 [
   {
+    "id": "09a450c20402aaf517f21c06167bd3ce",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "gosim - library for simulation of file system, multi-host network and other things for reproducible tests of apps",
+    "url": "https://www.reddit.com/r/golang/comments/1xc361s/gosim_library_for_simulation_of_file_system/",
+    "resume": "",
+    "date": "2026-10-21T23:44:22Z",
+    "vote": 0
+  },
+  {
     "id": "8a7d3571d15578a98ceb0000a87555f6",
     "source": {
       "path": "forums",
