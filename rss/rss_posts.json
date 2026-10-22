@@ -1,5 +1,18 @@
 [
   {
+    "id": "b4dff7149e7e8409cfd20a579cbb7517",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Evolution Of HTTP: An Interactive Guide",
+    "url": "https://www.reddit.com/r/golang/comments/1xcbvtu/evolution_of_http_an_interactive_guide/",
+    "resume": "",
+    "date": "2026-10-22T07:19:44Z",
+    "vote": 0
+  },
+  {
     "id": "09a450c20402aaf517f21c06167bd3ce",
     "source": {
       "path": "forums",
