@@ -1,5 +1,18 @@
 [
   {
+    "id": "abe6c02992075adf9c91a99a33c9ef67",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Help me for user authentication part",
+    "url": "https://www.reddit.com/r/golang/comments/1xda4kr/help_me_for_user_authentication_part/",
+    "resume": "",
+    "date": "2026-10-23T10:16:06Z",
+    "vote": 0
+  },
+  {
     "id": "64ed0be9a29ffe86c008db8a61700d54",
     "source": {
       "path": "forums",
