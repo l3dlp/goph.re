@@ -1,5 +1,18 @@
 [
   {
+    "id": "4b3aab7919b3113353beea9f5fffebaf",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built a disposable email inbox that lives in your terminal (Go + Bubble Tea)",
+    "url": "https://www.reddit.com/r/golang/comments/1xdjmu7/i_built_a_disposable_email_inbox_that_lives_in/",
+    "resume": "",
+    "date": "2026-10-23T16:59:45Z",
+    "vote": 0
+  },
+  {
     "id": "abe6c02992075adf9c91a99a33c9ef67",
     "source": {
       "path": "forums",
