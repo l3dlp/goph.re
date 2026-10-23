@@ -1,5 +1,18 @@
 [
   {
+    "id": "64ed0be9a29ffe86c008db8a61700d54",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I do not feel guilty about not grinding through Go syntax tutorials",
+    "url": "https://www.reddit.com/r/golang/comments/1xd84h0/i_do_not_feel_guilty_about_not_grinding_through/",
+    "resume": "",
+    "date": "2026-10-23T08:12:44Z",
+    "vote": 0
+  },
+  {
     "id": "9d14b148fa6c2dc548ec44125c5143a3",
     "source": {
       "path": "forums",
