@@ -26,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "f100fcf849f31703dda62b1c5e029ad7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Show Reddit: HMAC-SHA-256 from Scratch in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xdh2y6/show_reddit_hmacsha256_from_scratch_in_go/",
+    "resume": "",
+    "date": "2026-10-23T15:24:26Z",
+    "vote": 0
+  },
+  {
     "id": "abe6c02992075adf9c91a99a33c9ef67",
     "source": {
       "path": "forums",
