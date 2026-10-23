@@ -1,5 +1,18 @@
 [
   {
+    "id": "b83243f0c8f40b490a32fdd8c4dce010",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Rune 1.3 is out: adds TypeScript support, a Helix editor, Kitty graphics and OSC-7501.",
+    "url": "https://www.reddit.com/r/golang/comments/1xdokmj/rune_13_is_out_adds_typescript_support_a_helix/",
+    "resume": "",
+    "date": "2026-10-23T20:06:13Z",
+    "vote": 0
+  },
+  {
     "id": "e30dc8970c387595b5a4b75867a23d2e",
     "source": {
       "path": "forums",
