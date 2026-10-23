@@ -1,5 +1,18 @@
 [
   {
+    "id": "e30dc8970c387595b5a4b75867a23d2e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Goravel for Laravel immigrants",
+    "url": "https://www.reddit.com/r/golang/comments/1xdkarv/goravel_for_laravel_immigrants/",
+    "resume": "",
+    "date": "2026-10-23T17:24:13Z",
+    "vote": 0
+  },
+  {
     "id": "4b3aab7919b3113353beea9f5fffebaf",
     "source": {
       "path": "forums",
