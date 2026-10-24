@@ -10,7 +10,6 @@ version: v0.13.0
 stars: 38
 tags: rf, 5g, geospatial, concurrency, gin, rtree
 image: /gfx/og/picks/atom.jpg
-draft: true
 verdict: The most honest simulation engine we've read this year.
 og_kicker: #1
 og_title: A.T.O.M<i>.</i>

@@ -1,5 +1,10 @@
 [
   {
+    "path": "picks",
+    "name": "goph.re picks",
+    "url": "https://goph.re/picks/feed.xml"
+  },
+  {
     "path": "golang",
     "name": "GO.DEV",
     "url": "https://go.dev/blog/feed.atom"
