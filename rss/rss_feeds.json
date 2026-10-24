@@ -55,24 +55,19 @@
     "url": "https://www.ardanlabs.com/blog/index.xml"
   },
   {
-    "path":"experts",
-    "name":"Alex Edwards",
-    "url":"https://www.alexedwards.net/static/feed.rss"
+    "path": "experts",
+    "name": "Alex Edwards",
+    "url": "https://www.alexedwards.net/static/feed.rss"
   },
   {
-    "path":"experts",
-    "name":"Bitfield Consulting",
-    "url":"https://bitfieldconsulting.com/golang/rss.xml"
+    "path": "experts",
+    "name": "Bitfield Consulting",
+    "url": "https://feeds.feedburner.com/bitfieldconsulting"
   },
   {
-    "path":"community",
-    "name":"Hacker News Go",
-    "url":"https://hnrss.org/newest?q=golang"
-  },
-  {
-    "path":"official",
-    "name":"Go Vulnerabilities",
-    "url":"https://pkg.go.dev/vuln/feed.xml"
+    "path": "community",
+    "name": "Hacker News Go",
+    "url": "https://hnrss.org/newest?q=golang"
   },
   {
     "path": "examples",
@@ -103,5 +98,70 @@
     "path": "blogs",
     "name": "SDET",
     "url": "https://sdet.us/feed/"
+  },
+  {
+    "path": "golang",
+    "name": "Go Releases",
+    "url": "https://github.com/golang/go/tags.atom"
+  },
+  {
+    "path": "community",
+    "name": "Lobsters Go",
+    "url": "https://lobste.rs/t/go.rss"
+  },
+  {
+    "path": "community",
+    "name": "GopherCon",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCx9QVEApa5BKLw9r8cnOFEA"
+  },
+  {
+    "path": "podcasts",
+    "name": "Cup o' Go",
+    "url": "https://feeds.transistor.fm/cup-o-go"
+  },
+  {
+    "path": "podcasts",
+    "name": "Go Podcast()",
+    "url": "https://feeds.transistor.fm/go-podcast"
+  },
+  {
+    "path": "experts",
+    "name": "Russ Cox",
+    "url": "https://research.swtch.com/feed.atom"
+  },
+  {
+    "path": "experts",
+    "name": "Filippo Valsorda",
+    "url": "https://words.filippo.io/rss/"
+  },
+  {
+    "path": "experts",
+    "name": "Michael Stapelberg",
+    "url": "https://michael.stapelberg.ch/feed.xml"
+  },
+  {
+    "path": "experts",
+    "name": "Three Dots Labs",
+    "url": "https://threedots.tech/index.xml"
+  },
+  {
+    "path": "experts",
+    "name": "Preslav Rachev",
+    "url": "https://preslav.me/index.xml"
+  },
+  {
+    "path": "experts",
+    "name": "Ben Hoyt",
+    "url": "https://benhoyt.com/writings/rss.xml"
+  },
+  {
+    "path": "experts",
+    "name": "Redowan Delowar",
+    "url": "https://rednafi.com/index.xml"
+  },
+  {
+    "path": "experts",
+    "name": "Phil Pearl",
+    "url": "https://philpearl.github.io/index.xml"
   }
 ]
