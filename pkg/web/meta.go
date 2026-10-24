@@ -26,7 +26,7 @@ var sectionMeta = map[string]PageMeta{
 // metaFor returns the head metadata of a page ("feed", "pulse", "me") and optional section path.
 func metaFor(page, path string, all bool) PageMeta {
 	m := PageMeta{
-		Title:       "GOPH.RE — the news feed for Go programmers",
+		Title:       "GOPH.RE — the Go coders news feed",
 		Description: "Go releases, experts, blogs, podcasts and forums in one infinite wall, updated every hour.",
 		Image:       "feed",
 		Canonical:   "/",
