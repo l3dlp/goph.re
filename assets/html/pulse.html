@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GOPH.RE · Pulse</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="The weekly pulse of Go news: what's rising, what's worth reading, which sources are alive." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex,notranslate" />
+	<meta name="theme-color" content="#051521" />
+	<link href="/css/wall.css" rel="stylesheet" type="text/css" />
+	<link href="/css/pulse.css" rel="stylesheet" type="text/css" />
+	<base target="_blank" />
+</head>
+<body>
+	<journal>
+		GOPH.RE
+		<small>The Pulse of Go</small>
+		<menu>
+			<a href="/" target="_self">Live Feed</a>
+			<a href="/pulse" target="_self">Pulse</a>
+			<hr/>
+			<a href="/forums" target="_self">Forums</a>
+			<a href="/blogs" target="_self">Blogs</a>
+			<a href="/golang" target="_self">"Official" Go</a>
+			<hr/>
+			{{ if .user.ID }}
+				<a href="/me" target="_self">My Profile ({{ .user.Name }})</a>
+			{{ else }}
+				<a href="/auth/github" target="_self">Login with GitHub</a>
+			{{ end }}
+		</menu>
+	</journal>
+
+	{{ with .pulse }}
+	<main class="pulse">
+
+		<section class="hero">
+			<div class="kpi">
+				<b>{{ .Week }}</b>
+				<span>articles this week</span>
+				<em class="{{ if ge .DeltaPct 0 }}up{{ else }}down{{ end }}">{{ if ge .DeltaPct 0 }}▲ +{{ else }}▼ {{ end }}{{ .DeltaPct }}% vs last week</em>
+			</div>
+			<div class="kpi">
+				<b>{{ .SignalWeek }}</b>
+				<span>outside the forums</span>
+				<em>{{ pct .SignalWeek .Week }}% signal</em>
+			</div>
+			<div class="kpi">
+				<b>{{ .LiveSources }}<small>/{{ .TotalSources }}</small></b>
+				<span>sources alive</span>
+				<em>posted in the last 14 days</em>
+			</div>
+			<div class="kpi">
+				<b>{{ .Total }}</b>
+				<span>articles archived</span>
+				<em>data written {{ ago .UpdatedAt }}</em>
+			</div>
+		</section>
+
+		<section class="panel">
+			<h2>Rhythm <small>last 12 weeks · <i class="key other"></i> blogs, official &amp; co · <i class="key forums"></i> forums</small></h2>
+			<div class="bars">
+				{{ $max := .MaxDay }}
+				{{ range .Days }}
+				<div class="day" title="{{ .Date.Format "Mon 2 Jan" }} — {{ .Other }} signal, {{ .Forums }} forums">
+					<div class="stack" style="height: {{ pct (add .Forums .Other) $max }}%">
+						<i class="other" style="flex-grow: {{ .Other }}"></i>
+						<i class="forums" style="flex-grow: {{ .Forums }}"></i>
+					</div>
+					<label>{{ if eq (.Date.Format "Mon") "Mon" }}{{ .Date.Format "2 Jan" }}{{ end }}</label>
+				</div>
+				{{ end }}
+			</div>
+		</section>
+
+		<section class="panel">
+			<h2>Rising <small>words in this week's titles, vs. the last 6 months</small></h2>
+			{{ if .Trends }}
+			<div class="trends">
+				{{ range .Trends }}
+				<a href="/?q={{ .Term }}" target="_self" title="{{ .Count }} titles this week, {{ liftf .Lift }} the usual rate">
+					{{ .Term }} <b>{{ .Count }}</b> <em>{{ liftf .Lift }}</em>
+				</a>
+				{{ end }}
+			</div>
+			{{ else }}
+			<p class="empty">Nothing stands out this week. Quiet times.</p>
+			{{ end }}
+		</section>
+
+		<section class="panel">
+			<h2>Signal <small>this week, beyond Reddit &amp; forums</small></h2>
+			{{ if .Signal }}
+			<ol class="signal">
+				{{ range .Signal }}
+				<li>
+					<a class="src path-{{ .Source.Path }}" href="/{{ .Source.Path }}" target="_self">{{ .Source.Name }}</a>
+					<a class="title" href="{{ .URL }}">{{ .Name }}</a>
+					<time>{{ ago .Date }}</time>
+				</li>
+				{{ end }}
+			</ol>
+			{{ else }}
+			<p class="empty">Only forum chatter this week.</p>
+			{{ end }}
+		</section>
+
+		<section class="panel">
+			<h2>Sources <small>12-week activity · last post · 30-day volume</small>
+				{{ if eq $.user.ID "60765" }}<a class="admin" href="/admin/rss" target="_self">edit feeds →</a>{{ end }}
+			</h2>
+			<table class="sources">
+				{{ range .Sources }}
+				<tr class="{{ .Status }}">
+					<td><i class="dot"></i></td>
+					<td class="name"><a href="{{ .URL }}">{{ .Name }}</a><small>{{ .Path }}</small></td>
+					<td class="spark"><div>
+						{{ $m := .MaxWeeks }}
+						{{ range .Weeks }}<i style="height: {{ if $m }}{{ pct . $m }}{{ else }}0{{ end }}%" title="{{ . }}"></i>{{ end }}
+					</div></td>
+					<td class="num">{{ .Month }}<small>/30d</small></td>
+					<td class="last">{{ ago .Last }}</td>
+					<td class="status">{{ .Status }}</td>
+				</tr>
+				{{ end }}
+			</table>
+		</section>
+
+	</main>
+	{{ end }}
+</body>
+</html>

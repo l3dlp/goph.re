@@ -57,6 +57,9 @@ func Serve(port ...int) {
 	r := gin.Default()
 	// Trust the proxy
 	r.SetTrustedProxies([]string{"169.155.237.69"})
+	for name, fn := range pulseFuncs {
+		customFuncs[name] = fn
+	}
 	r.SetFuncMap(customFuncs)
 	r.Use(RateLimiterMiddleware(limiter))
 
@@ -120,6 +123,8 @@ func Serve(port ...int) {
 			"user": user,
 		})
 	})
+
+	r.GET("/pulse", PulsePage)
 
 	// API POST
 	r.POST("/vote/:id/:vote", Vote)

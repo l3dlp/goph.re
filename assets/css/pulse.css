@@ -1,0 +1,204 @@
+/* ===== Pulse dashboard ===== */
+.pulse {
+	--ink: #051521;
+	--panel: #051521e6;
+	--line: #ffffff1a;
+	--muted: #ffffff8c;
+	--cyan: #00adef;
+	--violet: #8f54a0;
+	--live: #3ddc84;
+	--quiet: #f5b942;
+	--dead: #e5484d;
+	max-width: 1440px;
+	margin: 0 16px 80px;
+	color: #fff;
+}
+.pulse div, .pulse p, .pulse a { color: inherit; }
+.pulse a { text-decoration: none; }
+
+.pulse section { margin: 0 0 24px; }
+.panel {
+	background: var(--panel);
+	border-radius: 14px;
+	padding: 22px 24px 26px;
+	box-shadow: var(--cyan) 0 1px 2px;
+	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(14px);
+}
+.panel h2 {
+	margin: 0 0 18px;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 4px 14px;
+}
+.panel h2 small {
+	font-size: 13px;
+	font-weight: 200;
+	color: var(--muted);
+}
+.panel h2 .admin {
+	margin-left: auto;
+	font-size: 13px;
+	color: var(--cyan);
+}
+.empty { color: var(--muted); font-weight: 200; }
+
+/* Hero KPIs */
+.hero {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 14px;
+	margin-top: 24px !important;
+}
+.kpi {
+	background: var(--panel);
+	border-radius: 14px;
+	padding: 18px 20px;
+	box-shadow: var(--cyan) 0 1px 2px;
+	display: flex;
+	flex-direction: column;
+}
+.kpi b {
+	font-size: 54px;
+	line-height: 1;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+}
+.kpi b small { font-size: 26px; color: var(--muted); }
+.kpi span { font-size: 16px; margin-top: 4px; }
+.kpi em { font-style: normal; font-weight: 200; font-size: 13px; color: var(--muted); margin-top: 6px; }
+.kpi em.up { color: var(--live); }
+.kpi em.down { color: var(--quiet); }
+
+/* Rhythm */
+.key { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; margin-left: 6px; }
+.key.other, .stack .other { background: var(--cyan); }
+.key.forums, .stack .forums { background: var(--violet); }
+.bars {
+	display: flex;
+	align-items: flex-end;
+	gap: 2px;
+	height: 160px;
+	padding-bottom: 16px;
+}
+.day {
+	flex: 1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-width: 0;
+}
+.stack {
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px 3px 0 0;
+	overflow: hidden;
+	min-height: 2px;
+	transition: filter .15s;
+}
+.stack i { display: block; flex-basis: 0; }
+.day:hover .stack { filter: brightness(1.35); }
+.day { position: relative; }
+.day label {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	white-space: nowrap;
+	font-size: 10px;
+	color: var(--muted);
+	margin-top: 3px;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Rising */
+.trends { display: flex; flex-wrap: wrap; gap: 8px; }
+.trends a {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 6px;
+	padding: 6px 12px;
+	border-radius: 999px;
+	border: 1px solid var(--line);
+	background: #ffffff0d;
+	font-size: 17px;
+	transition: background .15s, border-color .15s;
+}
+.trends a:hover { background: var(--cyan); border-color: var(--cyan); }
+.trends a b { font-size: 12px; font-weight: 700; }
+.trends a em { font-style: normal; font-size: 12px; font-weight: 200; color: var(--muted); }
+.trends a:hover em { color: #fff; }
+
+/* Signal */
+.signal { list-style: none; margin: 0; padding: 0; }
+.signal li {
+	display: grid;
+	grid-template-columns: 150px 1fr auto;
+	gap: 14px;
+	align-items: baseline;
+	padding: 10px 0;
+	border-top: 1px solid var(--line);
+}
+.signal li:first-child { border-top: 0; }
+.signal .src {
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	color: var(--cyan);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.signal .src.path-golang, .signal .src.path-official { color: var(--live); }
+.signal .src.path-experts, .signal .src.path-blogs { color: #c58bd6; }
+.signal .title { font-size: 18px; font-weight: 200; line-height: 1.25; }
+.signal .title:hover { text-decoration: underline; }
+.signal time { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+/* Sources */
+.sources { width: 100%; border-collapse: collapse; }
+.sources td { padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: middle; }
+.sources tr:first-child td { border-top: 0; }
+.sources .dot { display: block; width: 9px; height: 9px; border-radius: 50%; }
+.sources .live .dot { background: var(--live); box-shadow: 0 0 8px var(--live); }
+.sources .quiet .dot { background: var(--quiet); }
+.sources .dead .dot { background: var(--dead); }
+.sources .silent .dot { border: 1px solid var(--muted); }
+.sources .name a { font-size: 16px; }
+.sources .name a:hover { text-decoration: underline; }
+.sources .name small { display: block; font-size: 11px; color: var(--muted); text-transform: uppercase; }
+.sources .spark { width: 120px; }
+.sources .spark div { height: 26px; display: flex; align-items: flex-end; gap: 2px; }
+.sources .spark i { flex: 1; min-height: 1px; background: var(--cyan); border-radius: 1px; opacity: .85; }
+.sources .num { text-align: right; font-variant-numeric: tabular-nums; font-size: 16px; white-space: nowrap; }
+.sources .num small, .sources .last { font-size: 12px; color: var(--muted); }
+.sources .last { white-space: nowrap; text-align: right; }
+.sources .status { font-size: 11px; font-weight: 700; text-transform: uppercase; text-align: right; }
+.sources .live .status { color: var(--live); }
+.sources .quiet .status { color: var(--quiet); }
+.sources .dead .status { color: var(--dead); }
+.sources .silent .status { color: var(--muted); }
+.sources .dead, .sources .silent { opacity: .7; }
+
+@media (max-width: 700px) {
+	.pulse { margin: 0 12px 60px; }
+	.panel { padding: 18px 16px 20px; }
+	.kpi b { font-size: 40px; }
+	.signal li { grid-template-columns: 1fr auto; gap: 2px 10px; }
+	.signal .src { grid-column: 1 / -1; }
+	.sources .spark, .sources .status { display: none; }
+	.day label { display: none; }
+	.bars { padding-bottom: 0; }
+}
+
+@media (min-width: 960px) {
+	.pulse { padding-left: 400px; margin: 0 30px 80px; }
+}
+@media (min-width: 1900px) {
+	.pulse { padding-left: 720px; }
+}
