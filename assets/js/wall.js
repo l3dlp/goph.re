@@ -50,8 +50,8 @@
 	function render(article) {
 		const date = new Date(article.date);
 		const path = article.source?.path || "";
-		const vote = voteOf(article.id);
-		if (vote === "BAD" && !FEED.all && mode === "feed") return;
+		const state = voteOf(article.id);
+		if (state === "BAD" && !FEED.all && mode === "feed") return;
 
 		const isNew = lastSeen && article.date > lastSeen;
 		if (!dividerPlaced && !isNew && mode === "feed" && page === 1) {
@@ -71,7 +71,7 @@
 		}
 
 		const card = QUALITY.has(path) || (article.resume && path !== "forums");
-		const item = el("article", `item ${card ? "card glass" : "row"} ${vote || ""}`);
+		const item = el("article", `item ${card ? "card glass" : "row"} ${state || ""}`);
 		item.dataset.id = article.id;
 		if (isNew) { item.classList.add("new"); fresh++ }
 
