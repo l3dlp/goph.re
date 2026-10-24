@@ -87,6 +87,7 @@ func PulsePage(c *gin.Context) {
 		"user":  user,
 		"page":  "pulse",
 		"path":  "",
+		"meta":  metaFor("pulse", "", false),
 	})
 }
 

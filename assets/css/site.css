@@ -56,7 +56,7 @@ kbd { font: 700 .85em var(--mono); color: var(--peach); }
 #backdrop.on { opacity: 1; }
 .no-webgl body::before {
 	content: ""; position: fixed; inset: 0; z-index: -1;
-	background: url(/gfx/crowd.png) center 40% / cover no-repeat;
+	background: url(/gfx/crowd.jpg) center 40% / cover no-repeat;
 	opacity: .35; filter: saturate(1.2);
 	mix-blend-mode: luminosity;
 }
@@ -107,6 +107,21 @@ kbd { font: 700 .85em var(--mono); color: var(--peach); }
 .search input::placeholder { color: var(--dim); }
 .search input:focus { border-color: var(--line-hi); background: rgba(8, 16, 25, .85); }
 
+/* push opt-in */
+.notify { display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.notify[hidden] { display: none; }
+.notify .label { margin: 0 0 2px; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); }
+.notify label { display: flex; align-items: center; gap: 10px; color: var(--fg-2); cursor: pointer; line-height: 1.3; }
+.notify input { appearance: none; flex: 0 0 auto; width: 30px; height: 17px; margin: 0; border-radius: 999px; background: rgba(8, 16, 25, .7); border: 1px solid var(--line-hi); position: relative; cursor: pointer; transition: background .2s, border-color .2s; }
+.notify input::after { content: ""; position: absolute; top: 2px; left: 2px; width: 11px; height: 11px; border-radius: 50%; background: var(--dim); transition: transform .2s, background .2s; }
+.notify input:checked { background: var(--coral); border-color: var(--coral); }
+.notify input:checked::after { transform: translateX(13px); background: #fff; }
+.notify input:disabled { opacity: .5; }
+.notify input:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.notify label:hover span { color: #fff; }
+.notify .hint { margin: 2px 0 0; font-size: 11px; line-height: 1.5; color: var(--peach); }
+.notify .hint[hidden] { display: none; }
+
 /* ===== tmux status line ===== */
 .status-line {
 	position: fixed; left: 0; right: 0; bottom: 0; height: 26px; z-index: 20;
@@ -126,6 +141,8 @@ kbd { font: 700 .85em var(--mono); color: var(--peach); }
 .status-line .clock { background: var(--coral); color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
 .status-line button { all: unset; cursor: pointer; padding: 0 1.1ch; }
 .status-line button:hover { color: #fff; }
+.status-line .install { color: var(--ink); background: var(--cyan); font-weight: 700; }
+.status-line .install[hidden] { display: none; }
 
 /* ===== help popup ===== */
 .help-pop { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; background: rgba(5, 9, 15, .6); }
@@ -139,5 +156,6 @@ kbd { font: 700 .85em var(--mono); color: var(--peach); }
 	.side-nav nav { flex-direction: row; flex-wrap: wrap; gap: 4px 16px; font-size: 16px; }
 	.side-nav nav hr, .side-nav nav a kbd { display: none; }
 	.side-nav .who { margin-top: 0; }
+	.notify { order: 5; }
 	.status-line .hide-sm { display: none; }
 }

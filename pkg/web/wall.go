@@ -103,6 +103,8 @@ func wallPage(c *gin.Context, extra gin.H) {
 	for k, v := range extra {
 		h[k] = v
 	}
+	all, _ := h["all"].(bool)
+	h["meta"] = metaFor("feed", h["path"].(string), all)
 	c.HTML(http.StatusOK, "wall.html", h)
 }
 

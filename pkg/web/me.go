@@ -85,6 +85,7 @@ func UserBookmarks(c *gin.Context) {
 	c.HTML(http.StatusOK, "me.html", gin.H{
 		"user": user,
 		"me":   view,
+		"meta": metaFor("me", "", false),
 	})
 }
 

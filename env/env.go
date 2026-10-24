@@ -16,6 +16,12 @@ var (
 	DISCORD_WEBHOOK_URL  string
 	SESSION_KEY          string
 
+	// Web Push (VAPID) keys, generated with `gophre vapid`. Push is disabled
+	// when they are empty. VAPID_SUBJECT is a mailto: or https: contact URL.
+	VAPID_PUBLIC_KEY  string
+	VAPID_PRIVATE_KEY string
+	VAPID_SUBJECT     string
+
 	// LOCAL_IPV4 optionally pins outbound connections to one local IPv4
 	// address. Leave empty to let the kernel pick the source address.
 	LOCAL_IPV4 string
@@ -30,6 +36,12 @@ func init() {
 	DISCORD_WEBHOOK_URL = lookup("DISCORD_WEBHOOK_URL", fileVars)
 	SESSION_KEY = lookup("SESSION_KEY", fileVars)
 	LOCAL_IPV4 = lookup("LOCAL_IPV4", fileVars)
+	VAPID_PUBLIC_KEY = lookup("VAPID_PUBLIC_KEY", fileVars)
+	VAPID_PRIVATE_KEY = lookup("VAPID_PRIVATE_KEY", fileVars)
+	VAPID_SUBJECT = lookup("VAPID_SUBJECT", fileVars)
+	if VAPID_SUBJECT == "" {
+		VAPID_SUBJECT = "https://goph.re"
+	}
 }
 
 // lookup returns the value of key from the process environment, falling back

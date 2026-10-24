@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- OpenGraph card template (1200x630). Rendered by tools/og/render.sh: og.html?v=<variant> -->
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="../../assets/css/site.css" rel="stylesheet">
+<style>
+	html, body { width: 1200px; height: 630px; overflow: hidden; }
+	body { position: relative; }
+	#backdrop { opacity: 1 !important; transition: none !important; }
+	.scrim { position: absolute; inset: 0; background:
+		linear-gradient(90deg, rgba(8,16,25,.94) 0%, rgba(8,16,25,.78) 42%, rgba(8,16,25,.15) 75%, rgba(8,16,25,.05)),
+		linear-gradient(0deg, rgba(8,16,25,.85), rgba(8,16,25,0) 35%); }
+	.card { position: absolute; inset: 0; padding: 56px 64px; display: flex; flex-direction: column; }
+	.top { display: flex; align-items: center; gap: 16px; font: 700 22px var(--mono); color: var(--fg-2); letter-spacing: .02em; }
+	.top img { width: 64px; height: 64px; border-radius: 14px; box-shadow: 0 10px 40px rgba(3,213,211,.25); }
+	.top b { color: #fff; }
+	.top span { color: var(--dim); font-weight: 400; }
+	.kicker { margin-top: auto; font: 700 18px var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--coral); }
+	h1 { margin: 10px 0 0; font: 800 104px/0.92 var(--sans); letter-spacing: -.025em; color: #fff; max-width: 820px; }
+	h1 i { font-style: normal; color: var(--coral); }
+	h1.sm { font-size: 84px; }
+	p.sub { margin: 18px 0 0; font: 300 30px/1.3 var(--sans); color: var(--fg-2); max-width: 720px; }
+	.chips { display: flex; gap: 10px; margin-top: 34px; font: 700 15px var(--mono); text-transform: uppercase; letter-spacing: .08em; }
+	.chips span { padding: 7px 13px; border-radius: 999px; background: rgba(8,16,25,.7); border: 1px solid var(--line); }
+	body.has-bars p.sub { max-width: 600px; }
+	.bars { position: absolute; right: 64px; bottom: 64px; display: flex; align-items: flex-end; gap: 6px; height: 190px; }
+	.bars i { width: 16px; border-radius: 3px 3px 0 0; display: flex; flex-direction: column; overflow: hidden; }
+	.bars i::before { content: ""; background: var(--cyan); flex: 0 0 var(--o); }
+	.bars i::after { content: ""; background: var(--wine); flex: 1; }
+	.term { position: absolute; right: 56px; top: 150px; width: 470px; padding: 18px 20px; border-radius: 10px;
+		font: 400 15px/1.55 var(--mono); color: var(--fg); background: rgba(8,16,25,.82); border: 1px solid var(--line-hi);
+		box-shadow: 0 30px 80px rgba(0,0,0,.5); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+	.term .u { color: #3fd9a8; } .term .p { color: var(--teal); } .term .d { color: var(--dim); } .term .k { color: var(--cyan); font-weight: 700; }
+	.term .t { color: #fff; font-weight: 700; } .term .bar { color: var(--teal); }
+	.url { position: absolute; right: 64px; top: 64px; font: 700 20px var(--mono); color: var(--fg-2); }
+	.url b { color: var(--coral); }
+</style>
+</head>
+<body data-backdrop="0.82" data-backdrop-focus="0.56 0.4" data-backdrop-image="../../assets/gfx/crowd.jpg">
+<div class="scrim"></div>
+<div class="card" id="card"></div>
+<script>
+const V = {
+	feed: { kicker: "the news feed for go programmers", title: 'GOPH<i>.</i>RE', sub: "Releases, experts, blogs, podcasts and forums — one infinite wall, updated every hour.", chips: ["official", "experts", "blogs", "podcasts", "forums"] },
+	pulse: { kicker: "goph.re/pulse", title: 'The pulse<br>of Go<i>.</i>', sub: "What's rising this week, what's worth reading, which sources are alive.", bars: true },
+	me: { kicker: "goph.re/me", title: 'Your Go<br>terminal<i>.</i>', sub: "Bookmarks, vim keys, neofetch and a tail of your favourite sources.", term: true },
+	golang: { kicker: "goph.re/golang", title: 'Official Go<i>.</i>', sub: "The Go blog, release notes and every go1.x.y tag as it ships.", chips: ["go.dev", "releases", "golang weekly"] },
+	experts: { kicker: "goph.re/experts", title: 'Go experts<i>.</i>', sub: "Russ Cox, Filippo Valsorda, Three Dots Labs, Alex Edwards and more.", chips: ["deep dives", "crypto", "performance"] },
+	blogs: { kicker: "goph.re/blogs", title: 'Go blogs<i>.</i>', sub: "Independent writing about Go, from tutorials to war stories.", chips: ["tutorials", "essays", "til"] },
+	podcasts: { kicker: "goph.re/podcasts", title: 'Go podcasts<i>.</i>', sub: "Cup o' Go, Go Podcast() and the archive of Go Time.", chips: ["weekly news", "interviews"] },
+	community: { kicker: "goph.re/community", title: 'Go community<i>.</i>', sub: "Lobsters, Hacker News and GopherCon talks about Go.", chips: ["lobsters", "hacker news", "gophercon"] },
+	forums: { kicker: "goph.re/forums", title: 'Go forums<i>.</i>', sub: "r/golang and the Golang Bridge forum, live.", chips: ["reddit", "golang bridge"] },
+	all: { kicker: "goph.re/all", title: 'Everything<br>Go<i>.</i>', sub: "Every article from every source, unfiltered.", chips: ["33 sources", "31k+ articles"] },
+};
+const v = V[new URLSearchParams(location.search).get("v") || "feed"];
+const card = document.getElementById("card");
+card.innerHTML = `
+	<div class="top"><img src="../../assets/gfx/icons/icon.svg" alt=""><b>goph.re</b><span>· go news</span></div>
+	<div class="kicker">${v.kicker}</div>
+	<h1 class="${v.title.length > 30 ? "sm" : ""}">${v.title}</h1>
+	<p class="sub">${v.sub}</p>
+	${v.chips ? `<div class="chips">${v.chips.map(c => `<span class="p-${c === "forums" ? "forums" : c === "official" ? "golang" : c === "experts" ? "experts" : c === "blogs" ? "blogs" : c === "podcasts" ? "podcasts" : "community"}">${c}</span>`).join("")}</div>` : ""}`;
+if (v.bars) {
+	document.body.classList.add("has-bars");
+	const bars = document.createElement("div"); bars.className = "bars";
+	[38,52,44,61,35,70,48,57,90,64,52,76,58,81,66,72,95,60].forEach((h, i) => {
+		const b = document.createElement("i"); b.style.height = h + "%"; b.style.setProperty("--o", (12 + (i * 37) % 30) + "%"); bars.append(b);
+	});
+	document.body.append(bars);
+}
+if (v.term) {
+	const t = document.createElement("pre"); t.className = "term";
+	t.innerHTML = `<span class="u">gopher@goph.re</span>:<span class="p">~</span>$ neofetch
+<span class="k">OS:</span> goph.re GNU/Linux x86_64
+<span class="k">Kernel:</span> go1.27.0
+<span class="k">Packages:</span> 124 (bookmarks)
+<span class="k">Streak:</span> 12 days
+
+<span class="u">gopher@goph.re</span>:<span class="p">~</span>$ du -h ~/bookmarks/*
+ 42 <span class="bar">[||||||||||||||||    ]</span> <span class="t">experts</span>
+ 31 <span class="bar">[||||||||||||        ]</span> <span class="t">golang</span>
+ 18 <span class="bar">[|||||||             ]</span> <span class="t">blogs</span>
+<span class="u">gopher@goph.re</span>:<span class="p">~</span>$ <span class="t">▌</span>`;
+	document.body.append(t);
+}
+</script>
+<script src="../../assets/js/backdrop.js"></script>
+</body>
+</html>

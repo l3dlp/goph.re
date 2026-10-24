@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="gophre">
 <head>
-	<title>{{ or .user.NickName .user.Name }}@goph.re: ~</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="robots" content="noindex,notranslate" />
-	<meta name="theme-color" content="#081019" />
+	{{ template "head" . }}
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 	<link href="/css/me.css" rel="stylesheet" type="text/css" />
@@ -126,6 +122,7 @@
 		<a class="win" href="/pulse">1:pulse</a>
 		<a class="win active" href="/me">2:me*</a>
 		<span class="spacer"></span>
+		<button type="button" class="install" data-install hidden>⇩ install</button>
 		<span class="keys"><kbd>?</kbd> help</span>
 		<span class="theme" id="themeName">gophre</span>
 		<span class="host">{{ $nick }}@goph.re</span>
@@ -149,5 +146,6 @@
 
 <script src="/js/backdrop.js"></script>
 <script src="/js/me.js"></script>
+<script src="/js/pwa.js"></script>
 </body>
 </html>

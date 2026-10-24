@@ -210,3 +210,5 @@ body { background: transparent; }
 .status .exit { background: var(--red); color: var(--bg); font-weight: 700; align-self: stretch; display: flex; align-items: center; gap: .6ch; }
 .status .exit:hover { background: var(--white); text-decoration: none; }
 .status .exit kbd { color: inherit; opacity: .7; }
+.status .install { all: unset; cursor: pointer; padding: 0 1ch; font-weight: 700; }
+.status .install[hidden] { display: none; }

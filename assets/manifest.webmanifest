@@ -1,0 +1,35 @@
+{
+  "id": "/",
+  "name": "goph.re — the news feed for Go programmers",
+  "short_name": "goph.re",
+  "description": "Go releases, experts, blogs, podcasts and forums in one infinite wall, updated every hour.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#081019",
+  "theme_color": "#081019",
+  "categories": ["news", "developer", "education"],
+  "launch_handler": { "client_mode": "focus-existing" },
+  "icons": [
+    { "src": "/gfx/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/gfx/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/gfx/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/gfx/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/gfx/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/gfx/icons/badge-96.png", "sizes": "96x96", "type": "image/png", "purpose": "monochrome" }
+  ],
+  "shortcuts": [
+    { "name": "Pulse", "short_name": "Pulse", "description": "What's rising in Go this week", "url": "/pulse", "icons": [{ "src": "/gfx/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Official Go", "short_name": "Official", "description": "go.dev, releases and Golang Weekly", "url": "/golang", "icons": [{ "src": "/gfx/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Experts", "short_name": "Experts", "description": "Russ Cox, Filippo Valsorda and friends", "url": "/experts", "icons": [{ "src": "/gfx/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "My terminal", "short_name": "Me", "description": "Your bookmarks in a terminal", "url": "/me", "icons": [{ "src": "/gfx/icons/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "screenshots": [
+    { "src": "/gfx/screens/feed-wide.jpg", "sizes": "1600x1000", "type": "image/jpeg", "form_factor": "wide", "label": "The infinite Go news wall" },
+    { "src": "/gfx/screens/pulse-wide.jpg", "sizes": "1600x1000", "type": "image/jpeg", "form_factor": "wide", "label": "The pulse of Go: trends and source health" },
+    { "src": "/gfx/screens/feed-narrow.jpg", "sizes": "420x900", "type": "image/jpeg", "form_factor": "narrow", "label": "goph.re on your phone" }
+  ]
+}

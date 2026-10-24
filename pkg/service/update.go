@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"gophre/cmd/data"
 	"gophre/env"
+	"gophre/pkg/push"
 	"html"
 	"log"
 	"net/http"
@@ -31,6 +32,9 @@ const (
 	// notifyMaxAge limits Discord notifications to recently published articles so a
 	// backfill of old feed items does not flood the channel.
 	notifyMaxAge = 7 * 24 * time.Hour
+
+	// pushMaxAge is tighter: a push should only ever announce genuinely new articles.
+	pushMaxAge = 48 * time.Hour
 )
 
 // discordStripHTML removes all markup from feed descriptions before posting.
@@ -158,9 +162,10 @@ func Update() {
 	}
 
 	// Récupérer les articles de chaque source RSS
+	var fresh []data.Article
 	for _, src := range sources {
 		fmt.Printf("%s:\n", src.Name)
-		readSource(src)
+		fresh = append(fresh, readSource(src)...)
 		/*
 			feed, err := fp.ParseURL(src.URL)
 			if err != nil {
@@ -181,6 +186,9 @@ func Update() {
 			}
 		*/
 	}
+
+	// One grouped Web Push notification per subscriber for this run.
+	push.NotifyNew(fresh)
 
 	/*
 		// Trier les articles par date
@@ -244,7 +252,9 @@ func itemDate(item *gofeed.Item, layouts []string) time.Time {
 	return parsed
 }
 
-func readSource(source data.Rss) {
+// readSource merges a feed's new items into rss_posts.json and returns the ones
+// published recently enough to notify about.
+func readSource(source data.Rss) (fresh []data.Article) {
 	fp := gofeed.NewParser()
 	feed, err := fp.ParseURL(source.URL)
 	if err != nil {
@@ -304,6 +314,9 @@ func readSource(source data.Rss) {
 			if !published.IsZero() && time.Since(published) <= notifyMaxAge {
 				notifyDiscord(newArticle)
 			}
+			if !published.IsZero() && time.Since(published) <= pushMaxAge {
+				fresh = append(fresh, newArticle)
+			}
 		}
 	}
 
@@ -317,13 +330,14 @@ func readSource(source data.Rss) {
 		updatedFile, err := json.MarshalIndent(allArticles, "", "  ")
 		if err != nil {
 			log.Printf("Error encoding JSON: %v\n", err)
-			return
+			return nil
 		}
 
 		err = os.WriteFile(env.POSTS, updatedFile, 0644)
 		if err != nil {
 			log.Printf("Error writing file: %v\n", err)
-			return
+			return nil
 		}
 	}
+	return fresh
 }

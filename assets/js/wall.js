@@ -55,10 +55,13 @@
 
 		const isNew = lastSeen && article.date > lastSeen;
 		if (!dividerPlaced && !isNew && mode === "feed" && page === 1) {
-			const since = el("div", "since mono");
-			since.id = "since";
-			since.append(el("span", "", fresh ? `↑ ${fresh} new since your last visit · you're caught up` : "nothing new since your last visit"));
-			feed.append(since);
+			// Only worth a line when something actually arrived since last time.
+			if (fresh > 0) {
+				const since = el("div", "since mono");
+				since.id = "since";
+				since.append(el("span", "", `↑ ${fresh} new since your last visit · you're caught up`));
+				feed.append(since);
+			}
 			dividerPlaced = true;
 		}
 

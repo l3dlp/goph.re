@@ -156,7 +156,7 @@
 		draw(performance.now());
 		if (!still) requestAnimationFrame(loop);
 	};
-	img.src = body.dataset.backdropImage || "/gfx/crowd.png";
+	img.src = body.dataset.backdropImage || "/gfx/crowd.jpg";
 
 	// ~30 fps animation, paused when hidden; a single frame for reduced motion.
 	const still = matchMedia("(prefers-reduced-motion: reduce)").matches;

@@ -20,6 +20,12 @@
 		<hr/>
 		<a href="/all" target="_self" class="{{ if .all }}on{{ end }}"><kbd>9</kbd>Everything</a>
 	</nav>
+	<div class="notify" id="notify" hidden>
+		<p class="label mono">notifications</p>
+		<label><input type="checkbox" value="official" /><span>Go releases &amp; official news</span></label>
+		<label><input type="checkbox" value="signal" /><span>everything outside the forums</span></label>
+		<p class="hint mono" id="notifyHint" hidden></p>
+	</div>
 	<div class="who">
 		{{ if .user.ID }}
 		<a href="/me" target="_self">~{{ or .user.NickName .user.Name }}</a> · <a href="/auth/logout" target="_self">logout</a>
@@ -39,7 +45,48 @@
 	<a class="win" href="/me" target="_self">2:me</a>
 	<span class="spacer"></span>
 	<span class="count" id="newCount"></span>
+	<button type="button" class="install" data-install hidden>⇩ install</button>
 	<button type="button" class="hide-sm" data-help>? help</button>
 	<span class="clock" id="clock"></span>
 </footer>
+{{ end }}
+
+{{ define "head" }}
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+	<title>{{ .meta.Title }}</title>
+	<meta name="description" content="{{ .meta.Description }}" />
+	<meta name="robots" content="noindex,notranslate" />
+	<link rel="canonical" href="https://goph.re{{ .meta.Canonical }}" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="goph.re" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="{{ .meta.Title }}" />
+	<meta property="og:description" content="{{ .meta.Description }}" />
+	<meta property="og:url" content="https://goph.re{{ .meta.Canonical }}" />
+	<meta property="og:image" content="{{ .meta.Image }}" />
+	<meta property="og:image:secure_url" content="{{ .meta.Image }}" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="{{ .meta.ImageAlt }}" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{{ .meta.Title }}" />
+	<meta name="twitter:description" content="{{ .meta.Description }}" />
+	<meta name="twitter:image" content="{{ .meta.Image }}" />
+	<meta name="twitter:image:alt" content="{{ .meta.ImageAlt }}" />
+
+	<meta name="theme-color" content="#081019" />
+	<meta name="color-scheme" content="dark" />
+	<meta name="application-name" content="goph.re" />
+	<meta name="apple-mobile-web-app-title" content="goph.re" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+	<link rel="icon" href="/gfx/icons/icon.svg" type="image/svg+xml" />
+	<link rel="apple-touch-icon" href="/gfx/icons/apple-touch-icon.png" />
+	<link rel="manifest" href="/manifest.webmanifest" />
 {{ end }}

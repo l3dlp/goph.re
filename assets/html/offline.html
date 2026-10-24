@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{ template "head" . }}
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+	<link href="/css/feed.css" rel="stylesheet" type="text/css" />
+	<style>
+		.offline { margin-left: 300px; max-width: 900px; padding: 48px 40px 80px 8px; }
+		.offline .prompt { font: 400 14px/1.6 var(--mono); color: var(--fg-2); margin: 0 0 6px; }
+		.offline .prompt b { color: #3fd9a8; }
+		.offline .err { color: var(--coral); }
+		.offline h1 { font: 800 52px/1 var(--sans); margin: 26px 0 10px; color: #fff; }
+		.offline h1 i { font-style: normal; color: var(--coral); }
+		.offline p.sub { color: var(--fg-2); font-size: 18px; margin: 0 0 26px; }
+		.offline button { all: unset; cursor: pointer; font: 700 13px var(--mono); padding: 9px 16px; border-radius: 6px; background: var(--cyan); color: var(--ink); }
+		@media (max-width: 960px) { .offline { margin: 0; padding: 24px 16px 60px; } }
+	</style>
+</head>
+<body data-backdrop="0.45">
+	<main class="offline">
+		<p class="prompt"><b>gopher@goph.re</b>:~$ curl -s https://goph.re/feed</p>
+		<p class="prompt err">curl: (6) Could not resolve host: goph.re</p>
+		<h1>You're offline<i>.</i></h1>
+		<p class="sub">Here's the last feed you loaded. goph.re reconnects on its own.</p>
+		<button type="button" onclick="location.reload()">retry ↻</button>
+		<div class="feed" id="cached" style="margin:24px 0 0;padding:0;max-width:none"></div>
+	</main>
+	<script>
+		(async () => {
+			const out = document.getElementById("cached");
+			try {
+				const keys = await caches.keys();
+				const name = keys.find(k => k.endsWith("-data"));
+				if (!name) return;
+				const cache = await caches.open(name);
+				const requests = (await cache.keys()).filter(r => new URL(r.url).pathname === "/feed");
+				const seen = new Set();
+				for (const req of requests) {
+					const articles = await (await cache.match(req)).json();
+					for (const a of articles) {
+						if (seen.has(a.id)) continue;
+						seen.add(a.id);
+						const item = document.createElement("article");
+						item.className = "item row";
+						const meta = document.createElement("div");
+						meta.className = "meta mono";
+						const src = document.createElement("span");
+						src.className = "src p-" + (a.source?.path || "");
+						src.textContent = a.source?.name || "";
+						meta.append(src);
+						const h = document.createElement("h3");
+						const link = document.createElement("a");
+						link.href = a.url; link.textContent = a.name; link.target = "_blank"; link.rel = "noopener";
+						h.append(link);
+						item.append(meta, h);
+						out.append(item);
+					}
+				}
+			} catch (e) {}
+			addEventListener("online", () => location.reload());
+		})();
+	</script>
+	<script src="/js/backdrop.js"></script>
+</body>
+</html>

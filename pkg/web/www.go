@@ -97,6 +97,7 @@ func Serve(port ...int) {
 	}
 
 	r.LoadHTMLGlob(env.PATH + "assets/html/*")
+	SetupPWA(r)
 	r.Static("/css", env.PATH+"assets/css")
 	r.Static("/gfx", env.PATH+"assets/gfx")
 	r.Static("/js", env.PATH+"assets/js")
