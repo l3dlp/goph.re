@@ -1,5 +1,31 @@
 [
   {
+    "id": "86b0771892300fbaf0a8d1d6c8c565b6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Arch-specific SIMD in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xe3n0g/archspecific_simd_in_go/",
+    "resume": "",
+    "date": "2026-10-24T08:51:51Z",
+    "vote": 0
+  },
+  {
+    "id": "62cff867d73ef3d659a5941e07b138f6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "A Resource Leak and Concurrency Static Analyzer for Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xdz00s/a_resource_leak_and_concurrency_static_analyzer/",
+    "resume": "",
+    "date": "2026-10-24T04:16:10Z",
+    "vote": 0
+  },
+  {
     "id": "b83243f0c8f40b490a32fdd8c4dce010",
     "source": {
       "path": "forums",
