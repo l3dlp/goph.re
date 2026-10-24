@@ -102,30 +102,13 @@ func Serve(port ...int) {
 	r.Static("/js", env.PATH+"assets/js")
 
 	// Website
-	r.GET("/", func(c *gin.Context) {
-		user, _ := GetCurrentUser(c)
-		c.HTML(http.StatusOK, "wall.html", gin.H{
-			"user": user,
-		})
-	})
+	r.GET("/", func(c *gin.Context) { wallPage(c, nil) })
 
-	r.GET("/all", func(c *gin.Context) {
-		user, _ := GetCurrentUser(c)
-		c.HTML(http.StatusOK, "wall.html", gin.H{
-			"all":  true,
-			"user": user,
-		})
-	})
+	r.GET("/all", func(c *gin.Context) { wallPage(c, gin.H{"all": true}) })
 
 	r.GET("/me", UserBookmarks)
 
-	r.GET("/top", func(c *gin.Context) {
-		user, _ := GetCurrentUser(c)
-		c.HTML(http.StatusOK, "wall.html", gin.H{
-			"top":  true,
-			"user": user,
-		})
-	})
+	r.GET("/top", func(c *gin.Context) { wallPage(c, gin.H{"top": true}) })
 
 	r.GET("/pulse", PulsePage)
 
@@ -182,12 +165,7 @@ func Feed(c *gin.Context) {
 // It takes the path parameter from the URL, and passes it to the Topic function in the rss package.
 // The Topic function returns a slice of articles, which is then passed to the search.html template
 func Topic(c *gin.Context) {
-	path := c.Param("path")
-	user, _ := GetCurrentUser(c)
-	c.HTML(http.StatusOK, "wall.html", gin.H{
-		"path": path,
-		"user": user,
-	})
+	wallPage(c, gin.H{"path": c.Param("path")})
 }
 
 // GetRssFeedsEditorHandler handles GET requests to /admin/rss

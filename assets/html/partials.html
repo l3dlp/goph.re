@@ -1,0 +1,45 @@
+{{ define "sidebar" }}
+<aside class="side-nav">
+	<a class="brand" href="/" target="_self">
+		<b>GOPH<i>.</i>RE</b>
+		<small>{{ if .path }}~/{{ .path }}{{ else if .all }}~/all — unfiltered{{ else if eq .page "pulse" }}the pulse of go{{ else }}the news feed for go programmers{{ end }}</small>
+	</a>
+	{{ if ne .page "pulse" }}
+	<label class="search"><span>/</span><input id="searchInput" type="search" placeholder="search articles" autocomplete="off" spellcheck="false" /></label>
+	{{ end }}
+	<nav>
+		<a href="/" target="_self" class="{{ if eq .page "feed" }}{{ if not .path }}{{ if not .all }}on{{ end }}{{ end }}{{ end }}"><kbd>1</kbd>Live feed</a>
+		<a href="/pulse" target="_self" class="{{ if eq .page "pulse" }}on{{ end }}"><kbd>2</kbd>Pulse</a>
+		<hr/>
+		<a href="/golang" target="_self" class="{{ if eq .path "golang" }}on{{ end }}"><kbd>3</kbd>Official Go</a>
+		<a href="/experts" target="_self" class="{{ if eq .path "experts" }}on{{ end }}"><kbd>4</kbd>Experts</a>
+		<a href="/blogs" target="_self" class="{{ if eq .path "blogs" }}on{{ end }}"><kbd>5</kbd>Blogs</a>
+		<a href="/podcasts" target="_self" class="{{ if eq .path "podcasts" }}on{{ end }}"><kbd>6</kbd>Podcasts</a>
+		<a href="/community" target="_self" class="{{ if eq .path "community" }}on{{ end }}"><kbd>7</kbd>Community</a>
+		<a href="/forums" target="_self" class="{{ if eq .path "forums" }}on{{ end }}"><kbd>8</kbd>Forums</a>
+		<hr/>
+		<a href="/all" target="_self" class="{{ if .all }}on{{ end }}"><kbd>9</kbd>Everything</a>
+	</nav>
+	<div class="who">
+		{{ if .user.ID }}
+		<a href="/me" target="_self">~{{ or .user.NickName .user.Name }}</a> · <a href="/auth/logout" target="_self">logout</a>
+		{{ else }}
+		<a href="/auth/github" target="_self">login with github</a> to keep articles
+		{{ end }}
+		<br/><a href="https://github.com/gophre/webapp" target="_blank" rel="noopener">source on github</a>
+	</div>
+</aside>
+{{ end }}
+
+{{ define "status" }}
+<footer class="status-line">
+	<span class="session">[goph.re]</span>
+	<a class="win {{ if eq .page "feed" }}on{{ end }}" href="/" target="_self">0:feed{{ if eq .page "feed" }}*{{ end }}</a>
+	<a class="win {{ if eq .page "pulse" }}on{{ end }}" href="/pulse" target="_self">1:pulse{{ if eq .page "pulse" }}*{{ end }}</a>
+	<a class="win" href="/me" target="_self">2:me</a>
+	<span class="spacer"></span>
+	<span class="count" id="newCount"></span>
+	<button type="button" class="hide-sm" data-help>? help</button>
+	<span class="clock" id="clock"></span>
+</footer>
+{{ end }}

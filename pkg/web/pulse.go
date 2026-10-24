@@ -85,6 +85,8 @@ func PulsePage(c *gin.Context) {
 	c.HTML(http.StatusOK, "pulse.html", gin.H{
 		"pulse": pulse,
 		"user":  user,
+		"page":  "pulse",
+		"path":  "",
 	})
 }
 

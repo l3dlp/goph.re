@@ -1,58 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>GOPH.RE</title>
+	<title>GOPH.RE{{ if .path }} · {{ .path }}{{ else if .all }} · all{{ end }}</title>
 	<meta charset="UTF-8" />
-	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
-	<meta name="description" value="a source of news and information related to the Go programming language" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="description" content="The news feed for Go programmers: official releases, experts, blogs, podcasts and forums in one infinite wall." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="noindex,notranslate" />
-	<meta name="msapplication-tap-highlight" content="no" />
-	<meta name="mobile-web-app-capable" content="yes" />
-	<link rel="apple-touch-startup-image" href="/gfx/crowd.png" />
+	<meta name="theme-color" content="#081019" />
 	<meta name="apple-mobile-web-app-title" content="GOPH.RE" />
 	<meta name="mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="theme-color" content="#000000" />
-
-	<link href="/css/wall.css" rel="stylesheet" type="text/css" />
-	{{ if .all }}
-	<link href="/css/all.css" rel="stylesheet" type="text/css" />
-	{{ end }}
-	<base target="_blank" />
+	<link rel="apple-touch-startup-image" href="/gfx/crowd.png" />
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+	<link href="/css/feed.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-	<input type="text" id="searchInput" name="q" onkeyup="liveSearch(true)" placeholder="Search for articles...">
-	<journal>
-		GOPH.RE
-		<small>{{ if .path }}<uppercase>Newsfeed from {{ .path }}</uppercase>{{ else if .all }}Unfiltered #Go News-feed{{ else }}Golang-related Newsfeed{{ end }}</small>
-		<menu>
-			<a href="/" target="_self">Live Feed</a>
-			<a href="/pulse" target="_self">Pulse</a>
-			<a id="allPostsLink" class="hidden" href="/all" target="_self">See all posts</a>
-			<hr/>
-			<a href="/forums" target="_self">Forums</a>
-			<a href="/blogs" target="_self">Blogs</a>
-			<a href="/golang" target="_self">"Official" Go</a>
-			<hr/>
-			{{ if .user }}
-				<a href="/me" target="_self">My Profile ({{ .user.Name }})</a>
-				<a href="/auth/logout" target="_self">Logout</a>
-			{{ else }}
-				<a href="/auth/github" target="_self">Login with GitHub</a>
-			{{ end }}
-			<hr/>
-			<a class="minilink" href="https://github.com/gophre/webapp" target="_self">Contribute on GitHub</a>
-		</menu>
-	</journal>
-	<div id="articlesContainer">
+<body class="{{ if .all }}show-all{{ end }}" data-backdrop="0.5" data-backdrop-focus="0.5 0.42">
+	{{ template "sidebar" . }}
+
+	<main class="feed" id="feed" aria-live="polite"></main>
+	<div class="sentinel" id="sentinel"><button type="button" class="more mono" id="more">load more</button></div>
+
+	{{ template "status" . }}
+
+	<div class="help-pop" id="help" hidden>
+		<pre class="glass">
+ <b>goph.re — keys</b>
+
+   <kbd>j</kbd> <kbd>k</kbd>   next / previous         <kbd>o</kbd> <kbd>↵</kbd>  open article
+   <kbd>s</kbd>       keep (bookmark)         <kbd>x</kbd>      skip, never show again
+   <kbd>e</kbd>       expand summary          <kbd>n</kbd>      jump to where you left off
+   <kbd>/</kbd>       search                  <kbd>g</kbd>      back to top
+   <kbd>1</kbd>–<kbd>9</kbd>     sections                <kbd>m</kbd>      your terminal (/me)
+
+ <span style="color:var(--dim)">press any key to close</span></pre>
 	</div>
-	<button class="more" onclick="loadMoreArticles()">Load next</button>
-<script>
-const path = "{{ .path }}";
-const pageSize = 50;
-</script>
-<script src="/js/wall.js"></script>
+
+	<script>
+		const FEED = {
+			path: {{ .path }},
+			all: {{ if .all }}true{{ else }}false{{ end }},
+			loggedIn: {{ if .user.ID }}true{{ else }}false{{ end }},
+			votes: {{ tojson .votes }},
+		};
+	</script>
+	<script src="/js/backdrop.js"></script>
+	<script src="/js/site.js"></script>
+	<script src="/js/wall.js"></script>
 </body>
 </html>

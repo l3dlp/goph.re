@@ -3,7 +3,7 @@
 	const $ = (s, el = document) => el.querySelector(s);
 	const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 	const panes = $$(".pane");
-	const themes = ["gruvbox", "tokyonight", "nord"];
+	const themes = ["gophre", "gruvbox", "tokyonight", "nord"];
 	const store = {
 		get(k) { try { return localStorage.getItem(k) } catch (e) { return null } },
 		set(k, v) { try { localStorage.setItem(k, v) } catch (e) {} },
@@ -125,7 +125,8 @@
 		themeName.textContent = t;
 		store.set("me-theme", t);
 		const meta = $('meta[name="theme-color"]');
-		if (meta) meta.content = getComputedStyle(document.body).backgroundColor;
+		if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+		document.dispatchEvent(new Event("themechange"));
 	}
 	const cycleTheme = () => setTheme(themes[(themes.indexOf(document.documentElement.dataset.theme) + 1) % themes.length]);
 	themeName.textContent = document.documentElement.dataset.theme;

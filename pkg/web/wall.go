@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"gophre/cmd/data"
 	"gophre/env"
+	"log"
 	"net/http"
 	"os"
 	"sort"
@@ -92,4 +93,43 @@ func TopArticles(c *gin.Context) {
 		"title":    "Top Voted Articles",
 		"isEmpty":  len(goodArticles) == 0,
 	})
+}
+
+// wallPage renders wall.html with the chrome data every page needs and, for a
+// logged-in user, their votes so the feed shows kept/skipped state on any device.
+func wallPage(c *gin.Context, extra gin.H) {
+	user, _ := GetCurrentUser(c)
+	h := gin.H{"user": user, "page": "feed", "path": "", "votes": userVotes(user.ID)}
+	for k, v := range extra {
+		h[k] = v
+	}
+	c.HTML(http.StatusOK, "wall.html", h)
+}
+
+// userVotes maps article IDs to "GOOD" or "BAD" for one user, from votes.json.
+func userVotes(userID string) map[string]string {
+	votes := map[string]string{}
+	if userID == "" {
+		return votes
+	}
+	file, err := os.ReadFile(env.VOTES)
+	if err != nil {
+		return votes
+	}
+	var all []data.Vote
+	if err := json.Unmarshal(file, &all); err != nil {
+		log.Printf("Error decoding votes: %v.", err)
+		return votes
+	}
+	for _, vote := range all {
+		if vote.UserID != userID {
+			continue
+		}
+		if vote.Value > 0 {
+			votes[vote.ArticleID] = "GOOD"
+		} else {
+			votes[vote.ArticleID] = "BAD"
+		}
+	}
+	return votes
 }

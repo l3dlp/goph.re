@@ -1,336 +1,267 @@
-let currentPage = 0;
-let currentDate = "2040-02-02";
-const container = document.getElementById('articlesContainer');
-function sanitizeHTML(html) {
-	const parser = new DOMParser();
-	const doc = parser.parseFromString(html, 'text/html');
-	return doc.body.textContent || '';
-}
+// goph.re infinite wall.
+(() => {
+	const feed = document.getElementById("feed");
+	const sentinel = document.getElementById("sentinel");
+	const moreButton = document.getElementById("more");
+	const search = document.getElementById("searchInput");
+	const newCount = document.getElementById("newCount");
 
-let oldFilter = ""
+	const PAGE_SIZE = 40;
+	const QUALITY = new Set(["golang", "official", "experts", "blogs", "podcasts", "community", "tools", "courses", "examples"]);
+	const store = {
+		get(k) { try { return localStorage.getItem(k) } catch (e) { return null } },
+		set(k, v) { try { localStorage.setItem(k, v) } catch (e) {} },
+	};
 
-let searchTimeout;
-let currentSearchPage = 1;
-const SEARCH_PAGE_SIZE = 30;
+	// Votes: the server's copy wins, localStorage covers anonymous visitors.
+	const voteOf = id => (FEED.votes && FEED.votes[id]) || store.get(`vote_${id}`);
 
-async function liveSearch(fromEvent = false) {
-    const urlParams = new URLSearchParams(window.location.search);
-	const input = document.getElementById('searchInput');
-	let filter = input.value.toLowerCase();
+	// "Since your last visit" only makes sense on the main feed.
+	const trackVisits = !FEED.path && !FEED.all;
+	const lastSeen = trackVisits ? store.get("feed-last-seen") : null;
+	let newest = null, fresh = 0, dividerPlaced = !lastSeen;
 
-	// Clear any existing timeouts
-	if (searchTimeout) {
-		clearTimeout(searchTimeout);
+	let mode = "feed", query = "", page = 0, loading = false, done = false, lastDay = "";
+
+	// Rendering -------------------------------------------------------------
+	const dayLabel = d => {
+		const today = new Date(); today.setHours(0, 0, 0, 0);
+		const that = new Date(d); that.setHours(0, 0, 0, 0);
+		const diff = Math.round((today - that) / 864e5);
+		if (diff === 0) return "today";
+		if (diff === 1) return "yesterday";
+		return d.toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: diff > 300 ? "numeric" : undefined });
+	};
+	const age = d => {
+		const s = (Date.now() - d) / 1000;
+		if (s < 3600) return Math.max(1, Math.round(s / 60)) + "m";
+		if (s < 86400) return Math.round(s / 3600) + "h";
+		if (s < 86400 * 30) return Math.round(s / 86400) + "d";
+		return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+	};
+	const host = url => { try { return new URL(url).hostname.replace(/^www\./, "") } catch (e) { return "" } };
+	const el = (tag, cls, text) => {
+		const e = document.createElement(tag);
+		if (cls) e.className = cls;
+		if (text !== undefined) e.textContent = text;
+		return e;
+	};
+
+	function render(article) {
+		const date = new Date(article.date);
+		const path = article.source?.path || "";
+		const vote = voteOf(article.id);
+		if (vote === "BAD" && !FEED.all && mode === "feed") return;
+
+		const isNew = lastSeen && article.date > lastSeen;
+		if (!dividerPlaced && !isNew && mode === "feed" && page === 1) {
+			const since = el("div", "since mono");
+			since.id = "since";
+			since.append(el("span", "", fresh ? `↑ ${fresh} new since your last visit · you're caught up` : "nothing new since your last visit"));
+			feed.append(since);
+			dividerPlaced = true;
+		}
+
+		const day = dayLabel(date);
+		if (day !== lastDay) {
+			const h = el("h2", "day mono");
+			h.append(el("span", "", day));
+			feed.append(h);
+			lastDay = day;
+		}
+
+		const card = QUALITY.has(path) || (article.resume && path !== "forums");
+		const item = el("article", `item ${card ? "card glass" : "row"} ${vote || ""}`);
+		item.dataset.id = article.id;
+		if (isNew) { item.classList.add("new"); fresh++ }
+
+		const meta = el("div", "meta mono");
+		const src = el("a", `src p-${path}`, article.source?.name || "?");
+		src.href = "/" + path; src.target = "_self";
+		meta.append(src, el("span", "age", age(date)));
+		if (card) meta.append(el("span", "host", host(article.url)));
+		meta.append(el("span", "badge kept", "kept"));
+
+		const title = el("h3");
+		const link = el("a", "", article.name);
+		link.href = article.url; link.target = "_blank"; link.rel = "noopener";
+		title.append(link);
+
+		const acts = el("div", "acts mono");
+		const keep = el("button", "keep"); keep.type = "button"; keep.innerHTML = "keep <kbd>s</kbd>";
+		const skip = el("button", "skip"); skip.type = "button"; skip.innerHTML = "skip <kbd>x</kbd>";
+		keep.addEventListener("click", () => vote(item, "GOOD"));
+		skip.addEventListener("click", () => vote(item, "BAD"));
+		acts.append(keep, skip);
+
+		item.append(meta, title);
+		if (article.resume && card) {
+			const resume = el("div", "resume");
+			resume.innerHTML = article.resume; // sanitized server-side with bluemonday
+			resume.querySelectorAll("a").forEach(a => { a.target = "_blank"; a.rel = "noopener" });
+			item.append(resume);
+			requestAnimationFrame(() => {
+				if (resume.scrollHeight > resume.clientHeight + 8) {
+					const more = el("button", "expand mono", "more ↓");
+					more.type = "button";
+					more.addEventListener("click", () => toggle(item));
+					item.insertBefore(more, acts.parentNode === item ? acts : null);
+					item.classList.add("clamped");
+				}
+			});
+		}
+		item.append(acts);
+		item.addEventListener("mouseenter", () => { if (!keyboardMode) select(item, false) });
+		feed.append(item);
 	}
 
-	if (filter == "" && filter==oldFilter) {
-		if (urlParams.get('q')!="") {
-			input.value = urlParams.get('q');
-			filter = urlParams.get('q');
+	function toggle(item) {
+		if (!item.classList.contains("clamped") && !item.classList.contains("open")) return;
+		const open = item.classList.toggle("open");
+		item.classList.toggle("clamped", !open);
+		const b = item.querySelector(".expand");
+		if (b) b.textContent = open ? "less ↑" : "more ↓";
+	}
+
+	// Loading ---------------------------------------------------------------
+	async function load() {
+		if (loading || done) return;
+		loading = true;
+		sentinel.classList.add("busy");
+		page++;
+		const url = mode === "search"
+			? `/search?q=${encodeURIComponent(query)}&page=${page}&size=30`
+			: `/feed?path=${encodeURIComponent(FEED.path)}&page=${page}&size=${PAGE_SIZE}`;
+		try {
+			const res = await fetch(url);
+			const articles = await res.json();
+			if (!articles || articles.length === 0) {
+				done = true;
+				if (page === 1) feed.append(el("p", "empty mono", mode === "search" ? `grep: no match for "${query}"` : "nothing here yet."));
+			} else {
+				if (page === 1 && mode === "feed") newest = articles[0].date;
+				articles.forEach(render);
+				if (page === 1 && mode === "feed" && trackVisits) announce();
+			}
+		} catch (e) {
+			page--;
+			console.error("Error loading articles:", e);
+		}
+		loading = false;
+		sentinel.classList.remove("busy");
+		sentinel.classList.toggle("done", done);
+	}
+
+	function announce() {
+		if (!lastSeen) { store.set("feed-last-seen", newest); return }
+		if (fresh > 0) {
+			newCount.textContent = `${fresh} new`;
+			document.title = `(${fresh}) ${document.title}`;
+		}
+		// The visit counts once the reader has actually been here a little while.
+		const save = () => newest && store.set("feed-last-seen", newest);
+		setTimeout(save, 15000);
+		addEventListener("pagehide", save);
+	}
+
+	function reset(newMode, q) {
+		mode = newMode; query = q || ""; page = 0; done = false; lastDay = "";
+		feed.replaceChildren();
+		selected = null;
+		load();
+	}
+
+	new IntersectionObserver(entries => {
+		if (entries.some(e => e.isIntersecting)) load();
+	}, { rootMargin: "1200px 0px" }).observe(sentinel);
+	moreButton.addEventListener("click", load);
+
+	// Votes -----------------------------------------------------------------
+	async function vote(item, value) {
+		const id = item.dataset.id;
+		item.classList.remove("GOOD", "BAD");
+		item.classList.add(value, "voted");
+		store.set(`vote_${id}`, value);
+		if (FEED.votes) FEED.votes[id] = value;
+		if (value === "BAD" && !FEED.all) {
+			if (selected === item) move(1);
+			item.style.height = item.offsetHeight + "px";
+			requestAnimationFrame(() => item.classList.add("leaving"));
+			setTimeout(() => item.remove(), 450);
+		}
+		try {
+			const res = await fetch(`/vote/${id}/${value}`, { method: "POST" });
+			if (res.status === 401) location.href = "/auth/github";
+		} catch (e) {
+			console.error("Error submitting vote:", e);
 		}
 	}
 
-	// Don't perform search until user stops typing (300ms delay)
-	if (fromEvent && filter !== "") {
-		searchTimeout = setTimeout(() => performSearch(filter), 300);
-		return;
+	// Keyboard --------------------------------------------------------------
+	let selected = null, keyboardMode = false;
+	addEventListener("mousemove", () => { keyboardMode = false }, { passive: true });
+	function select(item, scroll = true) {
+		if (selected) selected.classList.remove("sel");
+		selected = item;
+		if (!item) return;
+		item.classList.add("sel");
+		if (scroll) item.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 	}
-
-	await performSearch(filter);
-}
-
-async function performSearch(filter) {
-	oldFilter = filter;
-	currentSearchPage = 1;
-	
-    const url = new URL(window.location);
-	if (filter!="" && filter != null) {
-		url.searchParams.set('q', filter);
-    	window.history.pushState(null, '', url);
-
-		filter = encodeURIComponent(filter)
-		container.innerHTML = "";
-
-		await fetchAndRenderSearchResults(filter, currentSearchPage);
-	} else {
-		url.searchParams.delete('q', filter);
-    	window.history.pushState(null, '', url);
-		container.innerHTML = "";
-		loadMoreArticles();
-	}
-}
-
-async function fetchAndRenderSearchResults(filter, page) {
-	// Show loading indicator
-	const loadingDiv = document.createElement('div');
-	loadingDiv.id = 'search-loading';
-	loadingDiv.textContent = 'Loading...';
-	container.appendChild(loadingDiv);
-
-	try {
-		const res = await fetch(`/search?q=${filter}&page=${page}&size=${SEARCH_PAGE_SIZE}`);
-		const articles = await res.json();
-		
-		// Remove loading indicator
-		const loadingElement = document.getElementById('search-loading');
-		if (loadingElement) {
-			loadingElement.remove();
+	function move(delta) {
+		const items = [...feed.querySelectorAll(".item:not(.leaving)")];
+		if (!items.length) return;
+		let i = items.indexOf(selected);
+		if (i === -1) {
+			// Start from the first item visible on screen.
+			i = items.findIndex(x => x.getBoundingClientRect().bottom > 80) - (delta > 0 ? 1 : 0);
 		}
+		const next = items[Math.max(0, Math.min(items.length - 1, i + delta))];
+		select(next);
+		if (items.length - items.indexOf(next) < 8) load();
+	}
 
-		if (articles.length === 0 && page === 1) {
-			const noResultsDiv = document.createElement('div');
-			noResultsDiv.innerHTML = '<p>No results found</p>';
-			container.appendChild(noResultsDiv);
+	document.addEventListener("keydown", e => {
+		if (e.ctrlKey || e.metaKey || e.altKey) return;
+		if (e.target === search) {
+			if (e.key === "Escape") { search.value = ""; search.blur(); runSearch("") }
+			if (e.key === "Enter" || e.key === "ArrowDown") { search.blur(); keyboardMode = true; move(1) }
 			return;
 		}
-
-		renderArticles(articles);
-
-		// Add a "Load more results" button if articles were returned
-		if (articles.length > 0) {
-			let moreDiv = document.createElement('button');
-			moreDiv.classList.add("more");
-			moreDiv.addEventListener("click", function() {
-				currentSearchPage++;
-				fetchAndRenderSearchResults(filter, currentSearchPage);
-				this.remove();
-			});
-			moreDiv.innerHTML = "Load more results";
-			container.appendChild(moreDiv);
-		}
-	} catch (error) {
-		console.error("Error fetching search results:", error);
-		container.innerHTML += '<p>Error loading search results</p>';
-	}
-}
-
-function renderArticles(articles) {
-	articles.forEach(article => {
-		let sourceName = article.source ? article.source.name : 'N/A';
-		let sourceUrl = article.source ? article.source.path : '#';
-		let dateName = article.date ? article.date.substring(0,10) : '';
-		dateName = dateName.substr(8,2)+"/"+dateName.substr(5,2)+"/"+dateName.substr(0,4);
-
-		if (currentDate!=dateName && dateName!="") {
-			const h2Div = document.createElement('when');
-			h2Div.innerHTML = dateName;
-			container.appendChild(h2Div);
-		}
-		currentDate=dateName;
-
-		let voteDiv = document.createElement('buttons');
-		let existingVote = localStorage.getItem(`vote_${article.id}`);
-		voteDiv.id="buttons"+article.id;
-		if (existingVote) {
-			voteDiv.className = existingVote;
-			document.getElementById("allPostsLink").classList.remove("hidden");
-		}
-
-		let articleDiv = document.createElement('article');
-		articleDiv.id=article.id;
-
-		voteDiv.innerHTML = `
-		<buttonsblock>
-			<button class="good" href="'${article.id}'" onclick="vote('${article.id}', 'GOOD')">KEEP</button>
-			<button class="bad" href="'${article.id}'" onclick="vote('${article.id}', 'BAD')">REALLY NOT<br>INTERESTED</button>
-		</buttonsblock>
-		<articlesource><a href="${sourceUrl}" target="_self">${sourceName}</a></articlesource>
-		<articletitle`+ (article.resume != "" ? '' : ' class = "small"') +`><a href="${article.url}">${article.name}</a></articletitle>
-		`;
-		container.appendChild(voteDiv);
-
-		if (existingVote) {
-			// voteButtons = `<p>Voted: ${article.vote}</p>`
-		}
-
-		if (article.resume != "") {
-			articleDiv.innerHTML = `
-			<resume>${article.resume}</resume>
-			`;
-			container.appendChild(articleDiv);
-		}
-	});
-}
-
-async function loadMoreArticles() {
-	currentPage += 1;
-	const res = await fetch(`/feed?path=${path}&page=${currentPage}&size=${pageSize}`);
-	const articles = await res.json();
-
-	articles.forEach(article => {
-
-		let sourceName = article.source ? article.source.name : 'N/A';
-		let sourceUrl = article.source ? article.source.path : '#';
-		let dateName = article.date ? article.date.substring(0,10) : '';
-		dateName = dateName.substr(8,2)+"/"+dateName.substr(5,2)+"/"+dateName.substr(0,4);
-
-		if (currentDate!=dateName && dateName!="") {
-			const h2Div = document.createElement('when');
-			h2Div.innerHTML = dateName;
-			container.appendChild(h2Div);
-		}
-		currentDate=dateName;
-
-		let itemDiv = document.createElement('item');
-
-		let articleDiv = document.createElement('article');
-		articleDiv.id=article.id;
-		let existingVote = localStorage.getItem(`vote_${article.id}`);
-		if (existingVote) {
-			articleDiv.className = existingVote;
-			document.getElementById("allPostsLink").classList.remove("hidden");
-		}
-
-		let voteDiv = document.createElement('buttons');
-		voteDiv.id="buttons"+article.id;
-		if (existingVote) {
-			voteDiv.className = existingVote;
-		}
-
-		voteDiv.innerHTML = `
-		<buttonsblock>
-			<button class="good" href="'${article.id}'" onclick="vote('${article.id}', 'GOOD')">KEEP</button>
-			<button class="bad" href="'${article.id}'" onclick="vote('${article.id}', 'BAD')">REALLY NOT<br>INTERESTED</button>
-		</buttonsblock>
-		<articlesource><a href="${sourceUrl}" target="_self">${sourceName}</a></articlesource>
-		<articletitle`+ (article.resume != "" ? '' : ' class = "small"') +`><a href="${article.url}">${article.name}</a></articletitle>
-		`;
-		itemDiv.appendChild(voteDiv);
-
-		if (existingVote) {
-			// voteButtons = `<p>Voted: ${article.vote}</p>`
-		}
-
-		if (article.resume != "") {
-			articleDiv.innerHTML = `
-			<resume>${article.resume}</resume>
-			`;
-			itemDiv.appendChild(articleDiv);
-		}
-
-		container.appendChild(itemDiv);
-
+		if (!document.getElementById("help").hidden) return;
+		const act = {
+			j: () => move(1), k: () => move(-1),
+			o: () => selected?.querySelector("h3 a").click(),
+			Enter: () => selected?.querySelector("h3 a").click(),
+			s: () => selected && vote(selected, "GOOD"),
+			x: () => selected && vote(selected, "BAD"),
+			e: () => selected && toggle(selected),
+			n: () => { const s = document.getElementById("since"); if (s) { s.scrollIntoView({ block: "center", behavior: "smooth" }); select(s.nextElementSibling?.classList.contains("item") ? s.nextElementSibling : s.nextElementSibling?.nextElementSibling, false) } },
+			g: () => { scrollTo({ top: 0, behavior: "smooth" }); select(null) },
+			"/": () => search?.focus(),
+			Escape: () => select(null),
+		}[e.key];
+		if (act) { e.preventDefault(); keyboardMode = true; act() }
 	});
 
-	let moreDiv = document.createElement('button');
-	moreDiv.classList.add("more");
-	moreDiv.addEventListener("click", function() {
-		loadMoreArticles();
-	});
-	moreDiv.innerHTML = "Load next";
-	container.appendChild(moreDiv);
-}
-
-
-async function vote(id, voteValue) {
-	document.getElementById("allPostsLink").classList.remove("hidden");
-
-	// Store vote in localStorage
-	localStorage.setItem(`vote_${id}`, voteValue);
-
-	// Update UI
-	const voteDiv = document.getElementById("buttons"+id);
-	if (voteDiv) {
-		voteDiv.classList.remove("GOOD");
-		voteDiv.classList.remove("BAD");
-		voteDiv.classList.add(voteValue);
+	// Search ----------------------------------------------------------------
+	let searchTimer;
+	function runSearch(q) {
+		q = q.trim();
+		const url = new URL(location);
+		if (q) url.searchParams.set("q", q); else url.searchParams.delete("q");
+		history.replaceState(null, "", url);
+		reset(q ? "search" : "feed", q);
 	}
-
-	// Find the corresponding article div and update it
-	const articleDiv = document.getElementById(id);
-	if (articleDiv) {
-		// Add the vote value as a class to the article div
-		articleDiv.classList.remove("GOOD");
-		articleDiv.classList.remove("BAD");
-		articleDiv.classList.add(voteValue);
-
-		// Remove the vote buttons and display the vote value
-		if (voteDiv) {
-			const buttons = voteDiv.querySelectorAll('button');
-			buttons.forEach(button => button.remove());
-			const voteParagraph = document.createElement('p');
-			voteParagraph.textContent = `Voted: ${voteValue}`;
-			articleDiv.appendChild(voteParagraph);
-		}
-	}
-
-	// Send the vote to the server
-	try {
-		const response = await fetch(`/vote/${id}/${voteValue}`, { 
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		});
-		
-		if (!response.ok) {
-			const errorData = await response.json();
-			
-			if (response.status === 401) {
-				// Redirect to GitHub login if not authenticated
-				window.location.href = '/auth/github';
-				return;
-			}
-			
-			console.error('Failed to submit vote to server:', errorData.error);
-		}
-	} catch (error) {
-		console.error("Error submitting vote:", error);
-	}
-}
-
-function handleScroll() {
-	const scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-	const scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
-	const clientHeight = document.documentElement.clientHeight || window.innerHeight;
-
-	const articles = document.querySelectorAll('article');
-	articles.forEach(article => {
-		const rect = article.getBoundingClientRect();
-		if (rect.bottom < 0) {
-			const badButton = article.querySelector('button:last-child');
-			if (badButton) {
-				// badButton.click();
-			}
-		}
+	search?.addEventListener("input", () => {
+		clearTimeout(searchTimer);
+		searchTimer = setTimeout(() => runSearch(search.value), 300);
 	});
 
-	if (scrollTop + clientHeight >= scrollHeight - 100) {
-		loadMoreArticles();
-		window.removeEventListener('scroll', handleScroll);
+	const initial = new URLSearchParams(location.search).get("q");
+	if (initial && search) {
+		search.value = initial;
+		reset("search", initial);
+	} else {
+		load();
 	}
-}
-
-function debounce(func, wait) {
-	let timeout;
-	return function (...args) {
-		const context = this;
-		clearTimeout(timeout);
-		timeout = setTimeout(() => func.apply(context, args), wait);
-	};
-}
-
-// Function to update date headers visibility based on visible articles
-function updateDateHeadersVisibility() {
-    const dateHeaders = document.querySelectorAll('.date-header');
-    
-    dateHeaders.forEach(header => {
-        let nextElement = header.nextElementSibling;
-        let hasVisibleArticle = false;
-        
-        // Loop through all articles until the next date header
-        while (nextElement && !nextElement.classList.contains('date-header')) {
-            if (nextElement.tagName === 'ARTICLE' && nextElement.style.display !== 'none') {
-                hasVisibleArticle = true;
-                break;
-            }
-            nextElement = nextElement.nextElementSibling;
-        }
-        
-        // Hide date header if no visible articles under it
-        header.style.display = hasVisibleArticle ? 'block' : 'none';
-    });
-}
-
-window.addEventListener('scroll', debounce(handleScroll, 200));
-liveSearch("");
+})();

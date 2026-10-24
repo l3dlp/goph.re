@@ -1,21 +1,31 @@
 /* ===== goph.re/me — a terminal for gophers ===== */
-:root, [data-theme="gruvbox"] {
+:root, [data-theme="gophre"] {
+	--bg: #081019; --bg2: #0e2737; --bg3: #1d3b4c; --fg: #e4eff0; --dim: #6f8f98;
+	--red: #dc5269; --green: #3fd9a8; --yellow: #fbd99f; --blue: #06a1a6;
+	--magenta: #fc7972; --cyan: #03d5d3; --orange: #fd9f7a; --white: #fbf1e6;
+	--accent: var(--cyan);
+	--bd0: #05090f; --bd1: #09404c; --bd2: #077676; --bd3: #dc5269; --bd4: #fd9f7a;
+}
+[data-theme="gruvbox"] {
 	--bg: #1d2021; --bg2: #282828; --bg3: #3c3836; --fg: #ebdbb2; --dim: #928374;
 	--red: #fb4934; --green: #b8bb26; --yellow: #fabd2f; --blue: #83a598;
 	--magenta: #d3869b; --cyan: #8ec07c; --orange: #fe8019; --white: #fbf1c7;
 	--accent: var(--green);
+	--bd0: #141617; --bd1: #3c3836; --bd2: #458588; --bd3: #cc241d; --bd4: #fabd2f;
 }
 [data-theme="tokyonight"] {
 	--bg: #16161e; --bg2: #1a1b26; --bg3: #292e42; --fg: #c0caf5; --dim: #565f89;
 	--red: #f7768e; --green: #9ece6a; --yellow: #e0af68; --blue: #7aa2f7;
 	--magenta: #bb9af7; --cyan: #7dcfff; --orange: #ff9e64; --white: #e9ecff;
 	--accent: var(--blue);
+	--bd0: #0d0e14; --bd1: #24283b; --bd2: #3d59a1; --bd3: #bb9af7; --bd4: #7dcfff;
 }
 [data-theme="nord"] {
 	--bg: #242933; --bg2: #2e3440; --bg3: #3b4252; --fg: #d8dee9; --dim: #6c7a96;
 	--red: #bf616a; --green: #a3be8c; --yellow: #ebcb8b; --blue: #81a1c1;
 	--magenta: #b48ead; --cyan: #88c0d0; --orange: #d08770; --white: #eceff4;
 	--accent: var(--cyan);
+	--bd0: #1b1f27; --bd1: #3b4252; --bd2: #5e81ac; --bd3: #b48ead; --bd4: #88c0d0;
 }
 
 * { box-sizing: border-box; }
@@ -53,12 +63,14 @@ b { font-weight: 700; }
 	min-height: 0;
 	border: 1px solid var(--bg3);
 	border-radius: 2px;
-	background: var(--bg);
+	background: color-mix(in srgb, var(--bg) 78%, transparent);
+	-webkit-backdrop-filter: blur(10px) saturate(1.2);
+	backdrop-filter: blur(10px) saturate(1.2);
 }
 .pane.active { border-color: var(--accent); }
 .pane header {
 	position: absolute; top: -10px; left: 12px;
-	padding: 0 6px; background: var(--bg);
+	padding: 0 6px; background: var(--bg); border-radius: 2px;
 	font-size: 12px; line-height: 18px; color: var(--dim);
 	white-space: nowrap; max-width: calc(100% - 24px); overflow: hidden; text-overflow: ellipsis;
 }
@@ -188,3 +200,13 @@ b { font-weight: 700; }
 @media (prefers-reduced-motion: reduce) {
 	.cursor, .list li.new { animation: none; }
 }
+
+/* backdrop canvas (see /js/backdrop.js) */
+#backdrop { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; opacity: 0; transition: opacity 1.2s ease; }
+#backdrop.on { opacity: 1; }
+body { background: transparent; }
+
+/* exit button in the status line */
+.status .exit { background: var(--red); color: var(--bg); font-weight: 700; align-self: stretch; display: flex; align-items: center; gap: .6ch; }
+.status .exit:hover { background: var(--white); text-decoration: none; }
+.status .exit kbd { color: inherit; opacity: .7; }

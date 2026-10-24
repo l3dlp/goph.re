@@ -6,30 +6,13 @@
 	<meta name="description" content="The weekly pulse of Go news: what's rising, what's worth reading, which sources are alive." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="noindex,notranslate" />
-	<meta name="theme-color" content="#051521" />
-	<link href="/css/wall.css" rel="stylesheet" type="text/css" />
+	<meta name="theme-color" content="#081019" />
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
 	<link href="/css/pulse.css" rel="stylesheet" type="text/css" />
 	<base target="_blank" />
 </head>
-<body>
-	<journal>
-		GOPH.RE
-		<small>The Pulse of Go</small>
-		<menu>
-			<a href="/" target="_self">Live Feed</a>
-			<a href="/pulse" target="_self">Pulse</a>
-			<hr/>
-			<a href="/forums" target="_self">Forums</a>
-			<a href="/blogs" target="_self">Blogs</a>
-			<a href="/golang" target="_self">"Official" Go</a>
-			<hr/>
-			{{ if .user.ID }}
-				<a href="/me" target="_self">My Profile ({{ .user.Name }})</a>
-			{{ else }}
-				<a href="/auth/github" target="_self">Login with GitHub</a>
-			{{ end }}
-		</menu>
-	</journal>
+<body data-backdrop="0.5" data-backdrop-focus="0.5 0.4">
+	{{ template "sidebar" . }}
 
 	{{ with .pulse }}
 	<main class="pulse">
@@ -94,7 +77,7 @@
 			<ol class="signal">
 				{{ range .Signal }}
 				<li>
-					<a class="src path-{{ .Source.Path }}" href="/{{ .Source.Path }}" target="_self">{{ .Source.Name }}</a>
+					<a class="src p-{{ .Source.Path }}" href="/{{ .Source.Path }}" target="_self">{{ .Source.Name }}</a>
 					<a class="title" href="{{ .URL }}">{{ .Name }}</a>
 					<time>{{ ago .Date }}</time>
 				</li>
@@ -128,5 +111,15 @@
 
 	</main>
 	{{ end }}
+	{{ template "status" . }}
+	<div class="help-pop" id="help" hidden><pre class="glass">
+ <b>goph.re — keys</b>
+
+   <kbd>1</kbd>–<kbd>9</kbd>     sections        <kbd>m</kbd>   your terminal (/me)
+   <kbd>?</kbd>       this help
+
+ <span style="color:var(--dim)">press any key to close</span></pre></div>
+	<script src="/js/backdrop.js"></script>
+	<script src="/js/site.js"></script>
 </body>
 </html>
