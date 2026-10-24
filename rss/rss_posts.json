@@ -1,5 +1,18 @@
 [
   {
+    "id": "a76e94127639b08f37f53090e982964d",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "SIMD and Go",
+    "url": "https://internals-for-interns.com/posts/go-simd/",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/whgofc/simd_go\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-10-24T23:11:40Z",
+    "vote": 0
+  },
+  {
     "id": "939879c1b87f97d47e5012a58738bd32",
     "source": {
       "path": "forums",
