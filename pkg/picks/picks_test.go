@@ -17,14 +17,19 @@ func TestParseFileAndDrafts(t *testing.T) {
 		}
 	}
 	write("live.md", "---\ntitle: Live pick\nsubtitle: A subtitle\ndate: 2026-10-24\ntags: go, rf\nrepo: github.com/x/y\n---\n## Hello\n\n```go\nfunc main() {}\n```\n")
-	write("draft.md", "---\ntitle: Draft pick\ndate: 2026-10-25\ndraft: true\n---\nSoon.\n")
+	write("draft.md", "---\ntitle: Draft pick\ndate: 2026-10-25 09:30\ndraft: true\n---\nSoon.\n")
+	os.MkdirAll(filepath.Join(dir, "drafts"), 0755)
+	write("drafts/wip.md", "---\ntitle: WIP\ndate: 2026-10-20\n---\nWIP.\n")
 	write("broken.md", "---\ndate: 2026-10-26\n---\nNo title.\n")
 
 	if got := All(false); len(got) != 1 || got[0].Slug != "live" {
 		t.Fatalf("All(false) = %+v, want only the live pick", got)
 	}
-	if got := All(true); len(got) != 2 || got[0].Slug != "draft" {
-		t.Fatalf("All(true) should include the draft first (newest), got %d articles", len(got))
+	if got := All(true); len(got) != 3 || got[0].Slug != "draft" {
+		t.Fatalf("All(true) should include both drafts, newest first, got %d articles", len(got))
+	}
+	if w, ok := Get("wip", true); !ok || !w.Draft {
+		t.Error("a file in drafts/ must be a draft")
 	}
 	a, ok := Get("live", false)
 	if !ok {
@@ -36,6 +41,9 @@ func TestParseFileAndDrafts(t *testing.T) {
 	html := string(a.HTML)
 	if !strings.Contains(html, `<h2 id="hello">Hello</h2>`) || !strings.Contains(html, `class="chroma"`) {
 		t.Errorf("unexpected HTML: %s", html)
+	}
+	if d, _ := Get("draft", true); d.Date.Hour() != 9 || d.Date.Minute() != 30 {
+		t.Errorf("draft date = %v, want 09:30", d.Date)
 	}
 	if _, ok := Get("draft", false); ok {
 		t.Error("draft must not be published")

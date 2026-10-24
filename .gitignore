@@ -4,3 +4,4 @@ env/path.go
 users
 .env
 push
+picks/drafts/

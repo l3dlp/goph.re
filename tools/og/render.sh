@@ -23,7 +23,7 @@ for v in feed pulse me picks golang experts blogs podcasts community forums all;
 done
 # One card per pick: front matter keys og_title, og_sub, og_chips (comma separated).
 mkdir -p assets/gfx/og/picks
-for f in picks/*.md; do
+for f in picks/*.md picks/drafts/*.md; do
 	slug=$(basename "$f" .md)
 	get() { sed -n "/^---$/,/^---$/{s/^$1: *//p}" "$f" | head -1; }
 	title=$(get og_title); [ -z "$title" ] && title=$(get title)

@@ -25,6 +25,7 @@ import (
 )
 
 // Dir holds one Markdown file per article; the file name (minus .md) is the slug.
+// Files in Dir/drafts/ are always drafts; publishing a pick means moving it up.
 var Dir = env.PATH + "picks/"
 
 // Article is one rendered pick.
@@ -104,6 +105,9 @@ func load() ([]Article, error) {
 	if err != nil {
 		return nil, fmt.Errorf("Error listing picks: %v.", err)
 	}
+	// picks/drafts/ is gitignored: work in progress never reaches the public repo.
+	drafts, _ := filepath.Glob(Dir + "drafts/*.md")
+	files = append(files, drafts...)
 	var key strings.Builder
 	for _, f := range files {
 		if info, err := os.Stat(f); err == nil {
@@ -123,6 +127,9 @@ func load() ([]Article, error) {
 		if err != nil {
 			log.Printf("Error parsing pick %s: %v\n", filepath.Base(f), err)
 			continue
+		}
+		if filepath.Base(filepath.Dir(f)) == "drafts" {
+			a.Draft = true
 		}
 		articles = append(articles, a)
 	}
@@ -160,9 +167,9 @@ func parseFile(path string) (Article, error) {
 			case "subtitle":
 				a.Subtitle = v
 			case "date":
-				a.Date, _ = time.Parse("2006-01-02", v)
+				a.Date = parseDate(v)
 			case "updated":
-				a.Updated, _ = time.Parse("2006-01-02", v)
+				a.Updated = parseDate(v)
 			case "author":
 				a.Author = v
 			case "repo":
@@ -204,4 +211,18 @@ func parseFile(path string) (Article, error) {
 	a.HTML = template.HTML(out.String())
 	a.ReadMinutes = max(1, len(strings.Fields(string(body)))/220)
 	return a, nil
+}
+
+// parseDate accepts "2006-01-02 15:04" (Paris time) or a bare "2006-01-02".
+func parseDate(v string) time.Time {
+	loc, err := time.LoadLocation("Europe/Paris")
+	if err != nil {
+		loc = time.UTC
+	}
+	for _, layout := range []string{"2006-01-02 15:04", "2006-01-02"} {
+		if t, err := time.ParseInLocation(layout, v, loc); err == nil {
+			return t
+		}
+	}
+	return time.Time{}
 }
