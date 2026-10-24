@@ -1,5 +1,5 @@
 // goph.re service worker: offline shell, cached feed for offline reading, Web Push.
-const VERSION = "gophre-v1";
+const VERSION = "gophre-v2";
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
 const DATA = `${VERSION}-data`;

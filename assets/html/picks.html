@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{ template "head" . }}
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+	<link href="/css/picks.css" rel="stylesheet" type="text/css" />
+	<link rel="alternate" type="application/atom+xml" title="goph.re picks" href="/picks/feed.xml" />
+</head>
+<body data-backdrop="0.5" data-backdrop-focus="0.5 0.4">
+	{{ template "sidebar" . }}
+	<main class="picks">
+		<header class="picks-head">
+			<p class="kicker mono">goph.re/picks</p>
+			<h1>Go software we love<i>.</i></h1>
+			<p class="lede">We read the code, we explain the clever bits, and we don't pretend to be neutral. <span class="mono">Totally biased.</span></p>
+			<a class="rss mono" href="/picks/feed.xml">atom feed ↗</a>
+		</header>
+		<ol class="pick-list">
+			{{ range $i, $a := .articles }}
+			<li>
+				<a class="pick-card glass" href="{{ $a.URL }}" target="_self">
+					<span class="num mono">#{{ sub (len $.articles) $i }}</span>
+					<span class="meta mono">{{ $a.Date.Format "2 Jan 2006" }} · {{ $a.ReadMinutes }} min read{{ if $a.Draft }} · <b>draft</b>{{ end }}</span>
+					<h2>{{ $a.Title }}</h2>
+					<p>{{ $a.Subtitle }}</p>
+					{{ if $a.Verdict }}<p class="verdict mono">❤ {{ $a.Verdict }}</p>{{ end }}
+					<span class="tags mono">{{ if $a.Repo }}<b>{{ $a.Repo }}</b>{{ end }}{{ range $a.Tags }}<span>#{{ . }}</span>{{ end }}</span>
+				</a>
+			</li>
+			{{ else }}
+			<li class="empty mono">The first pick is being written. Stay tuned.</li>
+			{{ end }}
+		</ol>
+	</main>
+	{{ template "status" . }}
+	<div class="help-pop" id="help" hidden><pre class="glass">
+ <b>goph.re — keys</b>
+
+   <kbd>1</kbd>–<kbd>9</kbd>     sections        <kbd>p</kbd>   picks
+   <kbd>m</kbd>       your terminal   <kbd>?</kbd>   this help
+
+ <span style="color:var(--dim)">press any key to close</span></pre></div>
+	<script src="/js/backdrop.js"></script>
+	<script src="/js/site.js"></script>
+	<script src="/js/pwa.js"></script>
+</body>
+</html>

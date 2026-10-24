@@ -7,7 +7,7 @@
 	const newCount = document.getElementById("newCount");
 
 	const PAGE_SIZE = 40;
-	const QUALITY = new Set(["golang", "official", "experts", "blogs", "podcasts", "community", "tools", "courses", "examples"]);
+	const QUALITY = new Set(["picks", "golang", "official", "experts", "blogs", "podcasts", "community", "tools", "courses", "examples"]);
 	const store = {
 		get(k) { try { return localStorage.getItem(k) } catch (e) { return null } },
 		set(k, v) { try { localStorage.setItem(k, v) } catch (e) {} },

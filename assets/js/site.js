@@ -22,5 +22,6 @@
 		if (e.key === "?") { toggleHelp(true); e.preventDefault() }
 		else if (routes[e.key]) location.href = routes[e.key];
 		else if (e.key === "m") location.href = "/me";
+		else if (e.key === "p") location.href = "/picks";
 	});
 })();

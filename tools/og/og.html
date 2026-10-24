@@ -33,6 +33,9 @@
 		box-shadow: 0 30px 80px rgba(0,0,0,.5); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
 	.term .u { color: #3fd9a8; } .term .p { color: var(--teal); } .term .d { color: var(--dim); } .term .k { color: var(--cyan); font-weight: 700; }
 	.term .t { color: #fff; font-weight: 700; } .term .bar { color: var(--teal); }
+	.stamp { position: absolute; right: 90px; top: 150px; width: 190px; height: 190px; border-radius: 50%; display: grid; place-items: center; text-align: center;
+		font: 800 26px/1.05 var(--sans); text-transform: uppercase; color: var(--coral); border: 4px solid var(--coral); transform: rotate(-12deg);
+		background: rgba(8,16,25,.55); box-shadow: 0 0 0 8px rgba(252,121,114,.15), 0 20px 60px rgba(0,0,0,.4); }
 	.url { position: absolute; right: 64px; top: 64px; font: 700 20px var(--mono); color: var(--fg-2); }
 	.url b { color: var(--coral); }
 </style>
@@ -51,16 +54,24 @@ const V = {
 	podcasts: { kicker: "goph.re/podcasts", title: 'Go podcasts<i>.</i>', sub: "Cup o' Go, Go Podcast() and the archive of Go Time.", chips: ["weekly news", "interviews"] },
 	community: { kicker: "goph.re/community", title: 'Go community<i>.</i>', sub: "Lobsters, Hacker News and GopherCon talks about Go.", chips: ["lobsters", "hacker news", "gophercon"] },
 	forums: { kicker: "goph.re/forums", title: 'Go forums<i>.</i>', sub: "r/golang and the Golang Bridge forum, live.", chips: ["reddit", "golang bridge"] },
+	picks: { kicker: "goph.re/picks", title: 'Go software<br>we love<i>.</i>', sub: "We read the code, we explain the clever bits. Totally biased.", chips: ["long reads", "code walkthroughs", "opinions"], stamp: true },
 	all: { kicker: "goph.re/all", title: 'Everything<br>Go<i>.</i>', sub: "Every article from every source, unfiltered.", chips: ["33 sources", "31k+ articles"] },
 };
-const v = V[new URLSearchParams(location.search).get("v") || "feed"];
+const params = new URLSearchParams(location.search);
+// Custom cards (one per pick): og.html?v=custom&kicker=…&title=…&sub=…&chips=a,b,c&stamp=1
+const v = params.get("v") === "custom"
+	? { kicker: params.get("kicker"), title: params.get("title"), sub: params.get("sub"), chips: params.get("chips") ? params.get("chips").split(",") : null, stamp: params.get("stamp") === "1" }
+	: V[params.get("v") || "feed"];
 const card = document.getElementById("card");
 card.innerHTML = `
 	<div class="top"><img src="../../assets/gfx/icons/icon.svg" alt=""><b>goph.re</b><span>· go news</span></div>
 	<div class="kicker">${v.kicker}</div>
 	<h1 class="${v.title.length > 30 ? "sm" : ""}">${v.title}</h1>
 	<p class="sub">${v.sub}</p>
-	${v.chips ? `<div class="chips">${v.chips.map(c => `<span class="p-${c === "forums" ? "forums" : c === "official" ? "golang" : c === "experts" ? "experts" : c === "blogs" ? "blogs" : c === "podcasts" ? "podcasts" : "community"}">${c}</span>`).join("")}</div>` : ""}`;
+	${v.chips ? `<div class="chips">${v.chips.map((c, i) => `<span class="p-${({ forums: "forums", official: "golang", experts: "experts", blogs: "blogs", podcasts: "podcasts" })[c] || ["golang", "experts", "blogs", "podcasts", "community"][i % 5]}">${c}</span>`).join("")}</div>` : ""}`;
+if (v.stamp) {
+	const st = document.createElement("div"); st.className = "stamp"; st.innerHTML = "❤<br>totally<br>biased"; document.body.append(st);
+}
 if (v.bars) {
 	document.body.classList.add("has-bars");
 	const bars = document.createElement("div"); bars.className = "bars";

@@ -345,4 +345,5 @@ var pulseFuncs = map[string]any{
 	},
 	"liftf": func(f float64) string { return fmt.Sprintf("×%.1f", f) },
 	"add":   func(a, b int) int { return a + b },
+	"sub":   func(a, b int) int { return a - b },
 }

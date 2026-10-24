@@ -751,7 +751,7 @@
     "url": "https://www.reddit.com/r/golang/comments/1x8a6ar/interactive_refactoring_in_gopls/",
     "resume": "",
     "date": "2026-10-17T13:24:01Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "fa4fa827e6bd6653a33c2649b855baa7",
@@ -764,7 +764,7 @@
     "url": "https://www.reddit.com/r/golang/comments/1x87apv/brain_20_a_minimal_and_extensible_agent_server/",
     "resume": "",
     "date": "2026-10-17T10:51:53Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "7e415b1ee414b2ed390fef0ded22bbc6",
@@ -790,7 +790,7 @@
     "url": "https://www.reddit.com/r/golang/comments/1x85mnj/kubernetes_events_and_controller_design/",
     "resume": "",
     "date": "2026-10-17T09:07:59Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "c6e7821b93fafd81327425a16cfc306a",
@@ -842,7 +842,7 @@
     "url": "https://www.reddit.com/r/golang/comments/1x7oe1w/estonias_election_system_is_mostly_programmed_in/",
     "resume": "",
     "date": "2026-10-16T18:42:44Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "89d864dd45a6ee1c4d7f4e0ae120bb84",
@@ -1518,7 +1518,7 @@
     "url": "https://www.reddit.com/r/golang/comments/1x34ni7/hardware_coding_practice_tool_in_golang/",
     "resume": "",
     "date": "2026-10-11T10:18:22Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "2428f34ec37066e6ea7401e3a160b681",
@@ -1544,7 +1544,7 @@
     "url": "https://www.youtube.com/shorts/Ifc7dzvOTYo",
     "resume": "",
     "date": "2026-10-11T01:00:14Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "46bd74a36ff45d423da3d3748f784362",
@@ -1830,7 +1830,7 @@
     "url": "https://forum.golangbridge.org/t/dxui-a-declarative-desktop-gui-framework-for-go-without-cgo/42565#post_6",
     "resume": " \u003cp\u003eAmazing job!\u003c/p\u003e\n\u003cp\u003eAny intention to add charts?\u003c/p\u003e ",
     "date": "2026-10-08T15:42:36Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "bba894e50363fbc69307ebeab2ea1c2e",
@@ -1869,7 +1869,7 @@
     "url": "https://forum.golangbridge.org/t/shellroute-run-terminal-commands-through-a-proxy-by-country-or-city/42645#post_1",
     "resume": " \u003cp\u003eI built Shellroute, an open-source Go CLI for routing a shell session or a single terminal command through a proxy in a chosen country or city.\u003c/p\u003e\n\u003cp\u003eThe goal is to make country-specific HTTP checks easier without changing the rest of the machine. Other apps and terminals keep their normal connection.\u003c/p\u003e\n\u003cp\u003eFor example:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"lang-auto\"\u003eshellroute run DE -- curl -I https://example.com/\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThis works with compatible clients that honor the proxy settings supplied to the command. Browser traffic such as Playwright needs explicit browser proxy configuration.\u003c/p\u003e\n\u003cp\u003eThe CLI is open source. Routed proxy traffic is a paid service.\u003c/p\u003e\n\u003cp\u003eSource: \u003ca href=\"https://github.com/shellroute/shellroute-cli\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - shellroute/shellroute-cli: Run terminal commands through a proxy. Choose a country or city and route a shell session or a single command through a proxy. Your other apps and terminals keep their normal connection. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eQuickstart: \u003ca href=\"https://shellroute.com/docs/quickstart/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eQuickstart | Shellroute\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eFeedback on the CLI workflow and use cases is welcome.\u003c/p\u003e ",
     "date": "2026-10-08T12:58:39Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "6a832b8d41294684f606219efeff970b",
@@ -1895,7 +1895,7 @@
     "url": "https://www.reddit.com/r/golang/comments/1x0m2e6/i_built_an_opensource_cellular_network_planning/",
     "resume": "",
     "date": "2026-10-08T09:02:18Z",
-    "vote": 0
+    "vote": 1
   },
   {
     "id": "bc464a62752fdb31cc1e616d508b0be1",

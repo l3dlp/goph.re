@@ -39,11 +39,12 @@ body {
 ::selection { background: var(--coral); color: var(--ink); }
 a { color: inherit; text-decoration: none; }
 kbd { font: 700 .85em var(--mono); color: var(--peach); }
-.mono { font-family: var(--mono); }
+.mono { font-family: var(--mono); font-variant-ligatures: none; }
 .hidden { display: none !important; }
 
 /* source colours (ls --color, goph.re edition) */
 .p-golang, .p-official { color: var(--cyan); }
+.p-picks { color: var(--coral); }
 .p-experts { color: var(--coral); }
 .p-blogs { color: var(--peach); }
 .p-podcasts { color: var(--cream); }
@@ -91,6 +92,7 @@ kbd { font: 700 .85em var(--mono); color: var(--peach); }
 .side-nav nav a:hover { color: #fff; transform: translateX(3px); }
 .side-nav nav a.on { color: #fff; font-weight: 700; }
 .side-nav nav a.on kbd { color: var(--coral); }
+.side-nav nav .new-tag { font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); background: var(--coral); padding: 1px 5px; border-radius: 3px; align-self: center; }
 .side-nav nav hr { border: 0; height: 1px; background: var(--line); margin: 10px 0; width: 60%; }
 .side-nav .who { margin-top: auto; font: 400 12px/1.6 var(--mono); color: var(--dim); }
 .side-nav .who a { color: var(--fg-2); }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{ template "head" . }}
+	<link href="/css/site.css" rel="stylesheet" type="text/css" />
+	<link href="/css/picks.css" rel="stylesheet" type="text/css" />
+	<link rel="alternate" type="application/atom+xml" title="goph.re picks" href="/picks/feed.xml" />
+	{{ with .article }}
+	<meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}" />
+	{{ range .Tags }}<meta property="article:tag" content="{{ . }}" />{{ end }}
+	{{ end }}
+</head>
+<body data-backdrop="0.42" data-backdrop-focus="0.5 0.4">
+	<div class="progress" id="progress"></div>
+	{{ template "sidebar" . }}
+	{{ with .article }}
+	<main class="pick">
+		<article>
+			<header class="pick-head">
+				<p class="kicker mono"><a href="/picks" target="_self">picks</a> · {{ .Date.Format "2 Jan 2006" }} · {{ .ReadMinutes }} min read{{ if .Draft }} · <b>draft</b>{{ end }}</p>
+				<h1>{{ .Title }}</h1>
+				<p class="lede">{{ .Subtitle }}</p>
+				{{ if .Repo }}
+				<aside class="repo-card glass mono">
+					<a class="repo" href="https://{{ .Repo }}" target="_blank" rel="noopener"><span class="dim">$ git clone</span> {{ .Repo }} <span class="arrow">↗</span></a>
+					<dl>
+						{{ if .Version }}<div><dt>version</dt><dd>{{ .Version }}</dd></div>{{ end }}
+						{{ if .License }}<div><dt>license</dt><dd>{{ .License }}</dd></div>{{ end }}
+						{{ if .Stars }}<div><dt>stars</dt><dd>★ {{ .Stars }}</dd></div>{{ end }}
+						{{ if .Homepage }}<div><dt>demo</dt><dd><a href="{{ .Homepage }}" target="_blank" rel="noopener">{{ .Homepage }}</a></dd></div>{{ end }}
+					</dl>
+					{{ if .Verdict }}<p class="verdict">❤ {{ .Verdict }}</p>{{ end }}
+				</aside>
+				{{ end }}
+			</header>
+			<div class="prose" id="prose">
+				{{ .HTML }}
+			</div>
+			<footer class="pick-foot mono">
+				<p>Written by {{ or .Author "goph.re" }}. Totally biased, as promised. Corrections welcome on <a href="https://github.com/gophre/webapp" target="_blank" rel="noopener">GitHub</a>.</p>
+			</footer>
+		</article>
+		<nav class="toc mono" id="toc" aria-label="Contents"></nav>
+	</main>
+	{{ end }}
+	{{ if .more }}
+	<section class="more-picks">
+		<p class="kicker mono">more picks</p>
+		{{ range .more }}<a class="glass" href="{{ .URL }}" target="_self"><b>{{ .Title }}</b><span>{{ .Subtitle }}</span></a>{{ end }}
+	</section>
+	{{ end }}
+	{{ template "status" . }}
+	<div class="help-pop" id="help" hidden><pre class="glass">
+ <b>goph.re — keys</b>
+
+   <kbd>1</kbd>–<kbd>9</kbd>     sections        <kbd>p</kbd>   picks
+   <kbd>m</kbd>       your terminal   <kbd>?</kbd>   this help
+
+ <span style="color:var(--dim)">press any key to close</span></pre></div>
+	<script src="/js/backdrop.js"></script>
+	<script src="/js/site.js"></script>
+	<script src="/js/pwa.js"></script>
+	<script src="/js/pick.js"></script>
+</body>
+</html>

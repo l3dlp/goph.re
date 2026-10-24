@@ -2,7 +2,7 @@
 <aside class="side-nav">
 	<a class="brand" href="/" target="_self">
 		<b>GOPH<i>.</i>RE</b>
-		<small>{{ if .path }}~/{{ .path }}{{ else if .all }}~/all — unfiltered{{ else if eq .page "pulse" }}the pulse of go{{ else }}the news feed for go programmers{{ end }}</small>
+		<small>{{ if .path }}~/{{ .path }}{{ else if .all }}~/all — unfiltered{{ else if eq .page "pulse" }}the pulse of go{{ else if eq .page "picks" }}go software we love{{ else }}the news feed for go programmers{{ end }}</small>
 	</a>
 	{{ if ne .page "pulse" }}
 	<label class="search"><span>/</span><input id="searchInput" type="search" placeholder="search articles" autocomplete="off" spellcheck="false" /></label>
@@ -10,6 +10,7 @@
 	<nav>
 		<a href="/" target="_self" class="{{ if eq .page "feed" }}{{ if not .path }}{{ if not .all }}on{{ end }}{{ end }}{{ end }}"><kbd>1</kbd>Live feed</a>
 		<a href="/pulse" target="_self" class="{{ if eq .page "pulse" }}on{{ end }}"><kbd>2</kbd>Pulse</a>
+		<a href="/picks" target="_self" class="{{ if eq .page "picks" }}on{{ end }}"><kbd>p</kbd>Picks <span class="new-tag mono">new</span></a>
 		<hr/>
 		<a href="/golang" target="_self" class="{{ if eq .path "golang" }}on{{ end }}"><kbd>3</kbd>Official Go</a>
 		<a href="/experts" target="_self" class="{{ if eq .path "experts" }}on{{ end }}"><kbd>4</kbd>Experts</a>
@@ -42,7 +43,8 @@
 	<span class="session">[goph.re]</span>
 	<a class="win {{ if eq .page "feed" }}on{{ end }}" href="/" target="_self">0:feed{{ if eq .page "feed" }}*{{ end }}</a>
 	<a class="win {{ if eq .page "pulse" }}on{{ end }}" href="/pulse" target="_self">1:pulse{{ if eq .page "pulse" }}*{{ end }}</a>
-	<a class="win" href="/me" target="_self">2:me</a>
+	<a class="win {{ if eq .page "picks" }}on{{ end }}" href="/picks" target="_self">2:picks{{ if eq .page "picks" }}*{{ end }}</a>
+	<a class="win" href="/me" target="_self">3:me</a>
 	<span class="spacer"></span>
 	<span class="count" id="newCount"></span>
 	<button type="button" class="install" data-install hidden>⇩ install</button>

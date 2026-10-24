@@ -112,6 +112,9 @@ func Serve(port ...int) {
 	r.GET("/top", func(c *gin.Context) { wallPage(c, gin.H{"top": true}) })
 
 	r.GET("/pulse", PulsePage)
+	r.GET("/picks", PicksIndex)
+	r.GET("/picks/feed.xml", PicksFeed)
+	r.GET("/picks/:slug", PickArticle)
 
 	// API POST
 	r.POST("/vote/:id/:vote", Vote)
