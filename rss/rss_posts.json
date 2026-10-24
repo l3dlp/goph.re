@@ -39,19 +39,6 @@
     "vote": 0
   },
   {
-    "id": "2f97c7436d5db9d2124cf0fc00d63042",
-    "source": {
-      "path": "picks",
-      "name": "goph.re picks",
-      "url": "https://goph.re/picks/feed.xml"
-    },
-    "name": "A.T.O.M — the 5G ray tracer that refuses to lie to you",
-    "url": "https://goph.re/picks/atom",
-    "resume": "Thirty thousand lines of Go that plan cell towers over Ankara, and print their own limitations in every JSON response. We read all of it. We're in love.",
-    "date": "2026-10-24T00:00:00Z",
-    "vote": 0
-  },
-  {
     "id": "b83243f0c8f40b490a32fdd8c4dce010",
     "source": {
       "path": "forums",
