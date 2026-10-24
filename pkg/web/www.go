@@ -60,6 +60,9 @@ func Serve(port ...int) {
 	for name, fn := range pulseFuncs {
 		customFuncs[name] = fn
 	}
+	for name, fn := range meFuncs {
+		customFuncs[name] = fn
+	}
 	r.SetFuncMap(customFuncs)
 	r.Use(RateLimiterMiddleware(limiter))
 

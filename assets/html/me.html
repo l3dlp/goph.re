@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="gruvbox">
+<head>
+	<title>{{ or .user.NickName .user.Name }}@goph.re: ~</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex,notranslate" />
+	<meta name="theme-color" content="#1d2021" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+	<link href="/css/me.css" rel="stylesheet" type="text/css" />
+	<script>try { const t = localStorage.getItem("me-theme"); if (t) document.documentElement.dataset.theme = t } catch (e) {}</script>
+</head>
+{{ $nick := or .user.NickName .user.Name }}
+<body>
+<div class="tmux">
+	{{ with .me }}
+	<div class="panes">
+
+		<!-- Pane 0: neofetch + bookmarks -->
+		<section class="pane main active" data-pane="0">
+			<header><span>0:</span> bash — ~/bookmarks</header>
+			<div class="scroll">
+				<p class="prompt"><b class="u">{{ $nick }}@goph.re</b>:<b class="p">~</b>$ neofetch</p>
+				<div class="neofetch">
+<pre class="logo" aria-hidden="true">         ,_---~~~~~----._
+  _,,_,*^____      _____``*g*"*,
+ / __/ /'     ^.  /      \ ^@q   f
+[  @f | @))    |  | @))   l  0 _/
+ \`/   \~____ / __ \_____/    \
+  |           _l__l_           I
+  }          [______]           I
+  ]            | | |            |
+  ]             ~ ~             |
+  |                            |
+   |                           |</pre>
+					<dl class="info">
+						<dt class="title"><b class="u">{{ $nick }}</b>@<b class="u">goph.re</b></dt>
+						<dd class="rule">{{ repeat "-" (len (printf "%s@goph.re" $nick)) }}</dd>
+						<div><dt>OS</dt><dd>goph.re GNU/Linux x86_64</dd></div>
+						<div><dt>Host</dt><dd>{{ .Feeds }} feeds, {{ .Archive }} articles</dd></div>
+						<div><dt>Kernel</dt><dd>{{ .Kernel }}</dd></div>
+						<div><dt>Uptime</dt><dd>{{ if .Since.IsZero }}just booted{{ else }}{{ days .Since }} days{{ end }}</dd></div>
+						<div><dt>Packages</dt><dd>{{ .Good }} (bookmarks), {{ .Bad }} (purged)</dd></div>
+						<div><dt>Shell</dt><dd>gosh {{ .Kernel }}</dd></div>
+						<div><dt>Streak</dt><dd>{{ .Streak }} day{{ if ne .Streak 1 }}s{{ end }}</dd></div>
+						<div><dt>Last fetch</dt><dd>{{ ago .LastArticle }}</dd></div>
+						<dd class="palette"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></dd>
+					</dl>
+				</div>
+
+				<p class="prompt"><b class="u">{{ $nick }}@goph.re</b>:<b class="p">~</b>$ ls -lt ~/bookmarks</p>
+				<p class="dim">total <span id="total">{{ len .Bookmarks }}</span></p>
+				<ol class="ls list" id="bookmarks">
+					{{ range .Bookmarks }}
+					<li data-id="{{ .ID }}" data-text="{{ .Name }} {{ .Source.Name }} {{ .Source.Path }}">
+						<span class="perm">-rw-r--r--</span>
+						<span class="owner">{{ $nick }}</span>
+						<span class="group p-{{ .Source.Path }}">{{ .Source.Path }}</span>
+						<time datetime="{{ .SavedAt.Format "2006-01-02T15:04" }}">{{ .SavedAt.Format "Jan _2 15:04" }}</time>
+						<a class="name p-{{ .Source.Path }}" href="{{ .URL }}" target="_blank" rel="noopener">{{ .Name }}</a>
+					</li>
+					{{ else }}
+					<li class="dim">ls: cannot access '~/bookmarks': No such file or directory — press <kbd>s</kbd> on something in <em>tail</em> to save it.</li>
+					{{ end }}
+				</ol>
+				<p class="prompt"><b class="u">{{ $nick }}@goph.re</b>:<b class="p">~</b>$ <span class="cursor"></span></p>
+			</div>
+			<footer class="cmdline" id="cmdline" hidden>/<input id="filter" autocomplete="off" spellcheck="false" aria-label="filter bookmarks" /></footer>
+		</section>
+
+		<div class="side">
+			<!-- Pane 1: fresh from favourite sources -->
+			<section class="pane" data-pane="1">
+				<header><span>1:</span> tail -f ~/feed/favorites</header>
+				<div class="scroll">
+					<ol class="tail list" id="fresh">
+						{{ range .Fresh }}
+						<li data-id="{{ .ID }}" data-path="{{ .Source.Path }}" data-source="{{ .Source.Name }}" data-name="{{ .Name }}" data-url="{{ .URL }}">
+							<time>{{ .Date.Format "Jan _2" }}</time>
+							<span class="src p-{{ .Source.Path }}">{{ .Source.Name }}</span>
+							<a href="{{ .URL }}" target="_blank" rel="noopener">{{ .Name }}</a>
+						</li>
+						{{ else }}
+						<li class="dim">tail: no new lines in the last 14 days</li>
+						{{ end }}
+					</ol>
+				</div>
+			</section>
+
+			<!-- Pane 2: bookmarks per source -->
+			<section class="pane" data-pane="2">
+				<header><span>2:</span> du -h ~/bookmarks/* | sort -rh</header>
+				<div class="scroll">
+					{{ $max := .MaxSource }}
+					<ul class="du">
+						{{ range .Sources }}
+						<li><span class="n">{{ .Count }}</span><span class="meter">[<b class="p-{{ .Path }}">{{ bar .Count $max 20 }}</b>]</span><a class="p-{{ .Path }}" href="/{{ .Path }}">{{ .Name }}</a></li>
+						{{ else }}
+						<li class="dim">0	~/bookmarks</li>
+						{{ end }}
+					</ul>
+				</div>
+			</section>
+
+			<!-- Pane 3: vote heatmap -->
+			<section class="pane" data-pane="3">
+				<header><span>3:</span> cal --votes -26w</header>
+				<div class="scroll">
+					<div class="cal">
+						<div class="months"><span></span>{{ range .HeatMonths }}<span>{{ . }}</span>{{ end }}</div>
+						{{ range $i, $row := .HeatRows }}
+						<div class="row"><span class="wd">{{ index $.me.HeatLabels $i }}</span>{{ range $row }}<i class="l{{ .Level }}" title="{{ .Date.Format "Mon 2 Jan" }}: {{ .Count }} vote{{ if ne .Count 1 }}s{{ end }}"></i>{{ end }}</div>
+						{{ end }}
+						<p class="legend dim">less <i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> more</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	{{ end }}
+
+	<nav class="status">
+		<span class="session">[goph.re]</span>
+		<a class="win active" href="/me">0:me*</a>
+		<a class="win" href="/">1:feed</a>
+		<a class="win" href="/pulse">2:pulse</a>
+		<a class="win" href="/auth/logout">3:logout</a>
+		<span class="spacer"></span>
+		<span class="keys"><kbd>?</kbd> help</span>
+		<span class="theme" id="themeName">gruvbox</span>
+		<span class="host">{{ $nick }}@goph.re</span>
+		<span class="clock" id="clock"></span>
+	</nav>
+</div>
+
+<div class="help" id="help" hidden>
+	<pre>
+ <b>goph.re/me — keys</b>
+
+   <kbd>j</kbd> <kbd>k</kbd>   move down / up         <kbd>g</kbd> <kbd>G</kbd>   top / bottom
+   <kbd>o</kbd> <kbd>↵</kbd>   open link              <kbd>tab</kbd>   next pane
+   <kbd>x</kbd>       drop bookmark          <kbd>s</kbd>     save from tail
+   <kbd>/</kbd>       filter bookmarks       <kbd>esc</kbd>   clear / close
+   <kbd>t</kbd>       cycle theme            <kbd>q</kbd>     back to the feed
+
+ <span class="dim">press any key to close</span></pre>
+</div>
+
+<script src="/js/me.js"></script>
+</body>
+</html>

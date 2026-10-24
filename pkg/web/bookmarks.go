@@ -57,33 +57,6 @@ func GetUserBookmarks(userID string) ([]data.Article, error) {
 	return bookmarkedArticles, nil
 }
 
-// UserBookmarks handles the endpoint to show a user's bookmarked articles
-func UserBookmarks(c *gin.Context) {
-	user, isAuthenticated := GetCurrentUser(c)
-	if !isAuthenticated {
-		c.Redirect(http.StatusFound, "/auth/github")
-		return
-	}
-
-	articles, err := GetUserBookmarks(user.ID)
-	if err != nil {
-		c.String(http.StatusInternalServerError, fmt.Sprintf("Error retrieving bookmarks: %v", err))
-		return
-	}
-
-	// Sanitize content
-	p := bluemonday.UGCPolicy()
-	for i := range articles {
-		articles[i].Resume = p.Sanitize(articles[i].Resume)
-	}
-
-	c.HTML(http.StatusOK, "list.html", gin.H{
-		"articles":  articles,
-		"bookmarks": true,
-		"user":      user,
-	})
-}
-
 // LegacyBookmarks is kept for backward compatibility
 func LegacyBookmarks(c *gin.Context) {
 	file, err := os.ReadFile(env.POSTS)
