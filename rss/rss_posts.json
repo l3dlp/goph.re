@@ -52,6 +52,19 @@
     "vote": 0
   },
   {
+    "id": "a9d5bb8e2177c81f275ebe891b7e4b39",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Repowise update: multi-repo support for Go services, a call graph checked against Go's own, and refactoring plans",
+    "url": "https://www.reddit.com/r/golang/comments/1xf5pv8/repowise_update_multirepo_support_for_go_services/",
+    "resume": "",
+    "date": "2026-10-25T15:46:20Z",
+    "vote": 0
+  },
+  {
     "id": "ba12493495a46294aa917765f91e88d5",
     "source": {
       "path": "forums",
