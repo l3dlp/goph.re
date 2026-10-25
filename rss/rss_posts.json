@@ -1,5 +1,18 @@
 [
   {
+    "id": "0cf1e5a42300f68368e47dcf2926820f",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How we achieved single-binary static linking without Cgo (Windows \u0026 Linux)",
+    "url": "https://forum.golangbridge.org/t/how-we-achieved-single-binary-static-linking-without-cgo-windows-linux/42703#post_3",
+    "resume": " \u003cp\u003eThanks for the kind words, Akilan!\u003c/p\u003e\n\u003cp\u003eThe io_uring comparison is an interesting take, but the architectural reason for this explicit polling loop goes even deeper into how we manage the OS main thread.\u003c/p\u003e\n\u003cp\u003eIn standard Slint bindings (like JavaScript), event handling uses callbacks where handler functions are invoked implicitly. While convenient, that approach obscures how the main thread waits for events and turns the main event loop into a black box.\u003c/p\u003e\n\u003cp\u003eIn this Go binding, we intentionally chose an explicit event polling model:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eDeterministic thread execution: Event processing is guaranteed to run explicitly on the main thread (locked via runtime.LockOSThread()).\u003c/li\u003e\n\u003cli\u003eCoexistence with main-thread-only OS resources: Since polling can return or time out when idle, developers can interleave other OS-level operations that strictly require the main thread (such as Win32 COM/OLE routines, macOS Cocoa loops, or native platform resources) alongside GUI event processing.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eGiving full control of the main loop back to the developer is what makes this architecture so robust for real-world Go applications!\u003c/p\u003e ",
+    "date": "2026-10-25T05:23:46Z",
+    "vote": 0
+  },
+  {
     "id": "a76e94127639b08f37f53090e982964d",
     "source": {
       "path": "community",
