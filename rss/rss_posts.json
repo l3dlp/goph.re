@@ -1,5 +1,18 @@
 [
   {
+    "id": "5bcc019298d2e64ee0a5c63c31849c36",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How we achieved single-binary static linking without Cgo (Windows \u0026 Linux)",
+    "url": "https://forum.golangbridge.org/t/how-we-achieved-single-binary-static-linking-without-cgo-windows-linux/42703#post_4",
+    "resume": " \u003cp\u003eThanks a lot for taking the time for writing the response! (Very much appreciated). The deterministic thread execution is really interesting.\u003c/p\u003e\n\u003cp\u003e“developers can interleave other OS-level operations that strictly require the main thread”\u003c/p\u003e\n\u003cp\u003eI see, does this mean the entire library runs on a single thread ?\u003c/p\u003e ",
+    "date": "2026-10-25T17:42:29Z",
+    "vote": 0
+  },
+  {
     "id": "e1896af897eb41a1ba6288625d06cbb4",
     "source": {
       "path": "forums",
