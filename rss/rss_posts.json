@@ -1,5 +1,31 @@
 [
   {
+    "id": "e1896af897eb41a1ba6288625d06cbb4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Golang optimizations for high‑volume services",
+    "url": "https://www.reddit.com/r/golang/comments/1xf72kd/golang_optimizations_for_highvolume_services/",
+    "resume": "",
+    "date": "2026-10-25T16:38:37Z",
+    "vote": 0
+  },
+  {
+    "id": "3c63baf7c20ccdf69025ce002d599922",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Skyl: Go library to easily integrate more than 400 AI models",
+    "url": "https://forum.golangbridge.org/t/skyl-go-library-to-easily-integrate-more-than-400-ai-models/42724#post_1",
+    "resume": " \u003cp\u003eHey everyone! I’ve been working on Skyl, an open-source Go library that provides a unified interface for 400+ AI models, including OpenAI, Claude, Gemini, DeepSeek, and Ollama.\u003c/p\u003e\n\u003cp\u003eIt supports streaming, retries, structured outputs, and token tracking without having to manage separate SDKs for each provider.\u003c/p\u003e\n\u003cp\u003eI’d love feedback and contributions from fellow Go developers!\u003c/p\u003e\n\u003cp\u003eGitHub: \u003ca href=\"https://github.com/BAGOMBEKA-JOB-DEV/skyl\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - BAGOMBEKA-JOB-DEV/skyl: One Go interface for every AI model. Skyl is a small, dependency-light Go library that lets you talk to Claude, GPT, Gemini, and 400+ other models through a single, stable interface — then switch between them by changing one string · GitHub\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-10-25T16:37:56Z",
+    "vote": 0
+  },
+  {
     "id": "c28ab3d282db00a3f8eaf8570cf06e0c",
     "source": {
       "path": "forums",
@@ -10,6 +36,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xf5qi5/envoy_gateway_vs_traefik_anyone_used_both_in/",
     "resume": "",
     "date": "2026-10-25T15:47:04Z",
+    "vote": 0
+  },
+  {
+    "id": "ba12493495a46294aa917765f91e88d5",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "A comprehensive SMTP toolkit and library for Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xf4qiw/a_comprehensive_smtp_toolkit_and_library_for_go/",
+    "resume": "",
+    "date": "2026-10-25T15:06:33Z",
     "vote": 0
   },
   {
