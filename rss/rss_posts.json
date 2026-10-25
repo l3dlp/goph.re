@@ -1,5 +1,18 @@
 [
   {
+    "id": "c28ab3d282db00a3f8eaf8570cf06e0c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Envoy Gateway vs Traefik — Anyone used both in production?",
+    "url": "https://www.reddit.com/r/golang/comments/1xf5qi5/envoy_gateway_vs_traefik_anyone_used_both_in/",
+    "resume": "",
+    "date": "2026-10-25T15:47:04Z",
+    "vote": 0
+  },
+  {
     "id": "0cf1e5a42300f68368e47dcf2926820f",
     "source": {
       "path": "forums",
