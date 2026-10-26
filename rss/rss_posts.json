@@ -1,5 +1,18 @@
 [
   {
+    "id": "4ba5d3e82641f54f37892ad847e224ce",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GoModel - alternative to LiteLLM in Go (another AI gateway)",
+    "url": "https://www.reddit.com/r/golang/comments/1xg3mk9/gomodel_alternative_to_litellm_in_go_another_ai/",
+    "resume": "",
+    "date": "2026-10-26T17:38:42Z",
+    "vote": 0
+  },
+  {
     "id": "d3335766dd537d6241473608213109bb",
     "source": {
       "path": "forums",
