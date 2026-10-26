@@ -1,5 +1,44 @@
 [
   {
+    "id": "e31cd2f5498e9f12224243e663c30dd8",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Why I made Wyvern, and why I chose C++ over Rust, Zig or Golang",
+    "url": "https://wyvern.at/en/2026/10/25/why-i-made-wyvern-and-why-i-chose-c-over-rust-zig-or-golang/",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wyvern.at/en/2026/10/25/why-i-made-wyvern-and-why-i-chose-c-over-rust-zig-or-golang/\"\u003ehttps://wyvern.at/en/2026/10/25/why-i-made-wyvern-and-why-i-chose-c-over-rust-zig-or-golang/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50242279\"\u003ehttps://news.ycombinator.com/item?id=50242279\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-26T12:02:07Z",
+    "vote": 0
+  },
+  {
+    "id": "5fd42ceca366af430855fff16fa0a1bf",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go Concurrency in 5 Minutes: Goroutines, WaitGroups and Channels",
+    "url": "https://www.reddit.com/r/golang/comments/1xfurt4/go_concurrency_in_5_minutes_goroutines_waitgroups/",
+    "resume": "",
+    "date": "2026-10-26T11:58:21Z",
+    "vote": 0
+  },
+  {
+    "id": "accf6c40183897cbf06875cb46b5b715",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Wails v3.0.0 Released",
+    "url": "https://v3.wails.io/blog/wails-v3-released/",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/vgq0mf/wails_v3_0_0_released\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-10-26T11:30:37Z",
+    "vote": 0
+  },
+  {
     "id": "2b871d1dfaf9f8edb33ecc1550c77bc6",
     "source": {
       "path": "forums",
