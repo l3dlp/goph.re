@@ -1,5 +1,18 @@
 [
   {
+    "id": "9943b21ac3c55044ad3ef70282252ab1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Help with including a folder when building/running",
+    "url": "https://www.reddit.com/r/golang/comments/1xfjig3/help_with_including_a_folder_when_buildingrunning/",
+    "resume": "",
+    "date": "2026-10-26T01:18:13Z",
+    "vote": 0
+  },
+  {
     "id": "5bcc019298d2e64ee0a5c63c31849c36",
     "source": {
       "path": "forums",
