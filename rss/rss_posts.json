@@ -1,5 +1,31 @@
 [
   {
+    "id": "2b871d1dfaf9f8edb33ecc1550c77bc6",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Feedback wanted: keeping an embeddable agent core free of app dependencies in Go",
+    "url": "https://forum.golangbridge.org/t/feedback-wanted-keeping-an-embeddable-agent-core-free-of-app-dependencies-in-go/42733#post_1",
+    "resume": " \u003cp\u003eHi all,\u003c/p\u003e\n\u003cp\u003eI maintain \u003ca href=\"https://github.com/inhere/suga\" rel=\"noopener nofollow ugc\"\u003esuga\u003c/a\u003e, a coding agent written in Go (MIT, still v0). Most of the work has gone into long sessions, but the part I would like Go feedback on is how the core is split out so other Go programs can embed it.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003epkg/agentcore\u003c/code\u003e holds the model/tool loop, providers, the tool registry and approval. It must not import anything under \u003ccode\u003einternal/\u003c/code\u003e. Instead of relying on review, a test walks the package imports and checks them against an allowlist, so a new dependency or an unregistered package fails \u003ccode\u003ego test\u003c/code\u003e. The smallest working setup is:\u003c/p\u003e\n\u003cpre data-code-wrap=\"go\"\u003e\u003ccode class=\"lang-go\"\u003eruntime := agentcore.New(agentcore.Config{\n    Provider: mock.NewProvider(mock.Final(\"hello\")),\n})\nresult, err := runtime.Run(ctx, agentcore.RunInput{\n    AgentID:     \"example-agent\",\n    Instruction: \"say hello\",\n})\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eWrapping the registry in \u003ccode\u003etools.NewApproval\u003c/code\u003e with no approver denies every call, so the default is closed rather than open.\u003c/p\u003e\n\u003cp\u003eTwo things I am unsure about:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eIs an import allowlist test a reasonable way to keep a layer boundary, or would you split the core into its own module?\u003c/li\u003e\n\u003cli\u003eThe in-process SDK (\u003ccode\u003epkg/sugasdk\u003c/code\u003e) is still marked experimental. For embedding an agent loop, would you rather get a callback-style API or a channel of events?\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eDisclosure: I’m the author, and I use AI tools heavily on this project, including for drafting this post.\u003c/p\u003e ",
+    "date": "2026-10-26T10:40:03Z",
+    "vote": 0
+  },
+  {
+    "id": "bcbb09df138c2038417db25c8336a5df",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How we achieved single-binary static linking without Cgo (Windows \u0026 Linux)",
+    "url": "https://forum.golangbridge.org/t/how-we-achieved-single-binary-static-linking-without-cgo-windows-linux/42703#post_6",
+    "resume": " \u003cp\u003eI see, got it!\u003c/p\u003e\n\u003cp\u003eThanks, Will definitely keep an eye out on the project for future updates (I am working on UI system for analysing flight data from multiple sessions of flight simulations which will be open source by the mid of next year. I have added it to my list of libraries to potentially use by early Jan 2027).\u003c/p\u003e ",
+    "date": "2026-10-26T10:28:57Z",
+    "vote": 0
+  },
+  {
     "id": "7b0d807bcaf45b0ca8c77a6f4db5c499",
     "source": {
       "path": "forums",
