@@ -13,6 +13,32 @@
     "vote": 0
   },
   {
+    "id": "a5d6c09ffb2594db2ea2b86022147269",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go 1.28 HTTP/2 parking: 85-93 MiB less RSS with 5,000 idle connections",
+    "url": "https://www.reddit.com/r/golang/comments/1xgaesx/go_128_http2_parking_8593_mib_less_rss_with_5000/",
+    "resume": "",
+    "date": "2026-10-26T21:53:19Z",
+    "vote": 0
+  },
+  {
+    "id": "dcae0e5198827b867a3ecb94a3a26e36",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Cast videos to Chromecast, DLNA, Roku, Samsung and LG TVs from the terminal",
+    "url": "https://www.reddit.com/r/golang/comments/1xg77h0/cast_videos_to_chromecast_dlna_roku_samsung_and/",
+    "resume": "",
+    "date": "2026-10-26T19:50:25Z",
+    "vote": 0
+  },
+  {
     "id": "9600b4553b71a049085dbc74e5fbd8cb",
     "source": {
       "path": "forums",
@@ -192,6 +218,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xfjig3/help_with_including_a_folder_when_buildingrunning/",
     "resume": "",
     "date": "2026-10-26T01:18:13Z",
+    "vote": 0
+  },
+  {
+    "id": "cb01be12ecbbf0ceab3ae0065f9c28ce",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "Our Response To The eMudhra Key Disclosure Incident",
+    "url": "https://go.dev/blog/emudhra-incident",
+    "resume": "How the Go team responded to the eMudhra certificate compromise with our first-ever URGENT track security release.",
+    "date": "2026-10-26T00:00:00Z",
     "vote": 0
   },
   {
