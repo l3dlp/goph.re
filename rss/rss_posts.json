@@ -1,5 +1,18 @@
 [
   {
+    "id": "d3335766dd537d6241473608213109bb",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Wails v3.0.0 released: Go applications for desktop, server and mobile",
+    "url": "https://www.reddit.com/r/golang/comments/1xfva18/wails_v300_released_go_applications_for_desktop/",
+    "resume": "",
+    "date": "2026-10-26T12:21:29Z",
+    "vote": 0
+  },
+  {
     "id": "e31cd2f5498e9f12224243e663c30dd8",
     "source": {
       "path": "community",
@@ -75,6 +88,32 @@
     "url": "https://forum.golangbridge.org/t/how-we-achieved-single-binary-static-linking-without-cgo-windows-linux/42703#post_5",
     "resume": " \u003cp\u003eNot quite! It doesn’t restrict the entire library or your application to a single thread.\u003c/p\u003e\n\u003cp\u003eRather, only the UI event loop and OS-level windowing interactions are explicitly pinned to the OS main thread (via runtime.LockOSThread()). This is strictly to satisfy OS requirements (like Win32 message pumps, macOS Cocoa runloops, or GPU context rules) where certain resources must not migrate across native threads.\u003c/p\u003e\n\u003cp\u003eEverything else in Go behaves completely normally:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eYou can freely spawn background goroutines across multiple OS threads for heavy computation, file I/O, or networking.\u003c/li\u003e\n\u003cli\u003eBackground goroutines can easily communicate with the UI loop using standard Go channels or safe synchronization primitives.\u003c/li\u003e\n\u003cli\u003eSlint’s internal engine can also manage its own background workers or rendering tasks where applicable.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIn short, it guarantees thread-affinity where the OS demands it, while keeping Go’s full M:N concurrency model intact everywhere else!\u003c/p\u003e ",
     "date": "2026-10-26T08:46:23Z",
+    "vote": 0
+  },
+  {
+    "id": "b6303e5f3a43549eee3ad5caf02cd111",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How do you keep an agent's early constraints alive after the context gets compacted?",
+    "url": "https://www.reddit.com/r/golang/comments/1xfr1n4/how_do_you_keep_an_agents_early_constraints_alive/",
+    "resume": "",
+    "date": "2026-10-26T08:23:37Z",
+    "vote": 0
+  },
+  {
+    "id": "3cc8b10e8e329a2e38fe497a53a993cc",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Twigg - open source version control written in go",
+    "url": "https://www.reddit.com/r/golang/comments/1xfnlca/twigg_open_source_version_control_written_in_go/",
+    "resume": "",
+    "date": "2026-10-26T04:48:03Z",
     "vote": 0
   },
   {
