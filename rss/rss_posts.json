@@ -1,5 +1,18 @@
 [
   {
+    "id": "7b0d807bcaf45b0ca8c77a6f4db5c499",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How we achieved single-binary static linking without Cgo (Windows \u0026 Linux)",
+    "url": "https://forum.golangbridge.org/t/how-we-achieved-single-binary-static-linking-without-cgo-windows-linux/42703#post_5",
+    "resume": " \u003cp\u003eNot quite! It doesn’t restrict the entire library or your application to a single thread.\u003c/p\u003e\n\u003cp\u003eRather, only the UI event loop and OS-level windowing interactions are explicitly pinned to the OS main thread (via runtime.LockOSThread()). This is strictly to satisfy OS requirements (like Win32 message pumps, macOS Cocoa runloops, or GPU context rules) where certain resources must not migrate across native threads.\u003c/p\u003e\n\u003cp\u003eEverything else in Go behaves completely normally:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eYou can freely spawn background goroutines across multiple OS threads for heavy computation, file I/O, or networking.\u003c/li\u003e\n\u003cli\u003eBackground goroutines can easily communicate with the UI loop using standard Go channels or safe synchronization primitives.\u003c/li\u003e\n\u003cli\u003eSlint’s internal engine can also manage its own background workers or rendering tasks where applicable.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eIn short, it guarantees thread-affinity where the OS demands it, while keeping Go’s full M:N concurrency model intact everywhere else!\u003c/p\u003e ",
+    "date": "2026-10-26T08:46:23Z",
+    "vote": 0
+  },
+  {
     "id": "2f4ef8638711a2a6ba090552f3a4229b",
     "source": {
       "path": "examples",
