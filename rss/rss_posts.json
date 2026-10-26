@@ -1,5 +1,18 @@
 [
   {
+    "id": "2506104f23c01a85dc9482ae79d77c8b",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What are companies actually using for http in production right now? Feeling like I'm reinventing the wheel with net/http",
+    "url": "https://www.reddit.com/r/golang/comments/1xfjyo5/what_are_companies_actually_using_for_http_in/",
+    "resume": "",
+    "date": "2026-10-26T01:39:37Z",
+    "vote": 0
+  },
+  {
     "id": "9943b21ac3c55044ad3ef70282252ab1",
     "source": {
       "path": "forums",
@@ -10,6 +23,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xfjig3/help_with_including_a_folder_when_buildingrunning/",
     "resume": "",
     "date": "2026-10-26T01:18:13Z",
+    "vote": 0
+  },
+  {
+    "id": "096b8dd9df101fbe184fa118808d29fd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "The Unix Philosophy in Go: An example working with LLMs.",
+    "url": "https://www.reddit.com/r/golang/comments/1xfg79k/the_unix_philosophy_in_go_an_example_working_with/",
+    "resume": "",
+    "date": "2026-10-25T22:47:48Z",
     "vote": 0
   },
   {
