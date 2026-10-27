@@ -1,5 +1,18 @@
 [
   {
+    "id": "a698023b789bec05464e250bfb634263",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "When to Prefer `any` over Interfaces?",
+    "url": "https://www.reddit.com/r/golang/comments/1xgikvq/when_to_prefer_any_over_interfaces/",
+    "resume": "",
+    "date": "2026-10-27T04:01:22Z",
+    "vote": 0
+  },
+  {
     "id": "433e93543d827ee90643fd6443f60eaa",
     "source": {
       "path": "forums",
