@@ -1,5 +1,18 @@
 [
   {
+    "id": "6f7eae8a1f4b069863fc0d27cdb756dd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What would you prioritize when building a PII tokenization service in Go?",
+    "url": "https://www.reddit.com/r/golang/comments/1xgm634/what_would_you_prioritize_when_building_a_pii/",
+    "resume": "",
+    "date": "2026-10-27T07:37:48Z",
+    "vote": 0
+  },
+  {
     "id": "a698023b789bec05464e250bfb634263",
     "source": {
       "path": "forums",
