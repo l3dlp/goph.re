@@ -1,5 +1,31 @@
 [
   {
+    "id": "f5322c822f726f47ce90bd39d424bd31",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Why AI Infrastructure Is Moving to Rust",
+    "url": "https://www.youtube.com/watch?v=b03BdfL2s3k",
+    "resume": "",
+    "date": "2026-10-27T16:00:22Z",
+    "vote": 0
+  },
+  {
+    "id": "349f94c58be9fe846c8d1ea55ce77e0e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Our Response To The eMudhra Key Disclosure Incident",
+    "url": "https://www.reddit.com/r/golang/comments/1xgvjsu/our_response_to_the_emudhra_key_disclosure/",
+    "resume": "",
+    "date": "2026-10-27T15:26:30Z",
+    "vote": 0
+  },
+  {
     "id": "74239ed3dc478c0c171b75700fb61211",
     "source": {
       "path": "forums",
