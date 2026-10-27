@@ -1,5 +1,18 @@
 [
   {
+    "id": "5b9e0115207870c478a710e2c0246c4d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Embedding BuildKit, Syft, container-structure-test and hadolint into one static Go binary",
+    "url": "https://www.reddit.com/r/golang/comments/1xh3d7q/embedding_buildkit_syft_containerstructuretest/",
+    "resume": "",
+    "date": "2026-10-27T20:12:07Z",
+    "vote": 0
+  },
+  {
     "id": "f5322c822f726f47ce90bd39d424bd31",
     "source": {
       "path": "examples",
