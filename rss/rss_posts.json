@@ -1,5 +1,18 @@
 [
   {
+    "id": "433e93543d827ee90643fd6443f60eaa",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Swytch Engine 1.1 is released",
+    "url": "https://www.reddit.com/r/golang/comments/1xgcqgw/swytch_engine_11_is_released/",
+    "resume": "",
+    "date": "2026-10-26T23:30:10Z",
+    "vote": 0
+  },
+  {
     "id": "b71075bdff4ae9ba1ea3070703848cee",
     "source": {
       "path": "examples",
