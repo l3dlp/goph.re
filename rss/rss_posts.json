@@ -1,5 +1,18 @@
 [
   {
+    "id": "50be7222fabb0854d0da56fea01424ca",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Golang Profiling with pprof: CPU Flame Graphs and Memory Leaks",
+    "url": "https://www.reddit.com/r/golang/comments/1xhqmio/golang_profiling_with_pprof_cpu_flame_graphs_and/",
+    "resume": "",
+    "date": "2026-10-28T15:07:19Z",
+    "vote": 0
+  },
+  {
     "id": "0684f154794c6dbe50dd572d2f40a438",
     "source": {
       "path": "forums",
