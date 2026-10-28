@@ -1,5 +1,18 @@
 [
   {
+    "id": "63454f5aeea80708fb635de5583070d4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Could I get into trouble with this?",
+    "url": "https://www.reddit.com/r/golang/comments/1xhsvt9/could_i_get_into_trouble_with_this/",
+    "resume": "",
+    "date": "2026-10-28T16:28:11Z",
+    "vote": 0
+  },
+  {
     "id": "55cc3ea34df31888210253cbaf5a176d",
     "source": {
       "path": "examples",
@@ -23,6 +36,19 @@
     "url": "https://forum.golangbridge.org/t/how-we-achieved-single-binary-static-linking-without-cgo-windows-linux/42703#post_7",
     "resume": " \u003cp\u003eHi Akilan,\u003c/p\u003e\n\u003cp\u003eAs a quick update following our discussion on direct GPU/vector rendering needs:\u003c/p\u003e\n\u003cp\u003eTo help advance the Go graphics ecosystem—particularly for game engines and custom GUI toolkits beyond Slint—I have just released \u003cstrong\u003eWGPUStatic\u003c/strong\u003e, a Cgo-free static binding of Rust’s \u003ccode\u003ewgpu-native\u003c/code\u003e for Go:\u003c/p\u003e\n\u003caside class=\"onebox githubrepo\" data-onebox-src=\"https://github.com/kanryu/wgpu-static\"\u003e\n  \u003cheader class=\"source\"\u003e\n\n      \u003ca href=\"https://github.com/kanryu/wgpu-static\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003egithub.com\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"github-row\" data-github-private-repo=\"false\"\u003e\n  \u003cimg width=\"690\" height=\"344\" src=\"https://opengraph.githubassets.com/24205edc8f131c0b61c64e43c3789224/kanryu/wgpu-static\" class=\"thumbnail\"\u003e\n\n  \u003ch3\u003e\u003ca href=\"https://github.com/kanryu/wgpu-static\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGitHub - kanryu/wgpu-static: Cgo-free, statically linked WebGPU (wgpu-native)...\u003c/a\u003e\u003c/h3\u003e\n\n    \u003cp\u003e\u003cspan class=\"github-repo-description\"\u003eCgo-free, statically linked WebGPU (wgpu-native) bindings for Go. No external DLLs, no C compiler required.\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n\n\u003cp\u003eIt enables linking \u003ccode\u003ewgpu-native\u003c/code\u003e directly into standalone Go executables via \u003ccode\u003e.syso\u003c/code\u003e and Plan 9 assembly stubs without runtime DLL dependencies (currently tested and running on Windows amd64).\u003c/p\u003e\n\u003cp\u003eSince your flight simulation telemetry and analysis project will likely require high-performance, raw GPU rendering pipelines alongside UI widgets, I thought this might be useful for your architectural considerations. Best of luck with your project!\u003c/p\u003e ",
     "date": "2026-10-28T15:46:43Z",
+    "vote": 0
+  },
+  {
+    "id": "87bf1f866eb756c6e30a5cb6cc91311a",
+    "source": {
+      "path": "experts",
+      "name": "Bitfield Consulting",
+      "url": "https://feeds.feedburner.com/bitfieldconsulting"
+    },
+    "name": "Code Safari: Go subcommands",
+    "url": "https://bitfieldconsulting.com/posts/go-subcommands",
+    "resume": "Gwyn James and I explore some Go code.",
+    "date": "2026-10-28T15:27:51Z",
     "vote": 0
   },
   {
