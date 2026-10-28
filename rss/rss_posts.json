@@ -1,5 +1,18 @@
 [
   {
+    "id": "0684f154794c6dbe50dd572d2f40a438",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "agy-swap: Go TUI/CLI for switching Google Antigravity accounts and tracking model quota",
+    "url": "https://www.reddit.com/r/golang/comments/1xhh4zb/agyswap_go_tuicli_for_switching_google/",
+    "resume": "",
+    "date": "2026-10-28T07:02:47Z",
+    "vote": 0
+  },
+  {
     "id": "5b9e0115207870c478a710e2c0246c4d",
     "source": {
       "path": "forums",
