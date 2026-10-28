@@ -1,5 +1,31 @@
 [
   {
+    "id": "d2c46fe8a414f0768e8a5426305b16b7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "AutoDoc: embedded search engine made in go",
+    "url": "https://www.reddit.com/r/golang/comments/1xhxkx5/autodoc_embedded_search_engine_made_in_go/",
+    "resume": "",
+    "date": "2026-10-28T19:14:58Z",
+    "vote": 0
+  },
+  {
+    "id": "cc57266bf040b4abe53688fe396216ee",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "noalloc: Tooling and libraries to enforce zero heap allocations in Golang",
+    "url": "https://github.com/theconsensuslabs/noalloc",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/theconsensuslabs/noalloc\"\u003ehttps://github.com/theconsensuslabs/noalloc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50278645\"\u003ehttps://news.ycombinator.com/item?id=50278645\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-10-28T18:29:25Z",
+    "vote": 0
+  },
+  {
     "id": "63454f5aeea80708fb635de5583070d4",
     "source": {
       "path": "forums",
@@ -10,6 +36,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xhsvt9/could_i_get_into_trouble_with_this/",
     "resume": "",
     "date": "2026-10-28T16:28:11Z",
+    "vote": 0
+  },
+  {
+    "id": "19395a4ec66827066fcd3dfcd89d2201",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Spooler: A simple managed message queue",
+    "url": "https://www.reddit.com/r/golang/comments/1xhs8ra/spooler_a_simple_managed_message_queue/",
+    "resume": "",
+    "date": "2026-10-28T16:05:22Z",
     "vote": 0
   },
   {
