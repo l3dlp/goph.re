@@ -1,5 +1,31 @@
 [
   {
+    "id": "e8551f0db59b3f22d58ae76c638d245e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go puzzler",
+    "url": "https://www.reddit.com/r/golang/comments/1xihr8n/go_puzzler/",
+    "resume": "",
+    "date": "2026-10-29T11:48:19Z",
+    "vote": 0
+  },
+  {
+    "id": "71d03ec0b8e216b33a2d50a4b8992614",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Testing Automation",
+    "url": "https://forum.golangbridge.org/t/testing-automation/42698#post_4",
+    "resume": " \u003cp\u003eI think your “kind” field is superfluous. kind: “db” is directly followed by “db: …” so it is redundant and prone to break on copy \u0026amp; pasting or editing.\u003c/p\u003e ",
+    "date": "2026-10-29T11:44:33Z",
+    "vote": 0
+  },
+  {
     "id": "5689bfa375480043b9d03372f71312d7",
     "source": {
       "path": "community",
@@ -10,6 +36,19 @@
     "url": "https://www.youtube.com/watch?v=_BxdvkLLnDc",
     "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/1hbwvl/go_empty_interface_explained_hidden_heap\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
     "date": "2026-10-29T09:27:01Z",
+    "vote": 0
+  },
+  {
+    "id": "f5ac5ac0db20cdc124759d51c956b24c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Closed!!! Tinygo need serialization tools · Issue #447 · tinygo-org/tinygo",
+    "url": "https://www.reddit.com/r/golang/comments/1xi8aqx/closed_tinygo_need_serialization_tools_issue_447/",
+    "resume": "",
+    "date": "2026-10-29T02:40:55Z",
     "vote": 0
   },
   {
