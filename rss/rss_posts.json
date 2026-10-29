@@ -1,5 +1,18 @@
 [
   {
+    "id": "5689bfa375480043b9d03372f71312d7",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Go Empty Interface Explained \u0026 The Hidden Heap Allocation",
+    "url": "https://www.youtube.com/watch?v=_BxdvkLLnDc",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/1hbwvl/go_empty_interface_explained_hidden_heap\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-10-29T09:27:01Z",
+    "vote": 0
+  },
+  {
     "id": "d2c46fe8a414f0768e8a5426305b16b7",
     "source": {
       "path": "forums",
