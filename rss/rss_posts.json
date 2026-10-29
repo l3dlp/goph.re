@@ -1,5 +1,44 @@
 [
   {
+    "id": "ce99bc82569678a24f5eddc1ac1fa56a",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "I Have Spent 1000+ Hours With Claude Code. This Is What I Learned",
+    "url": "https://www.youtube.com/watch?v=kT3P1Gdrzzs",
+    "resume": "",
+    "date": "2026-10-29T14:30:38Z",
+    "vote": 0
+  },
+  {
+    "id": "0fd9787cfb626d89713c61adb4dbc720",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Built a Discord voice relay bot in Go, focused a lot on CPU and latency",
+    "url": "https://www.reddit.com/r/golang/comments/1xijq90/built_a_discord_voice_relay_bot_in_go_focused_a/",
+    "resume": "",
+    "date": "2026-10-29T13:17:50Z",
+    "vote": 0
+  },
+  {
+    "id": "99941f965fd0a2d3ebf152e4e044dd9f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "another ebiten-based ui framework",
+    "url": "https://www.reddit.com/r/golang/comments/1xijdfx/another_ebitenbased_ui_framework/",
+    "resume": "",
+    "date": "2026-10-29T13:03:00Z",
+    "vote": 0
+  },
+  {
     "id": "e8551f0db59b3f22d58ae76c638d245e",
     "source": {
       "path": "forums",
