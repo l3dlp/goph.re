@@ -1,5 +1,31 @@
 [
   {
+    "id": "d788705b2f8fa55e2c857148a14618d1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Tinygo 0.44 surprisingly good...",
+    "url": "https://www.reddit.com/r/golang/comments/1xipepq/tinygo_044_surprisingly_good/",
+    "resume": "",
+    "date": "2026-10-29T16:52:18Z",
+    "vote": 0
+  },
+  {
+    "id": "86453e2054a37edfac2291e7e393947f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Keycloak with React and Go: Login, PKCE and JWT Roles",
+    "url": "https://www.reddit.com/r/golang/comments/1xip0pd/keycloak_with_react_and_go_login_pkce_and_jwt/",
+    "resume": "",
+    "date": "2026-10-29T16:38:05Z",
+    "vote": 0
+  },
+  {
     "id": "ce99bc82569678a24f5eddc1ac1fa56a",
     "source": {
       "path": "examples",
