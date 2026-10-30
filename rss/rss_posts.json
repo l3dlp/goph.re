@@ -1,5 +1,18 @@
 [
   {
+    "id": "783f33ec215defebb5f71e6590626056",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Seeking a Go Concurrency Design Review: Semaphore Queueing vs. Network Throughput in a Task Processing Service",
+    "url": "https://www.reddit.com/r/golang/comments/1xj7mpp/seeking_a_go_concurrency_design_review_semaphore/",
+    "resume": "",
+    "date": "2026-10-30T06:09:20Z",
+    "vote": 0
+  },
+  {
     "id": "af4d588ad7f90bebef57a40b362de3ad",
     "source": {
       "path": "community",
