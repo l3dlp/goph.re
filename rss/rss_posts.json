@@ -1,5 +1,31 @@
 [
   {
+    "id": "5d7051780316212746a896171b6799f8",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Protecting against CVE-2026-98432",
+    "url": "https://groups.google.com/g/golang-announce/c/PCoQcdxoScw",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/mp8yqt/protecting_against_cve_2026_98432\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-10-30T17:54:52Z",
+    "vote": 0
+  },
+  {
+    "id": "37226bb336715f5b0a3f72812b253192",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Five Go exercises worth trying",
+    "url": "https://www.reddit.com/r/golang/comments/1xjlyx8/five_go_exercises_worth_trying/",
+    "resume": "",
+    "date": "2026-10-30T17:38:09Z",
+    "vote": 0
+  },
+  {
     "id": "34b48f6385e0d66cc6158f7fedad5217",
     "source": {
       "path": "forums",
