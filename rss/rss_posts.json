@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "ee09eba798828911481623430e7d266e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go program are vulnerable to CVE-2026-98432 (Linux TCP Use-After-Free which can lead to remote code execution)",
+    "url": "https://www.reddit.com/r/golang/comments/1xjamq3/go_program_are_vulnerable_to_cve202698432_linux/",
+    "resume": "",
+    "date": "2026-10-30T09:22:48Z",
+    "vote": 0
+  },
+  {
     "id": "e756076f49b7930f680643a15b664c47",
     "source": {
       "path": "forums",
