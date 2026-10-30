@@ -1,5 +1,18 @@
 [
   {
+    "id": "e756076f49b7930f680643a15b664c47",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Stracetest - Go test helper that runs subtests under strace to inject syscall faults",
+    "url": "https://forum.golangbridge.org/t/stracetest-go-test-helper-that-runs-subtests-under-strace-to-inject-syscall-faults/42747#post_1",
+    "resume": " \u003cp\u003eI originally made this just for fun, but turned out it’s actually helpful \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/slight_smile.png?v=15\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003cbr\u003e\n\u003ca href=\"https://github.com/roy2220/stracetest\" rel=\"noopener nofollow ugc\"\u003ehttps://github.com/roy2220/stracetest\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-10-30T08:12:18Z",
+    "vote": 0
+  },
+  {
     "id": "783f33ec215defebb5f71e6590626056",
     "source": {
       "path": "forums",
