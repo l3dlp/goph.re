@@ -1,5 +1,18 @@
 [
   {
+    "id": "34b48f6385e0d66cc6158f7fedad5217",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Sandboxing subprocesses with Landlock in Go 1.28",
+    "url": "https://www.reddit.com/r/golang/comments/1xjkc1c/sandboxing_subprocesses_with_landlock_in_go_128/",
+    "resume": "",
+    "date": "2026-10-30T16:38:42Z",
+    "vote": 0
+  },
+  {
     "id": "ad464718bcc94ca835423d2d01c8c509",
     "source": {
       "path": "community",
