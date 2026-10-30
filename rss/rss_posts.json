@@ -1,5 +1,18 @@
 [
   {
+    "id": "af4d588ad7f90bebef57a40b362de3ad",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "XSS in yarr RSS reader",
+    "url": "https://0x67673068.me/xss-in-yarr/",
+    "resume": "\u003cp\u003eNote: The dark mode of this site is kind of hard to read.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://lobste.rs/s/1r7enm/xss_yarr_rss_reader\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-10-29T23:55:54Z",
+    "vote": 0
+  },
+  {
     "id": "d788705b2f8fa55e2c857148a14618d1",
     "source": {
       "path": "forums",
