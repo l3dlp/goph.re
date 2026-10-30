@@ -1,5 +1,18 @@
 [
   {
+    "id": "13eeefe92f6c9c83761260ec5138a704",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "phpscript: a go php-syntax runtime",
+    "url": "https://www.reddit.com/r/golang/comments/1xjcrju/phpscript_a_go_phpsyntax_runtime/",
+    "resume": "",
+    "date": "2026-10-30T11:26:51Z",
+    "vote": 0
+  },
+  {
     "id": "e756076f49b7930f680643a15b664c47",
     "source": {
       "path": "forums",
