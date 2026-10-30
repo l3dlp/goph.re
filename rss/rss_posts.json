@@ -1,5 +1,44 @@
 [
   {
+    "id": "ad464718bcc94ca835423d2d01c8c509",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Go 1.28's HTTP/2 Parking: Measuring Memory Savings",
+    "url": "https://abdolirad.me/articles/go-1-28-http2-parking-memory/",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/mhmqky/go_1_28_s_http_2_parking_measuring_memory\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-10-30T15:39:37Z",
+    "vote": 0
+  },
+  {
+    "id": "6ff7e457830f6dd1f38b93a5c133fcfa",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "20 System Design Concepts in 10 Minutes",
+    "url": "https://www.youtube.com/watch?v=M8tpS_1RUWg",
+    "resume": "",
+    "date": "2026-10-30T15:30:30Z",
+    "vote": 0
+  },
+  {
+    "id": "978e5a9bebf967aa3481571a9c610e21",
+    "source": {
+      "path": "tools",
+      "name": "GoLand",
+      "url": "https://blog.jetbrains.com/go/feed/"
+    },
+    "name": "Compromised eMudhra Certificates: Update Your JetBrains IDEs, ReSharper, .NET Tools, Toolbox App, and Gateway Now",
+    "url": "https://blog.jetbrains.com/security/2026/10/compromised-emudhra-certificates-ides/",
+    "resume": "Summary Available fixed versions The issue is fixed in the following versions: The 2025.2.6.* updates for all IDEs now contain only the JBR fix. They will get a separate hotfix for the JCEF problem. Until then, use a workaround to disable JCEF in your IDE (see instructions below). IDE versions 2025.1 and earlier, and Toolbox [\u0026#8230;]",
+    "date": "2026-10-30T15:24:48Z",
+    "vote": 0
+  },
+  {
     "id": "13eeefe92f6c9c83761260ec5138a704",
     "source": {
       "path": "forums",
