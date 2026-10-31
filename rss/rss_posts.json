@@ -1,5 +1,18 @@
 [
   {
+    "id": "d4d161d56acc7ccc0336a88dedb47ed4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Template your files with Goplater",
+    "url": "https://www.reddit.com/r/golang/comments/1xjv7k2/template_your_files_with_goplater/",
+    "resume": "",
+    "date": "2026-10-30T23:48:29Z",
+    "vote": 0
+  },
+  {
     "id": "5d7051780316212746a896171b6799f8",
     "source": {
       "path": "community",
