@@ -1,5 +1,18 @@
 [
   {
+    "id": "bfee8b7942893ff43a9189657a36d85a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "A zero-dependency Discord API v10 driver for Go",
+    "url": "https://forum.golangbridge.org/t/a-zero-dependency-discord-api-v10-driver-for-go/42751#post_1",
+    "resume": " \u003cp\u003e\u003ccode\u003egda\u003c/code\u003e is a low-level Go driver for the Discord API v10 and Gateway WebSocket protocol, implemented using only the Go standard library (\u003ccode\u003enet/http\u003c/code\u003e, \u003ccode\u003ecrypto/ed25519\u003c/code\u003e, \u003ccode\u003ecompress/zlib\u003c/code\u003e).\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eDocumentation\u003c/strong\u003e: \u003ca href=\"https://pkg.go.dev/github.com/sfossl/gda\" rel=\"noopener nofollow ugc\"\u003epkg.go.dev/github.com/sfossl/gda\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eModule\u003c/strong\u003e: \u003ccode\u003egithub.com/sfossl/gda\u003c/code\u003e (v0.1.0)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eLicense\u003c/strong\u003e: MIT\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97045-architecture-design-1\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97045-architecture-design-1\" aria-label=\"Heading link\"\u003e\u003c/a\u003eArchitecture \u0026amp; Design\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eZero External Dependencies\u003c/strong\u003e: Pure Go 1.24 stdlib. Zero third-party packages in \u003ccode\u003ego.mod\u003c/code\u003e.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eRate Limiting\u003c/strong\u003e: Pre-flight, route-bucketed coordination tracking Discord’s per-route header buckets and global limits in memory before request execution.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eInteractions\u003c/strong\u003e: Unified router for application commands and components over both persistent Gateway WebSockets and stateless HTTPS webhooks with Ed25519 verification.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGateway\u003c/strong\u003e: WebSocket state machine with heartbeat watchdog, session resume and optional zlib stream decompression.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eState Management\u003c/strong\u003e: Zero default in-memory caching for guilds, channels or members. Cache architecture is delegated entirely to the application layer.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97045-installation-usage-2\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97045-installation-usage-2\" aria-label=\"Heading link\"\u003e\u003c/a\u003eInstallation \u0026amp; Usage\u003c/h3\u003e\n\u003cpre data-code-wrap=\"bash\"\u003e\u003ccode class=\"lang-bash\"\u003ego get github.com/sfossl/gda@v0.1.0\n\u003c/code\u003e\u003c/pre\u003e\n\u003cpre data-code-wrap=\"go\"\u003e\u003ccode class=\"lang-go\"\u003epackage main\n\nimport (\n\t\"context\"\n\t\"fmt\"\n\t\"log\"\n\t\"os\"\n\n\t\"github.com/sfossl/gda\"\n\t\"github.com/sfossl/gda/types\"\n)\n\nfunc main() {\n\tclient, err := gda.New(\n\t\tos.Getenv(\"DISCORD_TOKEN\"),\n\t\tgda.WithIntents(types.IntentGuildMessages|types.IntentMessageContent),\n\t)\n\tif err != nil {\n\t\tlog.Fatal(err)\n\t}\n\n\tclient.OnReady(func(ctx context.Context, r *types.ReadyEvent) {\n\t\tfmt.Printf(\"Connected as %s\\n\", r.User.Username)\n\t})\n\n\tclient.OnMessageCreate(func(ctx context.Context, msg *types.Message) {\n\t\tif msg.Author.Bot {\n\t\t\treturn\n\t\t}\n\t\tif msg.Content == \"ping\" {\n\t\t\tfmt.Printf(\"Ping received from %s\\n\", msg.Author.Username)\n\t\t}\n\t})\n\n\tif err := client.Start(context.Background()); err != nil {\n\t\tlog.Fatal(err)\n\t}\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFeedback, bug reports and benchmarks can be submitted at \u003ca href=\"https://github.com/sfossl/gda/issues\" rel=\"noopener nofollow ugc\"\u003eGitHub Issues\u003c/a\u003e.\u003c/p\u003e ",
+    "date": "2026-10-31T12:34:29Z",
+    "vote": 0
+  },
+  {
     "id": "a3e770143d925ebf0b44734e35f4c5ee",
     "source": {
       "path": "podcasts",
@@ -49,6 +62,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xk39xq/any_project_suggestions_to_impress_recruiters/",
     "resume": "",
     "date": "2026-10-31T06:49:51Z",
+    "vote": 0
+  },
+  {
+    "id": "124f8de90c348195de8ce51d339acd21",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "128 logins at once used 7.5 GB of RAM on my Go server. Letting only 3 hash at a time used 608 MB",
+    "url": "https://www.reddit.com/r/golang/comments/1xk1m3a/128_logins_at_once_used_75_gb_of_ram_on_my_go/",
+    "resume": "",
+    "date": "2026-10-31T05:08:12Z",
     "vote": 0
   },
   {
