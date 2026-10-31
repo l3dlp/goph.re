@@ -1,5 +1,18 @@
 [
   {
+    "id": "f20511ba6fe142d9c32654a85cd970e3",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "fuzzing when the overwhelming majority of possible calls will just be errors?",
+    "url": "https://www.reddit.com/r/golang/comments/1xke6y1/fuzzing_when_the_overwhelming_majority_of/",
+    "resume": "",
+    "date": "2026-10-31T16:11:58Z",
+    "vote": 0
+  },
+  {
     "id": "bfee8b7942893ff43a9189657a36d85a",
     "source": {
       "path": "forums",
