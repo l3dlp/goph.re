@@ -1,5 +1,18 @@
 [
   {
+    "id": "a3e770143d925ebf0b44734e35f4c5ee",
+    "source": {
+      "path": "podcasts",
+      "name": "Cup o' Go",
+      "url": "https://feeds.transistor.fm/cup-o-go"
+    },
+    "name": "Maps and CVEs: They just keep growing!",
+    "url": "https://share.transistor.fm/s/fc8cb6fc",
+    "resume": "\u003cul\u003e\u003cli\u003e🗺️ Accepted proposal: \u003ca href=\"https://github.com/golang/go/issues/81698\"\u003eadd maps.Grow\u003c/a\u003e\u003c/li\u003e\u003cli\u003e🇪🇪 \u003ca href=\"https://github.com/valimised/ivxv\"\u003eIVXV online voting system\u003c/a\u003e\u003cul\u003e\u003cli\u003e\u003ca href=\"https://www.reddit.com/r/golang/comments/1x7oe1w/estonias_election_system_is_mostly_programmed_in/\"\u003eReddit thread\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/li\u003e\u003cli\u003e🐧 \u003ca href=\"https://groups.google.com/g/golang-announce/c/PCoQcdxoScw\"\u003eProtecting against CVE-2026-98432\u003c/a\u003e\u003c/li\u003e\u003cli\u003e🌩️ Lightning round\u003cul\u003e\u003cli\u003e\u003ca href=\"https://github.com/YoanWai/agent-manager\"\u003eagent-manager\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://github.com/tinygo-org/tinygo/releases/tag/v0.44.0\"\u003etinygo 0.44.0 released\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/li\u003e\u003c/ul\u003e\n\u003cstrong\u003e\n  \u003ca href=\"https://www.patreon.com/user?u=52571196\" rel=\"payment\" title=\"★ Support this podcast on Patreon ★\"\u003e★ Support this podcast on Patreon ★\u003c/a\u003e\n\u003c/strong\u003e",
+    "date": "2026-10-31T11:49:37Z",
+    "vote": 0
+  },
+  {
     "id": "97fbf3a515f5b7a31bea9be85b5a71f9",
     "source": {
       "path": "forums",
