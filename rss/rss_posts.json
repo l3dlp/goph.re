@@ -1,5 +1,18 @@
 [
   {
+    "id": "e2521ad355057da2dad3c8b4d1e83d11",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "2026 Go Developer Survey",
+    "url": "https://www.reddit.com/r/golang/comments/1xk4glz/2026_go_developer_survey/",
+    "resume": "",
+    "date": "2026-10-31T08:04:48Z",
+    "vote": 0
+  },
+  {
     "id": "81e49be75adce0c04d3c327b7f76a707",
     "source": {
       "path": "forums",
