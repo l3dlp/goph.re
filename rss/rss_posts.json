@@ -1,5 +1,18 @@
 [
   {
+    "id": "038d9ae372ebb4118b6f03ffb9b6394d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I contributed to Golang, here is how you can too",
+    "url": "https://www.reddit.com/r/golang/comments/1xkx7cz/i_contributed_to_golang_here_is_how_you_can_too/",
+    "resume": "",
+    "date": "2026-11-01T07:45:17Z",
+    "vote": 0
+  },
+  {
     "id": "f20511ba6fe142d9c32654a85cd970e3",
     "source": {
       "path": "forums",
