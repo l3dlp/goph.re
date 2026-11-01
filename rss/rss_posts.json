@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "0aeeaa7d5e062abf7a700f8ba5448294",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What actually broke while building a Go relay, how we catch it now, and whether Rust would have helped",
+    "url": "https://www.reddit.com/r/golang/comments/1xl0lk7/what_actually_broke_while_building_a_go_relay_how/",
+    "resume": "",
+    "date": "2026-11-01T11:19:19Z",
+    "vote": 0
+  },
+  {
     "id": "038d9ae372ebb4118b6f03ffb9b6394d",
     "source": {
       "path": "forums",
