@@ -1,5 +1,18 @@
 [
   {
+    "id": "f2f5bfef8a0e6df993e1dfea8a7e7241",
+    "source": {
+      "path": "community",
+      "name": "Hacker News Go",
+      "url": "https://hnrss.org/newest?q=golang"
+    },
+    "name": "Vercel is adding Golang support to Next.js",
+    "url": "https://twitter.com/timneutkens/status/2116204819279134824",
+    "resume": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/timneutkens/status/2116204819279134824\"\u003ehttps://twitter.com/timneutkens/status/2116204819279134824\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=50344510\"\u003ehttps://news.ycombinator.com/item?id=50344510\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n",
+    "date": "2026-11-02T22:03:31Z",
+    "vote": 0
+  },
+  {
     "id": "fc3ae590ca54833e903efb92f57ee306",
     "source": {
       "path": "forums",
@@ -36,6 +49,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xm59k5/how_goembed_works_from_source_files_to_binary/",
     "resume": "",
     "date": "2026-11-02T18:30:18Z",
+    "vote": 0
+  },
+  {
+    "id": "cb42082c2c3e08b75feda8c6cb4f88c3",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Introducing Arkoren, a modular Go toolkit for backend services",
+    "url": "https://www.reddit.com/r/golang/comments/1xm3q53/introducing_arkoren_a_modular_go_toolkit_for/",
+    "resume": "",
+    "date": "2026-11-02T17:35:52Z",
     "vote": 0
   },
   {
