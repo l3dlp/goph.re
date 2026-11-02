@@ -1,5 +1,18 @@
 [
   {
+    "id": "fc3ae590ca54833e903efb92f57ee306",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Managing go modules with go.work",
+    "url": "https://www.reddit.com/r/golang/comments/1xm8pn8/managing_go_modules_with_gowork/",
+    "resume": "",
+    "date": "2026-11-02T20:35:20Z",
+    "vote": 0
+  },
+  {
     "id": "0bb8d07d0c60144b666eebc481535f44",
     "source": {
       "path": "forums",
