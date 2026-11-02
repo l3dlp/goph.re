@@ -1,5 +1,31 @@
 [
   {
+    "id": "c07b61db2f7c7d481dc3a7153cd00e71",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Anyone using GoatConter for analytics?",
+    "url": "https://www.reddit.com/r/golang/comments/1xly7to/anyone_using_goatconter_for_analytics/",
+    "resume": "",
+    "date": "2026-11-02T14:11:10Z",
+    "vote": 0
+  },
+  {
+    "id": "40b8777eac8099e100e1898649b7ad23",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "gohawk | Resource-focused static analysis for Go",
+    "url": "https://gohawk.dev",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/xrqppo/gohawk_resource_focused_static_analysis\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-02T13:56:37Z",
+    "vote": 0
+  },
+  {
     "id": "dc246dd85c8e6c990c60b6351b7c5924",
     "source": {
       "path": "forums",
