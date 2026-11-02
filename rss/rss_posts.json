@@ -1,5 +1,57 @@
 [
   {
+    "id": "d165ab44dbf012eb1950d82341736632",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "igiveyouarendezvous: an interview scheduler in pure Go (local search, lexicographic objectives)",
+    "url": "https://forum.golangbridge.org/t/igiveyouarendezvous-an-interview-scheduler-in-pure-go-local-search-lexicographic-objectives/42758#post_1",
+    "resume": " \u003cp\u003eHi gophers,\u003c/p\u003e\n\u003cp\u003eI’ve released igiveyouarendezvous, a command-line tool and Go library that plans interview days. Each candidate must meet several recruiters, and the tool builds the timetable.\u003c/p\u003e\n\u003cp\u003eWhat it handles:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ea recruiter sees one candidate at a time; recruiters of the same “joint group” may interview together;\u003c/li\u003e\n\u003cli\u003eall of a candidate’s interviews happen the same day, back to back (or with a bounded wait), never across the lunch break;\u003c/li\u003e\n\u003cli\u003eavailabilities per person, every day or by date, and an interview length per recruiter;\u003c/li\u003e\n\u003cli\u003estrict priorities, plus an automatic urgency for candidates with few days left.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe objectives are lexicographic, with no weights to tune: candidates seen first, then meetings, then sparing recruiters’ days and half-days, then fewer interviews and less recruiter time.\u003c/p\u003e\n\u003cp\u003eUnder the hood:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ea greedy start, then a ruin-and-recreate local search with late acceptance hill climbing, one search per core;\u003c/li\u003e\n\u003cli\u003eCtrl+C returns the best schedule so far, and a run can resume from a saved plan, where the candidates already convened are “fixed”: kept as they are, with an alert if one no longer holds;\u003c/li\u003e\n\u003cli\u003eon 60 to 100 candidates and 10 to 12 recruiters, it reaches the proven optimum (checked with HiGHS) on the number of candidates in every benchmark case;\u003c/li\u003e\n\u003cli\u003ethe tests compare it with a MILP model (go-milp) and with an exhaustive enumeration on 300 small random problems.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe input is a single YAML or JSON file, with a JSON Schema for editor validation, and -rest writes the next day’s file while keeping your comments. Pure Go, no cgo, 0BSD or WTFPL.\u003c/p\u003e\n\u003caside class=\"onebox githubrepo\" data-onebox-src=\"https://github.com/FrederickFrance/igiveyouarendezvous\"\u003e\n  \u003cheader class=\"source\"\u003e\n\n      \u003ca href=\"https://github.com/FrederickFrance/igiveyouarendezvous\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003egithub.com\u003c/a\u003e\n  \u003c/header\u003e\n\n  \u003carticle class=\"onebox-body\"\u003e\n    \u003cdiv class=\"github-row\" data-github-private-repo=\"false\"\u003e\n  \u003cimg width=\"690\" height=\"344\" src=\"https://opengraph.githubassets.com/434e14db14e2b17f86d5d3e542e29ebc/FrederickFrance/igiveyouarendezvous\" class=\"thumbnail\"\u003e\n\n  \u003ch3\u003e\u003ca href=\"https://github.com/FrederickFrance/igiveyouarendezvous\" target=\"_blank\" rel=\"noopener nofollow ugc\"\u003eGitHub - FrederickFrance/igiveyouarendezvous: Interview scheduling between candidates and...\u003c/a\u003e\u003c/h3\u003e\n\n    \u003cp\u003e\u003cspan class=\"github-repo-description\"\u003eInterview scheduling between candidates and recruiters, in Go, as a command or as a library.\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\n  \u003c/article\u003e\n\n  \u003cdiv class=\"onebox-metadata\"\u003e\n    \n    \n  \u003c/div\u003e\n\n  \u003cdiv style=\"clear: both\"\u003e\u003c/div\u003e\n\u003c/aside\u003e\n\n\u003cp\u003eFeedback welcome, on the search above all. I measured 2-opt-style swaps and ALNS against plain ruin \u0026amp; recreate and got no gain, which surprised me: ideas are welcome. Comments on the API are welcome too.\u003c/p\u003e ",
+    "date": "2026-11-02T17:08:53Z",
+    "vote": 0
+  },
+  {
+    "id": "c5b7be7b48c1143f6eb08146bd7aeafd",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Excelize 2.11.1 Released - Open-source library for spreadsheet",
+    "url": "https://forum.golangbridge.org/t/excelize-2-11-1-released-open-source-library-for-spreadsheet/42755#post_2",
+    "resume": " \u003cp\u003eThanks for the all the hard work on Excelize. I appreciate it.\u003c/p\u003e ",
+    "date": "2026-11-02T17:07:48Z",
+    "vote": 0
+  },
+  {
+    "id": "664e85fe3132265eb972a04b3ebd132e",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "F**k Doomscrolling, Build These Projects Instead",
+    "url": "https://www.youtube.com/watch?v=k2MX5Y3MEDA",
+    "resume": "",
+    "date": "2026-11-02T16:45:34Z",
+    "vote": 0
+  },
+  {
+    "id": "c543c27cdb81dc3cdc58852a89281c08",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "The rise of Go? Next.js might support Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xm26p9/the_rise_of_go_nextjs_might_support_go/",
+    "resume": "",
+    "date": "2026-11-02T16:40:48Z",
+    "vote": 0
+  },
+  {
     "id": "4b2e6d6c8fd103c513c3ca1a07359b13",
     "source": {
       "path": "forums",
