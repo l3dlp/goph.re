@@ -1,5 +1,18 @@
 [
   {
+    "id": "db3958ff99320c99e839724e45498d33",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_4",
+    "resume": " \u003cp\u003eHonestly tired of seeing all these. I don’t think they even fit in Go language environment. that’s like JAVA. I don’t think any gopher wants that. gophers are happy with go itself.\u003c/p\u003e ",
+    "date": "2026-11-02T14:38:20Z",
+    "vote": 0
+  },
+  {
     "id": "c07b61db2f7c7d481dc3a7153cd00e71",
     "source": {
       "path": "forums",
