@@ -1,5 +1,18 @@
 [
   {
+    "id": "5281aae5c81387cce6cf1259bd6bcb14",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How //go:embed Works: From Source Files to Binary",
+    "url": "https://www.reddit.com/r/golang/comments/1xm59k5/how_goembed_works_from_source_files_to_binary/",
+    "resume": "",
+    "date": "2026-11-02T18:30:18Z",
+    "vote": 0
+  },
+  {
     "id": "d165ab44dbf012eb1950d82341736632",
     "source": {
       "path": "forums",
