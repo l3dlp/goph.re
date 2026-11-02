@@ -26,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "5911ba2ca7bf1638655af2d359e7665c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Excelize 2.11.1 Released - Open-source library for spreadsheet",
+    "url": "https://www.reddit.com/r/golang/comments/1xlr4rr/excelize_2111_released_opensource_library_for/",
+    "resume": "",
+    "date": "2026-11-02T07:45:24Z",
+    "vote": 0
+  },
+  {
     "id": "0f729418ef4ab08a7db2c375631e687e",
     "source": {
       "path": "examples",
