@@ -1,5 +1,18 @@
 [
   {
+    "id": "4b2e6d6c8fd103c513c3ca1a07359b13",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Agentic Harness Eco System",
+    "url": "https://www.reddit.com/r/golang/comments/1xlzdb9/agentic_harness_eco_system/",
+    "resume": "",
+    "date": "2026-11-02T14:56:34Z",
+    "vote": 0
+  },
+  {
     "id": "db3958ff99320c99e839724e45498d33",
     "source": {
       "path": "forums",
@@ -36,6 +49,19 @@
     "url": "https://gohawk.dev",
     "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/xrqppo/gohawk_resource_focused_static_analysis\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
     "date": "2026-11-02T13:56:37Z",
+    "vote": 0
+  },
+  {
+    "id": "f583aa3b62101c738503d6b0e25fb59d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GitHub - changkun/occamy: 🖥️ a modern remote desktop proxy written in Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xlx6ry/github_changkunoccamy_a_modern_remote_desktop/",
+    "resume": "",
+    "date": "2026-11-02T13:29:01Z",
     "vote": 0
   },
   {
