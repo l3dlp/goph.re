@@ -1,5 +1,18 @@
 [
   {
+    "id": "5723b51b7117e20145c655a269b0445d",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Excelize 2.11.1 Released - Open-source library for spreadsheet",
+    "url": "https://forum.golangbridge.org/t/excelize-2-11-1-released-open-source-library-for-spreadsheet/42755#post_3",
+    "resume": " \u003cp\u003eAmazing library I use in every other project. Once you get the hang of some performance quirks and different methods it is invaluable for working with spreadsheets.\u003c/p\u003e\n\u003cp\u003eOne question I asked myself: Is there a reason why the library does not expose a simple getCellValue[T]() method to get the unformatted underlying value of a cell instead of the string-formatted value ?\u003c/p\u003e ",
+    "date": "2026-11-03T09:45:14Z",
+    "vote": 0
+  },
+  {
     "id": "a39e959426113cd8fa4ce070619b7bd3",
     "source": {
       "path": "forums",
