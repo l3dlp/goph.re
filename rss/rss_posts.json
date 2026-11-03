@@ -1,5 +1,18 @@
 [
   {
+    "id": "b8f1ae98c60cec3f0fb55168efffef50",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How Does Code Become Electricity?",
+    "url": "https://www.youtube.com/watch?v=joAJW-By59Y",
+    "resume": "",
+    "date": "2026-11-03T18:33:16Z",
+    "vote": 0
+  },
+  {
     "id": "83ebc26f90e8d80d10474d9baddede91",
     "source": {
       "path": "forums",
