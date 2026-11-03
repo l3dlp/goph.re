@@ -1,5 +1,18 @@
 [
   {
+    "id": "83ebc26f90e8d80d10474d9baddede91",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_7",
+    "resume": " \u003cp\u003e\u003ca class=\"mention\" href=\"https://forum.golangbridge.org/u/sunder\"\u003e@Sunder\u003c/a\u003e Let me check the excpetion handling. I am just learning V because it offers the Option/Result pattern to handle exception so it would be great to check another point of view…\u003c/p\u003e ",
+    "date": "2026-11-03T13:52:55Z",
+    "vote": 0
+  },
+  {
     "id": "56894367ed87462a4fe10f41aee9ffdb",
     "source": {
       "path": "forums",
