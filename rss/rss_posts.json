@@ -104,6 +104,19 @@
     "vote": 0
   },
   {
+    "id": "94a890059d38fb39235f721825bb5837",
+    "source": {
+      "path": "experts",
+      "name": "Redowan Delowar",
+      "url": "https://rednafi.com/index.xml"
+    },
+    "name": "Accepted proposal: grow an existing map with maps.Grow",
+    "url": "https://rednafi.com/shards/2026/11/go-maps-grow/",
+    "resume": "The maps package is getting a Grow function that presizes a map you already have, and maps.Copy will start doing it for you.",
+    "date": "2026-11-03T00:00:00Z",
+    "vote": 0
+  },
+  {
     "id": "f2f5bfef8a0e6df993e1dfea8a7e7241",
     "source": {
       "path": "community",
