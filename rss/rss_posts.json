@@ -1,5 +1,18 @@
 [
   {
+    "id": "56894367ed87462a4fe10f41aee9ffdb",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Ardan Labs",
+    "url": "https://www.reddit.com/r/golang/comments/1xmsknv/ardan_labs/",
+    "resume": "",
+    "date": "2026-11-03T13:12:17Z",
+    "vote": 0
+  },
+  {
     "id": "2557af5c39a6d8c94d7a63bddcfcc0c8",
     "source": {
       "path": "forums",
