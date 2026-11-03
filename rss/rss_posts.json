@@ -1,5 +1,18 @@
 [
   {
+    "id": "2557af5c39a6d8c94d7a63bddcfcc0c8",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "igiveyouarendezvous: an interview scheduler in pure Go (local search, lexicographic objectives)",
+    "url": "https://forum.golangbridge.org/t/igiveyouarendezvous-an-interview-scheduler-in-pure-go-local-search-lexicographic-objectives/42758#post_2",
+    "resume": " \u003cp\u003eInteresting Project - I like the clear and flexible configuration options via YAML/JSON. Two Ideas come to mind:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003ePerformance:\u003cbr\u003e\nHave you thought about using SIMD instructions to increase performance? Since this problem seems mostly CPU bound it could greatly benefit from vectorized execution: \u003ca href=\"https://go.dev/blog/simd-experiment\" rel=\"noopener nofollow ugc\"\u003eGo-Blog:SIMD\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eAdoption:\u003cbr\u003e\nIf you want to ease adoption you could provide a simple online demo. Then users could just edit the YAML text in the text-field and get the schedule with a single click without having to run local binaries. (You could for example build the code as WASM and provide static hosting via GitHub, so everything runs in the browser)\u003c/li\u003e\n\u003c/ol\u003e ",
+    "date": "2026-11-03T10:30:04Z",
+    "vote": 0
+  },
+  {
     "id": "5723b51b7117e20145c655a269b0445d",
     "source": {
       "path": "forums",
