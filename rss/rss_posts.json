@@ -1,5 +1,18 @@
 [
   {
+    "id": "13ca014a814ba91c4a143dac15870f24",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "igiveyouarendezvous: an interview scheduler in pure Go (local search, lexicographic objectives)",
+    "url": "https://forum.golangbridge.org/t/igiveyouarendezvous-an-interview-scheduler-in-pure-go-local-search-lexicographic-objectives/42758#post_3",
+    "resume": " \u003cp\u003eThanks a lot for the feedback!\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003eSIMD: I profiled the search, and most of the time goes into exploring the possible placements of each candidate: branchy code over a handful of time slots, not wide data-parallel loops. The bit operations that could be vectorised take less than 20% of the time, and an earlier switch to 64-bit word bitsets gained nothing. Smarter pruning would help more than raw speed, but I’ll keep an eye on the \u003ccode\u003esimd\u003c/code\u003e package once it leaves the experiment.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eOnline demo: great idea, and it’s done: \u003ca href=\"https://frederickfrance.github.io/igiveyouarendezvous/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eigiveyouarendezvous demo\u003c/a\u003e — pick an example, edit the YAML and click Plan. The engine is pure Go, so it compiled to WebAssembly as is. It runs in a web worker, in the browser, so the data never leaves the user’s machine, which matters for HR people handling candidates’ names. The schedule shows as a board, one row per person, and improves while the search runs.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e ",
+    "date": "2026-11-03T21:04:50Z",
+    "vote": 0
+  },
+  {
     "id": "b8f1ae98c60cec3f0fb55168efffef50",
     "source": {
       "path": "examples",
