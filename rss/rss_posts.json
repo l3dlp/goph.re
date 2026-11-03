@@ -1,5 +1,18 @@
 [
   {
+    "id": "cd6c8f122cc82299b441905eec7c9dff",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Packages in ditch",
+    "url": "https://forum.golangbridge.org/t/packages-in-ditch/42765#post_1",
+    "resume": " \u003cp\u003ePlease stop leaving my packages in the ditch.\u003c/p\u003e ",
+    "date": "2026-11-03T21:49:49Z",
+    "vote": 0
+  },
+  {
     "id": "13ca014a814ba91c4a143dac15870f24",
     "source": {
       "path": "forums",
