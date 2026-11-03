@@ -1,5 +1,31 @@
 [
   {
+    "id": "5ccda497cb590d1628271f1b2d0a55fa",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Gist of Go: Concurrency",
+    "url": "https://antonz.org/go-concurrency/",
+    "resume": "\u003cp\u003eThis seems like a well executed mini-course on concurrency in Go.\u003c/p\u003e\n\u003cp\u003eI'd love to hear where it might be out of date or otherwise steering me wrong, as well as pointers to other good resources.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://lobste.rs/s/erkjnx/gist_go_concurrency\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-03T23:05:03Z",
+    "vote": 0
+  },
+  {
+    "id": "e8b1edefaac8ec9308be0ea9259a4852",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "go-in-lean: Exploring Go correctness with AI agents, Lean 4 and QEMU",
+    "url": "https://forum.golangbridge.org/t/go-in-lean-exploring-go-correctness-with-ai-agents-lean-4-and-qemu/42766#post_1",
+    "resume": " \u003cp\u003eHi everyone!\u003c/p\u003e\n\u003cp\u003eFirst, a quick introduction. I’m a physics and computer science teacher in France, \u003cstrong\u003enot a Go expert\u003c/strong\u003e. I wrote a little Go code a few years ago for a telemetry project involving an electric go-kart, but that’s about it!\u003c/p\u003e\n\u003cp\u003eRecently, two articles caught my attention:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://discourse.julialang.org/t/formalizing-julia-in-lean-and-finding-400-bugs-in-base/140243\" rel=\"noopener nofollow ugc\"\u003eFormalizing Julia in Lean and finding 400 bugs in Base\u003c/a\u003e, about Miles Cranmer’s impressive experiment with AI-assisted formal verification.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://linuxfr.org/users/wilk/journaux/sondage-sur-le-langage-go-et-indication-sur-l-usage-de-l-ia-au-sein-de-l-equipe-go\" rel=\"noopener nofollow ugc\"\u003eA LinuxFr article about AI usage within the Go team\u003c/a\u003e, reporting Cameron Balahan’s comments about AI-generated contributions and the importance of thorough human verification.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI found the Go team’s position particularly interesting. Contributors can use AI, but they remain responsible for verifying their work, and the Go team reviews submissions line by line.\u003c/p\u003e\n\u003cp\u003eThat makes sense, especially for a compiler. But it also made me wonder: \u003cstrong\u003ecould AI agents help investigate the correctness of Go itself, provided their findings are independently verifiable?\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eSo I decided to experiment!\u003c/p\u003e\n\u003ch3\u003e\u003ca name=\"p-97070-introducing-go-in-lean-1\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97070-introducing-go-in-lean-1\" aria-label=\"Heading link\"\u003e\u003c/a\u003eIntroducing go-in-lean\u003c/h3\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/s-celles/go-in-lean\" rel=\"noopener nofollow ugc\"\u003ego-in-lean\u003c/a\u003e is an experimental open-source project inspired by \u003ca href=\"https://github.com/MilesCranmer/julia-in-lean\" rel=\"noopener nofollow ugc\"\u003ejulia-in-lean\u003c/a\u003e.\u003c/p\u003e\n\u003cp\u003eThe project is largely developed with AI coding agents, combining:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eAI agents\u003c/strong\u003e to explore Go’s source code, build formal models, generate Lean proofs, and investigate potential bugs.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ca href=\"https://lean-lang.org/\" rel=\"noopener nofollow ugc\"\u003eLean 4\u003c/a\u003e\u003c/strong\u003e to verify properties of standard library functions and compiler SSA optimizations.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eDifferential and metamorphic testing\u003c/strong\u003e to compare expected behavior against actual Go implementations.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ca href=\"https://www.qemu.org/\" rel=\"noopener nofollow ugc\"\u003eQEMU\u003c/a\u003e\u003c/strong\u003e on my personal homelab to test ARM, MIPS, RISC-V, PowerPC, s390x, and other architectures.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eHuman review\u003c/strong\u003e to validate findings before reporting them upstream.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97070-how-is-it-different-from-julia-in-lean-2\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97070-how-is-it-different-from-julia-in-lean-2\" aria-label=\"Heading link\"\u003e\u003c/a\u003eHow is it different from julia-in-lean?\u003c/h3\u003e\n\u003cp\u003eMiles Cranmer’s project already uses AI agents, formal proofs, and differential testing. I’m building on that methodology, but exploring a few additional directions:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCompiler internals:\u003c/strong\u003e investigating SSA rewrite rules and architecture-specific optimizations, beyond standard library functions.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eBit-precise reasoning:\u003c/strong\u003e using Lean’s \u003ccode\u003eBitVec\u003c/code\u003e and \u003ccode\u003ebv_decide\u003c/code\u003e to verify fixed-width integer operations, with explicit auditing of the additional proof assumptions.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eCross-architecture testing:\u003c/strong\u003e running QEMU-based fuzzing campaigns on my homelab, without needing physical hardware for every target architecture.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThe QEMU part turned out to be particularly useful. Some compiler bugs only appear on specific architectures.\u003c/p\u003e\n\u003ch3\u003e\u003ca name=\"p-97070-early-results-3\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97070-early-results-3\" aria-label=\"Heading link\"\u003e\u003c/a\u003eEarly results\u003c/h3\u003e\n\u003cp\u003eThe experiment has already uncovered several reproducible Go compiler miscompilations, including architecture-specific issues, reported upstream.\u003c/p\u003e\n\u003cp\u003eA few examples:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/golang/go/issues/82763\" rel=\"noopener nofollow ugc\"\u003egolang/go#82763\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/golang/go/issues/82767\" rel=\"noopener nofollow ugc\"\u003egolang/go#82767\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/golang/go/issues/82772\" rel=\"noopener nofollow ugc\"\u003egolang/go#82772\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eOf course, proving a property of a Lean model doesn’t prove the correctness of the actual Go implementation. Every suspected bug must be reproduced, and QEMU testing has its limitations.\u003c/p\u003e\n\u003ch3\u003e\u003ca name=\"p-97070-why-am-i-sharing-this-4\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97070-why-am-i-sharing-this-4\" aria-label=\"Heading link\"\u003e\u003c/a\u003eWhy am I sharing this?\u003c/h3\u003e\n\u003cp\u003eI’m interested in the methodology as much as the bugs themselves.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eCan AI agents help us investigate complex software outside our primary areas of expertise, while formal methods, reproducible testing, and human review help establish confidence in the results?\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eI’m certainly learning a lot about Go and its compiler along the way, and I would appreciate feedback from people who know them much better than I do.\u003c/p\u003e\n\u003cp\u003eRepository: \u003ca href=\"https://github.com/s-celles/go-in-lean\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - s-celles/go-in-lean: A proof-of-concept to find correctness bugs in Go's standard library with Lean 4. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eFeedback, criticism, and contributions are very welcome!\u003c/p\u003e ",
+    "date": "2026-11-03T22:29:20Z",
+    "vote": 0
+  },
+  {
     "id": "cd6c8f122cc82299b441905eec7c9dff",
     "source": {
       "path": "forums",
@@ -36,6 +62,19 @@
     "url": "https://www.youtube.com/watch?v=joAJW-By59Y",
     "resume": "",
     "date": "2026-11-03T18:33:16Z",
+    "vote": 0
+  },
+  {
+    "id": "bc81c9391af8b3669eeeb49fc40e176c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Two bugs I hit writing a buffered HTTP client in Go: concurrent Close() and retry deadlines",
+    "url": "https://www.reddit.com/r/golang/comments/1xn0ud7/two_bugs_i_hit_writing_a_buffered_http_client_in/",
+    "resume": "",
+    "date": "2026-11-03T18:26:02Z",
     "vote": 0
   },
   {
