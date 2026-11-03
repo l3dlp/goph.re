@@ -1,5 +1,18 @@
 [
   {
+    "id": "a39e959426113cd8fa4ce070619b7bd3",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_6",
+    "resume": " \u003cp\u003e\u003ca class=\"mention\" href=\"https://forum.golangbridge.org/u/yamil_bracho\"\u003e@Yamil_Bracho\u003c/a\u003e  Appreciate your feedback, I’m glad you found something useful here. My aim here was to give us Go developers more higher level tools to help build better solutions with fewer lines of code using well understood software patterns while staying true to the Go ecosystem and the learning invested. For me personally, exception handling alone has been worth its weight in gold! \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/slight_smile.png?v=15\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e Hope to hear your experiences should you try this out in the future. Thanks!\u003c/p\u003e ",
+    "date": "2026-11-03T04:37:49Z",
+    "vote": 0
+  },
+  {
     "id": "89eb31d5438b0775896fd1f18f5e9903",
     "source": {
       "path": "forums",
