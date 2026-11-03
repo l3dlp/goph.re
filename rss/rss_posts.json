@@ -1,5 +1,18 @@
 [
   {
+    "id": "89eb31d5438b0775896fd1f18f5e9903",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_5",
+    "resume": " \u003cp\u003eWhat i feel in love with go it is its simplicity. However, there are some good ideas here that can be useful for going further and even simplifying things more. For example, extensions, ORM (right-in-the-box) and other features.\u003c/p\u003e ",
+    "date": "2026-11-03T03:17:50Z",
+    "vote": 0
+  },
+  {
     "id": "f2f5bfef8a0e6df993e1dfea8a7e7241",
     "source": {
       "path": "community",
