@@ -1,5 +1,18 @@
 [
   {
+    "id": "c3cd0f6a4b24281d2b6e7fcca17399cd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Should I choose Go or C#/.NET for backend development?",
+    "url": "https://www.reddit.com/r/golang/comments/1xnw6xf/should_i_choose_go_or_cnet_for_backend_development/",
+    "resume": "",
+    "date": "2026-11-04T18:41:33Z",
+    "vote": 0
+  },
+  {
     "id": "7d517b21a2fe1b4967f0b39f864440a9",
     "source": {
       "path": "forums",
