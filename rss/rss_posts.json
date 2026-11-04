@@ -1,5 +1,44 @@
 [
   {
+    "id": "7d517b21a2fe1b4967f0b39f864440a9",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Hike: An alternative Go compiler implemented 100% in Go, for zero-runtime, tiny Wasm, and Cgo-free native libraries",
+    "url": "https://forum.golangbridge.org/t/introducing-hike-an-alternative-go-compiler-implemented-100-in-go-for-zero-runtime-tiny-wasm-and-cgo-free-native-libraries/42770#post_1",
+    "resume": " \u003cp\u003eHi everyone,\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHike is an alternative Go compiler implemented 100% in Go.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eIn fact, a significant amount of standard Go source code already compiles directly with Hike today.\u003c/p\u003e\n\u003cp\u003eWhy build another Go compiler? Go is exceptional for backends and network services, but standard Go’s runtime assumptions (GC, M:N scheduler, and Cgo mechanics) make certain low-level, performance-critical domains structurally difficult. Hike was built not to replace Go or fork the community, but to solve specific architectural bottlenecks that the official toolchain cannot easily address.\u003c/p\u003e\n\u003ch3\u003e\u003ca name=\"p-97098-the-real-world-friction-hike-solves-1\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97098-the-real-world-friction-hike-solves-1\" aria-label=\"Heading link\"\u003e\u003c/a\u003eThe Real-World Friction Hike Solves\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eInstant, Zero-Overhead C-ABI Calls:\u003c/strong\u003e Calling C via Cgo incurs substantial overhead (goroutine stack switching, signal handling, scheduler interaction) and severely impairs seamless cross-compilation.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eTiny Wasm Payloads with Zero Heap Drift:\u003c/strong\u003e Standard Go Wasm binaries bundle the runtime and GC, easily ballooning to multiple megabytes and generating steady heap allocation.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003ePackaging Complex Native Desktop/Graphics Libraries:\u003c/strong\u003e Dynamic extraction tricks (like dropping embedded \u003ccode\u003e.dll\u003c/code\u003e/\u003ccode\u003e.so\u003c/code\u003e files to \u003ccode\u003e/tmp\u003c/code\u003e at runtime) are increasingly blocked by modern enterprise AV/EDR software or hardened \u003ccode\u003enoexec\u003c/code\u003e mounts.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e\u003ca name=\"p-97098-core-capabilities-2\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97098-core-capabilities-2\" aria-label=\"Heading link\"\u003e\u003c/a\u003eCore Capabilities\u003c/h3\u003e\n\u003ch4\u003e\u003ca name=\"p-97098-h-1-direct-c-abi-calling-native-shared-library-generation-3\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97098-h-1-direct-c-abi-calling-native-shared-library-generation-3\" aria-label=\"Heading link\"\u003e\u003c/a\u003e1. Direct C-ABI Calling \u0026amp; Native Shared Library Generation\u003c/h4\u003e\n\u003cp\u003eIn Hike, calling native C functions requires zero glue code, wrapper layers, or Cgo. You simply write standard Go-style function declarations:\u003c/p\u003e\n\u003cp\u003eGo\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"lang-auto\"\u003e// Direct C-ABI call lowered to a native machine instruction\nfunc abs(n int32) int32\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eHike also compiles directly into native shared libraries (\u003ccode\u003e.so\u003c/code\u003e / \u003ccode\u003e.dll\u003c/code\u003e), automatically generating complete, fully-typed C++ header files ready for external toolchains.\u003c/p\u003e\n\u003ch4\u003e\u003ca name=\"p-97098-h-2-ultra-lightweight-webassembly-from-14kb-zero-heap-overhead-4\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97098-h-2-ultra-lightweight-webassembly-from-14kb-zero-heap-overhead-4\" aria-label=\"Heading link\"\u003e\u003c/a\u003e2. Ultra-Lightweight WebAssembly (From 1.4KB, Zero Heap Overhead)\u003c/h4\u003e\n\u003cp\u003eWhen targeting WebAssembly, Hike emits clean, compact binaries:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eBase binary sizes start at \u003cstrong\u003e~1.4KB\u003c/strong\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eExecutes 10,000+ continuous function calls with \u003cstrong\u003ezero heap memory growth\u003c/strong\u003e, ensuring rock-solid predictability.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eFeatures a built-in DWARF emitter, providing step-through line debugging directly inside Chrome DevTools without relying on heavy external toolchains.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003ca name=\"p-97098-h-3-cgo-free-static-linking-via-sxso-5\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97098-h-3-cgo-free-static-linking-via-sxso-5\" aria-label=\"Heading link\"\u003e\u003c/a\u003e3. Cgo-Free Static Linking via \u003ccode\u003e.sxso\u003c/code\u003e\u003c/h4\u003e\n\u003cp\u003eHike leverages Go’s native static object specification (\u003ccode\u003e.sxso\u003c/code\u003e). By automating the bridge between prebuilt C++/Rust static archives and \u003ccode\u003e.sxso\u003c/code\u003e objects, Hike enables seamless, Cgo-free static compilation within standard Go projects.\u003c/p\u003e\n\u003cp\u003eWe have already used this technique to deliver fully working, Cgo-free Go bindings for major modern GUI and system libraries:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eSlint\u003c/strong\u003e (Declarative UI framework)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003ewgpu\u003c/strong\u003e (WebGPU native implementation)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003ewinit\u003c/strong\u003e (Cross-platform window creation)\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eSDL3\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97098-a-complementary-tool-for-gophers-6\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97098-a-complementary-tool-for-gophers-6\" aria-label=\"Heading link\"\u003e\u003c/a\u003eA Complementary Tool for Gophers\u003c/h3\u003e\n\u003cp\u003eHike is not an adversarial project. It is a complementary tool designed to expand what Go developers can build, allowing them to bring Go’s clean syntax and engineering efficiency into domains where heavy runtimes cannot survive: microcontrollers, edge nodes, real-time GUI applications, and bandwidth-constrained Wasm sandboxes.\u003c/p\u003e\n\u003cp\u003eThe project is completely open source:\u003cbr\u003e\n\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/backhand_index_pointing_right.png?v=15\" title=\":backhand_index_pointing_right:\" class=\"emoji\" alt=\":backhand_index_pointing_right:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e \u003cstrong\u003eGitHub: \u003ca href=\"https://github.com/kanryu/hike-lang\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - kanryu/hike-lang: A zero-overhead systems language uniting Go ergonomics with bare-metal performance: zero-GC, direct C-ABI, and ultra-lightweight, WASI-free WebAssembly (normal \u0026amp; concurrent). · GitHub\u003c/a\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eI welcome all feedback, critique, and technical discussions from the community!\u003c/p\u003e ",
+    "date": "2026-11-04T17:01:46Z",
+    "vote": 0
+  },
+  {
+    "id": "d29ba1d3d535b2efe23d4e74b4e59d2b",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Anthropic is now watermarking everything Claude writes",
+    "url": "https://www.youtube.com/watch?v=Clrq5Za7KDQ",
+    "resume": "",
+    "date": "2026-11-04T16:30:25Z",
+    "vote": 0
+  },
+  {
+    "id": "cc987b8bf37176eab9d194bdac430e83",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Building Barista—Part 1",
+    "url": "https://www.reddit.com/r/golang/comments/1xnshzx/building_baristapart_1/",
+    "resume": "",
+    "date": "2026-11-04T16:23:08Z",
+    "vote": 0
+  },
+  {
     "id": "14294209da86855115f49075e6afd6d5",
     "source": {
       "path": "forums",
