@@ -1,5 +1,44 @@
 [
   {
+    "id": "d41796157b11eea1a0ed98f476d30136",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Accepted proposal: grow an existing map with maps.Grow",
+    "url": "https://www.reddit.com/r/golang/comments/1xnklbs/accepted_proposal_grow_an_existing_map_with/",
+    "resume": "",
+    "date": "2026-11-04T10:12:39Z",
+    "vote": 0
+  },
+  {
+    "id": "bae6d71401b064f2747c1a834fb95d88",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go Backend Engineer, open to remote roles (full-time, part-time, or contract)",
+    "url": "https://forum.golangbridge.org/t/go-backend-engineer-open-to-remote-roles-full-time-part-time-or-contract/42768#post_1",
+    "resume": " \u003cp\u003eI’m a backend engineer with 5 years of experience, mostly in Go, and I’m open to remote full-time, part-time, or contract work. Recent projects include a multi-tenant MCP\u003cbr\u003e\nserver hub (Go microservices over Redis Streams, Nomad execution, Vault-backed tenant isolation, SCIM and SAML/OIDC), a Temporal-based autonomous coding\u003cbr\u003e\npipeline, and marketplace payments with idempotent webhook handling and settlement on PostgreSQL. Earlier, I worked on ride-hailing billing against a double-entry ledger on\u003cbr\u003e\nCockroachDB and open-sourced deeplink, a Go library extracted from a production service. I also handle the infrastructure side, including AWS, Docker, Pulumi, Terraform, and\u003cbr\u003e\nPrometheus/Grafana. On Upwork, I’m Top Rated Plus with 100% Job Success. I’m based in Addis Ababa (UTC+3) and work as a contractor or through an employer of record. You can\u003cbr\u003e\nreach me here by DM or through contacts found in \u003ca href=\"http://yinebebt.com\" rel=\"noopener nofollow ugc\"\u003eyinebebt.com\u003c/a\u003e.\u003c/p\u003e ",
+    "date": "2026-11-04T09:50:10Z",
+    "vote": 0
+  },
+  {
+    "id": "85681d046ef81d8ce0e109aafb9df1ce",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Looking for a Golang Developer - Internship",
+    "url": "https://forum.golangbridge.org/t/looking-for-a-golang-developer-internship/41658#post_4",
+    "resume": " \u003cp\u003eDo you have a flexible schedule? Updated - I can share with new grads\u003c/p\u003e ",
+    "date": "2026-11-04T09:44:43Z",
+    "vote": 0
+  },
+  {
     "id": "a339d4f28441f564537f128bb9d50e74",
     "source": {
       "path": "forums",
