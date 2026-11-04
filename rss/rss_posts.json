@@ -1,5 +1,18 @@
 [
   {
+    "id": "a339d4f28441f564537f128bb9d50e74",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go Empty Interface Explained \u0026 The Hidden Heap Allocation",
+    "url": "https://www.reddit.com/r/golang/comments/1xnhkez/go_empty_interface_explained_the_hidden_heap/",
+    "resume": "",
+    "date": "2026-11-04T06:58:12Z",
+    "vote": 0
+  },
+  {
     "id": "5ccda497cb590d1628271f1b2d0a55fa",
     "source": {
       "path": "community",
