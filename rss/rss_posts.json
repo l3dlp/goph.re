@@ -117,6 +117,19 @@
     "vote": 0
   },
   {
+    "id": "c2ba3fb5c9670441df50e619e44d8547",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "A new Go API for JSON",
+    "url": "https://go.dev/blog/jsonv2",
+    "resume": "Go 1.27 introduces new encoding/json/v2 and encoding/json/jsontext packages.",
+    "date": "2026-11-04T00:00:00Z",
+    "vote": 0
+  },
+  {
     "id": "5ccda497cb590d1628271f1b2d0a55fa",
     "source": {
       "path": "community",
