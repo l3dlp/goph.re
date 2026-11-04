@@ -1,5 +1,18 @@
 [
   {
+    "id": "4145b83b1cfd6a134515d487c01b6aef",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "How //go:embed Works: From Source Files to Binary",
+    "url": "https://internals-for-interns.com/posts/how-go-embed-works/",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/macxwd/how_go_embed_works_from_source_files\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-04T12:45:22Z",
+    "vote": 0
+  },
+  {
     "id": "d41796157b11eea1a0ed98f476d30136",
     "source": {
       "path": "forums",
