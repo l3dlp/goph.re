@@ -1,5 +1,18 @@
 [
   {
+    "id": "28680aeb71dafd0d2504ce170dcc8177",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GitHub - fantuz/entropy-service: Randomness, on your terms. A self-hosted Go toolkit to generate, stream and inspect random data from hardware or software RNGs, through HTTP and WebSocket APIs.",
+    "url": "https://www.reddit.com/r/golang/comments/1xo5s26/github_fantuzentropyservice_randomness_on_your/",
+    "resume": "",
+    "date": "2026-11-05T01:19:10Z",
+    "vote": 0
+  },
+  {
     "id": "c3cd0f6a4b24281d2b6e7fcca17399cd",
     "source": {
       "path": "forums",
