@@ -1,5 +1,44 @@
 [
   {
+    "id": "7e6d9be56490a56a803992ca26b51cd1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Proposal Accepted: Generic Sets",
+    "url": "https://www.reddit.com/r/golang/comments/1xoe261/proposal_accepted_generic_sets/",
+    "resume": "",
+    "date": "2026-11-05T09:07:31Z",
+    "vote": 0
+  },
+  {
+    "id": "8c98e2a02f983c21fe417adac2427230",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Has anyone done this course?",
+    "url": "https://www.reddit.com/r/golang/comments/1xocdn4/has_anyone_done_this_course/",
+    "resume": "",
+    "date": "2026-11-05T07:15:12Z",
+    "vote": 0
+  },
+  {
+    "id": "de8fa581927fe2737472ce8aa960d197",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Porting ECS to Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xoc38q/porting_ecs_to_go/",
+    "resume": "",
+    "date": "2026-11-05T06:57:00Z",
+    "vote": 0
+  },
+  {
     "id": "28680aeb71dafd0d2504ce170dcc8177",
     "source": {
       "path": "forums",
