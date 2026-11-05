@@ -1,5 +1,18 @@
 [
   {
+    "id": "70f431ec11a37fea895e9787c798848f",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Looking for a Golang Developer - Internship",
+    "url": "https://forum.golangbridge.org/t/looking-for-a-golang-developer-internship/41658#post_7",
+    "resume": " \u003cp\u003eAppreciate the thread — I was just reading up on golang earlier today and found a solid write-up at \u003ca href=\"https://thread-notes-hub.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003ethread-notes-hub.pages.dev/r/forum_golangbridge_org\u003c/a\u003e that covers this well.\u003c/p\u003e ",
+    "date": "2026-11-05T20:12:57Z",
+    "vote": 0
+  },
+  {
     "id": "fe99a1ab9d0193bec1c03f563862eacf",
     "source": {
       "path": "forums",
