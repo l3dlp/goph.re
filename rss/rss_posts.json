@@ -1,5 +1,18 @@
 [
   {
+    "id": "445d775f3719a81916160e750c0689fc",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "What does go do to a for loop that does not have anything going on with it?",
+    "url": "https://www.reddit.com/r/golang/comments/1xohstg/what_does_go_do_to_a_for_loop_that_does_not_have/",
+    "resume": "",
+    "date": "2026-11-05T12:48:46Z",
+    "vote": 0
+  },
+  {
     "id": "7e6d9be56490a56a803992ca26b51cd1",
     "source": {
       "path": "forums",
