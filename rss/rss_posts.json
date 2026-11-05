@@ -1,5 +1,18 @@
 [
   {
+    "id": "fe99a1ab9d0193bec1c03f563862eacf",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Should I ensure my Go code \"root directory/working directory\" is the initial executable directory?",
+    "url": "https://www.reddit.com/r/golang/comments/1xoqz6b/should_i_ensure_my_go_code_root_directoryworking/",
+    "resume": "",
+    "date": "2026-11-05T18:55:15Z",
+    "vote": 0
+  },
+  {
     "id": "c189af9621735e9a553cd07cd340a269",
     "source": {
       "path": "examples",
