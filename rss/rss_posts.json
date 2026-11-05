@@ -26,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "1cb7ad2df49d0e0ad105b8541860cc14",
+    "source": {
+      "path": "tools",
+      "name": "GoLand",
+      "url": "https://blog.jetbrains.com/go/feed/"
+    },
+    "name": "GoLand 2026.3 Is Now Available!",
+    "url": "https://blog.jetbrains.com/go/2026/11/05/goland-2026-3-is-now-available/",
+    "resume": "GoLand 2026.3 brings JetBrains Air into your Go workflow. You can run coding agents inside GoLand, review their changes alongside your code, and guide them with feedback tied to specific lines. A new GoLand skill helps agents use the profiler to investigate performance problems. Additionally, this release improves Git worktrees, GoLand’s responsiveness, and support for [\u0026#8230;]",
+    "date": "2026-11-05T13:25:58Z",
+    "vote": 0
+  },
+  {
     "id": "445d775f3719a81916160e750c0689fc",
     "source": {
       "path": "forums",
