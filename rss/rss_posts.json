@@ -1,5 +1,18 @@
 [
   {
+    "id": "c189af9621735e9a553cd07cd340a269",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "I Bet Nobody Has Ever Explained the Backend Ecosystem Like This Before",
+    "url": "https://www.youtube.com/watch?v=ZuEexQF-7hk",
+    "resume": "",
+    "date": "2026-11-05T17:30:12Z",
+    "vote": 0
+  },
+  {
     "id": "e1dc165361d37df4eba9cb7265fb19e2",
     "source": {
       "path": "forums",
