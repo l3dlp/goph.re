@@ -1,5 +1,31 @@
 [
   {
+    "id": "e1dc165361d37df4eba9cb7265fb19e2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GoLand 2026.3 Is Here: JetBrains Air Integration, New Profiling Skills for AI Agents, and IDE Improvements",
+    "url": "https://www.reddit.com/r/golang/comments/1xoj1t7/goland_20263_is_here_jetbrains_air_integration/",
+    "resume": "",
+    "date": "2026-11-05T13:47:06Z",
+    "vote": 0
+  },
+  {
+    "id": "878b07fdb620d7138d67bd6c494e2fa1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GoLand 2026.3 Is Now Available",
+    "url": "https://www.reddit.com/r/golang/comments/1xoisve/goland_20263_is_now_available/",
+    "resume": "",
+    "date": "2026-11-05T13:35:45Z",
+    "vote": 0
+  },
+  {
     "id": "445d775f3719a81916160e750c0689fc",
     "source": {
       "path": "forums",
