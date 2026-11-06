@@ -1,5 +1,18 @@
 [
   {
+    "id": "3778f88693235dc803287fb84d423054",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "GitHub - tjcoder-labs/cli: Terminal-first research harness exploring generative UIs and model-directed presentation across multi-surface environments.",
+    "url": "https://www.reddit.com/r/golang/comments/1xp26tj/github_tjcoderlabscli_terminalfirst_research/",
+    "resume": "",
+    "date": "2026-11-06T03:04:30Z",
+    "vote": 0
+  },
+  {
     "id": "2298a85abeaec8ee993d3a8428ae04dc",
     "source": {
       "path": "community",
@@ -10,6 +23,19 @@
     "url": "https://go.dev/doc/asm",
     "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/o0e2wj/quick_guide_go_s_assembler\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
     "date": "2026-11-05T22:07:32Z",
+    "vote": 0
+  },
+  {
+    "id": "7a67e5517c5245a75613899fec9237c5",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Robotgo now supports pure go \"darwin, windows, wayland, libei and x11\" backend",
+    "url": "https://www.reddit.com/r/golang/comments/1xovlzt/robotgo_now_supports_pure_go_darwin_windows/",
+    "resume": "",
+    "date": "2026-11-05T21:59:01Z",
     "vote": 0
   },
   {
