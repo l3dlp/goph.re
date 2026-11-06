@@ -1,5 +1,31 @@
 [
   {
+    "id": "9ea473912cf1dc0ca1913192616804c2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Migrating 1.9 million lines of Go to encoding/json/v2: 762 benchmarks on three builds",
+    "url": "https://www.reddit.com/r/golang/comments/1xp9cgn/migrating_19_million_lines_of_go_to/",
+    "resume": "",
+    "date": "2026-11-06T10:15:41Z",
+    "vote": 0
+  },
+  {
+    "id": "c5565ce6a7f069890f4c9508c0a7df84",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go 1.27: encoding/json/v2, Stricter Defaults, and Finally [] for Nil Slices · cekrem.github.io",
+    "url": "https://www.reddit.com/r/golang/comments/1xp8buk/go_127_encodingjsonv2_stricter_defaults_and/",
+    "resume": "",
+    "date": "2026-11-06T09:09:30Z",
+    "vote": 0
+  },
+  {
     "id": "43924574166a0a9e2ebe21decde4592f",
     "source": {
       "path": "forums",
