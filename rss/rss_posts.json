@@ -1,5 +1,18 @@
 [
   {
+    "id": "3fd12316700673f781c3b2c7c8cba966",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Embed yaml files or create a generator?",
+    "url": "https://www.reddit.com/r/golang/comments/1xpnmm2/embed_yaml_files_or_create_a_generator/",
+    "resume": "",
+    "date": "2026-11-06T20:43:47Z",
+    "vote": 0
+  },
+  {
     "id": "8fe55243761690c6aeff6c516f81fd2e",
     "source": {
       "path": "forums",
