@@ -1,5 +1,18 @@
 [
   {
+    "id": "38b7d4b675eb85fe77148a3956e4f959",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How to handle events and keys in Gio Editors.",
+    "url": "https://www.reddit.com/r/golang/comments/1xpr0az/how_to_handle_events_and_keys_in_gio_editors/",
+    "resume": "",
+    "date": "2026-11-06T23:07:26Z",
+    "vote": 0
+  },
+  {
     "id": "3fd12316700673f781c3b2c7c8cba966",
     "source": {
       "path": "forums",
