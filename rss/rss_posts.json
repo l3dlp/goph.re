@@ -1,5 +1,18 @@
 [
   {
+    "id": "8fe55243761690c6aeff6c516f81fd2e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "New Course for beginners",
+    "url": "https://www.reddit.com/r/golang/comments/1xpjw7w/new_course_for_beginners/",
+    "resume": "",
+    "date": "2026-11-06T18:14:39Z",
+    "vote": 0
+  },
+  {
     "id": "3692c786161758bbd4b6654a34b5830c",
     "source": {
       "path": "examples",
