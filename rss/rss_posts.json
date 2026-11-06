@@ -1,5 +1,18 @@
 [
   {
+    "id": "b1a69d99868b1433fdc4c9421b07bbc1",
+    "source": {
+      "path": "tools",
+      "name": "GoLand",
+      "url": "https://blog.jetbrains.com/go/feed/"
+    },
+    "name": "GoLand’s Profiler Now Works With AI Agents",
+    "url": "https://blog.jetbrains.com/go/2026/11/06/we-gave-ai-agents-goland-s-profiler-they-found-the-same-bottlenecks-with-half-the-tokens/",
+    "resume": "In our practical guide to profiling in Go, we mentioned that some of the Go developers we talked to avoid pprof if they can. For many of them, typical Go services perform well enough without optimizations, so when they do need to profile, it can feel like a “rescue mission” with a tool they are [\u0026#8230;]",
+    "date": "2026-11-06T11:32:04Z",
+    "vote": 0
+  },
+  {
     "id": "9ea473912cf1dc0ca1913192616804c2",
     "source": {
       "path": "forums",
