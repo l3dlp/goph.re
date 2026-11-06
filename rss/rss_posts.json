@@ -1,5 +1,31 @@
 [
   {
+    "id": "81a1315c44c6c74145b887a6e175911c",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "The MustCreate Pattern for Go Tests",
+    "url": "https://mtlynch.io/notes/go-must-create-pattern/",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/i96uyr/mustcreate_pattern_for_go_tests\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-06T15:37:00Z",
+    "vote": 0
+  },
+  {
+    "id": "2378a5461923f6d72f4f92451ab7432c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "The MustCreate Pattern for Go Tests",
+    "url": "https://www.reddit.com/r/golang/comments/1xpfsqm/the_mustcreate_pattern_for_go_tests/",
+    "resume": "",
+    "date": "2026-11-06T15:36:12Z",
+    "vote": 0
+  },
+  {
     "id": "b1a69d99868b1433fdc4c9421b07bbc1",
     "source": {
       "path": "tools",
