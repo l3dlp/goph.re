@@ -1,5 +1,18 @@
 [
   {
+    "id": "43924574166a0a9e2ebe21decde4592f",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "High-performance, zero-dependency Discord Application Framework for Go",
+    "url": "https://forum.golangbridge.org/t/high-performance-zero-dependency-discord-application-framework-for-go/42775#post_1",
+    "resume": " \u003cp\u003e\u003ccode\u003egdk\u003c/code\u003e is an application command framework built on top of \u003ccode\u003egda\u003c/code\u003e. It provides slash command routing, differential command synchronization, token-bucket rate limiting, UI component handling and dual execution transports (persistent Gateway WebSocket or serverless HTTP Webhooks) using only the Go standard library.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eDocumentation\u003c/strong\u003e: \u003ca href=\"https://pkg.go.dev/github.com/sfossl/gdk\" rel=\"noopener nofollow ugc\"\u003epkg.go.dev/github.com/sfossl/gdk\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eModule\u003c/strong\u003e: \u003ccode\u003egithub.com/sfossl/gda\u003c/code\u003e (v0.1.0)\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eLicense\u003c/strong\u003e: MIT\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca name=\"p-97111-architecture-design-1\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97111-architecture-design-1\" aria-label=\"Heading link\"\u003e\u003c/a\u003eArchitecture \u0026amp; Design\u003c/h2\u003e\n\u003cp\u003e\u003ccode\u003egdk\u003c/code\u003e is organized into focused subsystems\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eApp\u003c/strong\u003e: Application lifecycle runner, functional configuration, graceful shutdown, dual execution transports and modular registration (\u003ccode\u003eModule\u003c/code\u003e).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eCommand\u003c/strong\u003e: Slash command declarations, typed option definitions across all 9 Discord option types, subcommand trees, autocomplete routing and local schema validation.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eContext\u003c/strong\u003e: Execution context passed to handlers, typed option extraction with default fallbacks, automatic 2.5-second deferral and fluent action suites.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eComponent\u003c/strong\u003e: Declarative builders for rich embeds with strict limit checking, buttons, select menus, action rows with auto-packing (\u003ccode\u003ePackRows\u003c/code\u003e) and modals.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMiddleware\u003c/strong\u003e: Interception pipelines, 64-shard partitioned token-bucket cooldown store, permission checks and panic recovery (\u003ccode\u003eGuard\u003c/code\u003e).\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eUtilities\u003c/strong\u003e: Compound human duration parsing (\u003ccode\u003e1h 30m\u003c/code\u003e, \u003ccode\u003e2d\u003c/code\u003e) and dynamic Discord markdown timestamp formatting (\u003ccode\u003e\u0026lt;t:UNIX:STYLE\u0026gt;\u003c/code\u003e).\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca name=\"p-97111-installation-2\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97111-installation-2\" aria-label=\"Heading link\"\u003e\u003c/a\u003eInstallation\u003c/h2\u003e\n\u003cp\u003eRequires Go 1.24 or higher:\u003c/p\u003e\n\u003cpre data-code-wrap=\"bash\"\u003e\u003ccode class=\"lang-bash\"\u003ego get github.com/sfossl/gdk\n\u003c/code\u003e\u003c/pre\u003e ",
+    "date": "2026-11-06T07:44:20Z",
+    "vote": 0
+  },
+  {
     "id": "cc3b9ed0905d7f80616043ea65a7dfd7",
     "source": {
       "path": "forums",
