@@ -1,5 +1,18 @@
 [
   {
+    "id": "a27958256cde876a07d51d6c393bd900",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "libtmux-go 0.1: tmux client library, mcp, workspace manager for golang",
+    "url": "https://www.reddit.com/r/golang/comments/1xpv4kk/libtmuxgo_01_tmux_client_library_mcp_workspace/",
+    "resume": "",
+    "date": "2026-11-07T02:25:56Z",
+    "vote": 0
+  },
+  {
     "id": "2d06c98bf8c973fa3e3334b9452e4df2",
     "source": {
       "path": "forums",
