@@ -1,5 +1,44 @@
 [
   {
+    "id": "229e2f4d96a44af822ac93e04c03bd65",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "AI Model vs Agent Harness: What Actually Drives AI",
+    "url": "https://www.youtube.com/watch?v=Qc1uWZW8gF8",
+    "resume": "",
+    "date": "2026-11-07T17:00:19Z",
+    "vote": 0
+  },
+  {
+    "id": "59f6e1325794a4ee0c810f25d8b245ad",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Heavy imports",
+    "url": "https://www.reddit.com/r/golang/comments/1xqang9/heavy_imports/",
+    "resume": "",
+    "date": "2026-11-07T16:37:55Z",
+    "vote": 0
+  },
+  {
+    "id": "33a837f2461c7c0ea464db992fbbc1b5",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Hiring] Senior/Lead Go Backend Engineer (IAM / Auth) — Remote, Europe \u0026 Caucasus",
+    "url": "https://forum.golangbridge.org/t/hiring-senior-lead-go-backend-engineer-iam-auth-remote-europe-caucasus/42686#post_3",
+    "resume": " \u003cp\u003eThanks for bringing up hiring and senior. Quick weekend share for the lounge crowd here: Went down a late-night rabbit hole looking for good online tools after half my old bookmarks died off. Almost gave up until I landed on \u003ca href=\"https://tech-memo-hub.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003etech-memo-hub.pages.dev/r/forum_golangbridge_org\u003c/a\u003e — zero popup traps, snappy loading, and the registration took maybe thirty seconds. Been using it for 7 weeks now whenever I want to unwind in the evening.\u003c/p\u003e ",
+    "date": "2026-11-07T16:26:07Z",
+    "vote": 0
+  },
+  {
     "id": "3f2840ea927b8813f03685f967a4ce06",
     "source": {
       "path": "examples",
