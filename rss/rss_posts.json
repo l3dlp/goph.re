@@ -1,5 +1,18 @@
 [
   {
+    "id": "2d06c98bf8c973fa3e3334b9452e4df2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How hard could implementing DTLS 1.3 possibly be?",
+    "url": "https://www.reddit.com/r/golang/comments/1xpt8hm/how_hard_could_implementing_dtls_13_possibly_be/",
+    "resume": "",
+    "date": "2026-11-07T00:52:23Z",
+    "vote": 0
+  },
+  {
     "id": "38b7d4b675eb85fe77148a3956e4f959",
     "source": {
       "path": "forums",
