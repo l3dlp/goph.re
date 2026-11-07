@@ -1,5 +1,31 @@
 [
   {
+    "id": "3f2840ea927b8813f03685f967a4ce06",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How to replace doomscrolling with coding",
+    "url": "https://www.youtube.com/watch?v=0v6nEM7KTnk",
+    "resume": "",
+    "date": "2026-11-07T15:00:10Z",
+    "vote": 0
+  },
+  {
+    "id": "fbbace49c2f174b20e2dcc6c5d88ab7e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "gobwas/ws v1.5.0: Go 1.27 flate fix, OOM vuln fix, 4x faster masking with asm",
+    "url": "https://www.reddit.com/r/golang/comments/1xq6zuj/gobwasws_v150_go_127_flate_fix_oom_vuln_fix_4x/",
+    "resume": "",
+    "date": "2026-11-07T13:58:31Z",
+    "vote": 0
+  },
+  {
     "id": "3897d0ffce05b8083e995edcc65b5e1e",
     "source": {
       "path": "forums",
