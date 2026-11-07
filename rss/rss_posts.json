@@ -1,5 +1,18 @@
 [
   {
+    "id": "a682462e2c9fc471d5c64dbdce6166b7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Arquiteturas CRUD tradicionais em Golang",
+    "url": "https://www.reddit.com/r/golang/comments/1xqcqqd/arquiteturas_crud_tradicionais_em_golang/",
+    "resume": "",
+    "date": "2026-11-07T18:05:40Z",
+    "vote": 0
+  },
+  {
     "id": "229e2f4d96a44af822ac93e04c03bd65",
     "source": {
       "path": "examples",
