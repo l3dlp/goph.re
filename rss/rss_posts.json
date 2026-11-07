@@ -1,5 +1,18 @@
 [
   {
+    "id": "463e863373d047ed0994ba0adc880ab6",
+    "source": {
+      "path": "podcasts",
+      "name": "Cup o' Go",
+      "url": "https://feeds.transistor.fm/cup-o-go"
+    },
+    "name": "🌉 Ready, Sets, Go! Live from SF, hosted by Assembled!",
+    "url": "https://share.transistor.fm/s/62db1b94",
+    "resume": "\u003cp\u003eThank you to \u003ca href=\"https://www.assembled.com/\"\u003ehttps://www.assembled.com/\u003c/a\u003e for hosting Cup o' Go!\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003ca href=\"https://github.com/golang/go/issues/69230#issuecomment-6040903375\"\u003eGo Sets\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://github.com/golang/go/issues/82464\"\u003eproposal: go test should run analyzers specified by the workspace\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://x.com/timneutkens/status/2116204819279134824?s=20\"\u003eVercel Go Support\u003c/a\u003e\u003c/li\u003e\u003cli\u003eLightning Round:\u003cul\u003e\u003cli\u003e\u003ca href=\"https://go.dev/blog/jsonv2\"\u003eJSON v2\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://www.youtube.com/@func25\"\u003ePhuong Le's YouTube about Go\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/li\u003e\u003c/ul\u003e\n\u003cstrong\u003e\n  \u003ca href=\"https://www.patreon.com/user?u=52571196\" rel=\"payment\" title=\"★ Support this podcast on Patreon ★\"\u003e★ Support this podcast on Patreon ★\u003c/a\u003e\n\u003c/strong\u003e",
+    "date": "2026-11-07T12:16:31Z",
+    "vote": 0
+  },
+  {
     "id": "a27958256cde876a07d51d6c393bd900",
     "source": {
       "path": "forums",
