@@ -1,5 +1,31 @@
 [
   {
+    "id": "07f4caa757a639c163de71153271356e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Smart Contracts",
+    "url": "https://www.reddit.com/r/golang/comments/1xqdzgi/smart_contracts/",
+    "resume": "",
+    "date": "2026-11-07T18:58:08Z",
+    "vote": 0
+  },
+  {
+    "id": "6d905052398f2271b8048e75cba580e6",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Simulating Black Holes in C++",
+    "url": "https://www.youtube.com/watch?v=TZman68Vs6o",
+    "resume": "",
+    "date": "2026-11-07T18:15:40Z",
+    "vote": 0
+  },
+  {
     "id": "a682462e2c9fc471d5c64dbdce6166b7",
     "source": {
       "path": "forums",
