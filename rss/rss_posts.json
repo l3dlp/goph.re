@@ -1,5 +1,18 @@
 [
   {
+    "id": "3897d0ffce05b8083e995edcc65b5e1e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Why is naming variables in Go so weird, ex: r, w, c, cfg, etcIs it an obsession with simplicity and conciseness in everything",
+    "url": "https://www.reddit.com/r/golang/comments/1xq5vqu/why_is_naming_variables_in_go_so_weird_ex_r_w_c/",
+    "resume": "",
+    "date": "2026-11-07T13:03:33Z",
+    "vote": 0
+  },
+  {
     "id": "463e863373d047ed0994ba0adc880ab6",
     "source": {
       "path": "podcasts",
