@@ -1,5 +1,18 @@
 [
   {
+    "id": "94c8ac7b4a8304c367d5ed50c7a93023",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built a decompiler that turns stripped Go binaries back into Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xqjmbp/i_built_a_decompiler_that_turns_stripped_go/",
+    "resume": "",
+    "date": "2026-11-07T23:10:29Z",
+    "vote": 0
+  },
+  {
     "id": "07f4caa757a639c163de71153271356e",
     "source": {
       "path": "forums",
@@ -10,6 +23,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xqdzgi/smart_contracts/",
     "resume": "",
     "date": "2026-11-07T18:58:08Z",
+    "vote": 0
+  },
+  {
+    "id": "9559246cf67743bd539f9fe3730c36d7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "New to go, just wanna geek out a bit",
+    "url": "https://www.reddit.com/r/golang/comments/1xqd40m/new_to_go_just_wanna_geek_out_a_bit/",
+    "resume": "",
+    "date": "2026-11-07T18:21:14Z",
     "vote": 0
   },
   {
