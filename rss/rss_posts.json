@@ -1,5 +1,31 @@
 [
   {
+    "id": "c9222f3087cea7203ae7bca17b104b7d",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Gad - A tiny, unconventional dependency wiring framework",
+    "url": "https://forum.golangbridge.org/t/gad-a-tiny-unconventional-dependency-wiring-framework/42785#post_1",
+    "resume": " \u003cp\u003erepo: \u003ca href=\"https://github.com/roy2220/gad\" rel=\"noopener nofollow ugc\"\u003ehttps://github.com/roy2220/gad\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-08T14:22:41Z",
+    "vote": 0
+  },
+  {
+    "id": "0fb9c2b5371ad63d886b03897817e092",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "The future of Software Engineering is boring",
+    "url": "https://www.reddit.com/r/golang/comments/1xqzijp/the_future_of_software_engineering_is_boring/",
+    "resume": "",
+    "date": "2026-11-08T14:21:03Z",
+    "vote": 0
+  },
+  {
     "id": "e44570eaf9cd9fe669d4e076c2cd3155",
     "source": {
       "path": "forums",
