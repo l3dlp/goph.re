@@ -1,5 +1,18 @@
 [
   {
+    "id": "20eb87fa64ce676dde0cd9d5dcd4ffcd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Looking for contributors for VPS Pilot (Go, self-hosted server dashboard)",
+    "url": "https://www.reddit.com/r/golang/comments/1xqo14i/looking_for_contributors_for_vps_pilot_go/",
+    "resume": "",
+    "date": "2026-11-08T02:52:54Z",
+    "vote": 0
+  },
+  {
     "id": "aaf10a7d5ac98cd95cb9e62e93233445",
     "source": {
       "path": "forums",
