@@ -91,6 +91,19 @@
     "vote": 0
   },
   {
+    "id": "9d4809b5f77a5d0b7c358f2c4bad9f68",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Need help with this error",
+    "url": "https://www.reddit.com/r/golang/comments/1xqzeoh/need_help_with_this_error/",
+    "resume": "",
+    "date": "2026-11-08T14:15:58Z",
+    "vote": 0
+  },
+  {
     "id": "e44570eaf9cd9fe669d4e076c2cd3155",
     "source": {
       "path": "forums",
