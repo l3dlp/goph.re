@@ -26,6 +26,32 @@
     "vote": 0
   },
   {
+    "id": "05525e2c90dae89de4b44002d62c4980",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "A new Go API for JSON",
+    "url": "https://www.reddit.com/r/golang/comments/1xqtk9i/a_new_go_api_for_json/",
+    "resume": "",
+    "date": "2026-11-08T08:24:26Z",
+    "vote": 0
+  },
+  {
+    "id": "00133d498b4eadaf607d9f9767f60e73",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Scriptables lives on - Open-Source control panel for Ubuntu servers",
+    "url": "https://www.reddit.com/r/golang/comments/1xqrqr8/scriptables_lives_on_opensource_control_panel_for/",
+    "resume": "",
+    "date": "2026-11-08T06:26:29Z",
+    "vote": 0
+  },
+  {
     "id": "ed93c00563c697c76d5efd7623d5e21e",
     "source": {
       "path": "forums",
