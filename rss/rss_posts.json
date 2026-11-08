@@ -1,5 +1,18 @@
 [
   {
+    "id": "e44570eaf9cd9fe669d4e076c2cd3155",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "My Go Application Occasionally Returns Incomplete API Responses Under Concurrent Requests",
+    "url": "https://forum.golangbridge.org/t/my-go-application-occasionally-returns-incomplete-api-responses-under-concurrent-requests/42778#post_2",
+    "resume": " \u003cp\u003eSounds quite a classical race conditions. Thus, checking the app with race detection and with testing of different traffic models should be one step. The problem could be in processing of concurrent requests - thus in Go handlers.\u003c/p\u003e\n\u003cp\u003eHowever, there is also the possibility that assigning the  requests to connected clients (sessions) is broken. This is not necessarily always a Go race condition.\u003c/p\u003e ",
+    "date": "2026-11-08T11:28:15Z",
+    "vote": 0
+  },
+  {
     "id": "e8552c32f833d7a2e5260a70d3eec095",
     "source": {
       "path": "forums",
