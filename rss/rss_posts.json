@@ -1,5 +1,31 @@
 [
   {
+    "id": "5b703b1f2ae9a03b433bdda625d7221a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Hotel / public Wi-Fi fine for browsing — banking logins keep looping?",
+    "url": "https://forum.golangbridge.org/t/hotel-public-wi-fi-fine-for-browsing-banking-logins-keep-looping/42786#post_1",
+    "resume": " \u003cp\u003eQuick practical travel-laptop question.On hotel guest Wi-Fi, normal browsing is usually fine, but banking / work logins fail or loop — especially with a captive portal.Is that just a common captive-portal thing, or a bad access point? What do you actually do on the road — mobile data / eSIM for those logins, ask for another SSID, or something else?Not after a deep dump — just what you’d tell a friend. Thanks.\u003c/p\u003e ",
+    "date": "2026-11-08T16:15:16Z",
+    "vote": 0
+  },
+  {
+    "id": "440d9160df38f8891738876279aa9887",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Problem with Stdin, Stdout",
+    "url": "https://www.reddit.com/r/golang/comments/1xr1mm7/problem_with_stdin_stdout/",
+    "resume": "",
+    "date": "2026-11-08T15:56:23Z",
+    "vote": 0
+  },
+  {
     "id": "c9222f3087cea7203ae7bca17b104b7d",
     "source": {
       "path": "forums",
