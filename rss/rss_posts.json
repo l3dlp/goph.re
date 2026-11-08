@@ -1,5 +1,44 @@
 [
   {
+    "id": "ed93c00563c697c76d5efd7623d5e21e",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do you version a review API when the set of answers might grow?",
+    "url": "https://forum.golangbridge.org/t/how-do-you-version-a-review-api-when-the-set-of-answers-might-grow/42782#post_1",
+    "resume": " \u003cp\u003eWe ship a document-review API from a Go service at Landvex. Today the report is six named dimensions, each verified / deviation / unclear. There is no overall score, and I want to keep it that way.\u003c/p\u003e\n\u003cp\u003eWhat I’m not sure about: we may need a seventh question later, or we may need to split one of the six once we understand a document family better.\u003c/p\u003e\n\u003cp\u003e- Do you treat the dimensions as an extensible list in the JSON (clients must ignore unknown names), or as a closed struct that forces a v2?\u003c/p\u003e\n\u003cp\u003e- How do you stop an old client from inventing a summary score the moment it sees a list instead of six fixed fields?\u003c/p\u003e\n\u003cp\u003e- Any Go API design you regretted here — protobuf enums that couldn’t grow, or a map that became a junk drawer?\u003c/p\u003e\n\u003cp\u003eI’d rather version honestly than paint ourselves into a corner.\u003c/p\u003e ",
+    "date": "2026-11-08T06:14:52Z",
+    "vote": 0
+  },
+  {
+    "id": "ab013fdf37035c15f564dc44e39471ea",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "A phone photo of a printed PDF — which checks still make sense?",
+    "url": "https://forum.golangbridge.org/t/a-phone-photo-of-a-printed-pdf-which-checks-still-make-sense/42781#post_1",
+    "resume": " \u003cp\u003eWe’ve got a review pipeline in Go with separate analysis parts: original file/hash, image/layout, text/relations, file structure/signatures, external references.\u003c/p\u003e\n\u003cp\u003eA common input at Landvex isn’t the original PDF. It’s a phone photo of a piece of paper that was itself printed from a PDF. Hash and PDF-object checks have nothing real to work on. Visual checks might. Text via OCR might. Crypto signatures are gone.\u003c/p\u003e\n\u003cp\u003eI’m unsure how strictly to encode that:\u003c/p\u003e\n\u003cp\u003e- Auto-mark file-structure and hash parts as `NOT_RUN` (or not applicable) as soon as we detect “this is a raster photo”, rather than attempting them and failing?\u003c/p\u003e\n\u003cp\u003e- Is “not applicable” a different state from “we didn’t run it”? I don’t want either one to read as a pass.\u003c/p\u003e\n\u003cp\u003e- Any prior art for representing generation loss like this in an API, so a reviewer sees *why* those parts are silent?\u003c/p\u003e\n\u003cp\u003eWar stories from people who’ve had to put this in a real service would help more than theory.\u003c/p\u003e ",
+    "date": "2026-11-08T06:12:18Z",
+    "vote": 0
+  },
+  {
+    "id": "9f38a2fc743071603fca02f2c556b688",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do you stop \"check not run\" from looking like a pass?",
+    "url": "https://forum.golangbridge.org/t/how-do-you-stop-check-not-run-from-looking-like-a-pass/42779#post_1",
+    "resume": " \u003cp\u003eAt Landvex we’ve got a document review pipeline with several independent analyzers: file/hash, layout/vision, text consistency, container/signatures, external references. Some of them simply won’t run on a given upload. Phone photo of a paper statement, no PDF crypto to verify, that kind of thing.\u003c/p\u003e\n\u003cp\u003eThe failure mode I want to design out: the API or UI goes quiet on the parts we didn’t run, and a reviewer reads that silence as “nothing wrong”.\u003c/p\u003e\n\u003cp\u003eHow do you model this so a skipped step is first-class and visually distinct from “we ran it and it looked fine”? Explicit `NOT_RUN` states? Forcing the client to render every analyzer? Refusing to compute any kind of overall score until a minimum set has actually run?\u003c/p\u003e\n\u003cp\u003eWar stories appreciated more than theory here.\u003c/p\u003e ",
+    "date": "2026-11-08T06:06:40Z",
+    "vote": 0
+  },
+  {
     "id": "20eb87fa64ce676dde0cd9d5dcd4ffcd",
     "source": {
       "path": "forums",
