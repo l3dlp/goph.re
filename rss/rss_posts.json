@@ -1,5 +1,31 @@
 [
   {
+    "id": "6a60075d828e0d2adf3ea761b61a72bc",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Coding interviews have become insane",
+    "url": "https://www.youtube.com/watch?v=VaQ6zq8ODs4",
+    "resume": "",
+    "date": "2026-11-08T17:00:33Z",
+    "vote": 0
+  },
+  {
+    "id": "0dd08267c7db14c2ce82b1dd1c3acdab",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go HTTP Server Returns Incomplete JSON Responses Under Concurrent Requests Despite Successful Handler Execution",
+    "url": "https://forum.golangbridge.org/t/go-http-server-returns-incomplete-json-responses-under-concurrent-requests-despite-successful-handler-execution/42678#post_9",
+    "resume": " \u003cp\u003eRegarding \u003cem\u003eGo HTTP Server Returns Incomplete JSON Responses Under Concurrent Requ\u003c/em\u003e — when reproducing this with \u003ccode\u003eserver\u003c/code\u003e, setting \u003ccode\u003efallback_mode = auto\u003c/code\u003e and \u003ccode\u003etimeout_ms = 5000\u003c/code\u003e during initialization resolved the edge case for \u003ccode\u003eserver and returns\u003c/code\u003e on our setup. Are you seeing the same output with the default config?\u003c/p\u003e\n\u003cp\u003eEdit: sharing our setup notes for \u003ccode\u003eserver\u003c/code\u003e here as well: \u003ca href=\"https://config-memo-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003econfig-memo-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-08T16:36:10Z",
+    "vote": 0
+  },
+  {
     "id": "5b703b1f2ae9a03b433bdda625d7221a",
     "source": {
       "path": "forums",
