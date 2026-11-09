@@ -1,5 +1,31 @@
 [
   {
+    "id": "8c5cfb8f770fc50f25b0e68c8beb2875",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The algorithm Behind Google Maps: Dijkstra And A-star",
+    "url": "https://www.youtube.com/shorts/eDJJdnSfRrM",
+    "resume": "",
+    "date": "2026-11-09T20:15:34Z",
+    "vote": 0
+  },
+  {
+    "id": "c888f374df371cfef23a0493116ad6f6",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Small Projects",
+    "url": "https://www.reddit.com/r/golang/comments/1xs21mk/small_projects/",
+    "resume": "",
+    "date": "2026-11-09T20:00:51Z",
+    "vote": 0
+  },
+  {
     "id": "ff63155fbf6a038b8c6a59bf63e44a52",
     "source": {
       "path": "forums",
