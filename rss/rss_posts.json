@@ -1,5 +1,18 @@
 [
   {
+    "id": "4142b025e057a91aa997810ab6d44424",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How to Escape Tutorial Hell",
+    "url": "https://www.youtube.com/watch?v=MZW6PnTGyWI",
+    "resume": "",
+    "date": "2026-11-09T17:00:21Z",
+    "vote": 0
+  },
+  {
     "id": "aadca2ce3b583366009cfdaf517f82f7",
     "source": {
       "path": "forums",
