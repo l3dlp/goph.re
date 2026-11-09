@@ -1,5 +1,31 @@
 [
   {
+    "id": "aadca2ce3b583366009cfdaf517f82f7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I Load Tested Go’s New JSON v2",
+    "url": "https://www.reddit.com/r/golang/comments/1xrvump/i_load_tested_gos_new_json_v2/",
+    "resume": "",
+    "date": "2026-11-09T16:14:39Z",
+    "vote": 0
+  },
+  {
+    "id": "216b019ecfeccc7c4cbadfdd52ad2219",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "My Go Application Occasionally Returns Incomplete API Responses Under Concurrent Requests",
+    "url": "https://forum.golangbridge.org/t/my-go-application-occasionally-returns-incomplete-api-responses-under-concurrent-requests/42778#post_3",
+    "resume": " \u003cp\u003eIncomplete bodies under concurrency usually means shared buffer or writer reuse, not “Go is weird.”\u003c/p\u003e\n\u003cp\u003eCheck whether handlers share a bytes.Buffer / slice across requests, or write to the same ResponseWriter from more than one goroutine. Also watch middleware that tees the body. A quick stress with unique request IDs in the payload makes the torn responses obvious. Race detector + that tends to end the mystery faster than more logging.\u003c/p\u003e ",
+    "date": "2026-11-09T15:46:24Z",
+    "vote": 0
+  },
+  {
     "id": "b5a7c59cf8a6274d5189be29413a6fc2",
     "source": {
       "path": "forums",
