@@ -52,6 +52,19 @@
     "vote": 0
   },
   {
+    "id": "07b1c37a7150e4d28133d29adefd6eba",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go turns 17 today! See what changed in the ecosystem since last year",
+    "url": "https://www.reddit.com/r/golang/comments/1xsh7nf/go_turns_17_today_see_what_changed_in_the/",
+    "resume": "",
+    "date": "2026-11-10T08:00:09Z",
+    "vote": 0
+  },
+  {
     "id": "e44a692be8ae8305f3381a00c3d491cd",
     "source": {
       "path": "tools",
