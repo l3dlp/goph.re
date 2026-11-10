@@ -1,5 +1,18 @@
 [
   {
+    "id": "2b8faebd028bff145b5ce69f7eacf38b",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "I can't run my go program in vs code",
+    "url": "https://forum.golangbridge.org/t/i-cant-run-my-go-program-in-vs-code/42800#post_1",
+    "resume": " \u003cp\u003eI have trying to run my go program on my windows in vs code. But, I always get that my program execution is blocked.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"https://forum.golangbridge.org/uploads/default/original/3X/8/d/8d9d18ffb060c498539da34c03545f59f0dde483.png\" alt=\"image\" data-base62-sha1=\"kcLU13cjl3uqoPz9U1pOyOH73vZ\" width=\"690\" height=\"30\" data-dominant-color=\"2B2B2B\"\u003e\u003c/p\u003e\n\u003cp\u003eI have searched for the solution and mostly people say to turn off smart app protection but I dont want to compromise on my laptops security. Is there any other way? I have tried adding folder path in the exceptions in the antivirus microsoft defender.  I am using go version 1.25.11.\u003c/p\u003e ",
+    "date": "2026-11-10T06:32:48Z",
+    "vote": 0
+  },
+  {
     "id": "a460964b99b2a6f178d71e1da25cb586",
     "source": {
       "path": "forums",
