@@ -1,5 +1,31 @@
 [
   {
+    "id": "6bee17b556932ed0cef37c7cdc0e2afc",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "The Ultimate Go Book \u0026 Beyond",
+    "url": "https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649#post_5",
+    "resume": " \u003cp\u003eBeen following \u003cem\u003eThe Ultimate Go Book \u0026amp; Beyond\u003c/em\u003e since I also work with \u003ccode\u003eultimate\u003c/code\u003e pretty regularly. The observations here on \u003ccode\u003eultimate and book\u003c/code\u003e are spot on.\u003c/p\u003e\n\u003cp\u003eI keep this one bookmarked for \u003ccode\u003eultimate\u003c/code\u003e: \u003ca href=\"https://bench-notes-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003ebench-notes-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-10T17:55:14Z",
+    "vote": 0
+  },
+  {
+    "id": "74aff2d891dd5107d40ccb2b8c7c67c0",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "128 Circles Draw a Cat 🎧",
+    "url": "https://www.youtube.com/shorts/vRimlHdSY2Y",
+    "resume": "",
+    "date": "2026-11-10T17:50:15Z",
+    "vote": 0
+  },
+  {
     "id": "40507c809ebafa9d1f9d6cc71b4af8e0",
     "source": {
       "path": "golang",
