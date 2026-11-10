@@ -1,5 +1,18 @@
 [
   {
+    "id": "db9ba442c7d2b21ea8258b6668cf47ff",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "My Go Application Occasionally Returns Incomplete API Responses Under Concurrent Requests",
+    "url": "https://forum.golangbridge.org/t/my-go-application-occasionally-returns-incomplete-api-responses-under-concurrent-requests/42778#post_4",
+    "resume": " \u003cp\u003eWhen running with go run -race . does not yield any results, I would check if you somewhere return from a handler and continue writing data to a response with a “go …” routine.\u003c/p\u003e\n\u003cp\u003eHTTP Connections will be available for reuse as soon as your handler returns - so make sure every operation which writes to a connection (response body) has finished before returning from the handler function.\u003c/p\u003e ",
+    "date": "2026-11-10T14:17:16Z",
+    "vote": 0
+  },
+  {
     "id": "a467648263a50fc8eaea4c186ff99085",
     "source": {
       "path": "forums",
