@@ -1,5 +1,18 @@
 [
   {
+    "id": "76d4ba20686240c61749400d91d0a2ad",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "`uf`: better documentation than `man` or `tldr`, autocomplete for everything in `fish`/`zsh`/`bash`, CLI code generation for multiple languages, etc etc.",
+    "url": "https://www.reddit.com/r/golang/comments/1xt17oq/uf_better_documentation_than_man_or_tldr/",
+    "resume": "",
+    "date": "2026-11-10T22:49:16Z",
+    "vote": 0
+  },
+  {
     "id": "1fcacf87856890c21fa07489d716b31d",
     "source": {
       "path": "examples",
