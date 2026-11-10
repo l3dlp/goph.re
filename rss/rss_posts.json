@@ -1,5 +1,18 @@
 [
   {
+    "id": "a460964b99b2a6f178d71e1da25cb586",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "The Ultimate Go Book \u0026 Beyond",
+    "url": "https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649#post_3",
+    "resume": " \u003cp\u003eThank you so much for the kind words. It really means a lot, and I’m glad you’re finding the book useful. Your feedback and contributions are always welcome, so feel free to open a PR if you find anything to improve. Happy reading \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/slight_smile.png?v=15\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e ",
+    "date": "2026-11-10T04:12:08Z",
+    "vote": 0
+  },
+  {
     "id": "ef2e4d670a660d8b59e1f22554661575",
     "source": {
       "path": "forums",
