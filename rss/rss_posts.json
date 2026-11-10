@@ -1,5 +1,18 @@
 [
   {
+    "id": "a467648263a50fc8eaea4c186ff99085",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How do you guys write contracts for your APIs?",
+    "url": "https://www.reddit.com/r/golang/comments/1xsish6/how_do_you_guys_write_contracts_for_your_apis/",
+    "resume": "",
+    "date": "2026-11-10T09:43:56Z",
+    "vote": 0
+  },
+  {
     "id": "f382c17c8f10f7d554a0ee795b4052b4",
     "source": {
       "path": "examples",
