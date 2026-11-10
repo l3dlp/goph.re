@@ -1,5 +1,44 @@
 [
   {
+    "id": "f382c17c8f10f7d554a0ee795b4052b4",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Merge Sort vs Quick Sort",
+    "url": "https://www.youtube.com/shorts/1OPF1E0gk58",
+    "resume": "",
+    "date": "2026-11-10T08:24:21Z",
+    "vote": 0
+  },
+  {
+    "id": "a4987b084fdb9d3762d105aaf4d7d669",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "(Real World Example) Dijkstra's Algorithm vs. A* Search",
+    "url": "https://www.youtube.com/shorts/bfexBkSnzbI",
+    "resume": "",
+    "date": "2026-11-10T08:23:10Z",
+    "vote": 0
+  },
+  {
+    "id": "e44a692be8ae8305f3381a00c3d491cd",
+    "source": {
+      "path": "tools",
+      "name": "GoLand",
+      "url": "https://blog.jetbrains.com/go/feed/"
+    },
+    "name": "The State of Go in 2026: What Changed In the Golang Ecosystem Since Last Year",
+    "url": "https://blog.jetbrains.com/go/2026/11/10/state-of-golang-2026/",
+    "resume": "Every year, the JetBrains Developer Ecosystem survey gives us a snapshot of how developers work. This year, 28,945 developers took part between May and July 2026, and 1,836 of them named Go as one of their primary programming languages. To celebrate Go’s 17th birthday, in this post, we look at who those Gophers are, which [\u0026#8230;]",
+    "date": "2026-11-10T07:56:41Z",
+    "vote": 0
+  },
+  {
     "id": "2b8faebd028bff145b5ce69f7eacf38b",
     "source": {
       "path": "forums",
@@ -23,6 +62,45 @@
     "url": "https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649#post_3",
     "resume": " \u003cp\u003eThank you so much for the kind words. It really means a lot, and I’m glad you’re finding the book useful. Your feedback and contributions are always welcome, so feel free to open a PR if you find anything to improve. Happy reading \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/slight_smile.png?v=15\" title=\":slight_smile:\" class=\"emoji\" alt=\":slight_smile:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e ",
     "date": "2026-11-10T04:12:08Z",
+    "vote": 0
+  },
+  {
+    "id": "0e15b4802a424784ffd000013edf9fa4",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "C++ vs Java vs Python: Hello World Program",
+    "url": "https://www.youtube.com/shorts/DwmHP544Yeo",
+    "resume": "",
+    "date": "2026-11-10T04:00:30Z",
+    "vote": 0
+  },
+  {
+    "id": "31bfc6a4390130647d5846e151fc3516",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "BFS vs DFS in Maze",
+    "url": "https://www.youtube.com/shorts/2RD8leazM4g",
+    "resume": "",
+    "date": "2026-11-10T02:00:13Z",
+    "vote": 0
+  },
+  {
+    "id": "26b48dfffcf95c3b893519aa027f2876",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "4 Algorithms Battle for Total Territory control",
+    "url": "https://www.youtube.com/shorts/DL4FqbMjTmY",
+    "resume": "",
+    "date": "2026-11-10T00:30:02Z",
     "vote": 0
   },
   {
