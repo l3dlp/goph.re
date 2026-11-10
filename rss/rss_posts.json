@@ -26,6 +26,19 @@
     "vote": 0
   },
   {
+    "id": "4cc777c8ecd33915a812dd5c2407e1fd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go 1.27.4 is released",
+    "url": "https://www.reddit.com/r/golang/comments/1xst1yi/go_1274_is_released/",
+    "resume": "",
+    "date": "2026-11-10T17:31:06Z",
+    "vote": 0
+  },
+  {
     "id": "40507c809ebafa9d1f9d6cc71b4af8e0",
     "source": {
       "path": "golang",
