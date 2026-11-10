@@ -1,5 +1,18 @@
 [
   {
+    "id": "1fcacf87856890c21fa07489d716b31d",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Dijkstra's Algorithm vs A* Search",
+    "url": "https://www.youtube.com/shorts/qiSsFzlPcRs",
+    "resume": "",
+    "date": "2026-11-10T21:30:11Z",
+    "vote": 0
+  },
+  {
     "id": "cc2760097c0325dc792cac47bfe3767f",
     "source": {
       "path": "examples",
@@ -244,6 +257,19 @@
     "url": "https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649#post_2",
     "resume": " \u003cp\u003eHi Najib,\u003c/p\u003e\n\u003cp\u003eI’ve just forked your repo and reading this book locally on my machine, and I must say, I am very impressed.\u003c/p\u003e\n\u003cp\u003eI’m a huge fan of Go, and it’s great to see a book like this that is so up to date and comprehensive.\u003c/p\u003e\n\u003cp\u003eIt’s obvious to see you’ve put a lot of work into this, whether it is AI-assisted or not. And I just want to say your effort is greatly appreciated.\u003c/p\u003e\n\u003cp\u003eHopefully others will read this and comment because I think this deserves adequate recognition.\u003c/p\u003e\n\u003cp\u003eThanks again for your time in doing this, and I’m looking forward to reading it and hopefully contributing.\u003c/p\u003e ",
     "date": "2026-11-10T00:27:57Z",
+    "vote": 0
+  },
+  {
+    "id": "0e64466b844928447eea43694ae09516",
+    "source": {
+      "path": "golang",
+      "name": "GO.DEV",
+      "url": "https://go.dev/blog/feed.atom"
+    },
+    "name": "Go Turns 17",
+    "url": "https://go.dev/blog/17years",
+    "resume": "Happy Birthday, Go!",
+    "date": "2026-11-10T00:00:00Z",
     "vote": 0
   },
   {
