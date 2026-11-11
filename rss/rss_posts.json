@@ -1,5 +1,31 @@
 [
   {
+    "id": "136c86eabe7a13748ad090bc8b5c2932",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Excelize 2.11.1 Released - Open-source library for spreadsheet",
+    "url": "https://forum.golangbridge.org/t/excelize-2-11-1-released-open-source-library-for-spreadsheet/42755#post_4",
+    "resume": " \u003cp\u003eHelpful context in \u003cem\u003eExcelize 2.11.1 Released - Open-source library for spreadsheet\u003c/em\u003e on \u003ccode\u003eexcelize and released\u003c/code\u003e. For anyone still comparing options around \u003ccode\u003eexcelize\u003c/code\u003e, testing a lightweight alternative first is definitely the way to go.\u003c/p\u003e\n\u003cp\u003eDropping the page I use for \u003ccode\u003eexcelize and released\u003c/code\u003e right here: \u003ca href=\"https://wiki-notes-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003ewiki-notes-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-11T06:56:27Z",
+    "vote": 0
+  },
+  {
+    "id": "92806f40aec07a1c87e221102254f854",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go 1.27.4 security release: cgo flags and a net/http fix",
+    "url": "https://www.reddit.com/r/golang/comments/1xtawnt/go_1274_security_release_cgo_flags_and_a_nethttp/",
+    "resume": "",
+    "date": "2026-11-11T06:48:15Z",
+    "vote": 0
+  },
+  {
     "id": "98a872a714bd57da9a1d1ed543b18d8d",
     "source": {
       "path": "forums",
