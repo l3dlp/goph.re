@@ -1,5 +1,18 @@
 [
   {
+    "id": "e13abe7eb2167aebb826568cecd8f4dc",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "SilentJSON: a specialized JSON parser for Go, built for a real-world data processing system",
+    "url": "https://www.reddit.com/r/golang/comments/1xtg2ip/silentjson_a_specialized_json_parser_for_go_built/",
+    "resume": "",
+    "date": "2026-11-11T12:05:48Z",
+    "vote": 0
+  },
+  {
     "id": "136c86eabe7a13748ad090bc8b5c2932",
     "source": {
       "path": "forums",
