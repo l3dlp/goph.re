@@ -1,5 +1,31 @@
 [
   {
+    "id": "efef732b047984a349be3c253dc1bda7",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Forge: catching entire classes of bugs in agent-written code",
+    "url": "https://www.reddit.com/r/golang/comments/1xtm4q7/forge_catching_entire_classes_of_bugs_in/",
+    "resume": "",
+    "date": "2026-11-11T16:24:32Z",
+    "vote": 0
+  },
+  {
+    "id": "4252397887facd7707e99a5fc5ada623",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Oxynote v0.10: our self-hosted wiki in Go can now show live logs next to its metrics",
+    "url": "https://www.reddit.com/r/golang/comments/1xtjtzf/oxynote_v010_our_selfhosted_wiki_in_go_can_now/",
+    "resume": "",
+    "date": "2026-11-11T14:56:35Z",
+    "vote": 0
+  },
+  {
     "id": "e13abe7eb2167aebb826568cecd8f4dc",
     "source": {
       "path": "forums",
