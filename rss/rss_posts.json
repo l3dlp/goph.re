@@ -26,6 +26,45 @@
     "vote": 0
   },
   {
+    "id": "ed4c74bd85116993fb78761ef2086c64",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The Developer Who Gets Hired Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/pbqOG2g3jZI",
+    "resume": "",
+    "date": "2026-11-11T03:40:19Z",
+    "vote": 0
+  },
+  {
+    "id": "95f6cc72d90702f550fb3a7fe88844d1",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Quick Sort",
+    "url": "https://www.youtube.com/shorts/xARcAIlewF4",
+    "resume": "",
+    "date": "2026-11-11T03:30:14Z",
+    "vote": 0
+  },
+  {
+    "id": "46728068119cf3a5c7a9c027c837ffa0",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How Many Circles Does It Take to Draw π? 🥧⭕",
+    "url": "https://www.youtube.com/shorts/WuUXpN1vUAE",
+    "resume": "",
+    "date": "2026-11-11T01:30:11Z",
+    "vote": 0
+  },
+  {
     "id": "98a872a714bd57da9a1d1ed543b18d8d",
     "source": {
       "path": "forums",
