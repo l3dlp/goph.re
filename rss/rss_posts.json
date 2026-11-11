@@ -1,5 +1,44 @@
 [
   {
+    "id": "99c5b122ffd5cb92d7101db1079fdc6a",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "How do you test reconnect logic in long-lived WebSocket clients?",
+    "url": "https://www.reddit.com/r/golang/comments/1xtwtes/how_do_you_test_reconnect_logic_in_longlived/",
+    "resume": "",
+    "date": "2026-11-11T23:15:28Z",
+    "vote": 0
+  },
+  {
+    "id": "fa0f43dc9eb98d6bff30e2b6682f9dbc",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Igiveyouarendezvous: an interview scheduler in pure Go (local search, lexicographic objectives)",
+    "url": "https://forum.golangbridge.org/t/igiveyouarendezvous-an-interview-scheduler-in-pure-go-local-search-lexicographic-objectives/42758#post_5",
+    "resume": " \u003cp\u003eHelpful context in \u003cem\u003eIgiveyouarendezvous: an interview scheduler in pure Go (local search\u003c/em\u003e on \u003ccode\u003eigiveyouarendezvous and interview\u003c/code\u003e. For anyone still comparing options around \u003ccode\u003eigiveyouarendezvous\u003c/code\u003e, testing a lightweight alternative first is definitely the way to go.\u003c/p\u003e\n\u003cp\u003eDropping the page I use for \u003ccode\u003eigiveyouarendezvous and interview\u003c/code\u003e right here: \u003ca href=\"https://bench-notes-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003ebench-notes-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-11T23:09:49Z",
+    "vote": 0
+  },
+  {
+    "id": "ecf5f76c8488537d662be591b2a7a72f",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Do I need to import specific pkg to use GODEBUG=\"allocfreetrace=1\"",
+    "url": "https://forum.golangbridge.org/t/do-i-need-to-import-specific-pkg-to-use-godebug-allocfreetrace-1/42802#post_1",
+    "resume": " \u003cp\u003eBase on what I read so far and \u003ca href=\"https://go.dev/wiki/Performance#memory-allocator-trace\" rel=\"noopener nofollow ugc\"\u003ehttps://go.dev/wiki/Performance#memory-allocator-trace\u003c/a\u003e, I should be able just do\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eGODEBUG=allocfreetrace=1 go run .\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eor\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eGODEBUG=allocfreetrace=1 \u0026lt;my-program\u0026gt;\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eHowever, I don’t see any additional output related to trace. Anyone have clue what I maybe missing?\u003c/p\u003e\n\u003cp\u003eI tried in both Linux and MacOS.\u003c/p\u003e\n\u003cp\u003eFollowing is my go env in MacOS\u003c/p\u003e\n\u003cpre data-code-wrap=\"bash\"\u003e\u003ccode class=\"lang-bash\"\u003e❯ go env\nAR='ar'\nCC='cc'\nCGO_CFLAGS='-O2 -g'\nCGO_CPPFLAGS=''\nCGO_CXXFLAGS='-O2 -g'\nCGO_ENABLED='1'\nCGO_FFLAGS='-O2 -g'\nCGO_LDFLAGS='-O2 -g'\nCXX='c++'\nGCCGO='gccgo'\nGO111MODULE=''\nGOARCH='arm64'\nGOARM64='v8.0'\nGOAUTH='netrc'\nGOBIN='/Users/js/code/go/bin'\nGOCACHE='/Users/js/Library/Caches/go-build'\nGOCACHEPROG=''\nGODEBUG='allocfreetrace=1'\nGOENV='/Users/js/Library/Application Support/go/env'\nGOEXE=''\nGOEXPERIMENT=''\nGOFIPS140='off'\nGOFLAGS=''\nGOGCCFLAGS='-fPIC -arch arm64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -ffile-prefix-map=/var/folders/1g/md7q63kd08sfmpl7zx4zqfym0000gn/T/go-build3532125912=/tmp/go-build -gno-record-gcc-switches -fno-common'\nGOHOSTARCH='arm64'\nGOHOSTOS='darwin'\nGOINSECURE=''\nGOMOD='/Users/js/code/pri/go-dotfile/go.mod'\nGOMODCACHE='/Users/js/code/go/pkg/mod'\nGONOPROXY='fj.vms.local/*'\nGONOSUMDB='fj.vms.local/*'\nGOOS='darwin'\nGOPACKAGESDRIVER=''\nGOPATH='/Users/js/code/go'\nGOPRIVATE='fj.vms.local/*'\nGOPROXY='https://proxy.golang.org'\nGOROOT='/opt/homebrew/Cellar/go/1.27.3/libexec'\nGOSUMDB='sum.golang.org'\nGOTELEMETRY='off'\nGOTELEMETRYDIR='/Users/js/Library/Application Support/go/telemetry'\nGOTMPDIR=''\nGOTOOLCHAIN='auto'\nGOTOOLDIR='/opt/homebrew/Cellar/go/1.27.3/libexec/pkg/tool/darwin_arm64'\nGOVCS=''\nGOVERSION='go1.27.3'\nGOWORK='/Users/js/code/pri/go-dotfile/go.work'\nPKG_CONFIG='pkg-config'\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFollowing is Linux go env\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"lang-auto\"\u003e❯ go env\nAR='ar'\nCC='cc'\nCGO_CFLAGS='-O2 -g'\nCGO_CPPFLAGS=''\nCGO_CXXFLAGS='-O2 -g'\nCGO_ENABLED='1'\nCGO_FFLAGS='-O2 -g'\nCGO_LDFLAGS='-O2 -g'\nCXX='c++'\nGCCGO='gccgo'\nGO111MODULE=''\nGOAMD64='v1'\nGOARCH='amd64'\nGOAUTH='netrc'\nGOBIN='/data/home/js/code/go/bin'\nGOCACHE='/data/home/js/.cache/go-build'\nGOCACHEPROG=''\nGODEBUG=''\nGOENV='/data/home/js/.config/go/env'\nGOEXE=''\nGOEXPERIMENT=''\nGOFIPS140='off'\nGOFLAGS=''\nGOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build144623771=/tmp/go-build -gno-record-gcc-switches'\nGOHOSTARCH='amd64'\nGOHOSTOS='linux'\nGOINSECURE=''\nGOMOD='/data/home/js/code/pri/go-auto-docker/go.mod'\nGOMODCACHE='/data/home/js/code/go/pkg/mod'\nGONOPROXY='fj.vms.local/*'\nGONOSUMDB='fj.vms.local/*'\nGOOS='linux'\nGOPACKAGESDRIVER=''\nGOPATH='/data/home/js/code/go'\nGOPRIVATE='fj.vms.local/*'\nGOPROXY='https://proxy.golang.org'\nGOROOT='/data/home/linuxbrew/.linuxbrew/Cellar/go/1.27.3/libexec'\nGOSUMDB='sum.golang.org'\nGOTELEMETRY='local'\nGOTELEMETRYDIR='/data/home/js/.config/go/telemetry'\nGOTMPDIR=''\nGOTOOLCHAIN='auto'\nGOTOOLDIR='/data/home/linuxbrew/.linuxbrew/Cellar/go/1.27.3/libexec/pkg/tool/linux_amd64'\nGOVCS=''\nGOVERSION='go1.27.3'\nGOWORK='/data/home/js/code/pri/go-auto-docker/go.work'\nPKG_CONFIG='pkg-config'\n\u003c/code\u003e\u003c/pre\u003e ",
+    "date": "2026-11-11T22:55:39Z",
+    "vote": 0
+  },
+  {
     "id": "9180e30cfbfa5c27be40356dc4c134cd",
     "source": {
       "path": "forums",
