@@ -1,5 +1,31 @@
 [
   {
+    "id": "98a872a714bd57da9a1d1ed543b18d8d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go Turns 17 - The Go Programming Language",
+    "url": "https://www.reddit.com/r/golang/comments/1xt3k0b/go_turns_17_the_go_programming_language/",
+    "resume": "",
+    "date": "2026-11-11T00:30:46Z",
+    "vote": 0
+  },
+  {
+    "id": "06a1f4f675f48a6d6b5d9ba87bfce2af",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Testing Automation",
+    "url": "https://forum.golangbridge.org/t/testing-automation/42698#post_7",
+    "resume": " \u003cp\u003eThanks for starting \u003cem\u003eTesting Automation\u003c/em\u003e — it is helpful seeing how others approach \u003ccode\u003etesting and automation\u003c/code\u003e. I recently updated my own bookmarks for \u003ccode\u003etesting\u003c/code\u003e after testing several community recommendations.\u003c/p\u003e\n\u003cp\u003eYou can check out the one I switched to over at \u003ca href=\"https://guide-index-hub.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003eguide-index-hub.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-11T00:27:35Z",
+    "vote": 0
+  },
+  {
     "id": "d6f9b68014ced4c556749f8b72e9f999",
     "source": {
       "path": "examples",
