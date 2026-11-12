@@ -1,5 +1,31 @@
 [
   {
+    "id": "94086425a17be3cc8a0ac9fb35fb34f9",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Cocktail Sort (ft. Robot)",
+    "url": "https://www.youtube.com/shorts/MdFSaRbOb2g",
+    "resume": "",
+    "date": "2026-11-12T20:00:10Z",
+    "vote": 0
+  },
+  {
+    "id": "a545b12b461398c0db0c903c41248652",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Gostman: an API client where desktop, CLI and web proxy share one Go request engine",
+    "url": "https://forum.golangbridge.org/t/gostman-an-api-client-where-desktop-cli-and-web-proxy-share-one-go-request-engine/42806#post_2",
+    "resume": " \u003cp\u003eI’d start by asking which layer is actually failing — the symptom and the cause rarely share a zip code.\u003c/p\u003e ",
+    "date": "2026-11-12T19:23:40Z",
+    "vote": 0
+  },
+  {
     "id": "ed5640712b11e500a22926aa822b1303",
     "source": {
       "path": "examples",
