@@ -221,6 +221,19 @@
     "vote": 0
   },
   {
+    "id": "76c45e9b545dd688bb9b5c12f69b4b7c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Do I need to import specific pkg to use GODEBUG=\"allocfreetrace=1\"",
+    "url": "https://www.reddit.com/r/golang/comments/1xtjc5g/do_i_need_to_import_specific_pkg_to_use/",
+    "resume": "",
+    "date": "2026-11-11T14:36:27Z",
+    "vote": 0
+  },
+  {
     "id": "e13abe7eb2167aebb826568cecd8f4dc",
     "source": {
       "path": "forums",
