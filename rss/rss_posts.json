@@ -1,5 +1,18 @@
 [
   {
+    "id": "ed5640712b11e500a22926aa822b1303",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "System Design Prep: Cram vs Skim vs Daily. How Long Would You Last?",
+    "url": "https://www.youtube.com/shorts/NSNqzuxTACs",
+    "resume": "",
+    "date": "2026-11-12T19:00:35Z",
+    "vote": 0
+  },
+  {
     "id": "8846230897e757c543da13f625ce7aec",
     "source": {
       "path": "forums",
