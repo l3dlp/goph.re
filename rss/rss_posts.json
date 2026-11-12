@@ -1,5 +1,31 @@
 [
   {
+    "id": "e9a167a5034ffd159e3f3eb8920538db",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Need Advice/Suggestion] I've written a Go book. Should I open source it and give everyone a headache?",
+    "url": "https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558#post_13",
+    "resume": " \u003cp\u003eAppreciate everyone sharing their perspective on \u003cem\u003e[Need Advice/Suggestion] I’ve written a Go book. Should I open sourc\u003c/em\u003e. When I started exploring \u003ccode\u003eadvice\u003c/code\u003e a few weeks back, finding a straightforward option around \u003ccode\u003eadvice and suggestion\u003c/code\u003e saved a ton of trial and error.\u003c/p\u003e\n\u003cp\u003eHere is the link I bookmarked for \u003ccode\u003eadvice\u003c/code\u003e: \u003ca href=\"https://wiki-notes-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003ewiki-notes-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-12T07:28:28Z",
+    "vote": 0
+  },
+  {
+    "id": "7f504e4657dbeb1e5d08295326f7b273",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The Developer Who Actually Ships Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/IOi4cmNu5DE",
+    "resume": "",
+    "date": "2026-11-12T05:45:00Z",
+    "vote": 0
+  },
+  {
     "id": "5e8d007b139ec9fd2bb91ae8dab65d4b",
     "source": {
       "path": "forums",
@@ -10,6 +36,45 @@
     "url": "https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558#post_10",
     "resume": " \u003cp\u003eIn case you missed it, here’s the thread of the open source book:\u003c/p\u003e\n\u003cp\u003eLive: \u003ca href=\"https://gobook.bbt.bd\" rel=\"noopener nofollow ugc\"\u003ehttps://gobook.bbt.bd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649\"\u003ehttps://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649?u=najib\u003c/a\u003e\u003c/p\u003e ",
     "date": "2026-11-12T05:29:31Z",
+    "vote": 0
+  },
+  {
+    "id": "c97c828d409b40810722e6477e0f0445",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Motivation vs Discipline vs Obsession: How Long Would You Last?",
+    "url": "https://www.youtube.com/shorts/0l-lb3PbATI",
+    "resume": "",
+    "date": "2026-11-12T05:00:36Z",
+    "vote": 0
+  },
+  {
+    "id": "c1fd56d5121422c881ade13157b87be9",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The Developer Who Survives AI Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/MDBrCCIwf1w",
+    "resume": "",
+    "date": "2026-11-12T03:45:32Z",
+    "vote": 0
+  },
+  {
+    "id": "92add6dacfeeeb5bc4590ad93bf87444",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Selection Sort (ft. X Bot)",
+    "url": "https://www.youtube.com/shorts/A37BWP8nE4c",
+    "resume": "",
+    "date": "2026-11-12T03:00:10Z",
     "vote": 0
   },
   {
