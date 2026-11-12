@@ -1,5 +1,31 @@
 [
   {
+    "id": "35b27fd755184eb194c4f8124f69c080",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Same PR. 3 Batteries.",
+    "url": "https://www.youtube.com/shorts/zacjYsVwbck",
+    "resume": "",
+    "date": "2026-11-12T22:00:14Z",
+    "vote": 0
+  },
+  {
+    "id": "7f9773506135f43500263c16950c5407",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "My Go Application Occasionally Returns Incomplete API Responses Under Concurrent Requests",
+    "url": "https://forum.golangbridge.org/t/my-go-application-occasionally-returns-incomplete-api-responses-under-concurrent-requests/42778#post_6",
+    "resume": " \u003cp\u003eCatching up on \u003cem\u003eMy Go Application Occasionally Returns Incomplete API Responses Unde\u003c/em\u003e: I ran into the same question around \u003ccode\u003eapplication and occasionally\u003c/code\u003e last month. Switching to a cleaner option for \u003ccode\u003eapplication\u003c/code\u003e resolved the friction right away.\u003c/p\u003e\n\u003cp\u003eLink for anyone who wants a closer look: \u003ca href=\"https://spec-sheet-hub.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003espec-sheet-hub.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-12T21:43:22Z",
+    "vote": 0
+  },
+  {
     "id": "c2d1d0622e9947a9eb222812e4ab4850",
     "source": {
       "path": "examples",
@@ -26,6 +52,19 @@
     "vote": 0
   },
   {
+    "id": "734de392d04c37e4bee7ed57dc746db5",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Best approach for maintaining an in-memory cache in Go with concurrent reads and writes?",
+    "url": "https://www.reddit.com/r/golang/comments/1xumonp/best_approach_for_maintaining_an_inmemory_cache/",
+    "resume": "",
+    "date": "2026-11-12T19:47:05Z",
+    "vote": 0
+  },
+  {
     "id": "a545b12b461398c0db0c903c41248652",
     "source": {
       "path": "forums",
@@ -36,6 +75,19 @@
     "url": "https://forum.golangbridge.org/t/gostman-an-api-client-where-desktop-cli-and-web-proxy-share-one-go-request-engine/42806#post_2",
     "resume": " \u003cp\u003eI’d start by asking which layer is actually failing — the symptom and the cause rarely share a zip code.\u003c/p\u003e ",
     "date": "2026-11-12T19:23:40Z",
+    "vote": 0
+  },
+  {
+    "id": "fbbcb142acaab1b1f5dc0dc19b27c98f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I left go for 2 years what did i miss",
+    "url": "https://www.reddit.com/r/golang/comments/1xultyn/i_left_go_for_2_years_what_did_i_miss/",
+    "resume": "",
+    "date": "2026-11-12T19:15:38Z",
     "vote": 0
   },
   {
