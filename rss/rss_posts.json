@@ -1,5 +1,18 @@
 [
   {
+    "id": "ac7058e3b4d476ee0962a70c00b53af7",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Not Lazy. On-Call.",
+    "url": "https://www.youtube.com/shorts/E5OUixs3Tpo",
+    "resume": "",
+    "date": "2026-11-12T02:00:12Z",
+    "vote": 0
+  },
+  {
     "id": "7d0a2b5f5f50ee0f5324219e0e52b1d5",
     "source": {
       "path": "examples",
