@@ -1,5 +1,31 @@
 [
   {
+    "id": "d8d5847a1490e05a52064789a81210db",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Niš Go meetup - Wednesday, Nov 18",
+    "url": "https://www.reddit.com/r/golang/comments/1xuidlv/ni%C5%A1_go_meetup_wednesday_nov_18/",
+    "resume": "",
+    "date": "2026-11-12T17:08:45Z",
+    "vote": 0
+  },
+  {
+    "id": "e8e5f700ee3a64d5c48db634c6f59445",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "10 Database Concepts Every Developer Needs To Know",
+    "url": "https://www.youtube.com/watch?v=iy-QwdoZl0k",
+    "resume": "",
+    "date": "2026-11-12T16:30:38Z",
+    "vote": 0
+  },
+  {
     "id": "7fd91860c65c766c64ad5cb5591fbe31",
     "source": {
       "path": "forums",
