@@ -1,5 +1,18 @@
 [
   {
+    "id": "5e8d007b139ec9fd2bb91ae8dab65d4b",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "[Need Advice/Suggestion] I've written a Go book. Should I open source it and give everyone a headache?",
+    "url": "https://forum.golangbridge.org/t/need-advice-suggestion-ive-written-a-go-book-should-i-open-source-it-and-give-everyone-a-headache/42558#post_10",
+    "resume": " \u003cp\u003eIn case you missed it, here’s the thread of the open source book:\u003c/p\u003e\n\u003cp\u003eLive: \u003ca href=\"https://gobook.bbt.bd\" rel=\"noopener nofollow ugc\"\u003ehttps://gobook.bbt.bd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649\"\u003ehttps://forum.golangbridge.org/t/the-ultimate-go-book-beyond/42649?u=najib\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-12T05:29:31Z",
+    "vote": 0
+  },
+  {
     "id": "ac7058e3b4d476ee0962a70c00b53af7",
     "source": {
       "path": "examples",
