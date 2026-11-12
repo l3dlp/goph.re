@@ -1,5 +1,31 @@
 [
   {
+    "id": "7d0a2b5f5f50ee0f5324219e0e52b1d5",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Gnome Sort (ft. Fox)",
+    "url": "https://www.youtube.com/shorts/P-pJPWb_FxM",
+    "resume": "",
+    "date": "2026-11-12T01:00:08Z",
+    "vote": 0
+  },
+  {
+    "id": "f6554c40dfe0671773e27ce3ad5d810e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Testing mobile app flows against a Go API?",
+    "url": "https://www.reddit.com/r/golang/comments/1xtxbea/testing_mobile_app_flows_against_a_go_api/",
+    "resume": "",
+    "date": "2026-11-11T23:37:45Z",
+    "vote": 0
+  },
+  {
     "id": "99c5b122ffd5cb92d7101db1079fdc6a",
     "source": {
       "path": "forums",
