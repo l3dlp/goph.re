@@ -1,5 +1,18 @@
 [
   {
+    "id": "c2d1d0622e9947a9eb222812e4ab4850",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The Developer Still Coding on Day 150 Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/H1SIcoqUUjs",
+    "resume": "",
+    "date": "2026-11-12T21:00:09Z",
+    "vote": 0
+  },
+  {
     "id": "94086425a17be3cc8a0ac9fb35fb34f9",
     "source": {
       "path": "examples",
