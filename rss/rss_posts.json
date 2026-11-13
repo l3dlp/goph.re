@@ -1,5 +1,18 @@
 [
   {
+    "id": "5d67beadd11596e6928bb43f3e2fce8e",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do you version a review API when the set of answers might grow?",
+    "url": "https://forum.golangbridge.org/t/how-do-you-version-a-review-api-when-the-set-of-answers-might-grow/42782#post_4",
+    "resume": " \u003cp\u003eI’d keep the dimensions as an open list of named results and version the report, not each question. Clients that ignore unknown names will survive a seventh dimension. The change that actually hurts is splitting one of the six, because old clients still look for the old name. That is when a path version is cheaper than being clever.\u003c/p\u003e ",
+    "date": "2026-11-13T19:18:30Z",
+    "vote": 0
+  },
+  {
     "id": "f130fb6ead8d82889b1a2ab551f67159",
     "source": {
       "path": "examples",
