@@ -39,6 +39,19 @@
     "vote": 0
   },
   {
+    "id": "b80325e8aefb4a6e242998a69b868ab8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Developer Story: Bridging Formal Logic and Production Distributed Systems with Go and Lean 4",
+    "url": "https://www.reddit.com/r/golang/comments/1xuppch/developer_story_bridging_formal_logic_and/",
+    "resume": "",
+    "date": "2026-11-12T21:45:20Z",
+    "vote": 0
+  },
+  {
     "id": "7f9773506135f43500263c16950c5407",
     "source": {
       "path": "forums",
