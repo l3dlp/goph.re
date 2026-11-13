@@ -1,5 +1,18 @@
 [
   {
+    "id": "9e423bcbf2b662d851c328f14ccc032b",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Behave: record how a CLI tool behaves, then check a rewrite against it",
+    "url": "https://forum.golangbridge.org/t/behave-record-how-a-cli-tool-behaves-then-check-a-rewrite-against-it/42812#post_1",
+    "resume": " \u003cp\u003eHi all. I built behave, a small open-source Go tool for a problem I kept hitting: you want to rewrite a command-line tool (C to Go, C to Rust, Python to Go) and you need proof that the new version behaves the same as the old one.\u003c/p\u003e\n\u003cp\u003ebehave treats the original binary as a black box. It runs it with lots of inputs (flags, stdin, files, error paths), records stdout, stderr and the exit code of each run as plain YAML test cases, and then replays the same cases against the rewrite and shows every difference.\u003c/p\u003e\n\u003cp\u003eI have been using it on the Rust rewrites of GNU coreutils, findutils, sed and procps. So far that led to 40 upstream bug reports and 47 fix PRs, 33 of them merged. Most of the differences are small: a missing error message, a different exit code, an edge case with an empty argument. Those are exactly the things a hand-written test suite tends to skip.\u003c/p\u003e\n\u003cp\u003eInstall: brew install emirmrkaljevic/tap/behave, or go install \u003ca href=\"http://github.com/emirmrkaljevic/behave/cmd/behave@latest\" rel=\"noopener nofollow ugc\"\u003egithub.com/emirmrkaljevic/behave/cmd/behave@latest\u003c/a\u003e. MIT licensed.\u003c/p\u003e\n\u003cp\u003eRepo: \u003ca href=\"https://github.com/emirmrkaljevic/behave\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - emirmrkaljevic/behave: Record how any CLI behaves (flags, stdin, exit codes, edge cases) and prove your Rust/Go rewrite behaves the same. CLI + MCP server. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eI would love feedback on the test case format, and on which tools you would try it on.\u003c/p\u003e ",
+    "date": "2026-11-13T11:21:50Z",
+    "vote": 0
+  },
+  {
     "id": "a13a0f1df8a8b11fcea7ab28e4b813d9",
     "source": {
       "path": "examples",
