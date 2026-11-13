@@ -1,5 +1,18 @@
 [
   {
+    "id": "ebff00c94afd658293a667775a7cef52",
+    "source": {
+      "path": "blogs",
+      "name": "Anton Zhiyanov",
+      "url": "https://antonz.org/index.xml"
+    },
+    "name": "Probabilistic data structures in Go",
+    "url": "https://antonz.org/probabilistic-data-structures/",
+    "resume": "Bloom filter, count-min sketch, HyperLogLog, t-digest, and top-k sketch.",
+    "date": "2026-11-13T15:00:00Z",
+    "vote": 0
+  },
+  {
     "id": "0068a061272ffccba771b6b0ce7663e9",
     "source": {
       "path": "forums",
