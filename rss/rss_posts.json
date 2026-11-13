@@ -1,5 +1,18 @@
 [
   {
+    "id": "9f22e4adfd08069c93d389ad8446e214",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "golang kubernetes deployment- home lab",
+    "url": "https://www.reddit.com/r/golang/comments/1xv6sru/golang_kubernetes_deployment_home_lab/",
+    "resume": "",
+    "date": "2026-11-13T12:38:53Z",
+    "vote": 0
+  },
+  {
     "id": "9e423bcbf2b662d851c328f14ccc032b",
     "source": {
       "path": "forums",
