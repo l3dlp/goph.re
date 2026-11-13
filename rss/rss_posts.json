@@ -1,5 +1,31 @@
 [
   {
+    "id": "a13a0f1df8a8b11fcea7ab28e4b813d9",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "C++ vs Python vs JavaScript vs Rust: The Winner Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/q7vMEK1vucY",
+    "resume": "",
+    "date": "2026-11-13T05:00:34Z",
+    "vote": 0
+  },
+  {
+    "id": "67167c683edcd8116ce89c4bbc13d244",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Odd-Even Sort (ft. Fox)",
+    "url": "https://www.youtube.com/shorts/9HSQzmT_frc",
+    "resume": "",
+    "date": "2026-11-13T03:00:03Z",
+    "vote": 0
+  },
+  {
     "id": "778af049a94ff26ed7a0172f8e52abe9",
     "source": {
       "path": "forums",
@@ -10,6 +36,19 @@
     "url": "https://forum.golangbridge.org/t/how-do-you-version-a-review-api-when-the-set-of-answers-might-grow/42782#post_2",
     "resume": " \u003cp\u003eI would keep the dimensions as an extensible list, not a closed struct. Return a slice of objects, each with a stable key, a status, and any detail, and document that clients must ignore unknown keys. That way adding a seventh dimension is an additive change, and splitting one means adding new keys and deprecating the old one, never reusing its name.\u003c/p\u003e\n\u003cp\u003eDo not return an overall score at all, and say so in the API docs. If there is no score field, an old client has nothing to sum, and a client that wants a summary can compute it locally. A list does not by itself invite a score, a score field does.\u003c/p\u003e\n\u003cp\u003eIn Go I would use a slice of structs with a string key type, not a map and not a protobuf enum for the dimensions. A map loses ordering, and an enum is hard to grow without breaking older generated code. Add a schema_version field to the report so a client can tell which set of keys it is seeing, and keep the semantics of the existing keys unchanged in v1.\u003c/p\u003e ",
     "date": "2026-11-13T02:15:24Z",
+    "vote": 0
+  },
+  {
+    "id": "93d5efd6fc1bb5d7e2e64edd5a3a09fc",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The 10x Developer Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/SdMgZ1rAOEU",
+    "resume": "",
+    "date": "2026-11-13T01:00:02Z",
     "vote": 0
   },
   {
