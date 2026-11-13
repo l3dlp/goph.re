@@ -1,5 +1,31 @@
 [
   {
+    "id": "f130fb6ead8d82889b1a2ab551f67159",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Rust for Dummies in 7 Minutes",
+    "url": "https://www.youtube.com/watch?v=ROYk9_7Dyrk",
+    "resume": "",
+    "date": "2026-11-13T16:45:06Z",
+    "vote": 0
+  },
+  {
+    "id": "b0f237dbbe0770ad1ac7c480f6e60d04",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "3AM HTTPS Crash Course (A True Story)",
+    "url": "https://www.youtube.com/watch?v=uN5MeYW2Nao",
+    "resume": "",
+    "date": "2026-11-13T16:30:39Z",
+    "vote": 0
+  },
+  {
     "id": "ebff00c94afd658293a667775a7cef52",
     "source": {
       "path": "blogs",
