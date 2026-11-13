@@ -1,5 +1,18 @@
 [
   {
+    "id": "64e3d46bfbf911f162cb45a812c37955",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do you version a review API when the set of answers might grow?",
+    "url": "https://forum.golangbridge.org/t/how-do-you-version-a-review-api-when-the-set-of-answers-might-grow/42782#post_3",
+    "resume": " \u003cp\u003eMy experience: API Versioning is a pain which I try to avoid in most cases.\u003c/p\u003e\n\u003cp\u003eBut choosing a bad API layout because of fear for future changes is worse.\u003c/p\u003e\n\u003cp\u003eDesign your JSON for optimal use and consumption. Introduce additional attributes without increasing the API version, because extension is a backwards compatible API change. But if you really have to split a question take the step and make a V2 API, since this is a change which is not backwards compatible.\u003c/p\u003e ",
+    "date": "2026-11-13T14:07:31Z",
+    "vote": 0
+  },
+  {
     "id": "9f22e4adfd08069c93d389ad8446e214",
     "source": {
       "path": "forums",
@@ -10,6 +23,19 @@
     "url": "https://www.reddit.com/r/golang/comments/1xv6sru/golang_kubernetes_deployment_home_lab/",
     "resume": "",
     "date": "2026-11-13T12:38:53Z",
+    "vote": 0
+  },
+  {
+    "id": "1d70462715e00365bfa3cd0b1a4cb4a9",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "We're building Sumeru, an open-source ERP framework in Go. Looking for contributors!",
+    "url": "https://www.reddit.com/r/golang/comments/1xv6bxz/were_building_sumeru_an_opensource_erp_framework/",
+    "resume": "",
+    "date": "2026-11-13T12:14:46Z",
     "vote": 0
   },
   {
