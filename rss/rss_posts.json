@@ -1,5 +1,18 @@
 [
   {
+    "id": "8c2e73cb74af31f8123a6ca4cbd51229",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I built the same Go app five ways: Fyne, Cogent Core, Wails, GoTTH and Qt (MIQT)",
+    "url": "https://www.reddit.com/r/golang/comments/1xvlrfe/i_built_the_same_go_app_five_ways_fyne_cogent/",
+    "resume": "",
+    "date": "2026-11-13T22:27:52Z",
+    "vote": 0
+  },
+  {
     "id": "5d67beadd11596e6928bb43f3e2fce8e",
     "source": {
       "path": "forums",
