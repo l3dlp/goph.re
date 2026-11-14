@@ -1,5 +1,18 @@
 [
   {
+    "id": "d49deb577d5b073d74293e786d587722",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Building AI Agents using Go + Temporal",
+    "url": "https://www.reddit.com/r/golang/comments/1xwc58n/building_ai_agents_using_go_temporal/",
+    "resume": "",
+    "date": "2026-11-14T20:15:33Z",
+    "vote": 0
+  },
+  {
     "id": "116196d1e47537293d3e6a5a920b7ba4",
     "source": {
       "path": "forums",
