@@ -1,5 +1,18 @@
 [
   {
+    "id": "355f5c22e92d23e19028cab9ff2274d1",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Should You Write Your Next.js API in Go? (I Tested It)",
+    "url": "https://www.reddit.com/r/golang/comments/1xvvzql/should_you_write_your_nextjs_api_in_go_i_tested_it/",
+    "resume": "",
+    "date": "2026-11-14T07:06:23Z",
+    "vote": 0
+  },
+  {
     "id": "8c2e73cb74af31f8123a6ca4cbd51229",
     "source": {
       "path": "forums",
