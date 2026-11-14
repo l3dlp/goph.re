@@ -1,5 +1,18 @@
 [
   {
+    "id": "80e8780d7fc02b795d6758a24ffd9dc2",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "DocWebHub: share a local folder as a read-only LAN document site",
+    "url": "https://forum.golangbridge.org/t/docwebhub-share-a-local-folder-as-a-read-only-lan-document-site/42818#post_1",
+    "resume": " \u003cp\u003eDocWebHub is a Go desktop app that turns a local folder into a read-only website you can open on the same machine or over a LAN. Files stay on disk; nothing is uploaded to a cloud service.\u003c/p\u003e\n\u003cp\u003eThe motivation is straightforward: sharing a mixed folder should not require a document-management system, cloud syncing, or a different viewer on every recipient’s machine. DocWebHub focuses on local browsing and previews rather than collaborative editing.\u003c/p\u003e\n\u003cp\u003eShared folders, static file servers, and cloud drives already handle distribution well. DocWebHub targets a narrower workflow: keep the folder local, serve it read-only, and provide bundled offline previews in the browser. Supported previews include:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOffice documents, including legacy \u003ccode\u003e.doc\u003c/code\u003e, \u003ccode\u003e.xls\u003c/code\u003e, and \u003ccode\u003e.ppt\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003ePDF, Markdown, images, audio/video, and source code\u003c/li\u003e\n\u003cli\u003eDWG/DXF drawings with pan, zoom, layer visibility, and PDF export\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eYou can optionally set a password. This provides access control, \u003cstrong\u003enot traffic encryption\u003c/strong\u003e. The server can also bind to localhost when you do not want LAN exposure.\u003c/p\u003e\n\u003cp\u003eBuilds are available for macOS, Windows, and Linux, including ARM. The project is dual-licensed under AGPL-3.0 and a commercial license.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://docwebhub.app/\" rel=\"noopener nofollow ugc\"\u003eHomepage\u003c/a\u003e · \u003ca href=\"https://github.com/0xChance/docwebhub\" rel=\"noopener nofollow ugc\"\u003eSource on GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThis is not a replacement for a full collaboration or document-management stack. I’d welcome feedback from the Go community, especially on Linux packaging, the desktop experience, and workflows where local document previews would be useful.\u003c/p\u003e ",
+    "date": "2026-11-14T14:54:41Z",
+    "vote": 0
+  },
+  {
     "id": "208ff2e9718c183a92db68d64822b29e",
     "source": {
       "path": "podcasts",
