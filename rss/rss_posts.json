@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "6aaa029e207dd2e60b41f6a310b4451d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Anything wrong with setting version 1 of a module to use \"/v1\", similarly to versions 2+? Or, releasing version 2 as the actual first version?",
+    "url": "https://www.reddit.com/r/golang/comments/1xvk920/anything_wrong_with_setting_version_1_of_a_module/",
+    "resume": "",
+    "date": "2026-11-13T21:26:11Z",
+    "vote": 0
+  },
+  {
     "id": "5d67beadd11596e6928bb43f3e2fce8e",
     "source": {
       "path": "forums",
@@ -23,6 +36,19 @@
     "url": "https://forum.golangbridge.org/t/how-do-you-version-a-review-api-when-the-set-of-answers-might-grow/42782#post_4",
     "resume": " \u003cp\u003eI’d keep the dimensions as an open list of named results and version the report, not each question. Clients that ignore unknown names will survive a seventh dimension. The change that actually hurts is splitting one of the six, because old clients still look for the old name. That is when a path version is cheaper than being clever.\u003c/p\u003e ",
     "date": "2026-11-13T19:18:30Z",
+    "vote": 0
+  },
+  {
+    "id": "c067da81fe3772d466243742adc5be57",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I build Kvolt: a net/http based web framework with modular batteries - looking for testers and feedback and its production promising",
+    "url": "https://www.reddit.com/r/golang/comments/1xve2ag/i_build_kvolt_a_nethttp_based_web_framework_with/",
+    "resume": "",
+    "date": "2026-11-13T17:30:20Z",
     "vote": 0
   },
   {
