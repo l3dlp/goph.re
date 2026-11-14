@@ -1,5 +1,18 @@
 [
   {
+    "id": "ac1c083f90de8045d958d247686f040c",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Help me understand a tree data structure",
+    "url": "https://www.reddit.com/r/golang/comments/1xwdrt7/help_me_understand_a_tree_data_structure/",
+    "resume": "",
+    "date": "2026-11-14T21:26:33Z",
+    "vote": 0
+  },
+  {
     "id": "a1a8a1fe7cb1427313027dde148a295e",
     "source": {
       "path": "forums",
