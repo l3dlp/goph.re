@@ -1,5 +1,18 @@
 [
   {
+    "id": "116196d1e47537293d3e6a5a920b7ba4",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "go-in-lean: Exploring Go correctness with AI agents, Lean 4 and QEMU",
+    "url": "https://forum.golangbridge.org/t/go-in-lean-exploring-go-correctness-with-ai-agents-lean-4-and-qemu/42766#post_2",
+    "resume": " \u003cp\u003eA small website is also available at \u003ca href=\"https://s-celles.github.io/go-in-lean/\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003ego-in-lean\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-14T19:11:40Z",
+    "vote": 0
+  },
+  {
     "id": "778aa5cdf0fc14d4083f7e490427856d",
     "source": {
       "path": "forums",
