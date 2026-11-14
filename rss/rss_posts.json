@@ -1,5 +1,18 @@
 [
   {
+    "id": "208ff2e9718c183a92db68d64822b29e",
+    "source": {
+      "path": "podcasts",
+      "name": "Cup o' Go",
+      "url": "https://feeds.transistor.fm/cup-o-go"
+    },
+    "name": "Waiting for the break of day as Go turns 17",
+    "url": "https://share.transistor.fm/s/edad940d",
+    "resume": "\u003cul\u003e\u003cli\u003e\u003ca href=\"https://github.com/golang/go/issues/81994\"\u003eproposal: net/netip: add netip.Addr.To6()\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://fosdem.org/2027/\"\u003eFOSDEM'27\u003c/a\u003e, Jan 30 \u0026amp; 31 @ Brussels, Belgium\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://www.youtube.com/@golangsf\"\u003eGolang SF on YouTube\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://go.dev/blog/17years\"\u003eGo Turns 17\u003c/a\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://www.youtube.com/watch?v=jhS_VD247Qocoll\"\u003eObservability Full Course: Logs, Metrics \u0026amp; Traces\u003c/a\u003e on YouTube\u003cul\u003e\u003cli\u003e\u003ca href=\"https://www.boot.dev/courses/learn-logging-observability-golang?promo=JHALL\"\u003eInteractive course @ Boot.dev\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/li\u003e\u003c/ul\u003e\n\u003cstrong\u003e\n  \u003ca href=\"https://www.patreon.com/user?u=52571196\" rel=\"payment\" title=\"★ Support this podcast on Patreon ★\"\u003e★ Support this podcast on Patreon ★\u003c/a\u003e\n\u003c/strong\u003e",
+    "date": "2026-11-14T13:59:01Z",
+    "vote": 0
+  },
+  {
     "id": "355f5c22e92d23e19028cab9ff2274d1",
     "source": {
       "path": "forums",
