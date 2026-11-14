@@ -1,5 +1,18 @@
 [
   {
+    "id": "778aa5cdf0fc14d4083f7e490427856d",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Shirei 0.9.0: overlay and auxiliary windows, document editing, furigana, and going agent-first",
+    "url": "https://www.reddit.com/r/golang/comments/1xw8rkl/shirei_090_overlay_and_auxiliary_windows_document/",
+    "resume": "",
+    "date": "2026-11-14T17:57:34Z",
+    "vote": 0
+  },
+  {
     "id": "1844b7ba83a9c124810e19c316f110b2",
     "source": {
       "path": "forums",
