@@ -1,5 +1,18 @@
 [
   {
+    "id": "a1a8a1fe7cb1427313027dde148a295e",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "encapsulation",
+    "url": "https://www.reddit.com/r/golang/comments/1xwcqn7/encapsulation/",
+    "resume": "",
+    "date": "2026-11-14T20:41:27Z",
+    "vote": 0
+  },
+  {
     "id": "d49deb577d5b073d74293e786d587722",
     "source": {
       "path": "forums",
