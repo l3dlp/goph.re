@@ -1,5 +1,18 @@
 [
   {
+    "id": "08bb9d32236705bd7d5d0729fb2c3bf8",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go Libraries or Workflow Engines for Always-On Agents",
+    "url": "https://www.reddit.com/r/golang/comments/1xwlztf/go_libraries_or_workflow_engines_for_alwayson/",
+    "resume": "",
+    "date": "2026-11-15T04:10:17Z",
+    "vote": 0
+  },
+  {
     "id": "f700b4fa1d0577f7d55b42e9526b5891",
     "source": {
       "path": "forums",
