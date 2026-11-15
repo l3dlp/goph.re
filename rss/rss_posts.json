@@ -1,5 +1,31 @@
 [
   {
+    "id": "9a817924f3d0a3122a80037937921017",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "gowt: native GUI for Go",
+    "url": "https://www.reddit.com/r/golang/comments/1xwv2h1/gowt_native_gui_for_go/",
+    "resume": "",
+    "date": "2026-11-15T13:07:41Z",
+    "vote": 0
+  },
+  {
+    "id": "9f0cf3a0e48efc21e29e451e474e4b82",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go is going I think",
+    "url": "https://www.reddit.com/r/golang/comments/1xwpyle/go_is_going_i_think/",
+    "resume": "",
+    "date": "2026-11-15T08:02:33Z",
+    "vote": 0
+  },
+  {
     "id": "08bb9d32236705bd7d5d0729fb2c3bf8",
     "source": {
       "path": "forums",
