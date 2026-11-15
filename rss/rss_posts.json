@@ -1,5 +1,18 @@
 [
   {
+    "id": "f700b4fa1d0577f7d55b42e9526b5891",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Loved writing code, reviewing code but seems spark is gone, any advice of what to do?",
+    "url": "https://www.reddit.com/r/golang/comments/1xwhg57/loved_writing_code_reviewing_code_but_seems_spark/",
+    "resume": "",
+    "date": "2026-11-15T00:14:32Z",
+    "vote": 0
+  },
+  {
     "id": "ca9db28ae235a9d54cf8fcf00cd17def",
     "source": {
       "path": "community",
