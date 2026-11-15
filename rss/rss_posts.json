@@ -1,5 +1,18 @@
 [
   {
+    "id": "ca9db28ae235a9d54cf8fcf00cd17def",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Walking across my Minecraft backups with Plakar",
+    "url": "https://poolp.org/posts/2026-11-14/walking-across-my-minecraft-backups-with-plakar/",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/h6eofy/walking_across_my_minecraft_backups_with\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-14T23:23:12Z",
+    "vote": 0
+  },
+  {
     "id": "ac1c083f90de8045d958d247686f040c",
     "source": {
       "path": "forums",
