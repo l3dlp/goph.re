@@ -1,5 +1,18 @@
 [
   {
+    "id": "5abe840dc7fb820660aa6489e2eb31ec",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Is my code correct ? , I am trying to tackle the race condition problem safely using mutex and waitGroups",
+    "url": "https://forum.golangbridge.org/t/is-my-code-correct-i-am-trying-to-tackle-the-race-condition-problem-safely-using-mutex-and-waitgroups/42022#post_4",
+    "resume": " \u003cp\u003eYour code is race-free: the mutex protects `counter`, and `WaitGroup.Wait()` makes sure both goroutines finish before you read it, so the result will be correct.\u003c/p\u003e\n\u003cp\u003eTwo practical notes:\u003c/p\u003e\n\u003cp\u003e1. Locking and unlocking on every increment is correct but slow — the mutex becomes the bottleneck. As Dean suggested, `atomic.Int32` is a good fit here, or give each goroutine its own local counter and add the two totals together at the end, so the workers never contend.\u003c/p\u003e\n\u003cp\u003e2. You can prove it to yourself by running it with the race detector: `go run -race main.go`. If there were a race on `counter`, it would report it, and with the mutex in place it should stay clean.\u003c/p\u003e ",
+    "date": "2026-11-15T15:53:57Z",
+    "vote": 0
+  },
+  {
     "id": "9a817924f3d0a3122a80037937921017",
     "source": {
       "path": "forums",
