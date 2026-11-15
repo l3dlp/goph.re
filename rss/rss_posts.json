@@ -1,5 +1,18 @@
 [
   {
+    "id": "949a7e70645212fd610e9f9b1323f48f",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Understanding Go: inside PGO",
+    "url": "https://www.reddit.com/r/golang/comments/1xwz33j/understanding_go_inside_pgo/",
+    "resume": "",
+    "date": "2026-11-15T16:02:06Z",
+    "vote": 0
+  },
+  {
     "id": "5abe840dc7fb820660aa6489e2eb31ec",
     "source": {
       "path": "forums",
