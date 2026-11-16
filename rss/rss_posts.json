@@ -1,5 +1,18 @@
 [
   {
+    "id": "278f9458002051b657738a8b9b279002",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Need advice on choosing DB and caching architecture for a read-heavy Go service",
+    "url": "https://www.reddit.com/r/golang/comments/1xxnlpb/need_advice_on_choosing_db_and_caching/",
+    "resume": "",
+    "date": "2026-11-16T12:01:11Z",
+    "vote": 0
+  },
+  {
     "id": "831653542854353af5571252b387a234",
     "source": {
       "path": "forums",
@@ -49,6 +62,19 @@
     "url": "https://forum.golangbridge.org/t/dxui-a-declarative-desktop-gui-framework-for-go-without-cgo/42565#post_11",
     "resume": " \u003cp\u003eHonestly, when I first stumbled across \u003ccode\u003ehyperlibs/hyperstack\u003c/code\u003e, I was pretty skeptical. It looked like someone tried to pack everything into one suite, and at first glance, it felt genuinely overwhelming.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eFair warning:\u003c/strong\u003e Do \u003cstrong\u003enot\u003c/strong\u003e try to consume the entire framework holistically on day one. If you try to digest all the micro-engines, the Go component DSL, the 2D layer matrix, and offline sync all at once, you will definitely be overwhelmed.\u003c/p\u003e\n\u003cp\u003eWhat actually changed my mind was stepping back from the big picture and building \u003cstrong\u003e5 to 10 small prototypes\u003c/strong\u003e with Claude across completely different use cases:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eA basic virtualized 10k-row table.\u003c/li\u003e\n\u003cli\u003eA live SSE event stream hooked directly to native Go channels.\u003c/li\u003e\n\u003cli\u003eAn offline form with local IndexedDB queuing.\u003c/li\u003e\n\u003cli\u003eA Compose-style dashboard layout using their pure Go DSL (\u003ccode\u003eVStack\u003c/code\u003e, \u003ccode\u003eHStack\u003c/code\u003e, \u003ccode\u003eStatCard\u003c/code\u003e).\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eThat’s when the architecture clicked for me. Under the hood, it’s essentially \u003cstrong\u003eHTMX on steroids paired with pure standard-library Go (\u003ccode\u003enet/http\u003c/code\u003e)\u003c/strong\u003e. There’s zero Node.js/npm baggage, zero CGo to mess up cross-compiles, and because the component contracts are pure declarative HTML, AI agents like Claude can generate atomic updates without the usual React/JSX hallucinations.\u003c/p\u003e\n\u003cp\u003eFor charts and visualizations—which usually turn into a never-ending headache in native canvas GUIs like \u003ccode\u003edxui\u003c/code\u003e or Fyne—you can just emit clean SVG components directly from Go or drop in standard web visualization tools without pulling in a 100MB embedded webview runtime.\u003c/p\u003e\n\u003cp\u003eMy takeaway for anyone checking it out: \u003cstrong\u003eDon’t look at the whole mountain first.\u003c/strong\u003e Focus on what you specifically need, figure out how you want it to work, and spin up 2 or 3 quick prototypes. You’ll see the ergonomics much faster that way.\u003c/p\u003e ",
     "date": "2026-11-16T09:50:20Z",
+    "vote": 0
+  },
+  {
+    "id": "7c7c109e5f63045102241246dbee0eac",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "An old repository I did not share",
+    "url": "https://www.reddit.com/r/golang/comments/1xxl89f/an_old_repository_i_did_not_share/",
+    "resume": "",
+    "date": "2026-11-16T09:37:11Z",
     "vote": 0
   },
   {
