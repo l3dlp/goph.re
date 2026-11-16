@@ -1,5 +1,18 @@
 [
   {
+    "id": "f65a67b5ce3e7edd8378505489301a72",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Small Projects",
+    "url": "https://www.reddit.com/r/golang/comments/1xxzj6f/small_projects/",
+    "resume": "",
+    "date": "2026-11-16T20:00:34Z",
+    "vote": 0
+  },
+  {
     "id": "130f8dc97bc4a0e4f70d849c59f6c832",
     "source": {
       "path": "forums",
@@ -153,6 +166,19 @@
     "url": "https://forum.golangbridge.org/t/looking-for-a-golang-developer-internship/41658#post_35",
     "resume": " \u003cp\u003eFollowing this discussion on \u003cem\u003eLooking for a Golang Developer - Internship\u003c/em\u003e closely. For anyone else dealing with \u003ccode\u003egolang and developer\u003c/code\u003e, keeping \u003ccode\u003egolang\u003c/code\u003e simple and avoiding bloated setups has been much more reliable for me.\u003c/p\u003e\n\u003cp\u003eIf anyone wants to compare, here is the site I settled on: \u003ca href=\"https://config-memo-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003econfig-memo-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
     "date": "2026-11-16T00:12:55Z",
+    "vote": 0
+  },
+  {
+    "id": "ae1874f05bf9fa3a927cc56074600a20",
+    "source": {
+      "path": "experts",
+      "name": "Redowan Delowar",
+      "url": "https://rednafi.com/index.xml"
+    },
+    "name": "Accepted proposal: omit the type in composite literals",
+    "url": "https://rednafi.com/shards/2026/11/go-untyped-composite-literals/",
+    "resume": "Go 1.28 is set to let you drop the type from a composite literal when the compiler can infer it from the place where the value goes.",
+    "date": "2026-11-16T00:00:00Z",
     "vote": 0
   },
   {
