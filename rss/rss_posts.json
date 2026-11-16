@@ -13,6 +13,32 @@
     "vote": 0
   },
   {
+    "id": "758849b1a4f58c6dc91c317a32174997",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The Developer Who Never Breaks Prod Is Not Who You Think",
+    "url": "https://www.youtube.com/shorts/DCRe2dcQL70",
+    "resume": "",
+    "date": "2026-11-16T05:00:34Z",
+    "vote": 0
+  },
+  {
+    "id": "41cfdfea554f03e6c5d521a4c58ece4a",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "The Bug That Freezes Everything",
+    "url": "https://www.youtube.com/shorts/uOSpNXBbZDQ",
+    "resume": "",
+    "date": "2026-11-16T03:00:16Z",
+    "vote": 0
+  },
+  {
     "id": "ec33e69c1311a64707cad819e79f72a4",
     "source": {
       "path": "forums",
