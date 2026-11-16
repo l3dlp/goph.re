@@ -1,5 +1,31 @@
 [
   {
+    "id": "8e642c7f883f58f75a3184bd262bba59",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Same deadline. Different ending.",
+    "url": "https://www.youtube.com/shorts/zC0krzdKGjY",
+    "resume": "",
+    "date": "2026-11-16T23:00:02Z",
+    "vote": 0
+  },
+  {
+    "id": "9508b7608d46f81e74cf6c241cedd9fe",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Building a Proof-of-Work Blockchain in Go: Lessons from a Real-World Implementation",
+    "url": "https://forum.golangbridge.org/t/building-a-proof-of-work-blockchain-in-go-lessons-from-a-real-world-implementation/42873#post_1",
+    "resume": " \u003cp\u003eHi everyone!\u003c/p\u003e\n\u003cp\u003eI’ve been working with Go and exploring how to build distributed systems from the ground up. One of my recent areas of focus has been implementing a Proof-of-Work (PoW) blockchain using Go.\u003c/p\u003e\n\u003cp\u003eDuring development, I’ve been working on several interesting technical challenges:\u003c/p\u003e\n\u003ch3\u003e\u003ca name=\"p-97386-h-1-blockchain-core-1\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97386-h-1-blockchain-core-1\" aria-label=\"Heading link\"\u003e\u003c/a\u003e1. Blockchain Core\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eBlock structure and transaction validation\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eProof-of-Work mining and difficulty adjustment\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eChain synchronization and reorganization handling\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97386-h-2-concurrency-and-performance-2\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97386-h-2-concurrency-and-performance-2\" aria-label=\"Heading link\"\u003e\u003c/a\u003e2. Concurrency and Performance\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eGoroutines and synchronization\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThread-safe mining operations\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eManaging concurrent network connections\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eRace condition prevention\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97386-h-3-p2p-networking-3\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97386-h-3-p2p-networking-3\" aria-label=\"Heading link\"\u003e\u003c/a\u003e3. P2P Networking\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003ePeer discovery and communication\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eBlock propagation\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTransaction relay\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eNetwork synchronization\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca name=\"p-97386-h-4-cryptography-4\" class=\"anchor\" href=\"https://forum.golangbridge.org#p-97386-h-4-cryptography-4\" aria-label=\"Heading link\"\u003e\u003c/a\u003e4. Cryptography\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eDigital signatures\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eTransaction verification\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eExploring post-quantum cryptography, particularly ML-DSA (FIPS 204)\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eI chose Go because of its simplicity, concurrency model, performance, and suitability for building network-intensive applications.\u003c/p\u003e\n\u003cp\u003eI’m interested in connecting with other Go developers, learning from their experiences, and discussing approaches to building reliable distributed systems.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eA question for the community:\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eFor developers who have built distributed systems in Go, what were the most challenging concurrency or networking problems you encountered, and how did you solve them?\u003c/p\u003e\n\u003cp\u003eLooking forward to learning from everyone!\u003c/p\u003e ",
+    "date": "2026-11-16T22:52:18Z",
+    "vote": 0
+  },
+  {
     "id": "4a7ac24a5a43779d697c990b60df5405",
     "source": {
       "path": "examples",
