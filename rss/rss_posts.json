@@ -1,5 +1,18 @@
 [
   {
+    "id": "130f8dc97bc4a0e4f70d849c59f6c832",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "I outlined the process we used to do a large-scale migration from Node to Go in two weeks",
+    "url": "https://www.reddit.com/r/golang/comments/1xxxfy5/i_outlined_the_process_we_used_to_do_a_largescale/",
+    "resume": "",
+    "date": "2026-11-16T18:42:28Z",
+    "vote": 0
+  },
+  {
     "id": "1eb0e14d2aeada4a365cf234db6b80c4",
     "source": {
       "path": "forums",
