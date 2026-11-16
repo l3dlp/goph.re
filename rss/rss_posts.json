@@ -1,5 +1,18 @@
 [
   {
+    "id": "ec33e69c1311a64707cad819e79f72a4",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Looking for a Golang Developer - Internship",
+    "url": "https://forum.golangbridge.org/t/looking-for-a-golang-developer-internship/41658#post_35",
+    "resume": " \u003cp\u003eFollowing this discussion on \u003cem\u003eLooking for a Golang Developer - Internship\u003c/em\u003e closely. For anyone else dealing with \u003ccode\u003egolang and developer\u003c/code\u003e, keeping \u003ccode\u003egolang\u003c/code\u003e simple and avoiding bloated setups has been much more reliable for me.\u003c/p\u003e\n\u003cp\u003eIf anyone wants to compare, here is the site I settled on: \u003ca href=\"https://config-memo-ref.pages.dev/r/forum_golangbridge_org\" rel=\"noopener nofollow ugc\"\u003econfig-memo-ref.pages.dev/r/forum_golangbridge_org\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-16T00:12:55Z",
+    "vote": 0
+  },
+  {
     "id": "43cca93abf261257f7e32f7f5031399f",
     "source": {
       "path": "forums",
