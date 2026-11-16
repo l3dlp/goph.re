@@ -1,5 +1,18 @@
 [
   {
+    "id": "1eb0e14d2aeada4a365cf234db6b80c4",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Go devs have long argued you don’t need a framework. A 19-year enterprise engineer reaches a similar conclusion from the other side",
+    "url": "https://www.reddit.com/r/golang/comments/1xxrx77/go_devs_have_long_argued_you_dont_need_a/",
+    "resume": "",
+    "date": "2026-11-16T15:15:25Z",
+    "vote": 0
+  },
+  {
     "id": "278f9458002051b657738a8b9b279002",
     "source": {
       "path": "forums",
