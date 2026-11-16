@@ -1,5 +1,18 @@
 [
   {
+    "id": "bac7e166a80118054d4945f1d3385d5d",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Is there any better GUI native for golang?",
+    "url": "https://forum.golangbridge.org/t/is-there-any-better-gui-native-for-golang/42869#post_1",
+    "resume": " \u003cp\u003eI built 5 modules on hyperstack - Trend Reports, Patient Flow, Staff ROTA, User Management etc\u003cbr\u003e\nas separate modules for internal usage. before starting other modules i want to implement a paas plane to host all these modular apps on a single plane.\u003c/p\u003e\n\u003cp\u003eCan someone explore \u003ca href=\"https://github.com/hyperlibs/hyperstack\" rel=\"noopener nofollow ugc\"\u003ehttps://github.com/hyperlibs/hyperstack\u003c/a\u003e and suggest if there is a prebuilt gui frontend framework which can solve my issues (decentralized apps to centralized app in a framework)\u003c/p\u003e ",
+    "date": "2026-11-16T06:19:02Z",
+    "vote": 0
+  },
+  {
     "id": "ec33e69c1311a64707cad819e79f72a4",
     "source": {
       "path": "forums",
