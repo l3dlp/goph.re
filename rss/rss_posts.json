@@ -1,5 +1,18 @@
 [
   {
+    "id": "57f4b9c6e2d97bcfd7706be1d3597502",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Comb Sort in 3D: far-apart swaps first #shorts",
+    "url": "https://www.youtube.com/shorts/l3H2ukzOsrc",
+    "resume": "",
+    "date": "2026-11-17T00:00:17Z",
+    "vote": 0
+  },
+  {
     "id": "8e642c7f883f58f75a3184bd262bba59",
     "source": {
       "path": "examples",
