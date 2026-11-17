@@ -1,5 +1,18 @@
 [
   {
+    "id": "501325e09f0e28fb6520651f3c706162",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Hiring a Senior Backend Engineer (Go) in Portugal",
+    "url": "https://forum.golangbridge.org/t/hiring-a-senior-backend-engineer-go-in-portugal/42877#post_1",
+    "resume": " \u003cp\u003eSubvisual is a product and engineering studio based in Braga, Portugal. We’re hiring a Senior Backend Engineer to join the engineering team of a regulated financial infrastructure client, building new platforms for payments, ledgers, and reconciliation.\u003c/p\u003e\n\u003cp\u003eWhat you’ll bring:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e3+ years building production backend systems in Go or another statically typed language\u003c/li\u003e\n\u003cli\u003eAPI design with REST and gRPC\u003c/li\u003e\n\u003cli\u003eRelational databases like Postgres\u003c/li\u003e\n\u003cli\u003eDistributed systems with Kafka or RabbitMQ, including retries and failure handling\u003c/li\u003e\n\u003cli\u003eTesting and CI/CD as part of your daily work\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003ePayments, banking, or ledger experience is a plus, not a must.\u003c/p\u003e\n\u003cp\u003eFull-time, based in Braga.\u003c/p\u003e\n\u003cp\u003eApply here: \u003ca href=\"https://jobs.subvisual.com/senior-backend-engineer/en\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eSenior Backend Engineer - Subvisual\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-17T18:13:59Z",
+    "vote": 0
+  },
+  {
     "id": "3cc7b38a9ff474d93b6fc1fdb63d6fd3",
     "source": {
       "path": "examples",
