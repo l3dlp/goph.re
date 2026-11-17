@@ -13,6 +13,19 @@
     "vote": 0
   },
   {
+    "id": "3dc595cbabeede4788dd788ff65da2c2",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "MinLZ SIMD Block Compression released",
+    "url": "https://www.reddit.com/r/golang/comments/1xyhaz1/minlz_simd_block_compression_released/",
+    "resume": "",
+    "date": "2026-11-17T10:43:58Z",
+    "vote": 0
+  },
+  {
     "id": "66fbc6621448f17fed37e734f3c641cd",
     "source": {
       "path": "forums",
@@ -36,6 +49,19 @@
     "url": "https://bitfieldconsulting.com/posts/useless-computer",
     "resume": "A computer that does nothing is more fun. Let’s build one together.",
     "date": "2026-11-17T08:46:00Z",
+    "vote": 0
+  },
+  {
+    "id": "b5ece9f3edd96ced8db50d415a25f586",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Please review my project",
+    "url": "https://www.reddit.com/r/golang/comments/1xyf3st/please_review_my_project/",
+    "resume": "",
+    "date": "2026-11-17T08:26:12Z",
     "vote": 0
   },
   {
