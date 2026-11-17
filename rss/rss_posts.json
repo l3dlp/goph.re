@@ -1,5 +1,18 @@
 [
   {
+    "id": "3cc7b38a9ff474d93b6fc1fdb63d6fd3",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "C++ for Dummies in 7 Minutes",
+    "url": "https://www.youtube.com/watch?v=rTxK_ql10Po",
+    "resume": "",
+    "date": "2026-11-17T16:45:38Z",
+    "vote": 0
+  },
+  {
     "id": "951b50da752754f51e2b840cfdd5f0b1",
     "source": {
       "path": "examples",
