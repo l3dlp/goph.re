@@ -1,5 +1,18 @@
 [
   {
+    "id": "28b30a72327f29f14ff543459671beb2",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "DFS vs Greedy Best-First: which one escapes first?",
+    "url": "https://www.youtube.com/shorts/ZQlVsHkqAwk",
+    "resume": "",
+    "date": "2026-11-17T04:00:21Z",
+    "vote": 0
+  },
+  {
     "id": "e23a8d8c41e46b10ef94b5c1b09e1737",
     "source": {
       "path": "examples",
