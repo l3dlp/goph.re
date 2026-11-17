@@ -1,5 +1,18 @@
 [
   {
+    "id": "951b50da752754f51e2b840cfdd5f0b1",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Math Every Programmer ACTUALLY Needs",
+    "url": "https://www.youtube.com/watch?v=-gBgZpC6ehA",
+    "resume": "",
+    "date": "2026-11-17T16:00:31Z",
+    "vote": 0
+  },
+  {
     "id": "bf3c86029bf464ff8549ea5346c0c79e",
     "source": {
       "path": "forums",
