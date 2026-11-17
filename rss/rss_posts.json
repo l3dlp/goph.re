@@ -1,5 +1,18 @@
 [
   {
+    "id": "a2fa505fb9363a890d3ce204a34efbc7",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Friday Deploy. 3 Batteries.",
+    "url": "https://www.youtube.com/shorts/bg73JYko9hQ",
+    "resume": "",
+    "date": "2026-11-17T02:00:04Z",
+    "vote": 0
+  },
+  {
     "id": "b618059dd1e8d555ed2999718adba0ba",
     "source": {
       "path": "examples",
