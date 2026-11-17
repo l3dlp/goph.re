@@ -1,5 +1,18 @@
 [
   {
+    "id": "a6a5e36a2a5d6479f7683baa57634cff",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "8 Sorting Algorithms… The Last One Never Finishes 💀",
+    "url": "https://www.youtube.com/shorts/CLlzrOAyN58",
+    "resume": "",
+    "date": "2026-11-17T23:00:16Z",
+    "vote": 0
+  },
+  {
     "id": "e6edf6224f6964f1a3a8768f1a96cbae",
     "source": {
       "path": "examples",
