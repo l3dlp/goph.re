@@ -1,5 +1,18 @@
 [
   {
+    "id": "66fbc6621448f17fed37e734f3c641cd",
+    "source": {
+      "path": "forums",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/r/golang.rss"
+    },
+    "name": "Accepted proposal: omit the type in composite literals",
+    "url": "https://www.reddit.com/r/golang/comments/1xyguw5/accepted_proposal_omit_the_type_in_composite/",
+    "resume": "",
+    "date": "2026-11-17T10:16:53Z",
+    "vote": 0
+  },
+  {
     "id": "4e8a5f04fad0eb22b308f7b8919b10bd",
     "source": {
       "path": "experts",
