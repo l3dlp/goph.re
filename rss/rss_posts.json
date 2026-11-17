@@ -1,5 +1,18 @@
 [
   {
+    "id": "4e8a5f04fad0eb22b308f7b8919b10bd",
+    "source": {
+      "path": "experts",
+      "name": "Bitfield Consulting",
+      "url": "https://feeds.feedburner.com/bitfieldconsulting"
+    },
+    "name": "The useless computer",
+    "url": "https://bitfieldconsulting.com/posts/useless-computer",
+    "resume": "A computer that does nothing is more fun. Let’s build one together.",
+    "date": "2026-11-17T08:46:00Z",
+    "vote": 0
+  },
+  {
     "id": "eb0b14daccfe94824db175085c5b225a",
     "source": {
       "path": "examples",
