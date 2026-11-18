@@ -1,5 +1,18 @@
 [
   {
+    "id": "83e96d2a8aec8bed38bf66491469a122",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Same layoff. Different portfolio.",
+    "url": "https://www.youtube.com/shorts/a7Ly8XRtKDk",
+    "resume": "",
+    "date": "2026-11-18T00:00:39Z",
+    "vote": 0
+  },
+  {
     "id": "a6a5e36a2a5d6479f7683baa57634cff",
     "source": {
       "path": "examples",
