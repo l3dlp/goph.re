@@ -1,5 +1,18 @@
 [
   {
+    "id": "afb5af63827e6c0c3ca8644c10a60e3c",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "20 Programming Projects That Will Make You A God At Coding",
+    "url": "https://www.youtube.com/watch?v=mXAwU_sKqg0",
+    "resume": "",
+    "date": "2026-11-18T16:30:18Z",
+    "vote": 0
+  },
+  {
     "id": "719d69231a3879d55a132f6a743861e8",
     "source": {
       "path": "forums",
