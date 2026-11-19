@@ -1,5 +1,18 @@
 [
   {
+    "id": "7d1aeb32b6d26b494cab857bc53e38a0",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go Backend Generates Incorrect URL Paths When Handling Nested Routes and Dynamic Parameters",
+    "url": "https://forum.golangbridge.org/t/go-backend-generates-incorrect-url-paths-when-handling-nested-routes-and-dynamic-parameters/42882#post_2",
+    "resume": " \u003cp\u003eOne thing I’d recommend is to not use string concatenation for dynamic URLs. Build and escape each path segment independently and then test instances with spaces, slashes and unicode characters. Also what router you using http.Chi, Gorilla Mux or ServeMux? That would assist to narrow down the issue.\u003c/p\u003e ",
+    "date": "2026-11-19T01:02:12Z",
+    "vote": 0
+  },
+  {
     "id": "af5f561e1548ef5f874048496def0841",
     "source": {
       "path": "forums",
