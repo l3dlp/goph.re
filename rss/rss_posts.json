@@ -1,5 +1,18 @@
 [
   {
+    "id": "175e43bc2ab2769b966cfe30cc6b13fa",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Writing code by hand is now an advantage",
+    "url": "https://www.youtube.com/watch?v=1kGmQsTy1YM",
+    "resume": "",
+    "date": "2026-11-19T16:30:23Z",
+    "vote": 0
+  },
+  {
     "id": "0fda92d42afc727c8c6346d7bb83e858",
     "source": {
       "path": "forums",
