@@ -1,5 +1,18 @@
 [
   {
+    "id": "aa16d2d70adf373522851371c4b86fa7",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "(Real World Example) Dijkstra vs A* in London",
+    "url": "https://www.youtube.com/shorts/V6Gz121kkSY",
+    "resume": "",
+    "date": "2026-11-20T00:00:16Z",
+    "vote": 0
+  },
+  {
     "id": "175e43bc2ab2769b966cfe30cc6b13fa",
     "source": {
       "path": "examples",
