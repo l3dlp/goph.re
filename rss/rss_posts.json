@@ -1,5 +1,31 @@
 [
   {
+    "id": "eaa305ebec327c8cd46d38e18c367467",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Go Backend Generates Incorrect URL Paths When Handling Nested Routes and Dynamic Parameters",
+    "url": "https://forum.golangbridge.org/t/go-backend-generates-incorrect-url-paths-when-handling-nested-routes-and-dynamic-parameters/42882#post_3",
+    "resume": " \u003cp\u003eAlways build dynamic URLs using the dedicated Functions in Go or Javascript. They will handle escaping, edge cases and error out if what you try to build is not a valid URL (e.g. a colon in the domain name)\u003c/p\u003e\n\u003cp\u003eJavascript:\u003cbr\u003e\n\u003ccode\u003e`.../${encodeURIComponent(part1)}/${encodeURIComponent(part)}`\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eGo:\u003cbr\u003e\n\u003ccode\u003eurl.JoinPath(...,url.PathEscape(part1), url.PathEscape(part2))\u003c/code\u003e\u003c/p\u003e ",
+    "date": "2026-11-20T08:44:24Z",
+    "vote": 0
+  },
+  {
+    "id": "d9e09607dab7f3ccb05d196c96f2e8f5",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Nople: an editor in pure Go, no cgo, that opens a 10 GB log in 0.35 s",
+    "url": "https://forum.golangbridge.org/t/nople-an-editor-in-pure-go-no-cgo-that-opens-a-10-gb-log-in-0-35-s/42879#post_2",
+    "resume": " \u003cp\u003eGreat work on the streamin/table approach. You think you could port this feature to VS Code? Maybe as a plugin for large files ?\u003c/p\u003e ",
+    "date": "2026-11-20T08:33:59Z",
+    "vote": 0
+  },
+  {
     "id": "174f916e90cd02bc348299704229b8c3",
     "source": {
       "path": "examples",
