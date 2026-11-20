@@ -1,5 +1,18 @@
 [
   {
+    "id": "4c9fe2670a7ce560ff1adfafd9613eda",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How many shuffles until bogosort sorts 6 cards? #algorithms #coding",
+    "url": "https://www.youtube.com/shorts/LyVNar60Hds",
+    "resume": "",
+    "date": "2026-11-20T04:00:22Z",
+    "vote": 0
+  },
+  {
     "id": "821dbafded0a88ace42ff204f8e7cb5f",
     "source": {
       "path": "examples",
