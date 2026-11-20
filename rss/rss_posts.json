@@ -1,5 +1,18 @@
 [
   {
+    "id": "174f916e90cd02bc348299704229b8c3",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Greedy vs A*: fastest exit or shortest path?",
+    "url": "https://www.youtube.com/shorts/xBeKm7KyybM",
+    "resume": "",
+    "date": "2026-11-20T07:00:27Z",
+    "vote": 0
+  },
+  {
     "id": "abf6892e1b737a0d45a498abf50ad73e",
     "source": {
       "path": "examples",
