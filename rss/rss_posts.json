@@ -1,5 +1,18 @@
 [
   {
+    "id": "98f86f5294559a75bbe0db7a8755d136",
+    "source": {
+      "path": "tools",
+      "name": "GoLand",
+      "url": "https://blog.jetbrains.com/go/feed/"
+    },
+    "name": "JetBrains Air in GoLand: Build, Review, and Profile Go Code With Agents",
+    "url": "https://blog.jetbrains.com/go/2026/11/20/jetbrains-air-in-goland/",
+    "resume": "If you’ve ever built backend services in Go, chances are you’ve also written a webhook handler or two. They’re small and rarely get much attention – that is, until something breaks. A third-party provider sends a signed request, and then you check the signature, store the event, and reply. Sounds like three easy steps, but [\u0026#8230;]",
+    "date": "2026-11-20T14:13:09Z",
+    "vote": 0
+  },
+  {
     "id": "eaa305ebec327c8cd46d38e18c367467",
     "source": {
       "path": "forums",
