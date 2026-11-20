@@ -1,5 +1,18 @@
 [
   {
+    "id": "5ad9b3d601b2b6513d3d340bc1865369",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Pair Programming. 3 Batteries.",
+    "url": "https://www.youtube.com/shorts/kV_WAl9vwWM",
+    "resume": "",
+    "date": "2026-11-20T02:00:23Z",
+    "vote": 0
+  },
+  {
     "id": "999265cc8a398607945c4ae9150dac7c",
     "source": {
       "path": "examples",
