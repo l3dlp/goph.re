@@ -1,5 +1,31 @@
 [
   {
+    "id": "50d317a72bc135e3cb671ebcfd49a580",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_11",
+    "resume": " \u003cp\u003eTake a look at variations on this theme: Lisette, GALA, Dingo, Soppo, Borgo.\u003c/p\u003e\n\u003cp\u003eThe links are in this issue:\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/borgo-lang/borgo/issues/43\" rel=\"noopener nofollow ugc\"\u003ehttps://github.com/borgo-lang/borgo/issues/43\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-21T00:43:29Z",
+    "vote": 0
+  },
+  {
+    "id": "31dfc16f2f666efc8606a7cc9f3e180b",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "100 test runs. Not a single pass.",
+    "url": "https://www.youtube.com/shorts/CdREvSr5gpc",
+    "resume": "",
+    "date": "2026-11-21T00:30:08Z",
+    "vote": 0
+  },
+  {
     "id": "1c1ba63a64307fbf903233ebd0f15e6e",
     "source": {
       "path": "forums",
