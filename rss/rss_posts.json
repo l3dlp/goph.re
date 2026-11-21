@@ -1,5 +1,18 @@
 [
   {
+    "id": "f84965025dfed823eeecfe2194087b49",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Crazy Computer Science Concepts",
+    "url": "https://www.youtube.com/watch?v=fvdTGcJ95rc",
+    "resume": "",
+    "date": "2026-11-21T16:30:30Z",
+    "vote": 0
+  },
+  {
     "id": "e49fab29544e939d101a4064be2a97b2",
     "source": {
       "path": "blogs",
