@@ -1,5 +1,18 @@
 [
   {
+    "id": "e49fab29544e939d101a4064be2a97b2",
+    "source": {
+      "path": "blogs",
+      "name": "Anton Zhiyanov",
+      "url": "https://antonz.org/index.xml"
+    },
+    "name": "Probabilistic data structures in Go, part 2",
+    "url": "https://antonz.org/probabilistic-data-structures-2/",
+    "resume": "Binary fuse filter, UltraLogLog, Log-linear histogram, and MinHash.",
+    "date": "2026-11-21T12:30:00Z",
+    "vote": 0
+  },
+  {
     "id": "2a115bd2477c0b33c5b8d03ef0dadd49",
     "source": {
       "path": "examples",
