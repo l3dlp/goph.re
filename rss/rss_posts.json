@@ -1,5 +1,18 @@
 [
   {
+    "id": "ed01b0ff2628427a322ab08503a59ce1",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "Same AI tool. Different engineer.",
+    "url": "https://www.youtube.com/shorts/CS-ZYrGDAVE",
+    "resume": "",
+    "date": "2026-11-21T01:30:15Z",
+    "vote": 0
+  },
+  {
     "id": "50d317a72bc135e3cb671ebcfd49a580",
     "source": {
       "path": "forums",
