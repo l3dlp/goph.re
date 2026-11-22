@@ -1,5 +1,18 @@
 [
   {
+    "id": "1dcd652d24b69df4c2ba823290755498",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Code Review: NetDisk — self-hosted Go file server (chi, pgx, local/S3, NFS gateway)",
+    "url": "https://forum.golangbridge.org/t/code-review-netdisk-self-hosted-go-file-server-chi-pgx-local-s3-nfs-gateway/42915#post_2",
+    "resume": " \u003cp\u003eA likely edge case in the ZIP path: on client disconnect, make sure the handler closes the reader side promptly and the producer treats any write error as terminal. If the producer can block on a pipe write while the consumer has already returned, that goroutine can leak. Also have the producer select on the request context between chunks, and clean up temp files on every error path. A bounded semaphore around concurrent ZIP generation is worth considering so a few slow downloads cannot pin unbounded goroutines or CPU.\u003c/p\u003e ",
+    "date": "2026-11-22T08:33:53Z",
+    "vote": 0
+  },
+  {
     "id": "1d63f22d6da7a9c83fb0d54c28739742",
     "source": {
       "path": "forums",
