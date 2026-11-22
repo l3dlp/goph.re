@@ -91,6 +91,19 @@
     "vote": 0
   },
   {
+    "id": "3b203ff3eb806fed137eab431377c29f",
+    "source": {
+      "path": "experts",
+      "name": "Preslav Rachev",
+      "url": "https://preslav.me/index.xml"
+    },
+    "name": "Do you really need to flash your Canon camera?",
+    "url": "https://preslav.me/2026/11/21/canon-custom-darkroom-firmware/",
+    "resume": "If you just want your old Canon to look different (filmic, nostalgic, straight out of camera) tomorrow morning, start with a style.",
+    "date": "2026-11-21T00:00:00Z",
+    "vote": 0
+  },
+  {
     "id": "1c1ba63a64307fbf903233ebd0f15e6e",
     "source": {
       "path": "forums",
