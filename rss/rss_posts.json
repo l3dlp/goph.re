@@ -1,5 +1,18 @@
 [
   {
+    "id": "8e350d651b674fda02a6f5da2ecf0ec8",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How long until a cat types \"bug\"? (real simulation)",
+    "url": "https://www.youtube.com/shorts/0v7bdISjTIw",
+    "resume": "",
+    "date": "2026-11-22T21:00:31Z",
+    "vote": 0
+  },
+  {
     "id": "bf901cd131cc8d18539a2934d9026420",
     "source": {
       "path": "examples",
