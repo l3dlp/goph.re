@@ -1,5 +1,18 @@
 [
   {
+    "id": "da9abff2c5455e8fb02751cde76235a3",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Conn3x: an open-source Go tool for cloud and server setup, looking for Go contributors",
+    "url": "https://forum.golangbridge.org/t/conn3x-an-open-source-go-tool-for-cloud-and-server-setup-looking-for-go-contributors/42945#post_1",
+    "resume": " \u003cp\u003eHi all. I’m James, and I run \u003ca href=\"https://github.com/conn3xorg/conn3x\" rel=\"noopener nofollow ugc\"\u003eConn3x\u003c/a\u003e, an MPL-2.0 project written in Go.\u003c/p\u003e\n\u003cp\u003eSetting up a server usually takes two tools. Terraform or OpenTofu creates the machine, then Ansible installs the packages and writes the files, with glue scripts holding the two together. Conn3x does both from one binary. It’s built on OpenTofu, so every Terraform provider still works, and it adds steps for what goes on the machine: packages, files, services, users, firewalls, Windows, even Arista and Cisco switches. \u003ccode\u003econn3x plan\u003c/code\u003e shows every change first; \u003ccode\u003econn3x apply\u003c/code\u003e makes it.\u003c/p\u003e\n\u003cp\u003eMost of the work is Go, and a few parts could use more hands:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eThe Ansible converter\u003c/strong\u003e (\u003ccode\u003einternal/conn3x/convert/ansible\u003c/code\u003e). \u003ccode\u003econn3x convert\u003c/code\u003e turns playbooks into Conn3x config, and each Ansible module maps through one small Go function. That makes it the easiest place to start. \u003cspan class=\"hashtag-raw\"\u003e#1012\u003c/span\u003e and \u003cspan class=\"hashtag-raw\"\u003e#1013\u003c/span\u003e are open good first issues.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSteps\u003c/strong\u003e (\u003ccode\u003einternal/conn3x/modules\u003c/code\u003e). Each step reads a host over SSH, plans the difference and applies it. There are 46 module packages, and new ones are always welcome.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eThe language server\u003c/strong\u003e (\u003ccode\u003einternal/conn3x/lsp\u003c/code\u003e). \u003ccode\u003econn3x lsp\u003c/code\u003e gives completion and checks for \u003ccode\u003e.circuit.hcl\u003c/code\u003e files. If you’ve worked on gopls or HCL tooling, I’d value your eyes on it.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReview.\u003c/strong\u003e Read any open PR and tell us what you’d change.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/conn3xorg/conn3x/blob/main/CONTRIBUTING.md\" rel=\"noopener nofollow ugc\"\u003eCONTRIBUTING.md\u003c/a\u003e covers setup. Every commit needs a DCO sign-off. Ask anything here or in GitHub Discussions.\u003c/p\u003e ",
+    "date": "2026-11-22T15:21:43Z",
+    "vote": 0
+  },
+  {
     "id": "6399eb5e5db28b69be56203b128bb221",
     "source": {
       "path": "forums",
