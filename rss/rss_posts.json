@@ -1,5 +1,18 @@
 [
   {
+    "id": "0d6b7811fc191a906df531573319edfa",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "punchtape: an external state machine that makes AI coding agents earn done",
+    "url": "https://forum.golangbridge.org/t/punchtape-an-external-state-machine-that-makes-ai-coding-agents-earn-done/42955#post_1",
+    "resume": " \u003cp\u003eHi GoBridge,\u003c/p\u003e\n\u003cp\u003ev0.5.1 of punchtape is out - a single Go binary, MIT, Linux/macOS, offline, no account.\u003c/p\u003e\n\u003cp\u003eWhat it does: it stands beside an AI coding agent (Claude Code, Cursor, Codex CLI - any agent with a shell) as an external state machine. Your words enter a file word for word and become the law of the task. The agent writes checks beside the code. The machine runs every check itself. The agent cannot declare done - it can only make done true. A finish is sealed with a checksum over exactly what passed.\u003c/p\u003e\n\u003cp\u003eWhy I made it: every “Done! All tested!” from my agent was a coin flip. That loop - check, send back, re-check - was mine, and it ate hours.\u003c/p\u003e\n\u003cp\u003eWhy it’s useful compared to similar tools: it is not another harness and not a plugin inside the agent - one binary, no background processes, no network calls at all. Linters and CI check the code. punchtape holds the task itself: every line of the task must be claimed by a check or openly crossed out, otherwise no finish. Any agent, any stack, any language - it sees files, commands, bytes.\u003c/p\u003e\n\u003cp\u003eField series 0.4.0, 25 tasks: manual acceptances fell 32 → 2, verifying time 4.4-7.3 h → 0.8-1.3 h, 25 of 25 accepted on first submission. Behind the method is a study with blind judges (1,720 checkpoints), published as a preprint: \u003ca href=\"https://doi.org/10.2139/ssrn.7566638\" rel=\"noopener nofollow ugc\"\u003ehttps://doi.org/10.2139/ssrn.7566638\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eRepo: \u003ca href=\"https://github.com/neurophant/punchtape\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - neurophant/punchtape: A state machine that makes your AI get the entire job done — start to finish, with every claim proven. Any agent, any stack. Offline, MIT. done: true has to be earned. · GitHub\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eSite: \u003ca href=\"https://punchtape.dev\" rel=\"noopener nofollow ugc\"\u003ehttps://punchtape.dev\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-22T22:40:47Z",
+    "vote": 0
+  },
+  {
     "id": "79fd7acfc64465855730e45dc6cb97d4",
     "source": {
       "path": "examples",
@@ -62,6 +75,19 @@
     "url": "https://www.youtube.com/shorts/nNWGuu71oSE",
     "resume": "",
     "date": "2026-11-22T19:00:09Z",
+    "vote": 0
+  },
+  {
+    "id": "4583af62cb915413ab8223ea55aebe2e",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_13",
+    "resume": " \u003cp\u003eOn exception handling, the most interesting design question is the Go boundary: if Go++ exceptions compile to ordinary Go, Go callers still expect error returns. It would be worth documenting how an exception crossing an exported Go++ function is represented—translated to error, a panic/recover convention, or something else—and whether Go callers can handle it idiomatically without importing Go++ runtime helpers. That boundary behavior will matter more to adopters than the syntax inside Go++ code.\u003c/p\u003e ",
+    "date": "2026-11-22T18:23:40Z",
     "vote": 0
   },
   {
@@ -218,6 +244,19 @@
     "url": "https://www.youtube.com/shorts/CS-ZYrGDAVE",
     "resume": "",
     "date": "2026-11-21T01:30:15Z",
+    "vote": 0
+  },
+  {
+    "id": "f7e437d705520fafc92da6c2cfebfb19",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Shutting down a worker pool without leaking goroutines - a checklist that finally stuck",
+    "url": "https://forum.golangbridge.org/t/shutting-down-a-worker-pool-without-leaking-goroutines-a-checklist-that-finally-stuck/42895#post_1",
+    "resume": " \u003cp\u003eI inherited a service with a fan-out pool: one producer, N workers, and a shutdown path that only closed the input channel. Under load it left goroutines behind every deploy, and pprof showed them slowly piling up.\u003c/p\u003e\n\u003cp\u003eThe fix is not exotic, but writing it down helped more than any single patch:\u003c/p\u003e\n\u003cp\u003e1. Derive a context with cancel in main and pass it everywhere.\u003c/p\u003e\n\u003cp\u003e2. select on ctx.Done() in the worker receive, not just on the channel.\u003c/p\u003e\n\u003cp\u003e3. Cancel before closing the input, not after.\u003c/p\u003e\n\u003cp\u003e4. WaitGroup.Wait with a deadline, then log the stacks of leftovers.\u003c/p\u003e\n\u003cp\u003e5. A test that runs the pool 200 times and asserts runtime.NumGoroutine comes back to baseline.\u003c/p\u003e\n\u003cp\u003eI used an AI terminal to get from the broken version to that list. Reading the actual package mattered: it followed the project’s existing errgroup usage instead of handing me a bare WaitGroup, and it wrote the test in the same table style as the rest of the file.\u003c/p\u003e\n\u003cp\u003eWhere it guessed wrong: it put the cancel call inside a defer in the worker, which fires too late. I moved it to the owner of the pool.\u003c/p\u003e\n\u003cp\u003eModel choice: cheap one for the test and comments, stronger one when reasoning about ordering. darkmind.chat shows the cost before each request, so trying two models on the same diff is a few cents, not a subscription.\u003c/p\u003e\n\u003cp\u003eWhat does your shutdown checklist look like? Mine is above, and I would rather steal a better one than defend it.\u003c/p\u003e ",
+    "date": "2026-11-21T01:03:50Z",
     "vote": 0
   },
   {
