@@ -1,5 +1,31 @@
 [
   {
+    "id": "79fd7acfc64465855730e45dc6cb97d4",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "(Real World Example) Greedy Best-First vs A* in Seattle",
+    "url": "https://www.youtube.com/shorts/4K63ojQt7Pc",
+    "resume": "",
+    "date": "2026-11-22T22:00:19Z",
+    "vote": 0
+  },
+  {
+    "id": "baf21e0c2d7356dfeaf6e5e3669d9861",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Where do you put migration approval in a Go deployment?",
+    "url": "https://forum.golangbridge.org/t/where-do-you-put-migration-approval-in-a-go-deployment/42889#post_2",
+    "resume": " \u003cp\u003eI’d put approval in the deployment pipeline, not inside the application: generate a plan artifact containing the target, version, SQL/Go migration IDs and a hash, then require a manual gate tied to that exact artifact. For an ambiguous COMMIT, don’t auto-retry. Have the deployment operator or DBA inspect the migration table, lock state, checksum/version, and any application-level backfill markers. Retry only when the transaction is definitively absent and the plan hash matches; otherwise reconcile forward with a new reviewed plan.\u003c/p\u003e ",
+    "date": "2026-11-22T21:35:31Z",
+    "vote": 0
+  },
+  {
     "id": "8e350d651b674fda02a6f5da2ecf0ec8",
     "source": {
       "path": "examples",
