@@ -1,5 +1,31 @@
 [
   {
+    "id": "da384f306f818b034130f44bc43b6aa5",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Gowaku: a Flutter-style desktop UI library in pure Go (no cgo)",
+    "url": "https://forum.golangbridge.org/t/gowaku-a-flutter-style-desktop-ui-library-in-pure-go-no-cgo/42880#post_2",
+    "resume": " \u003cp\u003eCongrats!\u003c/p\u003e\n\u003cp\u003eVery, very nice work!\u003c/p\u003e\n\u003cp\u003eThanks to AI the Golang UI scene is extremely hot - and I like it \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/grinning_face.png?v=16\" title=\":grinning_face:\" class=\"emoji\" alt=\":grinning_face:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e\n\u003cp\u003eKeep up the good work.\u003c/p\u003e ",
+    "date": "2026-11-22T10:16:35Z",
+    "vote": 0
+  },
+  {
+    "id": "86f8f7499cbad361edc02842b256b601",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "My Go Application Occasionally Returns Incomplete API Responses Under Concurrent Requests",
+    "url": "https://forum.golangbridge.org/t/my-go-application-occasionally-returns-incomplete-api-responses-under-concurrent-requests/42778#post_7",
+    "resume": " \u003cp\u003eOne concrete check: if a handler fans out goroutines, wait for all of them before encoding, and avoid appending to a shared slice or writing to the ResponseWriter from those goroutines. Encode into a per-request buffer, check the Encode error, then write the body once. A 200 with missing fields can be a partial write or a swallowed encoding error rather than a database issue. Adding a request ID and logging the row count plus response byte count at the final write point should help correlate torn responses with the responsible request.\u003c/p\u003e ",
+    "date": "2026-11-22T09:23:15Z",
+    "vote": 0
+  },
+  {
     "id": "1dcd652d24b69df4c2ba823290755498",
     "source": {
       "path": "forums",
