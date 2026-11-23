@@ -1,5 +1,18 @@
 [
   {
+    "id": "84f2b11266027a5bf103b07a16f0aa4e",
+    "source": {
+      "path": "examples",
+      "name": "The Coding Gopher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-mTIBh__DzAqW495JHXy5A"
+    },
+    "name": "How to Become a $300K AI Engineer in 2026 (Complete Roadmap)",
+    "url": "https://www.youtube.com/watch?v=x84C_9mRZY4",
+    "resume": "",
+    "date": "2026-11-23T16:00:25Z",
+    "vote": 0
+  },
+  {
     "id": "d2eac6cc7e62cfc3fe723873f95fef76",
     "source": {
       "path": "community",
