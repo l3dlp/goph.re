@@ -1,5 +1,70 @@
 [
   {
+    "id": "69dc293d501bb312d00c6eafd5fab02c",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Gowaku: a Flutter-style desktop UI library in pure Go (no cgo)",
+    "url": "https://forum.golangbridge.org/t/gowaku-a-flutter-style-desktop-ui-library-in-pure-go-no-cgo/42880#post_5",
+    "resume": " \u003cp\u003eThanks, good question. On Linux gowaku draws with Vulkan only, and it has no software renderer of its own. But it accepts Mesa’s CPU Vulkan driver (lavapipe) as a last resort, so a VM without a GPU works if lavapipe is installed (the mesa-vulkan-drivers package on Ubuntu). In fact all my Linux testing so far was on lavapipe; I have not tested on a real Linux GPU yet. If there is no Vulkan device at all, Run returns an error instead of crashing.\u003c/p\u003e ",
+    "date": "2026-11-23T06:09:22Z",
+    "vote": 0
+  },
+  {
+    "id": "9ae5b17a6d0c5dcf1d0bc910c57f1be7",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Gowaku: a Flutter-style desktop UI library in pure Go (no cgo)",
+    "url": "https://forum.golangbridge.org/t/gowaku-a-flutter-style-desktop-ui-library-in-pure-go-no-cgo/42880#post_4",
+    "resume": " \u003cp\u003eThank you! That is encouraging.\u003c/p\u003e ",
+    "date": "2026-11-23T06:08:36Z",
+    "vote": 0
+  },
+  {
+    "id": "a955e40bae5c76873001c39300c60aca",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Nople: an editor in pure Go, no cgo, that opens a 10 GB log in 0.35 s",
+    "url": "https://forum.golangbridge.org/t/nople-an-editor-in-pure-go-no-cgo-that-opens-a-10-gb-log-in-0-35-s/42879#post_4",
+    "resume": " \u003cp\u003eThanks! That answer is right. A VS Code extension cannot replace the editor’s text buffer, so the same approach would only work as a separate viewer. I have no plan to make one, but the editor widget in gowaku is reusable if someone wants to try.\u003c/p\u003e ",
+    "date": "2026-11-23T06:06:44Z",
+    "vote": 0
+  },
+  {
+    "id": "ce9760ef9fc1d6c6859444902842ba9f",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Nople: an editor in pure Go, no cgo, that opens a 10 GB log in 0.35 s",
+    "url": "https://forum.golangbridge.org/t/nople-an-editor-in-pure-go-no-cgo-that-opens-a-10-gb-log-in-0-35-s/42879#post_3",
+    "resume": " \u003cp\u003eA full port isn’t really possible through the normal extension API: VS Code owns the core text buffer, file loading, and rendering. The closest approach would be a custom editor/webview that streams blocks from disk and keeps a piece table outside the native document, but search, editing, and Git integration would be more limited or require extra glue. So it could work as a focused large-log viewer, not as a drop-in replacement for VS Code’s normal editor.\u003c/p\u003e ",
+    "date": "2026-11-23T05:50:31Z",
+    "vote": 0
+  },
+  {
+    "id": "5c9d45a852ed7ce2c42cdf84efb1594c",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do you version a review API when the set of answers might grow?",
+    "url": "https://forum.golangbridge.org/t/how-do-you-version-a-review-api-when-the-set-of-answers-might-grow/42782#post_31",
+    "resume": " \u003cp\u003eOne extra safeguard: separate the stable machine key from any human-readable label, and make status a string code with documented semantics rather than a numeric ordinal. Then a seventh dimension is just another key; a split adds new keys and marks the old key deprecated, and only becomes v2 when the old key’s meaning would change. Also put the “no aggregate score” contract in the schema description, not only prose, so SDK generators and reviewers see it. A client can still sum locally, but the server should not supply weights or severity numbers that make aggregation look intended.\u003c/p\u003e ",
+    "date": "2026-11-23T05:36:49Z",
+    "vote": 0
+  },
+  {
     "id": "afd805ad121ea1bbf3c0a0f20239ef24",
     "source": {
       "path": "forums",
