@@ -1,5 +1,18 @@
 [
   {
+    "id": "afd805ad121ea1bbf3c0a0f20239ef24",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Shutting down a worker pool without leaking goroutines - a checklist that finally stuck",
+    "url": "https://forum.golangbridge.org/t/shutting-down-a-worker-pool-without-leaking-goroutines-a-checklist-that-finally-stuck/42895#post_2",
+    "resume": " \u003cp\u003eOne addition: make the producer’s exit part of the shutdown contract. Signal it to stop, wait until it has finished sending, close the input, then cancel the workers. Otherwise workers can block on result paths or drain a channel that is still being fed. Also run the repeated shutdown test under the race detector; goroutine counts catch leaks, but not every shutdown race. Keeping the leftover-stack dump behind a test flag is useful so normal shutdown logs stay quiet.\u003c/p\u003e ",
+    "date": "2026-11-23T02:36:52Z",
+    "vote": 0
+  },
+  {
     "id": "bd23251b46696930e606f7b127f69037",
     "source": {
       "path": "forums",
