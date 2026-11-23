@@ -1,5 +1,18 @@
 [
   {
+    "id": "d2eac6cc7e62cfc3fe723873f95fef76",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "GPP -- Build on Go with classes, generics, exceptions, and more",
+    "url": "https://gpp.telga.in",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/uqd28a/gpp_build_on_go_with_classes_generics\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-23T13:10:31Z",
+    "vote": 0
+  },
+  {
     "id": "2507014e899686d31e4881e63d5682fb",
     "source": {
       "path": "forums",
