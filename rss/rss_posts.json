@@ -1,5 +1,18 @@
 [
   {
+    "id": "4ebb5f6e59611c40c0f4c6e363723edf",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Building a Proof-of-Work Blockchain in Go: Lessons from a Real-World Implementation",
+    "url": "https://forum.golangbridge.org/t/building-a-proof-of-work-blockchain-in-go-lessons-from-a-real-world-implementation/42873#post_2",
+    "resume": " \u003cp\u003eFollowing up on this, I’d particularly appreciate feedback on Armaxcoin’s P2P architecture and concurrency model.\u003c/p\u003e\n\u003cp\u003eI’m also interested in hearing from Go developers who have experience with blockchain consensus, distributed systems, or cryptographic implementations.\u003c/p\u003e\n\u003cp\u003eThe source code is publicly available, so anyone interested is welcome to explore it and share technical suggestions.\u003c/p\u003e\n\u003cp\u003eRepository: \u003ca href=\"https://github.com/armaxcoincore/armax-coin\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eGitHub - armaxcoincore/armax-coin: Proof-of-Work Layer-1 testnet with NIST FIPS 204 (ML-DSA-65) post-quantum signatures. · GitHub\u003c/a\u003e\u003c/p\u003e ",
+    "date": "2026-11-23T09:40:55Z",
+    "vote": 0
+  },
+  {
     "id": "69dc293d501bb312d00c6eafd5fab02c",
     "source": {
       "path": "forums",
