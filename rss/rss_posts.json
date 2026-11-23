@@ -1,5 +1,31 @@
 [
   {
+    "id": "d6e1608d9d122d9b9b4360e77c1f4f19",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Nople: an editor in pure Go, no cgo, that opens a 10 GB log in 0.35 s",
+    "url": "https://forum.golangbridge.org/t/nople-an-editor-in-pure-go-no-cgo-that-opens-a-10-gb-log-in-0-35-s/42879#post_5",
+    "resume": " \u003cp\u003eThis is nice. Side note: if you have 10gb log files, for the love of everything, cycle your log files. \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/wink.png?v=16\" title=\":wink:\" class=\"emoji\" alt=\":wink:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e ",
+    "date": "2026-11-23T21:04:51Z",
+    "vote": 0
+  },
+  {
+    "id": "59cb58d603258a89fa7315ada4bacc54",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Building a Proof-of-Work Blockchain in Go: Lessons from a Real-World Implementation",
+    "url": "https://forum.golangbridge.org/t/building-a-proof-of-work-blockchain-in-go-lessons-from-a-real-world-implementation/42873#post_3",
+    "resume": " \u003cp\u003eOne common pitfall in Go P2P blockchain code is unbounded goroutines and queues under peer churn. I’d suggest per-peer bounded outbound channels, explicit backpressure, and dropping or coalescing block announcements instead of blocking. Also avoid holding the chain lock across network writes; serialize writes per peer and use context deadlines for handshakes and reads. For sync and reorgs, keep validation separate from storage and make the reorg path explicit so concurrent readers see a consistent tip. These are general suggestions, not specific to your repository.\u003c/p\u003e ",
+    "date": "2026-11-23T20:36:49Z",
+    "vote": 0
+  },
+  {
     "id": "a88762a4674bbeb5b1de7cd403008b01",
     "source": {
       "path": "forums",
