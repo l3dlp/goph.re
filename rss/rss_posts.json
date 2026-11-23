@@ -1,5 +1,18 @@
 [
   {
+    "id": "bd23251b46696930e606f7b127f69037",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Gowaku: a Flutter-style desktop UI library in pure Go (no cgo)",
+    "url": "https://forum.golangbridge.org/t/gowaku-a-flutter-style-desktop-ui-library-in-pure-go-no-cgo/42880#post_3",
+    "resume": " \u003cp\u003eCongrats on the release. On Linux, what happens on machines without a usable Vulkan driver—is there a software fallback, or does the app fail to start? That’s often the sticking point for pure-Go desktop UI libraries on older hardware or VMs.\u003c/p\u003e ",
+    "date": "2026-11-23T01:32:38Z",
+    "vote": 0
+  },
+  {
     "id": "0d6b7811fc191a906df531573319edfa",
     "source": {
       "path": "forums",
