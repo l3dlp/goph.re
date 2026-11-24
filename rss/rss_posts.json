@@ -1,5 +1,18 @@
 [
   {
+    "id": "7e092e88fa5be3abb61d47df7ae804d3",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Dark mode is enabled!",
+    "url": "https://forum.golangbridge.org/t/dark-mode-is-enabled/42962#post_3",
+    "resume": " \u003cp\u003eAwesome. Glad it’s working. I just enabled a color switcher in the header too to make it more discoverable. And of course it follows system settings by default.\u003c/p\u003e ",
+    "date": "2026-11-24T16:05:35Z",
+    "vote": 0
+  },
+  {
     "id": "4669ec77ceb730473b206575ccf10f6c",
     "source": {
       "path": "forums",
