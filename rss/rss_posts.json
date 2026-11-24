@@ -1,5 +1,18 @@
 [
   {
+    "id": "99792a89fc06a65823582a75a360902e",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Dark mode is enabled!",
+    "url": "https://forum.golangbridge.org/t/dark-mode-is-enabled/42962#post_2",
+    "resume": " \u003cp\u003eLooks great and easy reading… Thanks!!!\u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/+1.png?v=16\" title=\":+1:\" class=\"emoji\" alt=\":+1:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e ",
+    "date": "2026-11-24T02:56:47Z",
+    "vote": 0
+  },
+  {
     "id": "f188981aec8ca330c4ace4a9a6a72de8",
     "source": {
       "path": "forums",
