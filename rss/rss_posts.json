@@ -1,5 +1,18 @@
 [
   {
+    "id": "d8c6918444b9cadcd3acda7e735f19a9",
+    "source": {
+      "path": "podcasts",
+      "name": "Cup o' Go",
+      "url": "https://feeds.transistor.fm/cup-o-go"
+    },
+    "name": "Collection inception",
+    "url": "https://share.transistor.fm/s/c7b6971b",
+    "resume": "\u003cul\u003e\u003cli\u003e\u003ca href=\"https://groups.google.com/g/golang-announce/c/iY8TY0wWgbM\"\u003eGo 1.27.4 and Go 1.26.11 released\u003c/a\u003e\u003cul\u003e\u003cli\u003e\u003ca href=\"https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities\"\u003eNGINX RCE\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://github.com/golang/go/issues/80590\"\u003eGo collections proposals\u003c/a\u003e\u003c/li\u003e\u003c/ul\u003e\n\u003cstrong\u003e\n  \u003ca href=\"https://www.patreon.com/user?u=52571196\" rel=\"payment\" title=\"★ Support this podcast on Patreon ★\"\u003e★ Support this podcast on Patreon ★\u003c/a\u003e\n\u003c/strong\u003e",
+    "date": "2026-11-24T18:55:57Z",
+    "vote": 0
+  },
+  {
     "id": "fd6146e56af323fb94031436822c8520",
     "source": {
       "path": "community",
