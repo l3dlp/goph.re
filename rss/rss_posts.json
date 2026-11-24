@@ -1,5 +1,18 @@
 [
   {
+    "id": "3d076316debf542017c2560d44a5bf8d",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "How do you handle Go website builds without a visual builder?",
+    "url": "https://forum.golangbridge.org/t/how-do-you-handle-go-website-builds-without-a-visual-builder/42964#post_1",
+    "resume": " \u003cp\u003eI’m a Go developer in Columbus, and I’ve been helping a small local group put together a simple website. We started talking about visual builders like Framer since they seem quick, but I’m more comfortable keeping the site logic in Go templates and a tiny static generator. The pricing tiers are one thing I keep turning over, since the costs seem to jump once you need a custom domain or extras. I’m also unsure how much control we’d actually get over the output if we go with a builder, versus just writing the HTML ourselves and deploying the binary. I don’t want to lock the group into something they’ll struggle to maintain later. Has anyone here used a website builder alongside a Go backend, and was the tradeoff worth it for a small non-technical group? I’m especially curious about ongoing maintenance and whether the generated markup caused any surprises.\u003c/p\u003e ",
+    "date": "2026-11-24T20:55:54Z",
+    "vote": 0
+  },
+  {
     "id": "d8c6918444b9cadcd3acda7e735f19a9",
     "source": {
       "path": "podcasts",
