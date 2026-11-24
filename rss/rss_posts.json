@@ -1,5 +1,18 @@
 [
   {
+    "id": "4669ec77ceb730473b206575ccf10f6c",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Introducing Go++ — a superset of Go",
+    "url": "https://forum.golangbridge.org/t/introducing-go-a-superset-of-go/42638#post_14",
+    "resume": " \u003cp\u003e\u003ca class=\"mention\" href=\"https://forum.golangbridge.org/u/aabbtree77\"\u003e@aabbtree77\u003c/a\u003e  Ha, thanks I didn’t know about these, interesting ideas here!\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"mention\" href=\"https://forum.golangbridge.org/u/lucasparker\"\u003e@lucasparker\u003c/a\u003e Your understanding is correct, everything is lowered to plain Go so errors are just values and should cross boundary without issues. The tests reveal that so far but interop is still a work in progress when it comes to using gpp objects in go (since gpp objects (classes) automatically invoke constructors, getting object handles will result in uninitialized objects at this time but there shouldn’t be any issues if you just keep to exported functions or builders), the other way of using Go in gpp shouldn’t spring any surprises. I’ve updated the interop examples to clarify the usage both ways. Needs more work but please see here for updated interop examples: \u003ca href=\"https://gpp.telga.in/examples/#packages-and-interop\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eRunnable examples | GPP\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThanks for your interest everyone!\u003c/p\u003e ",
+    "date": "2026-11-24T13:28:48Z",
+    "vote": 0
+  },
+  {
     "id": "c588d507aa7abb3b405b2ef7b4209919",
     "source": {
       "path": "experts",
