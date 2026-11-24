@@ -1,5 +1,18 @@
 [
   {
+    "id": "c588d507aa7abb3b405b2ef7b4209919",
+    "source": {
+      "path": "experts",
+      "name": "Bitfield Consulting",
+      "url": "https://feeds.feedburner.com/bitfieldconsulting"
+    },
+    "name": "Code Safari: cp",
+    "url": "https://bitfieldconsulting.com/posts/rust-cp",
+    "resume": "Marco Ivaldi and I explore the Rust version of `cp`. Are you not \nentertained?",
+    "date": "2026-11-24T11:13:01Z",
+    "vote": 0
+  },
+  {
     "id": "fa8473fa6e612f5d4f0fce569164389a",
     "source": {
       "path": "forums",
