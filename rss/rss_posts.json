@@ -1,5 +1,31 @@
 [
   {
+    "id": "27a93348abec7ffa9940ce87baf6fc8a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Built Protoverse: a tick-based multiplayer space strategy game backend in Go.",
+    "url": "https://forum.golangbridge.org/t/built-protoverse-a-tick-based-multiplayer-space-strategy-game-backend-in-go/42864#post_2",
+    "resume": " \u003cp\u003eThe ticks table is a good idempotency guard. If you aren’t already, make the income step a single INSERT … ON CONFLICT DO NOTHING RETURNING and apply payouts only when a row comes back, so the check and the write aren’t two round trips, and the same pattern covers tick advancement generally. For the Redis recovery sweep, consider a client-supplied command ID with a unique constraint per game so a replayed action after a lost ack can’t double-apply. Are ticks rows per-game or global? That choice affects how much contention the insert sees.\u003c/p\u003e ",
+    "date": "2026-11-23T23:36:38Z",
+    "vote": 0
+  },
+  {
+    "id": "0f1a1427f66aa9b3d6716b928bd777c3",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "cgo's pointer check is all over the place",
+    "url": "https://theconsensus.dev/p/2026/11/15/cgos-pointer-check.html",
+    "resume": "\u003cp\u003e\u003ca href=\"https://lobste.rs/s/fgbvtt/cgo_s_pointer_check_is_all_over_place\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-23T23:36:14Z",
+    "vote": 0
+  },
+  {
     "id": "d6e1608d9d122d9b9b4360e77c1f4f19",
     "source": {
       "path": "forums",
