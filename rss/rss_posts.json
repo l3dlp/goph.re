@@ -1,5 +1,18 @@
 [
   {
+    "id": "cc4fb09d2ad88ad4140399df8149ce9f",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Different models for coding tasks in Go?",
+    "url": "https://forum.golangbridge.org/t/different-models-for-coding-tasks-in-go/42963#post_1",
+    "resume": " \u003cp\u003eHi all \u003cimg src=\"https://forum.golangbridge.org/images/emoji/google/waving_hand.png?v=16\" title=\":waving_hand:\" class=\"emoji\" alt=\":waving_hand:\" loading=\"lazy\" width=\"20\" height=\"20\"\u003e\u003c/p\u003e\n\u003cp\u003eHas anyone here tested different models for coding tasks in Go?\u003c/p\u003e\n\u003cp\u003eI’m especially looking for cost-efficient, open models that may not be cutting edge but are good enough to write solid code.\u003c/p\u003e\n\u003cp\u003eI’m talking about providers like Qwen, Z.ai, DeepSeek and Tencent, and each of them offers several models. The market is crowded, and it’s hard to choose one.\u003c/p\u003e\n\u003cp\u003eThe price difference compared to Anthropic, the current tech leader, is significant.\u003c/p\u003e\n\u003cp\u003eThese are the models currently on my shortlist:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eDeepSeek V4.1 Flash\u003c/strong\u003e: very cheap, strong coding scores\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDeepSeek V4 Pro\u003c/strong\u003e: for harder tasks, very cheap with caching\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGLM-5.3 (Z.ai)\u003c/strong\u003e: seems strong for agentic and multi-file work\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMiniMax M3.1 Flash\u003c/strong\u003e: ultra cheap option for routine tasks\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eTencent Hy4 preview\u003c/strong\u003e: new, promising benchmarks\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eQwen3-Coder-Next\u003c/strong\u003e: small, fast and cheap\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eHas anyone actually tested these runner-up models and can share some tips?\u003c/p\u003e\n\u003cp\u003eDid you have good or bad experiences with them?\u003cbr\u003e\nIs there a model missing from my list that I should take a look at?\u003c/p\u003e\n\u003cp\u003eI’m currently using \u003ca href=\"https://openrouter.ai/models\" class=\"inline-onebox\" rel=\"noopener nofollow ugc\"\u003eCompare AI Models: Pricing, Context \u0026amp; Benchmarks | OpenRouter\u003c/a\u003e and I’m happy with it, but I’m open to alternatives as well.\u003c/p\u003e\n\u003cp\u003eBest wishes,\u003cbr\u003e\nKarl\u003c/p\u003e ",
+    "date": "2026-11-24T09:16:18Z",
+    "vote": 0
+  },
+  {
     "id": "99792a89fc06a65823582a75a360902e",
     "source": {
       "path": "forums",
