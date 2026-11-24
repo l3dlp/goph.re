@@ -1,5 +1,18 @@
 [
   {
+    "id": "fd6146e56af323fb94031436822c8520",
+    "source": {
+      "path": "community",
+      "name": "Lobsters Go",
+      "url": "https://lobste.rs/t/go.rss"
+    },
+    "name": "Go Without Wires: TinyGo on ESP32",
+    "url": "https://www.youtube.com/watch?v=Vi5M-uD2x_U",
+    "resume": "\u003cp\u003e[edited to call out the connection to TinyFlight first thing, since the YouTube title doesn't call it out]\u003c/p\u003e\n\u003cp\u003eI originally tried to submit the URL for the Github project, \u003ca href=\"https://github.com/hybridgroup/tinyflight\" rel=\"ugc\"\u003ehttps://github.com/hybridgroup/tinyflight\u003c/a\u003e, but was thwarted by submission system.\u003c/p\u003e\n\u003cp\u003eI wanted to call attention to the project because it is very \u003cem\u003enicely documented\u003c/em\u003e, full of clear (to me, an intermediate gopher) examples of TinyGo code to interact with devices, handle multicore concurrency on an MCU, and build a testable design for a microcontroller application.  Started off with \u003ca href=\"https://github.com/hybridgroup/tinyflight/blob/main/docs/architecture.md\" rel=\"ugc\"\u003ethe architecture doc\u003c/a\u003e and have been reading and playing happy.  I really appreciate the documentation effort.\u003c/p\u003e\n\u003cp\u003eDo folks have other small-enough-to-swallow-but-big-enough-to-be-real projects that helped them move up the learning ladder?\u003c/p\u003e\n\u003cp\u003e(It's also a cool project in its own right, my Stampfly is in the mail)\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://lobste.rs/s/qrhnbc/go_without_wires_tinygo_on_esp32\"\u003eComments\u003c/a\u003e\u003c/p\u003e",
+    "date": "2026-11-24T17:19:10Z",
+    "vote": 0
+  },
+  {
     "id": "6c2871da163467808531f23779d774f3",
     "source": {
       "path": "examples",
