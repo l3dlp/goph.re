@@ -1,5 +1,18 @@
 [
   {
+    "id": "f188981aec8ca330c4ace4a9a6a72de8",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Building a Proof-of-Work Blockchain in Go: Lessons from a Real-World Implementation",
+    "url": "https://forum.golangbridge.org/t/building-a-proof-of-work-blockchain-in-go-lessons-from-a-real-world-implementation/42873#post_4",
+    "resume": " \u003cp\u003eThanks for sharing these suggestions, Charlotte. I really appreciate the detailed insights.\u003c/p\u003e\n\u003cp\u003eYou’ve highlighted several important areas, especially bounded outbound queues, backpressure, goroutine management, and avoiding chain locks during network I/O.\u003c/p\u003e\n\u003cp\u003eThese are valuable considerations for maintaining P2P stability under peer churn and heavy network activity. I’ll use them as additional points in our ongoing P2P security and reliability review.\u003c/p\u003e\n\u003cp\u003eThanks again for taking the time to share your experience!\u003c/p\u003e ",
+    "date": "2026-11-24T01:53:47Z",
+    "vote": 0
+  },
+  {
     "id": "27a93348abec7ffa9940ce87baf6fc8a",
     "source": {
       "path": "forums",
