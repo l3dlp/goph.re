@@ -1,5 +1,18 @@
 [
   {
+    "id": "fa8473fa6e612f5d4f0fce569164389a",
+    "source": {
+      "path": "forums",
+      "name": "Golang Bridge",
+      "url": "https://forum.golangbridge.org/posts.rss"
+    },
+    "name": "Code Review: NetDisk — self-hosted Go file server (chi, pgx, local/S3, NFS gateway)",
+    "url": "https://forum.golangbridge.org/t/code-review-netdisk-self-hosted-go-file-server-chi-pgx-local-s3-nfs-gateway/42915#post_3",
+    "resume": " \u003cp\u003eThanks for the review!\u003c/p\u003e\n\u003cp\u003eOn the first couple of points: \u003ccode\u003edownloadZip\u003c/code\u003e does \u003ccode\u003edefer z.Content.Close()\u003c/code\u003e so a client disconnect closes the pipe reader and unblocks the producer with a write error, and \u003ccode\u003eOpenZip\u003c/code\u003e streams directly through \u003ccode\u003eio.Pipe\u003c/code\u003e without creating temp files.\u003c/p\u003e\n\u003cp\u003eThat said, you caught two real gaps:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eI currently only check \u003ccode\u003ectx.Err()\u003c/code\u003e between files in \u003ccode\u003ewriteZipEntries\u003c/code\u003e, not mid-file during \u003ccode\u003eio.Copy\u003c/code\u003e.\u003c/li\u003e\n\u003cli\u003eThere’s no concurrency bound on ZIP generation at all—adding a bounded semaphore (and rejecting/waiting cleanly when saturated) makes a lot of sense so slow downloads can’t pin CPU/goroutines.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eI’ll add the bounded semaphore and mid-stream context check in the next pass. Appreciate the feedback!\u003c/p\u003e ",
+    "date": "2026-11-24T10:32:06Z",
+    "vote": 0
+  },
+  {
     "id": "e568bd32d901d5f917d29188240fb1cd",
     "source": {
       "path": "forums",
