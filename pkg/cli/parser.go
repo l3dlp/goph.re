@@ -2,8 +2,10 @@ package cli
 
 import (
 	"fmt"
+	"gophre/env"
 	"gophre/pkg/push"
 	"gophre/pkg/service"
+	"gophre/pkg/store"
 	"gophre/pkg/web"
 	"os"
 	"strconv"
@@ -16,6 +18,18 @@ func ParseCommand() {
 		service.Reset()
 	} else if len(os.Args) > 1 && os.Args[1] == "update" {
 		service.Update()
+	} else if len(os.Args) > 1 && os.Args[1] == "migrate" {
+		articles, votes, err := store.ImportJSON(env.POSTS, env.VOTES)
+		if err != nil {
+			fmt.Printf("Error migrating: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Printf("Imported %d articles and %d votes into %s.\n", articles, votes, env.DB)
+	} else if len(os.Args) > 2 && os.Args[1] == "backup" {
+		if err := store.Backup(os.Args[2]); err != nil {
+			fmt.Printf("%v\n", err)
+			os.Exit(1)
+		}
 	} else if len(os.Args) > 1 && os.Args[1] == "vapid" {
 		private, public, err := webpush.GenerateVAPIDKeys()
 		if err != nil {
@@ -53,6 +67,8 @@ func ParseCommand() {
 		fmt.Println("- gophre update         : Update RSS feeds")
 		fmt.Println("- gophre serve <port>   : Run Local Web Server (port is optional)")
 		fmt.Println("- gophre reset          : Reset all data")
+		fmt.Println("- gophre migrate        : Import the legacy JSON posts and votes into SQLite")
+		fmt.Println("- gophre backup <file>  : Write a compacted copy of the database")
 		fmt.Println("- gophre vapid          : Generate Web Push (VAPID) keys for .env")
 		fmt.Println("- gophre push <title> [body] [url] : Notify every push subscriber")
 		fmt.Println("")

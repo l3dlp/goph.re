@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"gophre/cmd/data"
 	"gophre/env"
+	"gophre/pkg/store"
 	"math"
 	"net/http"
 	"os"
@@ -91,17 +92,17 @@ func PulsePage(c *gin.Context) {
 	})
 }
 
-// getPulse returns the cached pulse, recomputing it when the posts or feeds files changed.
+// getPulse returns the cached pulse, recomputing it when the articles or feeds changed.
 func getPulse() (*Pulse, error) {
-	postsInfo, err := os.Stat(env.POSTS)
+	stats, err := store.GetStats()
 	if err != nil {
-		return nil, fmt.Errorf("Error reading posts file: %v.", err)
+		return nil, err
 	}
 	feedsInfo, err := os.Stat(env.FEEDS)
 	if err != nil {
 		return nil, fmt.Errorf("Error reading feeds file: %v.", err)
 	}
-	key := postsInfo.ModTime().String() + "|" + feedsInfo.ModTime().String()
+	key := fmt.Sprintf("%d|%s|%s", stats.Count, stats.LastAdded, feedsInfo.ModTime())
 
 	pulseMu.Lock()
 	defer pulseMu.Unlock()
@@ -109,17 +110,13 @@ func getPulse() (*Pulse, error) {
 		return pulseCache, nil
 	}
 
-	var articles []data.Article
-	file, err := os.ReadFile(env.POSTS)
+	articles, err := store.Timeline()
 	if err != nil {
-		return nil, fmt.Errorf("Error reading posts file: %v.", err)
-	}
-	if err := json.Unmarshal(file, &articles); err != nil {
-		return nil, fmt.Errorf("Error decoding posts: %v.", err)
+		return nil, err
 	}
 
 	var feeds []data.Rss
-	file, err = os.ReadFile(env.FEEDS)
+	file, err := os.ReadFile(env.FEEDS)
 	if err != nil {
 		return nil, fmt.Errorf("Error reading feeds file: %v.", err)
 	}
@@ -128,7 +125,7 @@ func getPulse() (*Pulse, error) {
 	}
 
 	pulseCache = computePulse(articles, feeds, time.Now())
-	pulseCache.UpdatedAt = postsInfo.ModTime()
+	pulseCache.UpdatedAt = stats.LastAdded
 	pulseCacheKey = key
 	return pulseCache, nil
 }
