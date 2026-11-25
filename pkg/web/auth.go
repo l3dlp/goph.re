@@ -5,8 +5,6 @@ import (
 	"gophre/cmd/data"
 	"gophre/env"
 	"net/http"
-	"os"
-	"path/filepath"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
@@ -63,9 +61,6 @@ func SetupAuth(router *gin.Engine) {
 			session.Set("user", string(userDataJSON))
 			session.Save()
 
-			// Créer le fichier des préférences utilisateur s'il n'existe pas
-			createUserPreferencesFile(userData.ID)
-
 			// Redirige vers la page d'accueil
 			c.Redirect(http.StatusTemporaryRedirect, "/")
 		})
@@ -108,29 +103,6 @@ func RequireAuth() gin.HandlerFunc {
 		}
 		c.Next()
 	}
-}
-
-// createUserPreferencesFile crée un fichier de préférences vide pour un nouvel utilisateur
-func createUserPreferencesFile(userID string) error {
-	userFilePath := filepath.Join(env.USERS, userID+".json")
-
-	// Vérifie si le fichier existe déjà
-	if _, err := os.Stat(userFilePath); os.IsNotExist(err) {
-		// Crée un fichier vide avec des préférences par défaut
-		preferences := map[string]interface{}{
-			"user_id": userID,
-			"votes":   map[string]string{}, // Equivalent au localStorage
-		}
-
-		data, err := json.MarshalIndent(preferences, "", "  ")
-		if err != nil {
-			return err
-		}
-
-		return os.WriteFile(userFilePath, data, 0644)
-	}
-
-	return nil
 }
 
 // RequireAdmin middleware to check if the user is an admin

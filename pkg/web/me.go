@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"gophre/cmd/data"
 	"gophre/env"
+	"gophre/pkg/store"
 	"net/http"
 	"os"
 	"runtime"
 	"sort"
 	"strings"
-	"sync"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -61,13 +61,6 @@ const (
 	meTopSources = 8
 )
 
-var (
-	meMu       sync.Mutex
-	meArticles []data.Article
-	meIndex    map[string]int
-	meCacheKey string
-)
-
 // UserBookmarks renders the /me page: the logged-in user's terminal.
 func UserBookmarks(c *gin.Context) {
 	user, isAuthenticated := GetCurrentUser(c)
@@ -89,61 +82,33 @@ func UserBookmarks(c *gin.Context) {
 	})
 }
 
-// loadMeArticles returns all articles and an ID index, cached until the posts file changes.
-func loadMeArticles() ([]data.Article, map[string]int, error) {
-	info, err := os.Stat(env.POSTS)
-	if err != nil {
-		return nil, nil, fmt.Errorf("Error reading posts file: %v.", err)
-	}
-	key := info.ModTime().String()
-
-	meMu.Lock()
-	defer meMu.Unlock()
-	if meArticles != nil && meCacheKey == key {
-		return meArticles, meIndex, nil
-	}
-
-	file, err := os.ReadFile(env.POSTS)
-	if err != nil {
-		return nil, nil, fmt.Errorf("Error reading posts file: %v.", err)
-	}
-	var articles []data.Article
-	if err := json.Unmarshal(file, &articles); err != nil {
-		return nil, nil, fmt.Errorf("Error decoding posts: %v.", err)
-	}
-	index := make(map[string]int, len(articles))
-	for i, article := range articles {
-		index[article.ID] = i
-	}
-	meArticles, meIndex, meCacheKey = articles, index, key
-	return articles, index, nil
-}
-
 // buildMeView joins the user's votes with the articles to build every section of /me.
 func buildMeView(userID string, now time.Time) (*MeView, error) {
-	articles, index, err := loadMeArticles()
+	stats, err := store.GetStats()
+	if err != nil {
+		return nil, err
+	}
+	votes, err := store.UserVotes(userID)
+	if err != nil {
+		return nil, err
+	}
+	var kept []string
+	for _, vote := range votes {
+		if vote.Value > 0 {
+			kept = append(kept, vote.ArticleID)
+		}
+	}
+	bookmarked, err := store.ByID(kept)
 	if err != nil {
 		return nil, err
 	}
 
-	var votes []data.Vote
-	file, err := os.ReadFile(env.VOTES)
-	if err != nil {
-		return nil, fmt.Errorf("Error reading votes file: %v.", err)
-	}
-	if err := json.Unmarshal(file, &votes); err != nil {
-		return nil, fmt.Errorf("Error decoding votes: %v.", err)
-	}
-
-	view := &MeView{Archive: len(articles), Kernel: runtime.Version()}
+	view := &MeView{Archive: stats.Count, Kernel: runtime.Version(), LastArticle: stats.LastArticle}
 	if file, err := os.ReadFile(env.FEEDS); err == nil {
 		var feeds []data.Rss
 		if json.Unmarshal(file, &feeds) == nil {
 			view.Feeds = len(feeds)
 		}
-	}
-	if len(articles) > 0 {
-		view.LastArticle = articles[0].Date
 	}
 
 	voted := map[string]bool{}
@@ -163,11 +128,10 @@ func buildMeView(userID string, now time.Time) (*MeView, error) {
 			continue
 		}
 		view.Good++
-		i, ok := index[vote.ArticleID]
+		article, ok := bookmarked[vote.ArticleID]
 		if !ok {
 			continue
 		}
-		article := articles[i]
 		view.Bookmarks = append(view.Bookmarks, MeEntry{Article: article, SavedAt: vote.Timestamp})
 		count, ok := sourceCounts[article.Source.Name]
 		if !ok {
@@ -206,8 +170,12 @@ func buildMeView(userID string, now time.Time) (*MeView, error) {
 		}
 	}
 	horizon := now.AddDate(0, 0, -14)
+	recent, err := store.Since(horizon)
+	if err != nil {
+		return nil, err
+	}
 	perSource := map[string]int{}
-	for _, article := range articles {
+	for _, article := range recent {
 		if len(view.Fresh) >= meFreshSize || article.Date.Before(horizon) {
 			break
 		}

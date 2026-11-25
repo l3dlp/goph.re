@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"encoding/json"
 	"gophre/env"
-	"gophre/pkg/rss"
+	"gophre/pkg/store"
 	"html/template"
 	"log"
 	"net"
@@ -78,11 +78,11 @@ func Serve(port ...int) {
 		}
 		log.Println("SESSION_KEY is not set; using a random key, sessions will not survive restarts.")
 	}
-	store := cookie.NewStore(sessionKey)
-	r.Use(sessions.Sessions("gophre-session", store))
+	sessionStore := cookie.NewStore(sessionKey)
+	r.Use(sessions.Sessions("gophre-session", sessionStore))
 
 	// Configure Goth
-	gothic.Store = store
+	gothic.Store = sessionStore
 
 	// Setup auth routes and middleware
 	SetupAuth(r)
@@ -123,20 +123,14 @@ func Serve(port ...int) {
 	r.GET("/article/:id", Article)
 	r.GET("/feed", Feed)
 	r.GET("/search", func(c *gin.Context) {
-		q := c.Query("q")
-		page, err := strconv.Atoi(c.DefaultQuery("page", "1"))
-		if err != nil || page < 1 {
-			page = 1
+		page, size := pageParams(c)
+		results, err := store.Search(c.Query("q"), (page-1)*size, size)
+		if err != nil {
+			log.Printf("Error searching articles: %v\n", err)
+			c.JSON(http.StatusInternalServerError, gin.H{"success": false, "error": "Search failed."})
+			return
 		}
-		size, err := strconv.Atoi(c.DefaultQuery("size", "30"))
-		if err != nil || size < 1 || size > 100 {
-			size = 30
-		}
-
-		// Get all articles but limit the batch size to avoid loading everything
-		articles := rss.Feed("", "1", "1000")
-		searchResults := rss.Search(q, articles, page, size)
-		c.JSON(200, searchResults)
+		c.JSON(http.StatusOK, results)
 	})
 
 	// Check all articles from one topic
@@ -152,18 +146,40 @@ func Serve(port ...int) {
 
 }
 
+// pageParams reads the 1-based page and its size (1 to 100, default 30) from the query.
+func pageParams(c *gin.Context) (page, size int) {
+	page, err := strconv.Atoi(c.DefaultQuery("page", "1"))
+	if err != nil || page < 1 {
+		page = 1
+	}
+	size, err = strconv.Atoi(c.DefaultQuery("size", "30"))
+	if err != nil || size < 1 || size > 100 {
+		size = 30
+	}
+	return page, size
+}
+
 // It returns the article by ID
 func Article(c *gin.Context) {
-	uid := c.Param("id")
-	c.JSON(200, rss.Article(uid))
+	article, _, err := store.Get(c.Param("id"))
+	if err != nil {
+		log.Printf("Error reading article: %v\n", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"success": false, "error": "Failed to read article."})
+		return
+	}
+	c.JSON(http.StatusOK, article)
 }
 
 // It takes a path, page and number of elements per page (size), and returns a JSON response with the RSS feed
 func Feed(c *gin.Context) {
-	path := c.DefaultQuery("path", "")
-	page := c.DefaultQuery("page", "1")
-	size := c.DefaultQuery("size", "30")
-	c.JSON(200, rss.Feed(path, page, size))
+	page, size := pageParams(c)
+	articles, err := store.Recent(c.Query("path"), (page-1)*size, size)
+	if err != nil {
+		log.Printf("Error reading feed: %v\n", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"success": false, "error": "Failed to read feed."})
+		return
+	}
+	c.JSON(http.StatusOK, articles)
 }
 
 // It takes the path parameter from the URL, and passes it to the Topic function in the rss package.
